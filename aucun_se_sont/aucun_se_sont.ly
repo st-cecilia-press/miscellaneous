@@ -1,36 +1,40 @@
-date = #(strftime "%m-%d-%Y" (localtime (current-time)))
-ficta = { \once \set suggestAccidentals = ##t }
+% 3 1 true
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
 
 \paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup {
-  \column{
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-	\fill-line { \tiny { \line{ Edition Date: \date } } } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
+  %will be different in different pieces
+  %system-system-spacing.minimum-distance = #16
 }
 \include "english.ly"
-#(set-global-staff-size 17)
+#(set-global-staff-size 18)
 
-\header{
-  title = "Aucun se sont / A Dieu Commant / Super Te"
-  composer = "Adam de la Halle"
-  tagline = ""
-}
+scTempo = #(ly:make-moment 100 2)
 
-global= {
+scTitle = "Aucun se sont / A Dieu Commant / Super Te"
+scSubtitle = ""
+scComposer = "Adam de la Halle"
+scArranger = ""
+scMeter = ""
+scPoet = ""
+scCopyright = ""
+scTagline = ""
+
+
+scGlobal= {
+  
   \autoBeamOff
   \time 3/2
-  \key d \major
+  \key c \major
 }
 
-cantusMusic =   \relative c' {  
+scTransposeFrom =  c 
+scTransposeTo =  d 
+
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "G_8"
+scMusicOneClefTransposed = \clef "treble"
+scMusicOne =   \relative c' {  
    f4 f e8 d c4 \ficta bf2 | \ficta bf8 a g4 a2 c4 c | c c \ficta bf2 c | d4 d e8 d c4 d2 | e1 r2 | d4 d e2 f | 
    e2 e4 f g2 | e4 c e2 f | g1 r2 | g4 g g g g2 | f2 f8 e d4 e4 e | g2 g e | f4 f f2 f8 e d4 | 
    e1 r2 | g4 a g g e2 | c4 c c2 d8 c b4 | a1 r2 | d8 d d4 c2 d | e4 e e8 d c4 d2 | 
@@ -40,7 +44,11 @@ cantusMusic =   \relative c' {
    e4 d e f g2 | g4 a g g e e | c2 f g4 f | e d e f e8 d c4 | d1 r2 | e4 e e2 f4 g | 
    a4 g e2 f4 e | d1 e4 d | c1 r2 | e4 c e2 g | f2 e8 d c4 e2 | g4 a g8 f e4 d2 | f1.
 }
-tenorMusic =   \relative c' {  
+
+scMusicTwoName = "tenor"
+scMusicTwoClef = \clef "G_8"
+scMusicTwoClefTransposed = \clef "G_8"
+scMusicTwo =   \relative c' {  
    c1 d2 | e1 e8 d c4 | f1 e2 | d2 e f | e4 d e2 e8 d c4 | b1 d2 |
    e1 c2 | a1 a8 g f4 | g1 a2 | c1 d4 e | f1 e8 d c4 | d4 e d c b2 | c1 r2 |
    e4 f e8 d e4 c2 | d d e | f1 r2 | e1 f2 | g2 g f | e1 r2 |
@@ -58,14 +66,17 @@ superTe = \relative c {
    a1 r2 | g1 f2 | f1 g2 | a1 g2 | f1 r2 | g1 g2 |
 }
 
-bassusMusic =   {  
+scMusicThreeName = "bassus"
+scMusicThreeClef = \clef "G_8"
+scMusicThreeClefTransposed = \clef "G_8"
+scMusicThree =   {  
    \superTe f1 r2 \superTe f1.
 }
 
 
 
 
-cantusWords = \lyricmode {
+scWordsOneA = \lyricmode {
 Au -- cun se __ _ _ sont lo -- _ _ é d'a -- mours, 
 Mais je m'en doi plus que nus__ _ _ blas -- mer,
 C'on -- ques a nul jour
@@ -90,7 +101,7 @@ Fors cil qui bée a ser -- _ _ vir de __ _ guil -- _ _ _ ler.
 }
 
 
-tenorWords = \lyricmode {
+scWordsTwoA = \lyricmode {
 A Dieu com -- mant __ _ _ a -- mou -- re -- tes,
 Car je __ _ _ m'en __ _ _ vois
 Do -- lans pour les dou -- _ _ che -- tes,
@@ -110,44 +121,12 @@ Et fui -- ent __ _ _ cha deus __ _ _ cha __ _ _ trois,
 Sous -- _ _ pi -- rant en __ _ _ terre es -- tran -- _ _ ge.  
 }
 
-bassusWords = \lyricmode {
+scWordsThreeA = \lyricmode {
 Su -- per Te
 }
 
 
 
-\score{
+\include "./score.ly"
 
-	\new ChoirStaff 
-	<<
-		\new Voice = "cantusMusic" { \global \clef treble \transpose c d { \cantusMusic } }
-		\new Lyrics \lyricsto "cantusMusic" \cantusWords 
-
-
-		\new Voice = "tenorMusic" { \global \clef "G_8" \transpose c d { \tenorMusic } }
-		\new Lyrics \lyricsto "tenorMusic" \tenorWords 
-
-		\new Voice = "bassusMusic" { \global \clef "G_8" \transpose c d { \bassusMusic } }
-		\new Lyrics \lyricsto "bassusMusic" \bassusWords 
-	>>
-
-
-
-\midi{
-     \context {
-       \Score
-       tempoWholesPerMinute = #(ly:make-moment 100 2)
-       }
-}
-
-\layout {
- indent = 0\cm
- \context {
-    \Voice
-    \consists "Ambitus_engraver"
-  }
-}
-
-}
-
-\version "2.10.0"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.2"  % necessary for upgrading to future LilyPond versions.
