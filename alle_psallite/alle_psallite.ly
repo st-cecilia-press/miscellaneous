@@ -1,150 +1,106 @@
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 1"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
+% 3 1 true
+scDate = "2016-May-16"
+
+\include "../include/sc_functions.ly"
+\include "../include/sc_paper_vocal.ly"
+
+#(set-global-staff-size 20)
+#(ly:set-option 'midi-extension "mid")
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #16
 }
-#(set-global-staff-size 17)
 
 \include "english.ly"
-\header{
-  title = "Alle Psallite"
-  composer = "13th c. Motet"
-  arranger = \markup { \column { "originally in D Dorian" "transp. Arianna" } } 
-  tagline = ""
 
-}
+scTempo = #(ly:make-moment 140 4)
+scTitle = "Alle Psallite"
+scSubtitle = ""
+scComposer = "13th c. Motet"
+scArranger = ""
+scMeter = ""
+scPoet = ""
+scCopyright = ""
+scTagline = ""
 
-global= {
-  \key a \dorian
+
+
+scGlobal= {
+  \key d \dorian
   \time 6/8
-  \autoBeamOff
+  
 }
 
-cantusMusic =   \relative c' {  
+scTransposeFrom =  d 
+scTransposeTo =  a 
 
-  a'4.^\mf g a4 g8 fs4 g8 % Alle psallite cum 
-  a4. \melisma g16([ fs] e4) \melismaEnd % lu
-  e4. \melisma r e^\mp d e \melismaEnd r % ya
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "G_8"
+scMusicOneClefTransposed = \clef "treble"
+scMusicOne =   \relative c' {  
 
-  a^\mf g4( a8) b4 b8 a[( g)] fs % Alle concrepando 
-  g4 e8 fs4 g8 % psallite cum 
-  a4. \melisma g16([ fs] e4) \melismaEnd % lu 
-  e4. \melisma r fs^\mp fs e d e \melismaEnd r % ya 
+  d4. c4. d4 c8 b4 c8 d4. c16 b a4 a4. r4. |
+  a4. b4. a4. r4.
+  
+  d4. c4 d8 e4 e8 d c b 
+  
+   c4 a8 b4 c8 d4. c16 b a4 a4. r4. b4. b4. a4. g4. a4. r4. |
+   d4. c4 d8 e4 e8 d4 e8 f4 d8 e4 c8 |
+   d4 c8 b4 c8 d4. c16 b a4 a4. r4. | b4. d4 b8 | c4 d8 b4 c8 | a4 g8 b4 g8 a4. r4. |
+   d4. c8 d4 e4. d16 c b8 c8 d4. r4. 
 
-  a^\mf g4( a8) b4 b8 a4 b8 c4 a8 b4 g8 % Alle corde voto Deo toto 
-  a4 g8 fs4 g8 % psallite cum
-  a4. \melisma g16([ fs] e4) \melismaEnd % lu 
-  e4. \melisma r fs^\mp a4 fs8  g4 a8 fs4 g8 e4 d8 fs4 d8 e4. \melismaEnd r
-
-  \bar ":|" a g8( a4) b4. \melisma a16([ g fs8 g]) \melismaEnd a4. r \bar "|." % Alleluya
 }
 
-cantusWords =  \lyricmode {
-  Al -- le psa -- lli -- te cum lu __ ya. __ 
-  Al -- le __ con -- cre -- pan -- do 
-  psa -- lli -- te cum lu __ ya. __
-  Al -- le __ cor -- de -- vo -- to De -- o to -- to 
-  psa -- lli -- te cum lu __ ya. __
+scWordsOneA =  \lyricmode {
+  Al -- le psa -- lli -- te cum lu -- _ _ _ ya. __  _ _ _
+  Al -- le __ _ con -- cre -- pan -- _ do 
+  psa -- lli -- te cum lu -- _ _ _  ya. __ _ _ _ _ _ 
+  Al -- le __  _ cor -- de -- vo -- to De -- o to -- to 
+  psa -- lli -- te cum lu -- _ _ ya. __ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-  Al -- le __ lu __ ya.
+  Al -- le -- _  lu -- _ _ _ _ ya.
 }
-
-altusMusic = 
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "G_8"
+scMusicTwoClefTransposed = \clef "treble"
+scMusicTwo = 
 \relative c' {
-  e4.^\mp \melisma r e d e \melismaEnd r % Ah
-  a^\mf g a4 g8 fs4 g8 % Alle psallite cum
-  a4. \melisma g16([ fs] e4) \melismaEnd % lu
-  e4. \melisma r fs^\mp fs e d e \melismaEnd r % ya
-  a^\mf g4( a8) b4 b8 a4 fs8 g4 e8 fs4 g8 % Alle concrepando psallite cum 
-  a4. \melisma g16([ fs] e4) \melismaEnd % lu 
-  e4. \melisma r fs^\mp a4 fs8 g4 a8 fs4 g8 e4 d8 fs4 d8 e4. \melismaEnd r % ya
-  % Note : "toto" was missing an 8th note, changed 16th to 8ths to make it line up
 
-  a^\mf g4( a8) b4 b8 a4 b8 c4 a8 b8([ a]) g8 % Alle corde voto Deo toto 
-  a4 g8 fs4 g8 a4. \melisma g16([ fs] e4) \melismaEnd % psallite cum lu
-
-  \bar ":|" e4. e fs4( g8) fs([e d]) e4. r \bar "|." % ya. Alleluya
+  a4. r4. a4. g4. a4. r4. | d4. c4. d4 c8 b4 c8 | d4. c16 b a4 | a4. r4. b4. b4.
+  a4. g4. a4. r4. | d4. c4 d8 e4 e8 d4 b8 c4 a8 b4 c8 d4. c16 b a4 a4. r4. |  b4. d4 b8 c4 d8 b4 c8
+  a4 g8 b4 g8 a4. r4.  | d4. c4 d8 e4 e8 d4 e8 f4 d8 e8 d c d4 c8 b4 c8 d4. c16 b a4
+  a4. a4. b4 c8 b8 a g a4. r4. 
 }
 
-altusWords = \lyricmode {
-  Ah __ 
-  Al -- le psa -- lli -- te cum lu __ ya. __
-  Al -- le __ con -- cre -- pan -- do 
-  psa -- lli -- te cum lu __ ya. __
-  Al -- le __ cor -- de -- vo -- to De -- o to -- to 
-  psa -- lli -- te cum lu __
-
-  ya.   Al -- le __ lu __ ya.
+scWordsTwoA = \lyricmode {
+  Ah __ _ _ _ 
+  Al -- le psa -- lli -- te cum lu -- _ _ _ ya. __ _ _ _ _ _
+  Al -- le __ _ con -- cre -- pan -- do  
+  psa -- lli -- te cum lu -- _ _ _ ya. __ _ _ _ _ _ _ _ _ _ _ _ _
+  Al -- le __ _ cor -- de -- vo -- to De -- o to -- _  to 
+  psa -- lli -- te cum lu -- _ _ _  ya.   Al -- le -- _ lu -- _ _ ya.
+}
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "bass"
+scMusicThreeClefTransposed = \clef "bass"
+scMusicThree = 
+\relative c {
+  d4. f4 e8 d4. e4. d4. r4. | d4. f4 e8 d4. e d r4. d f e g f e d r |
+  d f e g f e d r | d f e g f4 g8 e4 f8 d4 c8 e4. d4. r |
+  d4. f4. e4. g | f4 g8 e4 f8 d4 c8 e4. d4. r4. | d4. f e2. d4. r4. 
+  \bar "|."
 }
 
-bassusMusic = 
-\relative a {
-  a4. c4( b8) a4. \melisma b \melismaEnd a r  % Alleluya
-  a4. c4( b8) a4. \melisma b \melismaEnd a r  % Alleluya
-  a4.->( c) b->( d) c->( b) a-> r % Alleluya
-  a4.( c) b( d) c( b) a r % Alleluya
-  a4.( c) b( d) c4( d8 b4 c8 a4 g8 b4.) a r % Alleluya
-  a4.( c) b( d) c4( d8 b4 c8 a4 g8 b4.) a r % Alleluya
-
-  \bar ":|" a c b2. a4. r \bar "|."  
+scWordsThreeA = \lyricmode {
+  Al -- le -- _  lu -- _ ya.
+  Al -- le -- _  lu -- _ ya.
+  Al -- _ le -- _ lu -- _ ya.
+  Al -- _ le -- _ lu -- _ ya.
+  Al -- _ le -- _ lu -- _ _ _ _ _ _ ya.
+  Al -- _ le -- _ lu -- _ _ _ _ _ _ ya.
+  Al -- le -- lu -- ya.
 }
 
-bassusWords = \lyricmode {
-  Al -- le __ lu __ ya.
-  Al -- le __ lu __ ya.
-  Al __ le __ lu __ ya.
-  Al __ le __ lu __ ya.
-  Al __ le __ lu __ ya.
-  Al __ le __ lu __ ya.
-  Al -- le -- lu __ ya.
-}
+\include "./score.ly"
 
-
-\score {
-  \context ChoirStaff <<
-    \context Staff = cantusStaff <<
-      \set Staff.instrument = "Cantus"
-      \context Voice = cantus {
-	<< \global \cantusMusic >> 
-      }
-    >>
-
-    \context Lyrics = cantus { s1 }
-
-    \context Staff = altusStaff <<
-      \set Staff.instrument = "Altus"
-
-      \context Voice = altus { 
-	<< \global 
-	\altusMusic >> 
-      }
-    >>
-
-    \context Lyrics = altus { s1 }
-
-    \context Staff = bassusStaff << \context Voice = bassus { 
-      \set Staff.instrument = "Bassus"
-      << \global
-      \clef bass
-      \bassusMusic >>
-    }
-  >>
-
-  \context Lyrics = bassus { s1 }
-  \context Lyrics = cantus \lyricsto cantus \cantusWords
-  \context Lyrics = altus \lyricsto altus \altusWords
-  \context Lyrics = bassus \lyricsto bassus \bassusWords
-
->>
-
-  \midi { \tempo 4 . = 80 }
-  \layout { }
-}
-
-\version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.2"  % necessary for upgrading to future LilyPond versions.
