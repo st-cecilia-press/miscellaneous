@@ -1,4 +1,4 @@
-% 3 3 false
+%score_options { "parts": 3, "verses": 3, "transposed": false }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 
@@ -11,15 +11,15 @@ scDate = "2016-May-16"
 \include "english.ly"
 
 
-  scTempo = #(ly:make-moment 140 4)
-  scTitle = "Pastime with good company"
-  scSubtitle = ""
-  scComposer = "Henry VIII (1513)"
-  scArranger = ""
-  scTagline = ""
-  scPoet = ""
-  scMeter=  ""
-  scCopyright = ""
+scTempo = #(ly:make-moment 140 4)
+scTitle = "Pastime with good company"
+scSubtitle = ""
+scComposer = "Henry VIII (1513)"
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
   
 
 
@@ -28,7 +28,6 @@ scGlobal= {
   \time 4/4
   \key g \dorian
 
-  \bar ":|"
 
 }
 
