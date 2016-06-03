@@ -1,59 +1,60 @@
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
+%score_options {"parts": 4, "verses": 4, "transposed": false}
+scDate = "2016-May-16"
 
 \include "english.ly"
 #(set-global-staff-size 18)
+#(ly:set-option 'midi-extension "mid")
 
-\header{
-  title = "Come Again"
-  composer = "John Dowland (1562-1626)"
-  tagline = ""
-}
+scTempo = #(ly:make-moment 100 2)
+scTitle = "Come Again"
+scSubtitle = ""
+scComposer = "John Dowland"
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
+
 
 global= {
   \autoBeamOff
-  \key f \minor
-  \time 2/2
+  \key a \minor
+  \time 4/2
 }
 
 cantusMusic =   \relative c'' {  
-  \partial 2 r4 c8. df16 | ef2 r4 ef| f ef df4. df8 | c2 r4 ef | 
-  ef df c c | bf2 r4 bf | c af bf4. bf8 | \cadenzaOn \partial 2 bf2 \bar "|:" \pageBreak
-  \partial 2 r8 ef, af4 \cadenzaOff | r8 f bf4 r8 g8 c4 | r8 af8 df4 r8 bf8 ef4~ | ef1 | 
-  r8 ef df c bf4 r8 c | bf  af  af4. g16 [ \melisma f ] g4 \melismaEnd | af2 \bar ":|"
+  \partial 1 r2 b4. c8 | d1 r2 d| e d c2. c4 | b1 r2 d | 
+  d c b b | a1 r2 a | b g a2. a4 | a1 
+  \repeat volta 2{ r4 d, g2 | r4 e a2 r4 fs4 b2 | r4 g4 c2 r4 a4 d2~ | d\breve | 
+  r4 d c b a2 r4 b | a  g  g2. fs8 e  fs2  | g1  }
 }
 
 altusMusic = 
-\relative a' {
-  \partial 2 af4. af8 | af2 r4 c | bf8 af af2 g4 | af2 r4 af |
-  af \melisma f8. \melismaEnd g16  af4. af8 | g2 r4 g | af4. ef8 f4. f8  \partial 2 g2 \bar "|:"
-  \partial 2 ef2 | f4 r8 f8 g4 r8 g8 | af4 r8 af bf4 r8 bf | 
-  c2. bf4 | af8. g16 f8 af g4. af8 | f4 c8[ \melisma df ] \melismaEnd ef4. df8 | \partial 2 c2 \bar ":|" 
+\relative c'' {
+  \partial 1
+  g2. g4 | g1 r2 b | a4 g g1 fs2 | g1 r2 g |
+  g e4. fs8  g2. g4 | fs1 r2 fs | g2. d4 e2. e4  fs1 
+  \repeat volta 2{
+   d1 | e2 r4 e4 fs2 r4 fs4 | g2 r4 g a2 r4 a | 
+  b1. a2 | g4. fs8 e4 g fs2. g4 | e2 b4 c d2. c4 | b1 } 
 }
 
 tenorMusic = 
 \relative c' {
-  \partial 2 ef4. ef8 | c2 r4 c | df ef f4. ef16 [ \melisma df ] \melismaEnd | ef2 r4 c |
-  c bf af ef' | ef2 r4 ef | ef4. ef8 ef4 d  \partial 2 ef2 \bar "|:" 
-  \partial 2 af,2 | af4 r8 df bf4 r8 ef | c4 r8 f8 ef4 r8 df8 |
-  c8 af af bf c4 df | ef r8 af,8 ef'4. ef8 | df c c bf16[  \melisma af ] \melismaEnd bf4. bf8  \partial 2 af2 \bar ":|"
+  \partial 1 d2. d4 | b1 r2 b | c d e2. d8  c | d1 r2 b |
+  b a g d' | d1 r2 d | d2. d4 d2 cs   d1 
+  \repeat volta 2{
+  g,1 | g2 r4 c a2 r4 d | b2 r4 e4 d2 r4 c4 |
+  b4 g g a b2 c | d r4 g,4 d'2. d4 | c b b a8 g  a2. a4  g1 }
 }
 
 bassusMusic = 
 \relative g {
-  \partial 2 af4 af | af2 r4 af, | df c bf4. bf8 | af2 r4 af |
-  af bf c af | ef'2 r4 ef | af, c bf4. bf8 \partial 2 ef2 \bar "|:"
-  \partial 2 c2 | df4. df8 ef4. ef8 | f4. f8 g4. g8 | 
-  af4 af, af bf c df ef c | df8 ef (\melisma f4 )\melismaEnd ef4. ef8 \partial 2 af,2  \bar ":|"
+  \partial 1 g2 g | g1 r2 g, | c b a2. a4 | g1 r2 g |
+  g a b g | d'1 r2 d | g, b a2. a4 d1 
+  \repeat volta 2{
+   b1 | c2. c4 d2. d4 | e2. e4 fs2. fs4 | 
+  g2 g, g a b c d b | c4 d e2  d2. d4  g,1 }
 
 }
 
@@ -63,7 +64,7 @@ cantusWordsA = \lyricmode {
   Come a -- gain, sweet love doth now in -- vite 
   Thy gra -- ces that re -- frain To do me due de -- light.
   To see, to hear, to touch, to kiss, to die __ 
-  With thee a -- gain in sweet -- est sym -- pa -- thy.
+  With thee a -- gain in sweet -- est sym -- pa -- _  _ thy.
 }
 
 cantusWordsB = \lyricmode {
@@ -72,7 +73,7 @@ cantusWordsB = \lyricmode {
   Through thy un -- kind dis -- dain; 
   For now left and for -- lorn.
   I sit, I sigh, I weep, I faint, I die __
-  In dead -- ly pain and end -- less mis -- se -- ry.
+  In dead -- ly pain and end -- less mis -- se -- _ _ ry.
 }
 
 cantusWordsC = \lyricmode {
@@ -81,58 +82,58 @@ cantusWordsC = \lyricmode {
   Thou canst not pierce her heart;
   For I that do ap -- prove
   By sighs and tears more hot than are thy shafts __
-  Did tempt while she for scan -- ty tri -- umphs __ laughs.
+  Did tempt while she for scan -- ty tri -- umphs __ _  _ laughs.
 }
 
 altusWordsA = \lyricmode {
   \set stanza = "1."
   Come a -- gain, sweet love doth now in -- vite 
-  Thy gra -- ces that re -- frain To do me due de -- light.
+  Thy gra -- _ ces that re -- frain To do me due de -- light.
   To see, to hear, to touch, to kiss, to die, to die
-  With thee a -- gain in sweet -- est __ sym -- pa -- thy.
+  With thee a -- gain in sweet -- est __ _ sym -- pa -- thy.
 }
 
 altusWordsB = \lyricmode {
   \set stanza = "2."
   Come a -- gain, that I may cease to mourn
-  Through thy __ un -- kind dis -- dain; 
+  Through thy __ _ un -- kind dis -- dain; 
   For now left and for -- lorn.
   I sit, I sigh, I weep, I faint, I die, I die
-  In dead -- ly pain and end -- less __ mis -- se -- ry.
+  In dead -- ly pain and end -- less __ _ mis -- se -- ry.
 }
 
 altusWordsC = \lyricmode {
   \set stanza = "3."
   Gen -- tle love, draw forth thy wound -- ing dart:
-  Thou canst __ not pierce her heart;
+  Thou canst __ _ not pierce her heart;
   For I that do ap -- prove
   By sighs and tears more hot than are thy shafts, thy shafts
-  Did tempt while she for scan -- ty __ tri -- umphs laughs.
+  Did tempt while she for scan -- ty __ _ tri -- umphs laughs.
 }
 tenorWordsA = \lyricmode {
   \set stanza = "1."
-  Come a -- gain, sweet love doth now in -- vite 
+  Come a -- gain, sweet love doth now in -- _ vite 
   Thy gra -- ces that re -- frain To do me due de -- light.
   To see, to hear, to touch, to kiss, to die, to die
-  With thee a -- gain, with thee a -- gain  in sweet -- est __ sym -- pa -- thy.
+  With thee a -- gain, with thee a -- gain  in sweet -- est __ _ sym -- pa -- thy.
 }
 
 tenorWordsB = \lyricmode {
   \set stanza = "2."
-  Come a -- gain, that I may cease to __ mourn
+  Come a -- gain, that I may cease to __ _ mourn
   Through thy un -- kind dis -- dain; 
   For now left and for -- lorn.
   I sit, I sigh, I weep, I faint, I die, I die
-  In dead -- ly pain, in dead -- ly pain  and end -- less __ mis -- se -- ry.
+  In dead -- ly pain, in dead -- ly pain  and end -- less __ _ mis -- se -- ry.
 }
 
 tenorWordsC = \lyricmode {
   \set stanza = "3."
-  Gen -- tle love, draw forth thy wound -- ing dart:
+  Gen -- tle love, draw forth thy wound -- ing __ _ dart:
   Thou canst not pierce her heart;
   For I that do ap -- prove
   By sighs and tears more hot than are thy shafts, thy shafts
-  Did tempt while she, did tempt while she for scan -- ty __ tri -- umphs laughs.
+  Did tempt while she, did tempt while she for scan -- ty __ _ tri -- umphs laughs.
 }
 
 bassusWordsA = \lyricmode {
@@ -140,7 +141,7 @@ bassusWordsA = \lyricmode {
   Come a -- gain, sweet love doth now in -- vite 
   Thy gra -- ces that re -- frain To do me due de -- light.
   To see, to hear, to touch, to kiss, to die, to die
-  With thee a -- gain in sweet -- est sym -- pa -- thy.
+  With thee a -- gain in sweet -- est __ _ sym -- pa -- thy.
 }
 
 bassusWordsB = \lyricmode {
@@ -149,7 +150,7 @@ bassusWordsB = \lyricmode {
   Through thy un -- kind dis -- dain; 
   For now left and for -- lorn.
   I sit, I sigh, I weep, I faint, I die, I die
-  In dead -- ly pain and end -- less mis -- se -- ry.
+  In dead -- ly pain and end -- less __ _ mis -- se -- ry.
 }
 
 bassusWordsC = \lyricmode {
@@ -158,14 +159,14 @@ bassusWordsC = \lyricmode {
   Thou canst not pierce her heart;
   For I that do ap -- prove
   By sighs and tears more hot than are thy shafts, thy shafts
-  Did tempt while she for scan -- ty tri -- umphs laughs.
+  Did tempt while she for scan -- ty __ _ tri -- umphs laughs.
 }
 \score {
   <<
     \context ChoirStaff <<
       \context Voice = cantus {
-	\set Staff.instrument = "Cantus"
-	\set Staff.instr = "C"
+	\set Staff.instrumentName = "Cantus"
+	\set Staff.shortInstrumentName = "C"
 	<< \global \cantusMusic 	 >> 
       }
       \context Lyrics = cantusLyricsA { s1 }
@@ -173,8 +174,8 @@ bassusWordsC = \lyricmode {
       \context Lyrics = cantusLyricsC { s1 }
 
       \context Voice = altus { 
-	\set Staff.instrument = "Altus"
-	\set Staff.instr = "A"
+	\set Staff.instrumentName = "Altus"
+	\set Staff.shortInstrumentName = "A"
 	<< \global \altusMusic >> 
       }
       \context Lyrics = altusLyricsA { s1 }
@@ -183,8 +184,8 @@ bassusWordsC = \lyricmode {
 
 
       \context Voice = tenor { 
-	\set Staff.instrument = "Tenor"
-	\set Staff.instr = "T"
+	\set Staff.instrumentName = "Tenor"
+	\set Staff.shortInstrumentName = "T"
 	<< \global \clef "G_8" \tenorMusic >> 
       }
       \context Lyrics = tenorLyricsA { s1 }
@@ -194,8 +195,8 @@ bassusWordsC = \lyricmode {
 
       \context Voice = bassus { 
 
-	\set Staff.instrument ="Bassus"
-	\set Staff.instr = "B"
+	\set Staff.instrumentName ="Bassus"
+	\set Staff.shortInstrumentName = "B"
 	<< \global \clef bass \bassusMusic >>
       }
       \context Lyrics = bassusLyricsA { s1 }
@@ -221,14 +222,17 @@ bassusWordsC = \lyricmode {
   >>
 
   \layout {
-    betweensystemspace = 5\mm
-    raggedbottom = ##t
+    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
+    ragged-bottom = ##t
   }
 
+  
   \midi {
     \tempo 2 = 68
-  }
+    }
+
+
 }
 
-\version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.2"  % necessary for upgrading to future LilyPond versions.
 
