@@ -105,14 +105,7 @@
           >>
          
         >>
-        \layout {
-          
-            indent = 0\mm
-              \context {
-                \Staff
-                  \consists "Ambitus_engraver"
-                }
-        }
+        \layout { }
         \midi {
           \context {
             \Score
@@ -236,14 +229,7 @@
           >>
          
         >>
-        \layout {
-          
-            indent = 0\mm
-              \context {
-                \Staff
-                  \consists "Ambitus_engraver"
-                }
-        }
+        \layout { }
         \midi {
           \context {
             \Score

@@ -1,6 +1,7 @@
 %score_options {"parts": 3, "verses": 4, "transposed": false}
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
 
 scTempo = #(ly:make-moment 180 4)
 

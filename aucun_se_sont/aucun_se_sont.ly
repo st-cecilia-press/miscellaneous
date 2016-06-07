@@ -1,6 +1,7 @@
 %score_options {"parts": 3, "verse": 1, "transposed": true}
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
 
 \paper {
   %will be different in different pieces

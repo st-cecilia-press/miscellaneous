@@ -45,15 +45,6 @@
               
             }
             
-            <<
-              
-              
-              
-                \new Lyrics \lyricsto "one" { \scWordsOneA } 
-                
-              
-            >>
-            
           >>
          
           \new Staff = \scMusicTwoName <<
@@ -68,15 +59,6 @@
               
               
             }
-            
-            <<
-              
-              
-              
-                \new Lyrics \lyricsto "two" { \scWordsTwoA } 
-                
-              
-            >>
             
           >>
          
@@ -93,26 +75,10 @@
               
             }
             
-            <<
-              
-              
-              
-                \new Lyrics \lyricsto "three" { \scWordsThreeA } 
-                
-              
-            >>
-            
           >>
          
         >>
-        \layout {
-          
-            indent = 0\mm
-              \context {
-                \Staff
-                  \consists "Ambitus_engraver"
-                }
-        }
+        \layout { }
         \midi {
           \context {
             \Score
@@ -172,15 +138,6 @@
               
             }
             
-            <<
-              
-              
-              
-                \new Lyrics \lyricsto "one" { \scWordsOneA } 
-                
-              
-            >>
-            
           >>
          
           \new Staff = \scMusicTwoName <<
@@ -197,15 +154,6 @@
                } 
               
             }
-            
-            <<
-              
-              
-              
-                \new Lyrics \lyricsto "two" { \scWordsTwoA } 
-                
-              
-            >>
             
           >>
          
@@ -224,26 +172,10 @@
               
             }
             
-            <<
-              
-              
-              
-                \new Lyrics \lyricsto "three" { \scWordsThreeA } 
-                
-              
-            >>
-            
           >>
          
         >>
-        \layout {
-          
-            indent = 0\mm
-              \context {
-                \Staff
-                  \consists "Ambitus_engraver"
-                }
-        }
+        \layout { }
         \midi {
           \context {
             \Score

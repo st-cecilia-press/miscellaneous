@@ -61,6 +61,12 @@
                 \new Lyrics \lyricsto "one" { \scWordsOneD } 
                 
               
+                \new Lyrics \lyricsto "one" { \scWordsOneE } 
+                
+              
+                \new Lyrics \lyricsto "one" { \scWordsOneF } 
+                
+              
             >>
             
           >>
@@ -92,6 +98,12 @@
                 
               
                 \new Lyrics \lyricsto "two" { \scWordsTwoD } 
+                
+              
+                \new Lyrics \lyricsto "two" { \scWordsTwoE } 
+                
+              
+                \new Lyrics \lyricsto "two" { \scWordsTwoF } 
                 
               
             >>
@@ -127,37 +139,10 @@
                 \new Lyrics \lyricsto "three" { \scWordsThreeD } 
                 
               
-            >>
-            
-          >>
-         
-          \new Staff = \scMusicFourName <<
-            \set Staff.midiInstrument = #"oboe"
-            \new Voice = "four" {
-              
-              \scGlobal 
-              
-               \scMusicFourClef
-              
-                \scMusicFour
-              
-              
-            }
-            
-            <<
-              
-              
-              
-                \new Lyrics \lyricsto "four" { \scWordsFourA } 
+                \new Lyrics \lyricsto "three" { \scWordsThreeE } 
                 
               
-                \new Lyrics \lyricsto "four" { \scWordsFourB } 
-                
-              
-                \new Lyrics \lyricsto "four" { \scWordsFourC } 
-                
-              
-                \new Lyrics \lyricsto "four" { \scWordsFourD } 
+                \new Lyrics \lyricsto "three" { \scWordsThreeF } 
                 
               
             >>
@@ -165,7 +150,10 @@
           >>
          
         >>
-        \layout { }
+        \layout {
+          
+                
+        }
         \midi {
           \context {
             \Score
