@@ -1,93 +1,117 @@
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 1"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
+%score_options {"parts": 4, "verses": 3, "transposed": false}
+scDate = "2016-May-16"
+
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
 
 \include "english.ly"
-% #(set-global-staff-size 13)
+#(set-global-staff-size 20)
+#(ly:set-option 'midi-extension "mid")
 
-global= {
+scTempo = #(ly:make-moment 100 2)
+scTitle = "Dindirín, dindirín"
+scSubtitle = ""
+scComposer = "Anonymous (c. 1500)"
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
+
+scGlobal= {
   \key d \minor
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
+scMusicOne = \relative c'{
+  \time 3/1 
+  f1 f f | e e f | g g f | e\breve f1 | g e e | d\breve.^"Fine"
+  \bar "||" \break
+  \time 2/1
+  d'1  d | a a a a | g\breve e1 e | f f e e | f a g\breve f\breve
+  \break
+  \time 3/1
+  f\breve f1 f\breve f1 f\breve f1 f\breve. e\breve f1 |
+  g\breve g1 | g\breve f1 | e\breve f1 | g e e | d\breve.^"D.C."
+  \bar "|."
+  
+}
 cantusMusicChorusA =   \relative c' {  
   \time 3/4 
-  f4 f f | e e f | g g f | e2 f4 | g e e | d2.^"Fine"\fermata
+  f4 f f | e e f | g g f | e2 f4 | g e e | d2.^"Fine"
   \bar "||"
 }
 
 cantusMusicVerseChorusB = \relative c'' {
-  \time 2/2 \partial 2 d4^\markup { \translate #(cons -4 0) "(" \smaller \general-align #Y #DOWN \note #"2" #1 "=" \smaller \general-align #Y #DOWN \note #"2." #1 ")"  }
-  d | a a a a | g2 e4 e | f f e e | f( a g2 ) \partial 2 f2\fermata 
-  \break \time 3/4 f2^\markup { \translate #(cons -4 0)  "(" \smaller \general-align #Y #DOWN \note #"2." #1 "=" \smaller \general-align #Y #DOWN \note #"2" #1 ")" } 
+  \time 2/2 d4 
+  d | a a a a | g2 e4 e | f f e e | f( a g2 ) f2
+  \break \time 3/4 f2
   f4 f2 f4 f2 f4 f2. e2 f4 |
-  g2 g4 | g2 f4 | e2 f4 | g e e | d2.^"D.C."\fermata
+  g2 g4 | g2 f4 | e2 f4 | g e e | d2.^"D.C."
   \bar "|."
 }
 
-altusMusicChorusA = 
-\relative c' {
-  \time 3/4
-  d4 d d | c c d | e e d | cs2 d4 | b cs cs | d2.\fermata
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
+scMusicTwo =   \relative c' { 
+  \time 3/1
+  d1 d d | c c d | e e d | cs\breve d1 | b cs cs | d\breve.
+  \time 2/1
+  
+  d1 d | f f f f | g\breve g1 g | a a g g | f1. d2 e\breve   f\breve
+  \time 3/1
+  d\breve d1 | d\breve d1 | d\breve d1 | d\breve. | c\breve d1 | 
+  e\breve e1 | e\breve d1 | cs\breve d1 | b  cs cs | d\breve. \bar "|."
+}
+
+
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
+scMusicThree =   \relative c' { 
+    \time 3/1
+  a1 a a | a a a | c c a | a\breve a1 | g a a | a\breve.
   \bar "||"
-}
-
-altusMusicVerseChorusB = \relative c' {
-  \time 2/2
-  \partial 2
-  d4 d | f f f f | g2 g4 g | a a g g | f4.( d8 e2)  \partial 2 f2\fermata
-  \time 3/4
-  d2 d4 | d2 d4 | d2 d4 | d2. | c2 d4 | 
-  e2 e4 | e2 d4 | cs2 d4 | b  cs cs | d2.\fermata \bar "|."
-}
-
-tenorMusicChorusA = 
-\relative a {
-  \time 3/4
-  a4 a a | a a a | c c a | a2 a4 | g a a | a2.\fermata
-  \bar "||"
-}
-
-tenorMusicVerseChorusB = 
-\relative a { 
-  \time 2/2
-  \partial 2
-  a4 a | d d d d | d2 c4 c | c c c c | c1 \partial 2 c2
-  \time 3/4
-  bf2 bf4 bf2 bf4 bf2 bf4 a2. | a2 a4 |
-  c2 c4 c2 a4 a2 a4 | g a a | a2.\fermata \bar "|."
+    a1 a | d d d d | d\breve c1 c | c c c c | c\longa  c\breve
+  \time 3/1
+  bf\breve bf1 bf\breve bf1 bf\breve bf1 a\breve. | a\breve a1 |
+  c\breve c1 c\breve a1 a\breve a1 | g a a | a\breve. \bar "|."
+  
 }
 
 
+scMusicFourName = "bassus"
+scMusicFourClef = \clef "bass"
+scMusicFour =   \relative c { 
+    \time 3/1
+  d1 d d | a a d | c c d | a\breve d1 | e a, a | d\breve. \bar "||"
+  \time 2/1
+    d1 d | d d d d | g\breve c,1 c | f f c c | f\breve c  f 
+  \time 3/1
+  bf,\breve bf1 | bf\breve bf1 | bf\breve bf1 | d\breve. | a\breve d1 |
+  c\breve c1 | c\breve d1 | a\breve d1 | e a, a | d\breve. \bar "|."
+}
 bassusMusicChorusA = 
 \relative c {
-  \time 3/4
-  d4 d d | a a d | c c d | a2 d4 | e a, a | d2.\fermata \bar "||"
+  \time 3/1
+  d1 d d | a a d | c c d | a\breve d1 | e a, a | d\breve. \bar "||"
+  
 }
 
 bassusMusicVerseChorusB = 
 \relative c {
   \time 2/2
-  \partial 2
-  d4 d | d d d d | g2 c,4 c | f f c c | f2(c) \partial 2 f 
+ 
+  d1 d | d d d d | g\breve c,1 c | f f c c | f\breve c  f 
   \time 3/4
-  bf,2 bf4 | bf2 bf4 | bf2 bf4 | d2. | a2 d4 |
-  c2 c4 | c2 d4 | a2 d4 | e a, a | d2.\fermata \bar "|."
+  bf,\breve bf1 | bf\breve bf1 | bf\breve bf1 | d\breve. | a\breve d1 |
+  c\breve c1 | c\breve d1 | a\breve d1 | e a, a | d\breve. \bar "|."
 }
 
-wordsChorusA = \lyricmode {
-  Din -- di -- rín, din -- di -- rín, din -- di -- rín -- da -- ña, din -- di -- rin -- dín. 
-}
+
 
 wordsChorusB = \lyricmode {
-  Din -- di -- rin -- dín.
+
 }
 
 wordsVerseA = \lyricmode {
@@ -117,80 +141,82 @@ wordsVerseC = \lyricmode {
   Que je ya só ma -- ri -- ta -- ta.”
 }
 
-\book {
-
-  \header{
-    title = "Dindirín, dindirín"
-    composer = "Anon (c. 1500)"
-    tagline = ""
-  }
-
-
-  \score {
-    <<
-      \context ChoirStaff <<
-	\context Staff = trebleA <<
-	  \context Voice = cantusA { \voiceOne << \global \cantusMusicChorusA >> }
-	  \context Voice = altusA { \voiceTwo << \global \altusMusicChorusA >> }
-	>>
-	\context Lyrics = chorusLyricsA { s1 }
-	\context Staff = bassA <<
-	  \clef bass
-	  \context Voice = tenorA { \voiceOne << \global \tenorMusicChorusA >> }
-	  \context Voice = bassusA { \voiceTwo << \global \bassusMusicChorusA >> }
-	>>
-
-      >>
-
-      \lyricsto "cantusA" \context Lyrics = chorusLyricsA \wordsChorusA
-
-
-    >>
-    
-  \layout {
-    indent = 0\mm
-    betweensystemspace = 5\mm
-  }
-    \midi {
-      \tempo 4 = 120
-    }
-  }
-  \score {
-    <<
-      \context ChoirStaff <<
-	\context Staff = trebleB <<
-	  \context Voice = cantusB { \voiceOne << \global \cantusMusicVerseChorusB >> }
-	  \context Voice = altusB { \voiceTwo << \global \altusMusicVerseChorusB >> }
-	>>
-	\context Lyrics = lyricsVerseA { s1 }
-	\context Lyrics = lyricsVerseB { s1 }
-	\context Lyrics = lyricsVerseC { s1 }
-	\context Staff = bass <<
-	  \clef bass
-	  \context Voice = tenorB { \voiceOne << \global \tenorMusicVerseChorusB >> }
-	  \context Voice = bassusB { \voiceTwo << \global \bassusMusicVerseChorusB >> }
-	>>
-
-	\lyricsto "cantusB" \context Lyrics = lyricsVerseA \wordsVerseA
-	\lyricsto "cantusB" \context Lyrics = lyricsVerseB { \wordsVerseB \wordsChorusB }
-	\lyricsto "cantusB" \context Lyrics = lyricsVerseC \wordsVerseC 
-      >>
-
-
-    >>
-
-  \layout {
-    indent = 0\mm
-    betweensystemspace = 5\mm
-  }
-  \midi {
-    \tempo 4 = 120
-  }
-
-  }
-
-
-
+emptyChorus = \lyricmode {
+  _ _ _ _ _ _ _ _ _  _ _ _ _ _ _
 }
-\version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+scWordsOneA = \lyricmode {
+   Din -- di -- rín, din -- di -- rín, din -- di -- rín -- da -- ña, din -- di -- rin -- dín. 
+  \set stanza = "1."
+Je me le -- vé_un bel ma -- tin, 
+  Ma -- ti -- na -- ta per la pra -- _ _ ta;
+
+  En -- con -- tré le rui -- se -- ñor
+  Que can -- ta -- ba so la ra -- ma.
+    
+}
+scWordsOneB = \lyricmode {
+  \emptyChorus
+    \set stanza = "2."
+  En -- con -- tré le rui -- se -- ñor
+  Que can -- ta -- ba so la ra -- _ _ ma.
+  
+  “Rui -- se -- ñor, le rui -- se -- ñor,
+  Fác -- te -- me_a -- ques -- ta_em -- ba -- xa -- ta.”
+  Din -- di -- rin -- dín.
+  
+}
+scWordsOneC = \lyricmode {
+  \emptyChorus
+  \set stanza = "3."
+  “Rui -- se -- ñor, le rui -- se -- ñor,
+  Fác -- te -- me_a -- ques -- ta_em -- ba -- xa -- _ _ ta.
+
+  Y dí -- ga -- lo_a mon a -- mi
+  Que je ya só ma -- ri -- ta -- ta.”
+}
+scWordsTwoA = \lyricmode {
+}
+scWordsTwoB = \lyricmode {
+}
+scWordsTwoC = \lyricmode {
+}
+
+scWordsThreeA = \lyricmode {
+   Din -- di -- rín, din -- di -- rín, din -- di -- rín -- da -- ña, din -- di -- rin -- dín. 
+  \set stanza = "1."
+Je me le -- vé_un bel ma -- tin, 
+  Ma -- ti -- na -- ta per la pra -- ta;
+
+  En -- con -- tré le rui -- se -- ñor
+  Que can -- ta -- ba so la ra -- ma.
+}
+scWordsThreeB = \lyricmode {
+   \emptyChorus
+    \set stanza = "2."
+  En -- con -- tré le rui -- se -- ñor
+  Que can -- ta -- ba so la ra -- ma.
+  
+  “Rui -- se -- ñor, le rui -- se -- ñor,
+  Fác -- te -- me_a -- ques -- ta_em -- ba -- xa -- ta.”
+  Din -- di -- rin -- dín.
+}
+scWordsThreeC = \lyricmode {
+    \emptyChorus
+  \set stanza = "3."
+  “Rui -- se -- ñor, le rui -- se -- ñor,
+  Fác -- te -- me_a -- ques -- ta_em -- ba -- xa -- ta.
+
+  Y dí -- ga -- lo_a mon a -- mi
+  Que je ya só ma -- ri -- ta -- ta.”
+}
+
+scWordsFourA = \lyricmode {
+}
+scWordsFourB = \lyricmode {
+}
+scWordsFourC = \lyricmode {
+}
+
+\include "./score.ly"
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

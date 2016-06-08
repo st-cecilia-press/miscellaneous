@@ -204,11 +204,6 @@ scWordsOneF = \lyricmode{
 
 
 
-
-
-
-
-
 scWordsTwoA = \lyricmode {
  
    De -- o gra -- ci -- as __ _ An -- gli -- a Red -- de __ _ pro vi -- cto -- ri -- a.
