@@ -5,9 +5,9 @@ scDate = "2016-May-16"
 #(ly:set-option 'midi-extension "mid")
 
 scTempo = #(ly:make-moment 140 4)
-scTitle = ""
+scTitle = "J'ayme bien mon amy"
 scSubtitle = ""
-scComposer = ""
+scComposer = "Adrien Willaert (c. 1490-1562)"
 scArranger = ""
 scTagline = ""
 scPoet = ""

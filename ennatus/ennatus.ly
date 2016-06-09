@@ -5,9 +5,9 @@ scDate = "2016-May-16"
 #(ly:set-option 'midi-extension "mid")
 
 scTempo = #(ly:make-moment 140 4)
-scTitle = ""
+scTitle = "En natus est Emanuel"
 scSubtitle = ""
-scComposer = ""
+scComposer = "Michael PRAETORIUS (1571-1621)"
 scArranger = ""
 scTagline = ""
 scPoet = ""

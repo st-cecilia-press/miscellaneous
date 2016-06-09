@@ -5,9 +5,9 @@ scDate = "2016-May-16"
 #(ly:set-option 'midi-extension "mid")
 
 scTempo = #(ly:make-moment 140 4)
-scTitle = ""
+scTitle = "Wee Be Three Poore Mariners"
 scSubtitle = ""
-scComposer = ""
+scComposer = "Thomas Ravenscroft"
 scArranger = ""
 scTagline = ""
 scPoet = ""
@@ -30,7 +30,7 @@ scCopyright = ""
 
 \header{
   title = "Wee Be Three Poore Mariners"
-  composer = \markup { Thomas Ravenscroft }
+  composer = "Thomas Ravenscroft"
   tagline = ""
 }
 

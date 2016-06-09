@@ -5,9 +5,9 @@ scDate = "2016-May-16"
 #(ly:set-option 'midi-extension "mid")
 
 scTempo = #(ly:make-moment 140 4)
-scTitle = ""
+scTitle = "Es ist ein Schnee gefallen"
 scSubtitle = ""
-scComposer = ""
+scComposer = "Caspar Othmayr (1515-1553)"
 scArranger = ""
 scTagline = ""
 scPoet = ""

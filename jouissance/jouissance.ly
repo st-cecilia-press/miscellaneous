@@ -5,9 +5,9 @@ scDate = "2016-May-16"
 #(ly:set-option 'midi-extension "mid")
 
 scTempo = #(ly:make-moment 140 4)
-scTitle = ""
+scTitle = "Jouissance Vous Donneray"
 scSubtitle = ""
-scComposer = ""
+scComposer = "Music by Claudin de Sermisy (1490-1562)"
 scArranger = ""
 scTagline = ""
 scPoet = ""

@@ -5,9 +5,9 @@ scDate = "2016-May-16"
 #(ly:set-option 'midi-extension "mid")
 
 scTempo = #(ly:make-moment 140 4)
-scTitle = ""
+scTitle = "Mon Coeur se Recommande à Vous"
 scSubtitle = ""
-scComposer = ""
+scComposer = "Orlando di Lasso (1560)"
 scArranger = ""
 scTagline = ""
 scPoet = ""

@@ -5,9 +5,9 @@ scDate = "2016-May-16"
 #(ly:set-option 'midi-extension "mid")
 
 scTempo = #(ly:make-moment 140 4)
-scTitle = ""
+scTitle = "La Bionda Treçça"
 scSubtitle = ""
-scComposer = ""
+scComposer = "Francesco Landini (14th Century)"
 scArranger = ""
 scTagline = ""
 scPoet = ""

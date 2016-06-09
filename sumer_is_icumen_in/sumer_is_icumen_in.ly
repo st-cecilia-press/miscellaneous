@@ -5,9 +5,9 @@ scDate = "2016-May-16"
 #(ly:set-option 'midi-extension "mid")
 
 scTempo = #(ly:make-moment 140 4)
-scTitle = ""
+scTitle = "Sumer is icumen in"
 scSubtitle = ""
-scComposer = ""
+scComposer = "John of Fornsete (?), c 1226"
 scArranger = ""
 scTagline = ""
 scPoet = ""

@@ -5,9 +5,9 @@ scDate = "2016-May-16"
 #(ly:set-option 'midi-extension "mid")
 
 scTempo = #(ly:make-moment 140 4)
-scTitle = ""
+scTitle = "Oy Comamos Y Bebamos"
 scSubtitle = ""
-scComposer = ""
+scComposer = "Juan del Encina (1469-c.1530)"
 scArranger = ""
 scTagline = ""
 scPoet = ""
