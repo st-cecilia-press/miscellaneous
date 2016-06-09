@@ -58,6 +58,12 @@
                 \new Lyrics \lyricsto "one" { \scWordsOneC } 
                 
               
+                \new Lyrics \lyricsto "one" { \scWordsOneD } 
+                
+              
+                \new Lyrics \lyricsto "one" { \scWordsOneE } 
+                
+              
             >>
             
           >>
@@ -86,6 +92,12 @@
                 
               
                 \new Lyrics \lyricsto "two" { \scWordsTwoC } 
+                
+              
+                \new Lyrics \lyricsto "two" { \scWordsTwoD } 
+                
+              
+                \new Lyrics \lyricsto "two" { \scWordsTwoE } 
                 
               
             >>

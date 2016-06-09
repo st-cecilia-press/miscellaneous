@@ -1,4 +1,4 @@
-\version "2.12.3"
+\version "2.18.0"
 
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 \paper {
@@ -33,7 +33,7 @@ global= {
   \time 2/2
 }
 
-cantusMusic =  
+scMusicOne =  
 \relative c' 
 {
 		g'4 b a g | a b a g | b b d d | c c b 
@@ -43,7 +43,7 @@ cantusMusic =
 		g4 g d' d | d d e e | d2 b2 
 		b4 d c b | a g fis d |
 		g d g d | g a b2 |
-		b4 d c b | a g fis g | a2 g2 \bar ":|" 
+		b4 d c b | a g fis g | a2 g2 \bar ":|." 
 
 }
 
@@ -51,7 +51,7 @@ cantusMusic =
 
 
 
-altusMusic = 
+scMusicTwo = 
 \relative c' 
 {
 		d4 g e e | d d d b | d d b d | e fis g d4~ |
@@ -69,7 +69,7 @@ altusMusic =
 
 
 
-tenorMusic = 
+scMusicThree = 
 \relative c' 
 {
 		b4 d c b | a g fis d | g d g d | g a b2 |
@@ -86,7 +86,7 @@ tenorMusic =
 
 
 
-bassusMusic = 
+scMusicFour = 
 \relative c 
 {
 		g'4 g a e | fis g d g, | g g g b | c a g2 | g'4 g a e | fis g d e | d2 g,2 |
@@ -156,21 +156,21 @@ S'il y meurt, je perds ma pei -- ne,
 }
 
 
-cantusWordsA = \lyricmode {
+scWordsOneA = \lyricmode {
 \refrain
 \set stanza = "1"
 \verseAI
 \verseAII
 \margot
 }
-cantusWordsB = \lyricmode {
+scWordsOneB = \lyricmode {
 \blankRefrain
 \set stanza = "2"
 \verseBI
 \verseBII
 }
 
-cantusWordsC = \lyricmode {
+scWordsOneC = \lyricmode {
 \refrain
 \set stanza = "3"
 \verseCI
@@ -178,20 +178,20 @@ cantusWordsC = \lyricmode {
 \margot
 }
 
-cantusWordsD = \lyricmode {
+scWordsOneD = \lyricmode {
 \blankRefrain
 \set stanza = "4"
 \verseDI
 \verseDII
 }
-cantusWordsE = \lyricmode {
+scWordsOneE = \lyricmode {
 \blankRefrain
 \set stanza = "5"
 \verseEI
 \verseEII
 }
 
-tenorWordsA = \lyricmode {
+scWordsThreeA = \lyricmode {
 \refrain
 \set stanza = "1"
 \verseAI
@@ -199,14 +199,14 @@ tenorWordsA = \lyricmode {
 \margot
 }
 
-tenorWordsB = \lyricmode {
+scWordsThreeB = \lyricmode {
 \blankRefrain
 \set stanza = "2"
 \verseBI
 \verseBI
 }
 
-tenorWordsC = \lyricmode {
+scWordsThreeC = \lyricmode {
 \refrain
 \set stanza = "3"
 \verseCI
@@ -214,13 +214,13 @@ tenorWordsC = \lyricmode {
 \margot
 }
 
-tenorWordsD = \lyricmode {
+scWordsThreeD = \lyricmode {
 \blankRefrain
 \set stanza = "4"
 \verseCI
 \verseCI
 }
-tenorWordsE = \lyricmode {
+scWordsThreeE = \lyricmode {
 \blankRefrain
 \set stanza = "5"
 \verseCI
@@ -256,10 +256,7 @@ tenorWordsE = \lyricmode {
 
 
 \midi{
-     \context {
-       \Score
-       tempoWholesPerMinute = #(ly:make-moment 100 2)
-       }
+     \tempo 2 = 100
 }
 
 \layout {indent = 0\mm

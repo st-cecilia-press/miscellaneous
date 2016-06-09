@@ -24,7 +24,7 @@ chorusSpacer = {
 }
 
 verseSpacer = {
-  s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 \bar ":|"
+  s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 \bar ":|."
 }
 
 cantusMusicA = \relative a' {
@@ -118,16 +118,19 @@ wordsC = \lyricmode {
 
     \layout {
       indent = 0\mm
-      betweensystemspace = 5\mm
+      obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
       \context {
 	\Staff
 	\remove Accidental_engraver
       }
     }
 
-    \midi {
-      \tempo 4 = 180 
+    
+  \midi {
+    \tempo 4 = 180
     }
+
+
   }
 
   \score {
@@ -172,18 +175,21 @@ wordsC = \lyricmode {
 
     \layout {
       indent = 0\mm
-      betweensystemspace = 5\mm
+      obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
       \context {
 	\Staff
 	\remove Accidental_engraver
       }
     }
 
-    \midi {
-      \tempo 2 = 70
+    
+  \midi {
+    \tempo 2 = 70
     }
+
+
   }
 }
 
-\version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

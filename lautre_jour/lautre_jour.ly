@@ -33,7 +33,7 @@ global= {
   \autoBeamOff
 }
 
-cantusMusic =   \relative g' {  
+scMusicOne =   \relative g' {  
   g2 a4 g2 f4 | e2 d4 e2 f4 | g2 g4 a4( g) f |
   e2. e2 r4 | g2 f8([ e]) d4( c) b | c2. c2 c4 | c2 b4 b2 a4 | g2. g2 r4
   c2 b4 d2 d4 | c2. c2 r4 | d2 c4 e2 f4 | e2 d4 e2 d4 | e2 f4 g2 f4
@@ -47,7 +47,7 @@ cantusMusic =   \relative g' {
   \bar "|."
 }
 
-cantusWords =  \lyricmode {
+scWordsOneA =  \lyricmode {
   L'au -- tre jour par un ma -- tin de -- jouste u -- ne __ va -- lé -- e
   a une a -- jour -- né -- e pas -- tou -- rele ai tro -- vé -- e,
   je l'ai re -- gar -- dé -- e;
@@ -63,7 +63,7 @@ cantusWords =  \lyricmode {
   car il m'aim -- me sans tre -- chier, ja pour vous ne le quer lais -- sier.
 }
 
-tenorMusic = 
+scMusicTwo = 
 \relative c' {
   c2. c2 d4 | e2 f4 e2 d4 | c2 c4 d4( c) b |
   a2. a2 r4 | c2 d4 e2 f4 | g2. g2 a4 | g2 f4 e2 f4 | d2. d2 r4
@@ -78,7 +78,7 @@ tenorMusic =
   \bar "|."
 }
 
-tenorWords = \lyricmode {
+scWordsTwoA = \lyricmode {
   Au tens pas -- cour tuit le pas -- tour d'u -- ne con -- tre -- e
   ont fait as -- sem -- ble -- e de sous u -- ne va -- le -- e.
   He -- bers en la pre -- e a de la pipe et dou ta -- bour la dan -- se de -- me -- ne -- e;
@@ -91,7 +91,7 @@ tenorWords = \lyricmode {
   iert sa pipe ef -- fon -- dré -- e.
 }
 
-bassusMusic = 
+scMusicThree = 
 \relative a {
   c2. c2 c4 | b2. \melisma r | c d |
   e r c b c r c b d r |
@@ -106,7 +106,7 @@ bassusMusic =
   \melismaEnd \bar "|."
 }
 
-bassusWords = \lyricmode {
+scWordsThreeA = \lyricmode {
   In se -- cu -- lum __
 }
 
@@ -147,14 +147,11 @@ bassusWords = \lyricmode {
 
 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 200 4)
-      }
+    \tempo 4 = 200
     }
 
 
 \layout { }
 }
 
-\version "2.10.10"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.

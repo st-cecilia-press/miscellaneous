@@ -54,7 +54,7 @@ primaryWords = \lyricmode {
 }
 
 accompMusic = \relative c' {
-    c4.^\markup{\circle \number 1} d4. | c4. d4( e8) | g4.^\markup{\circle \number 2} f4. g4. r4. \bar ":|"
+    c4.^\markup{\circle \number 1} d4. | c4. d4( e8) | g4.^\markup{\circle \number 2} f4. g4. r4. \bar ":|."
 }
 
 accompWords = \lyricmode {
@@ -73,14 +73,11 @@ accompWords = \lyricmode {
 	    >>
 	    \layout {
 		indent = 0\mm
-		    between-system-space = 5\mm
+		    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
 	    }
 	
 	  \midi {
-	    \context {
-	      \Score
-	      tempoWholesPerMinute = #(ly:make-moment 130 4)
-	      }
+	    \tempo 4 = 130
 	    }
 
 
@@ -95,14 +92,11 @@ accompWords = \lyricmode {
 	    	>>
 	    \layout {
 		indent = 0\mm
-		    between-system-space = 5\mm
+		    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
 	    }
 	
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 90 4)
-      }
+    \tempo 4 = 90
     }
 
 
@@ -111,5 +105,5 @@ accompWords = \lyricmode {
 	}
     }
 }
-\version "2.10.10"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

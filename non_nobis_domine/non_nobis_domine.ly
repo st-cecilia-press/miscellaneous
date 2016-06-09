@@ -25,7 +25,7 @@ global= {
   \autoBeamOff
 }
 
-altusMusic =   \relative c' {  
+scMusicOne =   \relative c' {  
   d2^\f e4 fs | g4. g8 fs4 fs
   \repeat volta 2 {  
     e2 d | r4 a' b8 b g4 | d'2-> d4 c | b4. b8 a2 |
@@ -35,13 +35,13 @@ altusMusic =   \relative c' {
   \bar "|."
 }
 
-altusWords =  \lyricmode {
+scWordsOneA =  \lyricmode {
   Non no -- bis Do -- mi -- ne, non no -- bis, sed no -- mi -- ni
   tu -- o da glo -- ri -- am, sed no -- mi -- ni tu -- o da glo -- ri -- am.
   Non no -- bis do -- mi -- ne, non Do -- mi -- ne.
 }
 
-tenorMusic = 
+scMusicTwo = 
 \relative c' {
   r2 a2^\f | b4 cs4 d4. d8 
   \repeat volta 2 {
@@ -52,13 +52,13 @@ tenorMusic =
   \bar "|."
 }
 
-tenorWords = \lyricmode {
+scWordsTwoA = \lyricmode {
   Non no -- bis Do -- mi -- ne, non -- no bis,
   sed no -- mi -- ni tu -- o da glo -- ri -- am, sed no -- mi -- ni tu -- o
   da glo -- ri -- am. Non non -- bis Do -- mi -- no -- bis.
 }
 
-bassusMusic = 
+scMusicThree = 
 \relative c {
   r1 | r2 d2^\f  
   \repeat volta 2 {
@@ -69,7 +69,7 @@ bassusMusic =
   \bar "|."
 }
 
-bassusWords = \lyricmode {
+scWordsThreeA = \lyricmode {
   Non no -- bis Do -- mi -- ne non no -- bis sed no -- mi -- ni tu -- o da glo -- ri -- am, sed
   no -- mi -- ni tu -- o da glo -- ri -- am. Non am. __
 }
@@ -77,7 +77,7 @@ bassusWords = \lyricmode {
 \score {
   \context ChoirStaff <<
     \context Staff = altusStaff <<
-      \set Staff.instrument = "Cantus"
+      \set Staff.instrumentName = "Cantus"
       \context Voice = altus {
 	<< \global \altusMusic >> 
       }
@@ -86,7 +86,7 @@ bassusWords = \lyricmode {
     \context Lyrics = altus { s1 }
 
     \context Staff = tenorStaff <<
-      \set Staff.instrument = "Altus"
+      \set Staff.instrumentName = "Altus"
 
       \context Voice = tenor { 
 	<< \global \clef "G_8" \tenorMusic >> 
@@ -96,7 +96,7 @@ bassusWords = \lyricmode {
     \context Lyrics = tenor { s1 }
 
     \context Staff = bassusStaff << \context Voice = bassus { 
-      \set Staff.instrument = "Bassus"
+      \set Staff.instrumentName = "Bassus"
       << \global \clef bass \bassusMusic >>
     }
   >>
@@ -108,8 +108,13 @@ bassusWords = \lyricmode {
 
 >>
 
-\midi { \tempo 4 . = 80 }
+
+  \midi {
+    \tempo 4. = 80
+    }
+
+
 \layout { }
 }
 
-\version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.

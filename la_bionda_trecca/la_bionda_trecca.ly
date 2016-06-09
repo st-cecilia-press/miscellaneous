@@ -30,18 +30,18 @@ global= {
   \key g \major
 }
 
-cantusMusic =   \relative c' {  
+scMusicOne =   \relative c' {  
 e2 e fs | g4 f e d2 \ficta cs4 | d2 d r | e fs1 | g4 \melisma f e d2 e4 | \break
 f4 e e d d c \melismaEnd | e1 r2 | c4 \melisma b b a b g \melismaEnd | a2 a4 b cs2 | d2 r2 e2 | c2 d4 e2 f4 \break
 g2 \melisma f4 e f d | d \ficta cs d \ficta cs2  b4 \melismaEnd| d1. |
    \repeat volta 2 { 
       a'1. | a2 a4 g g f | a2 e f | d2 e4 c2 d4 |  \break
       f4 \melisma e e d e \ficta cs \melismaEnd | d1 r2 | c2 c d | \[ e f \] g | a1 f2 | a4 g f e f d | \break
-      e2 r2 \melisma e4 f | \[ g2 d \] c4 d | e2 \times 2/3 { f4 e d } e4 \ficta cs | 
+      e2 r2 \melisma e4 f | \[ g2 d \] c4 d | e2 \tuplet 3/2 { f4 e d } e4 \ficta cs | 
       d2 r2 b4 c | d4 c b c2 d4 | c4 b a c2 b4 \melismaEnd |a 1.  \break
    }
 }
-tenorMusic =   \relative c' {  
+scMusicTwo =   \relative c' {  
 a2 a a | g2. f2 e4 | d2 g1 | a2 a1 | g1. | \break
 \melisma \[ a2 c \] b \melismaEnd | a1 r2 | \[ g2 f \] e | d2 d4 e e2 | d2 r2 e | f2. a2. | \break
 \[ g2 \melisma a \] g | f2. e2. \melismaEnd | d1. |
@@ -53,7 +53,7 @@ a2 a a | g2. f2 e4 | d2 g1 | a2 a1 | g1. | \break
 
 }
 
-cantusWordsA = \lyricmode {
+scWordsOneA = \lyricmode {
   \set stanza = "1. 5."
 La bion -- da tre -- _ _ çça, __ _ 
 del fin' or co -- lo -- re
@@ -65,7 +65,7 @@ O -- ve ri -- don __ _  le per -- le_e va -- _ _ ghi __ _ _
 fio -- ri.
 }
 
-cantusWordsB = \lyricmode {
+scWordsOneB = \lyricmode {
 \set stanza = "4."
 E so glief -- fet -- _ _ ti __ _ 
 del mie ma -- ma -- ggio -- ri.
@@ -76,7 +76,7 @@ mi __ _ sfa --  ce
 E non si cu -- _ ra, per -- ch'io mi __ _ _ sco -- _ _ 
 lo -- ri.
 }
-cantusWordsC = \lyricmode {
+scWordsOneC = \lyricmode {
 \set stanza = "1. 5."
 La bion -- da tre -- _ _ çça, __ _ 
 del fin' or co -- lo -- re
@@ -87,7 +87,7 @@ A dun -- que __ _ _ _ a -- mor che sai lo sta -- to mi -- o
 Che mi fa nel __ _ fo -- co es -- ser __ _ _ be -- _  a -- to
 
 }
-cantusWordsD = \lyricmode {
+scWordsOneD = \lyricmode {
 \set stanza = "4."
 Ore per me vi __ _ _ ti __ _ veg -- gia_a giu -- sto gra -- to
 Ac -- _ _ ciò che me non ven -- gni -- a_in do -- lo -- re.
@@ -96,7 +96,7 @@ De'! fa che __ _ _ _ _nel bel vi -- so_il __ _ qual __ _ i --  o
 Con vo -- ci as -- _ sa' pia -- to -- se __ _ _ t'ò chia -- ma -- to
 }
 
-tenorWordsA = \lyricmode {
+scWordsTwoA = \lyricmode {
 \set stanza = "1. 5."
 La bion -- da tre -- çça, __ _ 
 del fin' or co -- lo -- re
@@ -106,7 +106,7 @@ me -- ço'l co -- re.
 om -- _ bra __ _ fa -- _ _ ce,
 O -- ve ri -- don __ _  le per -- le_e va -- ghi __ _  fio -- ri.
 }
-tenorWordsB = \lyricmode {
+scWordsTwoB = \lyricmode {
 \set stanza = "4."
 E so glief -- fet -- ti __ _ 
 del mie ma -- ma -- ggio -- ri.
@@ -116,7 +116,7 @@ ve -- de_a -- mo --  re.
 mi __ _ sfa -- _ _ ce
 E non si cu -- _ ra, per -- ch'io mi  sco -- _ lo -- ri.
 }
-tenorWordsC = \lyricmode {
+scWordsTwoC = \lyricmode {
 \set stanza = "1. 5."
 La bion -- da tre -- çça, __ _ 
 del fin' or co -- lo -- re
@@ -126,7 +126,7 @@ me -- ço'l co -- re.
 A dun -- que __ _ a -- mor che sai lo sta -- to mi -- _ _ o
 Che mi fa nel __ _ fo -- co es -- ser be -- _  a -- to
 }
-tenorWordsD = \lyricmode {
+scWordsTwoD = \lyricmode {
 \set stanza = "4."
 Ore per me vi ti __ _ veg -- gia_a giu -- sto gra -- to
 Ac -- _ _ ciò che me non ven -- gni -- a_in do -- lo -- re.
@@ -156,10 +156,7 @@ Con vo -- ci as -- _ sa' pia -- to -- se t'ò chia -- ma -- to
 
 
 \midi{
-     \context {
-       \Score
-       tempoWholesPerMinute = #(ly:make-moment 100 2)
-       }
+     \tempo 2 = 100
 }
 
 \layout {
@@ -195,4 +192,4 @@ Con vo -- ci as -- _ sa' pia -- to -- se t'ò chia -- ma -- to
 }
 }
 
-\version "2.10.0"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.

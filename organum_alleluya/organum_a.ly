@@ -24,7 +24,7 @@ global= {
   \time 3/4
 }
 
-cantusMusic =   \relative c' {  
+scMusicOne =   \relative c' {  
 f4. e8 d4 | f4. e8 c4 | b8 d4 e4. | f4. r | 
 c4. b8 c4 | a4. a8 b4 | g4. a8 b4 | c4. r |
 f f8 d4 | e4. e8 d4 | c4. b8 c4 | e4. c8 b4 | a8 g4 c4. |
@@ -37,11 +37,11 @@ e4 f8 d4 d8 | e4 c8 d4 r8 | c8 b a c4 r8 | d4 e8 g4 f8 | e4 d8 e4 r8 | g4 f8 e4 
 c4. d4 r8 | f4. e8 f4 | g8 e4 d r8 | g4 f8 d4 r8 | f8 g4 a4. | g8 g4 f4. | g4. r
 }
 
-cantusWords =  \lyricmode {
+scWordsOne =  \lyricmode {
   Al -- le -- lu -- ya.
 }
 
-altusMusic = 
+scMusicTwo = 
 \relative c' {
 
 c4. b8 d4 | c4. a8 c4 | b8 g4 a8 c4 | c4. r | f d8 c4 | e4. c8 b4 | 
@@ -56,11 +56,11 @@ a4. g4 r8 | bf4. c8 bf4 | a8 c4 d r8 | d4 c8 d4 r8 | b4. a4. | c2. | d4. r
 
 }
 
-altusWords = \lyricmode {
+scWordsTwo = \lyricmode {
   Al -- le -- lu -- ya.
 }
 
-bassusMusic = 
+scMusicThree = 
 \relative c {
 f2. f f f f f f f f f f f f 
 g g g g g g g g g g g g g g g g g
@@ -70,7 +70,7 @@ g g g g g g g g g g g g g g g g g g
 
 }
 
-bassusWords = \lyricmode {
+scWordsThree = \lyricmode {
   Al -- le -- lu -- ya.
 }
 
@@ -114,14 +114,11 @@ bassusWords = \lyricmode {
 
   
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 240 8)
-      }
+    \tempo 4. = 80
     }
 
 
   \layout { }
 }
 
-\version "2.12.0"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.

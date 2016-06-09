@@ -28,7 +28,7 @@ global= {
   \time 2/2
 }
 
-cantusMusic =   \relative c'' {  
+scMusicOne =   \relative c'' {  
     g2 g4 g | a4  bf4. a8 g f | g4 g f bf| bf bf d2~ | d4 c8 bf a4 c4~|c bf2 a4
     bf2 r4 a4~|a e g2~|g4 f8 e d4 e | f4. g8 a4 bf4 | bf8 a c bf a g g4~|
     g fs g2~|g bf2 | bf4 bf d4. c8 | d4 e2 d4~|d cs d2 | r4 a bf bf 
@@ -39,7 +39,7 @@ cantusMusic =   \relative c'' {
 {g1~g} }
 }
 
-altusMusic = 
+scMusicTwo = 
 \relative c' {
     d2 d4 d | d2. d4 | g,4 g a g | g' g f2~|f4 f a4. g8 | f4 e f2 |
 r4 g d f | c4. d8 ef4. d8 | bf4 d2 c4 | a4 d4. c8 bf a | g4 g'4 f ef4 |
@@ -48,7 +48,7 @@ a2. g4 | f e f2 | d4 g d f | c4. d8 ef4. d8 | bf4 d2 c4 |
 a4 d4. c8 bf a | g4 g' f ef | d2 d4 g d d1~d
 }
 
-tenorMusic = 
+scMusicThree = 
 \relative c' {
     g2 g4 bf4 | a g bf2~ | bf4 c d2 | r4 d d d | f2. e4 | d4 c8 bf c4 c | 
 bf2 r4 d | a c g4. f8 | g4. a8 bf4 g | f f'4. e8 d c | bf4 ef8 d c bf a g | 
@@ -57,7 +57,7 @@ f2. e4 | d c8 bf c4 c | bf2 r4 d | a c g4. f8 | g4 a bf g |
 f f'4. e8 d c | bf4 ef8 d c bf a g | a2 g2 r4 g1~g
 }
 
-bassusMusic = 
+scMusicFour = 
 \relative g {
     g2 g4 g | f4 g4. f8 ef d | ef4 ef d g | g g bf2~|bf4 a8 g f4 a | bf g f2 |
 r2 g4 d | f c c8 bf c d | ef4 d bf c | d4. e8 f4 g4~| g c, f g | 
@@ -68,7 +68,7 @@ d4. e8 f4 g4~| g c,4 f g d2 g2 g4 g1~ g
 }
 
 
-cantusWords = \lyricmode {
+scWordsOneA = \lyricmode {
     Jou -- is -- san -- ce vous __ _ _ _ don -- ne -- ray, 
     Mon a -- my, et __ _ _ _ vous me -- ne -- ray
     La ou pre -- _ _ tend vostre es -- pe -- ran -- _ _ _ _ _ _ _ _ _ ce.
@@ -77,7 +77,7 @@ cantusWords = \lyricmode {
     L'es -- prit en __ au -- ra sou -- ve -- _ _ nan -- _ _ _ _ _ _ _ ce, ce.
 }
 
-altusWords = \lyricmode {
+scWordsTwoA = \lyricmode {
     Jou -- is -- san -- ce vous don -- ne -- ray, 
     Mon a -- my, et vous me -- _ ne -- _ ray
     La ou pre -- tend vostre es -- pe -- ran -- _ _ _ _ _ _ _ _ _ _ _ _ ce.
@@ -87,7 +87,7 @@ altusWords = \lyricmode {
     sou -- _ ve -- nan -- ce, L'es -- prit ce.
 }
 
-tenorWords = \lyricmode {
+scWordsThreeA = \lyricmode {
     Jou -- is -- san -- ce vous don -- ne -- ray, 
     Mon a -- my, et vous me -- _ _ _ ne -- ray
     La ou pre -- tend __ _ _ vostre es -- pe -- ran -- _ _ _ _ _ _ _ _ _ _ _ _ ce.
@@ -97,7 +97,7 @@ tenorWords = \lyricmode {
     sou --  ve -- nan -- _ _ _ _ ce, ce.
 }
 
-bassusWords = \lyricmode {
+scWordsFourA = \lyricmode {
     Jou -- is -- san -- ce vous __ _ _ _ don -- ne -- ray, 
     Mon a -- my, et __ _ _ _ vous me -- ne -- ray
     La ou pre -- _ tend __ _ _ _ _ vostre es -- pe -- ran -- _ _ _ _ _ _ _ ce.
@@ -152,20 +152,17 @@ bassusWords = \lyricmode {
   >>
 
   \layout {
-    between-system-space = 5\mm
+    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
     ragged-bottom = ##t
   }
 
   
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 68 2)
-      }
+    \tempo 2 = 68
     }
 
 
 }
 
-\version "2.12.0"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

@@ -37,25 +37,25 @@ global = {
 }
 
 strophen = \relative c{ \clef "G_8" 
-	\bar "|:" d4 d f d | e f g e | g g f e | d f d d | 	
+	\bar ".|:" d4 d f d | e f g e | g g f e | d f d d | 	
 	d4 d f d | e f g e | g g f e | d f d d | 	
 	a' g f e | g g a a | a g f e | g g a a | 
-	d, d f d | e f g e | g g f e | d f d d \bar ":|" \break  
+	d, d f d | e f g e | g g f e | d f d d \bar ":|." \break  
 }
 
 strophenB = \relative c{ \clef "G_8"
 	\cadenzaOn
-		\override NoteHead #'style = #'neomensural
+		\override NoteHead.style = #'neomensural
 		a'\breve^\markup{Solo; Add 1 Person Each Barline} 
-		\override NoteHead #'style = #'baroque
-		\override Stem #'transparent = ##t
+		\override NoteHead.style = #'baroque
+		\override Stem.transparent = ##t
 		a4 a a d,4
-		\override Stem #'transparent = ##f
+		\override Stem.transparent = ##f
 		\cadenzaOff
 		\bar "|" \break
 		
 
-		\override NoteHead #'style = #'neomensural
+		\override NoteHead.style = #'neomensural
 		\cadenzaOn
 		a'\breve \bar "|" a\breve 
 		\cadenzaOff
@@ -74,17 +74,17 @@ strophenB = \relative c{ \clef "G_8"
 		\cadenzaOff
 		\cadenzaOn
 		a\breve
-		\override NoteHead #'style = #'baroque
-		\override Stem #'transparent = ##t
+		\override NoteHead.style = #'baroque
+		\override Stem.transparent = ##t
 		a4 a d,4
-		\override Stem #'transparent = ##f
+		\override Stem.transparent = ##f
 		\cadenzaOff
 		\bar "||" \break
 		
 }
 	
 strophenC = \relative c{ \clef "G_8"
-		\override NoteHead #'style = #'neomensural
+		\override NoteHead.style = #'neomensural
 		\cadenzaOn
 		a'\breve^\markup{Solo; Add 1 Person Each Barline} \bar "|" a\breve 
 		\cadenzaOff
@@ -102,10 +102,10 @@ strophenC = \relative c{ \clef "G_8"
 		\bar "|" a\breve 
 		\cadenzaOff
 		\cadenzaOn
-		\override NoteHead #'style = #'baroque
-		\override Stem #'transparent = ##t
+		\override NoteHead.style = #'baroque
+		\override Stem.transparent = ##t
 		a4 a d,4 d
-		\override Stem #'transparent = ##f
+		\override Stem.transparent = ##f
 		\cadenzaOff
 		\bar "||" \break
 		
@@ -177,23 +177,23 @@ wordsB = \lyricmode{
 
 wordsC = \lyricmode{
 	\set stanza = "3. "
-	\once \override LyricText #'self-alignment-X = #-1	"Pri - mo pro num - ma - ta vi - ni,     Ex hac bi - bunt " li  -- ber -- ti -- ni.
-	\once \override LyricText #'self-alignment-X = #-1	"Se - mel bi - bunt pro cap - ti - vis,"     
-	\once \override LyricText #'self-alignment-X = #-1	"Post hec bi - bunt ter pro vi - vis, "
-	\once \override LyricText #'self-alignment-X = #-1	"Qua - ter pro christ - i - an - is cunc - tis,"     
-	\once \override LyricText #'self-alignment-X = #-1	"Quin - qui - es pro fi - del - i - bus de - func - tis,"
-	\once \override LyricText #'self-alignment-X = #-1	"Sex - i - es pro so - ro - ri - bus va - nis,"     
-	\once \override LyricText #'self-alignment-X = #-1	"Septies pro mi - li - ti - bus " sil -- va -- nis.
+	\once \override LyricText.self-alignment-X = #-1	"Pri - mo pro num - ma - ta vi - ni,     Ex hac bi - bunt " li  -- ber -- ti -- ni.
+	\once \override LyricText.self-alignment-X = #-1	"Se - mel bi - bunt pro cap - ti - vis,"     
+	\once \override LyricText.self-alignment-X = #-1	"Post hec bi - bunt ter pro vi - vis, "
+	\once \override LyricText.self-alignment-X = #-1	"Qua - ter pro christ - i - an - is cunc - tis,"     
+	\once \override LyricText.self-alignment-X = #-1	"Quin - qui - es pro fi - del - i - bus de - func - tis,"
+	\once \override LyricText.self-alignment-X = #-1	"Sex - i - es pro so - ro - ri - bus va - nis,"     
+	\once \override LyricText.self-alignment-X = #-1	"Septies pro mi - li - ti - bus " sil -- va -- nis.
 }
 
 wordsD = \lyricmode{
 	\set stanza = "4. "
-	\once \override LyricText #'self-alignment-X = #-1	"Oc - ti - es pro fra - tri - bus per - ver - sis,"     
-	\once \override LyricText #'self-alignment-X = #-1	"No - vi - es pro mo - na - chis dis - per - sis "
-	\once \override LyricText #'self-alignment-X = #-1	"De - ci - es pro na - vi - gan - ti - bus,"  
-	\once \override LyricText #'self-alignment-X = #-1	"Un - de - ci - es pro dis - cor - dan - ti bus "
-	\once \override LyricText #'self-alignment-X = #-1	"Du - o de - ci - es pro pe - ni - ten - ti - bus,"     
-	\once \override LyricText #'self-alignment-X = #-1	"Tre - de - ci - es pro  i - ter" a -- gen -- ti -- bus,
+	\once \override LyricText.self-alignment-X = #-1	"Oc - ti - es pro fra - tri - bus per - ver - sis,"     
+	\once \override LyricText.self-alignment-X = #-1	"No - vi - es pro mo - na - chis dis - per - sis "
+	\once \override LyricText.self-alignment-X = #-1	"De - ci - es pro na - vi - gan - ti - bus,"  
+	\once \override LyricText.self-alignment-X = #-1	"Un - de - ci - es pro dis - cor - dan - ti bus "
+	\once \override LyricText.self-alignment-X = #-1	"Du - o de - ci - es pro pe - ni - ten - ti - bus,"     
+	\once \override LyricText.self-alignment-X = #-1	"Tre - de - ci - es pro  i - ter" a -- gen -- ti -- bus,
 	Tam pro pa -- pa quam pro re -- ge
 	Bi -- bunt om -- nes si -- ne le -- ge
 }
@@ -242,10 +242,7 @@ wordsG = \lyricmode{
 		\new Lyrics \lyricsto "music" {\wordsB}
 	>>
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 250 4)
-      }
+    \tempo 4 = 250
     }
 }
 
@@ -258,8 +255,8 @@ wordsG = \lyricmode{
 		\Lyrics
 		  \consists "Bar_engraver"
 		  \consists "Separating_line_group_engraver"
-		  \override BarLine #'transparent = ##t
+		  \override BarLine.transparent = ##t
 }
 }
 
-\version "2.10.10"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.

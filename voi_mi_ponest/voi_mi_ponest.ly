@@ -33,11 +33,11 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 global = {
 	\key f \major
 	\time 4/2
-	\override Score.BarNumber #'padding = #3
+	\override Score.BarNumber.padding = #3
 	 
 }
 	
-sopMusic = \transpose f f \relative c' { \clef "treble"
+scMusicOne = \transpose f f \relative c' { \clef "treble"
 	\set Staff.instrumentName = "Soprano"
 	f\breve~ | f\breve g1. g2 | a1 f | bf\breve  |
 	a1 r2 c2 | c c c c | d1 c | a2 bf g1 | f r2 a |
@@ -50,7 +50,7 @@ sopMusic = \transpose f f \relative c' { \clef "treble"
 }
 
 	
-altoMusic = \transpose f f \relative c' { \clef "treble"
+scMusicTwo = \transpose f f \relative c' { \clef "treble"
 	\set Staff.instrumentName = "Alto"
 	c1 d~ | d2 c d f~ | f e4 d f2 e | f a a4 g f e | d e f2. e8 d  e2 |
 	f1 r2 a2 | a a g a | bf1 g2 a~ | a4 g f2. e8 d e2 | f1 r2 c'2 | 
@@ -62,7 +62,7 @@ altoMusic = \transpose f f \relative c' { \clef "treble"
 	
 }
 
-tenorMusic = \transpose f f \relative c { \clef "G_8"
+scMusicThree = \transpose f f \relative c { \clef "G_8"
 	\set Staff.instrumentName = "Tenor"
 	f1 bf1~ bf2 a bf d | c\breve | f,2 f'2. e4 d c | bf2 a g1 |
 	f1 r2 f | f f c' f, | bf1 c | c2 d c1 | f,\breve |
@@ -75,7 +75,7 @@ tenorMusic = \transpose f f \relative c { \clef "G_8"
 
 
 
-sopWords = \lyricmode {
+scWordsOneA = \lyricmode {
 Voi mi po -- nest' in fo -- co,
 per far -- mi'an -- ti'l mio di don -- na per -- i -- re,
 et per -- che que -- sto mal vi pa -- _ _ _ rea __ _ _ po -- co 
@@ -88,7 +88,7 @@ non pos -- so mo -- ri -- re.
 
 }
 
-altoWords = \lyricmode {
+scWordsTwoA = \lyricmode {
   Voi mi po -- nest' in__ _ _ fo -- _ co,
   in fo -- _ _ _ _ _ _ _ _ _ co,
 per far -- mi'an -- ti'l mio di don -- na per -- i -- _ _ _ re,
@@ -104,7 +104,7 @@ non pos -- so mo -- _ _ _ ri -- re, mo -- ri -- re.
 
 
 }
-tenorWords = \lyricmode {
+scWordsThreeA = \lyricmode {
 Voi mi po -- nest' in fo -- co,
 in __ _ _ _ _ _ fo -- co, 
 per far mi'an ti'l mio di don -- na per -- i -- re,
@@ -141,21 +141,18 @@ che di due mor -- t'io non pos -- so mo -- ri -- re, mo -- ri -- re.
         	
        	>>
 
-		  \lyricsto "sopMusic" \context Lyrics = sopLyrics \sopWords 
+		  \lyricsto "sopMusic" \context Lyrics = sopLyrics \sopWordsA 
 		 
-		  \lyricsto "altoMusic" \context Lyrics = altoLyrics \altoWords 
-		  \lyricsto "tenorMusic" \context Lyrics = tenorLyrics \tenorWords 
+		  \lyricsto "altoMusic" \context Lyrics = altoLyrics \altoWordsA 
+		  \lyricsto "tenorMusic" \context Lyrics = tenorLyrics \tenorWordsA 
 		  
 
 >>
 \layout {}
 
 \midi{
-     \context {
-       \Score
-       tempoWholesPerMinute = #(ly:make-moment 120 2)
-       }
+     \tempo 2 = 120
     }
 }
 
-\version "2.10.0"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.

@@ -147,14 +147,11 @@ bassusWords = \lyricmode {
 
 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 250 4)
-      }
+    \tempo 4 = 250
     }
 
 
 \layout { }
 }
 
-\version "2.10.10"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.

@@ -25,7 +25,7 @@ global= {
   \autoBeamOff
 }
 
-cantusMusic =   \relative c' {  
+scMusicOne =   \relative c' {  
   f2 f f | a1 c2 | c1 \melisma d2 | c1 \melismaEnd r2 |
   c2 a f | r1
   c'2 | a f
@@ -49,7 +49,7 @@ cantusMusic =   \relative c' {
   g2. g4 f2. d8[ \melisma e] f4 \melismaEnd d f1 \melisma e4 d e2 \melismaEnd e f1\fermata \bar "|."
 }
 
-cantusWords =  \lyricmode {
+scWordsOneA =  \lyricmode {
   In dul -- ci ju -- bi -- lo, __ 
   nu sin -- get, nu sin -- get, nu sin -- get und seid froh, __ 
   nu sin -- get, nu sin -- get, nu sin -- get, nu sin -- get und seid froh, __ 
@@ -69,7 +69,7 @@ cantusWords =  \lyricmode {
   Al -- pha es __ et O.
 }
 
-altusMusic = 
+scMusicTwo = 
 \relative c' {
   r1. 
   f2 f f a1 bf2 c1 \melisma d2 c1 \melismaEnd r2 |
@@ -91,7 +91,7 @@ altusMusic =
   r4 bf8[ \melisma c] d4 \melismaEnd bf c f,8[ \melisma g] a1 \melismaEnd a2 g1 g f\fermata
 }
 
-altusWords = \lyricmode {
+scWordsTwoA = \lyricmode {
   In dul -- ci ju -- bi -- lo, __
   nu sin -- get, nu sin -- get, nu sin -- get und seid froh, __
   nu sin -- get, nu sin -- get, nu sin -- get, nu sin -- get und seid froh __
@@ -116,7 +116,7 @@ altusWords = \lyricmode {
 \score {
   \context StaffGroup <<
     \context Staff = cantusStaff <<
-      \set Staff.instrument = "Cantus"
+      \set Staff.instrumentName = "Cantus"
       \context Voice = cantus {
 	<< \global \cantusMusic >> 
       }
@@ -125,7 +125,7 @@ altusWords = \lyricmode {
     \context Lyrics = cantus { s1 }
 
     \context Staff = altusStaff <<
-      \set Staff.instrument = "Altus"
+      \set Staff.instrumentName = "Altus"
 
       \context Voice = altus { 
 	<< \global 
@@ -140,12 +140,17 @@ altusWords = \lyricmode {
   >>
 
 
-  \midi { \tempo 2 = 120 }
+  
+  \midi {
+    \tempo 2 = 120
+    }
+
+
   \layout { 
 \context {
       \Score
-      \override BarLine #'transparent = ##t
+      \override BarLine.transparent = ##t
     }}
 }
 
-\version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.

@@ -9,7 +9,7 @@
     } }
   }
   evenFooterMarkup = \oddFooterMarkup
-  raggedbottom = ##t
+  ragged-bottom = ##t
 }
 \include "english.ly"
 
@@ -32,20 +32,20 @@ global= {
   s8 \noBreak \repeat unfold 3 { s2. \noBreak } s2 s8 \break
   s8 \noBreak \repeat unfold 3 { s2. \noBreak } s2. \break
 
-  \bar ":|"
+  \bar ":|."
 
 }
 
-cantusMusic =   \relative c' {  
+scMusicOne =   \relative c' {  
   d4 d8 f4 f8 | g4 g8 a4. | b4 c8 d4 d16([ c]) | d,4( c8) d4.
   d4 d8 f4 f8 | g4 g8 a4. | b4 c8 d4 d16([ c]) | d,4( c8) d4.
   d4 d8 f4 g8 | bf4( a8) g4( f8) | a4 bf8 c4 g8 | bf4( a8) g4( f8) |
   d4 d8 f4 g8 | bf4( a8) g4( f8) | a4 bf8 c4 g8 | bf4( a8) g8( f8) \bar "" g8 |
   f4 g8 e4 g8 | a4 a8 bf4 g8 | bf4 g16([ f]) g4 d8 | g4( f8) g4 \bar "" g8 |
-  f4 g8 e4 g8 | a4 a8 bf4 g8 | bf4 g16([ f]) g4 d8 | g4 \melisma \times 2/3 { f16([ e d \melismaEnd ]) } d4.
+  f4 g8 e4 g8 | a4 a8 bf4 g8 | bf4 g16([ f]) g4 d8 | g4 \melisma \tuplet 3/2 { f16([ e d \melismaEnd ]) } d4.
 }
 
-altusMusic = 
+scMusicTwo = 
 \relative c'' {
   d4 d8 c4 c8 | d4 d8 a4. | b4 a8 g4 c8 | a4( g8) a4.
   d4 d8 c4 c8 | d4 d8 a4. | b4 a8 g4 c8 | a4( g8) a4.
@@ -56,7 +56,7 @@ altusMusic =
 }
 
 
-wordsA = \lyricmode {
+scWordsOneA = \lyricmode {
   \set stanza = "1."
   TEM -- PUS Tran -- sit ge -- li -- dum
   mun -- dus re -- no -- va -- tur
@@ -77,7 +77,7 @@ wordsA = \lyricmode {
 
 }
 
-wordsB = \lyricmode {
+scWordsOneB = \lyricmode {
   \set stanza = "2."
 
   Lu -- dunt su -- per gra -- min -- a vir -- gi -- nes de -- cor -- e
@@ -88,7 +88,7 @@ wordsB = \lyricmode {
   vir -- gin -- i -- bus et av -- i -- bus stre -- pen -- ti -- bus so -- nor -- e
 }
 
-wordsC = \lyricmode {
+scWordsOneC = \lyricmode {
   \set stanza = "3."
 
   Ten -- dit mo -- do re -- ci -- a pu -- er pha -- re -- tra -- tus
@@ -99,7 +99,7 @@ wordsC = \lyricmode {
   et it -- er -- um per pu -- er -- um sum Ve -- ne -- ri pro -- stra -- tus
 }
 
-wordsD = \lyricmode {
+scWordsOneD = \lyricmode {
   \set stanza = "4."
 
   Un -- am hu -- ius vul -- ne -- re
@@ -114,7 +114,7 @@ wordsD = \lyricmode {
   nec ci -- na -- mum nec bal -- sa -- mum es -- set tam dul -- ce fa -- vi
 }
 
-wordsE = \lyricmode {
+scWordsOneE = \lyricmode {
   \set stanza = "5."
 
   Vrowe ih pin dir un -- der -- tan
@@ -156,13 +156,16 @@ wordsE = \lyricmode {
 
   \layout {
     indent = 0\mm
-    betweensystemspace = 5\mm
+    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
   }
 
+  
   \midi {
     \tempo 4 = 120
-  }
+    }
+
+
 }
 
-\version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

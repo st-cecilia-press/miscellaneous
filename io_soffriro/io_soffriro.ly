@@ -37,12 +37,12 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 global = {
 	\key g \major
 	\time 4/4
-	\override Score.BarNumber #'padding = #3
+	\override Score.BarNumber.padding = #3
 	 
 }
 
 	
-sopMusic = \transpose c g, \relative c' { \clef treble
+scMusicOne = \transpose c g, \relative c' { \clef treble
 	
 	
 	\repeat volta 2 {d'2 d4 d | d2 e | f1 | e8 e e e d4 b | c2 b8 b b b | c4 c d2 | e2 r4 g | d4 f c c | 
@@ -55,7 +55,7 @@ sopMusic = \transpose c g, \relative c' { \clef treble
 	
 }
 	
-altoMusic = \transpose c g, \relative c'' { \clef "treble"
+scMusicTwo = \transpose c g, \relative c'' { \clef "treble"
 	
 	\repeat volta 2{
 	  b2 b4 b | a4 b c2~ c4 b8 a b2 | c2 r4 g8 g |
@@ -69,7 +69,7 @@ altoMusic = \transpose c g, \relative c'' { \clef "treble"
 	
 }
 
-tenorMusic = \transpose c g, \relative c' { \clef "bass"
+scMusicThree = \transpose c g, \relative c' { \clef "bass"
 	
 	\repeat volta 2{
 	  g2 g4 g | f2 e2 | d1 | c8 c' c c b4 g | a2 g8 g g g | f4 a g2 |
@@ -85,7 +85,7 @@ tenorMusic = \transpose c g, \relative c' { \clef "bass"
 
 
 
-sopWords = \lyricmode {
+scWordsOne = \lyricmode {
    \set stanza = #"1. "
 Io sof -- fri -- ro cor mi -- o, o -- gni so -- ver -- chio'ar -- do -- re,
 o -- gn -- so -- ver -- chio'ar -- do -- re,
@@ -93,7 +93,7 @@ che m'ar -- d'il pet -- to'e mi con -- su -- ma'il co -- re,
  se la ser -- vi -- tu mi -- a,
 da -- te gra -- di -- _ _ _ _ _ _ _ _ ta fi -- _ _ _ a.
 }
-sopWordsB = \lyricmode {
+scWordsOneB = \lyricmode {
    \set stanza = #"2. "
 Io gio -- i -- ro cor mi -- o,
 d'o -- gni mia tri -- sta sor -- te, d'o -- gni mia tri -- sta sor -- te,
@@ -103,7 +103,7 @@ O dia -- mi mor -- te,
 da -- te gra -- di -- _ _ _ _ _ _ _ _ ta fi -- _ _ _ a.
 
 }
-sopWordsC = \lyricmode {
+scWordsOneC = \lyricmode {
    \set stanza = #"3. "
 Io pro -- ve -- ro cor mi -- o, i -- ra, sde -- gno'e fu -- ro -- re, i -- ra, sde -- gno'e fu -- ro -- re,
 di giu -- di -- ce cru -- del, 
@@ -112,7 +112,7 @@ d'em -- pio si -- gno -- re,
 da -- te gra -- di -- _ _ _ _ _ _ _ _ ta fi -- _ _ _ a.
 
 }
-sopWordsD = \lyricmode {
+scWordsOneD = \lyricmode {
    \set stanza = #"4. "
 Ti ser -- vi -- ro cor mi -- o,
 pur ch'i miei tri -- sti'ac -- cen -- ti, pur ch'i miei tri -- sti'ac -- cen -- ti,
@@ -121,28 +121,28 @@ o -- di be -- ni -- gn'e'i do -- lo -- ro -- si sten -- ti,
 fru -- i -- _ _ _ re.
 
 }
-altoWords = \lyricmode {
+scWordsTwo = \lyricmode {
    \set stanza = #"1. "
 Io sof -- fri -- ro cor mi -- _ _ _ o, 
 o -- gni so -- ver -- chio'ar do -- re, ar -- do -- re, 
 che m'ar -- d'il pet -- to'e mi con -- su -- ma'il co -- _ _ _ re,
  se la ser -- vi -- tu mi -- a, da te gra -- di -- _ _ _ _ _ _ ta fi -- _ _ a.
 }
-altoWordsB = \lyricmode {
+scWordsTwoB = \lyricmode {
    \set stanza = #"2. "
 Io gio -- i -- ro cor mi -- _ _ _ o, d'o -- gni mia tri -- sta sor -- te,__ _
 sor -- te, O dia -- mi vi -- t'A -- mor,
 O dia -- mi mor -- _ _ _ te,
  se la ser -- vi -- tu mi -- a, da te gra -- di -- _ _ _ _ _ _ ta fi -- _ _ a
 }
-altoWordsC = \lyricmode {
+scWordsTwoC = \lyricmode {
    \set stanza = #"3. "
 Io pro -- ve -- ro cor mi -- _ _ _ o, i -- ra, sde -- gno'e fu -- ro -- re
 fu -- ro -- re di giu -- di -- ce cru -- del,
 d'em -- pio si -- gno -- _ _ _ re,
   se la ser -- vi -- tu mi -- a, da te gra -- di -- _ _ _ _ _ _ ta fi -- _ _ a
 }
-altoWordsD = \lyricmode {
+scWordsTwoD = \lyricmode {
    \set stanza = #"4. "
 Ti ser -- vi -- ro cor mi -- _ _ _ o,
 pur ch'i miei tri -- sti'ac -- cen -- ti, 
@@ -152,7 +152,7 @@ stien -- _ _ _ ti,
  per che me -- glio'e lan -- gui -- re,
 per te che'al -- tra __ _ _ _ _ _ _ fru -- i -- _ _ re.
 }
-tenorWords = \lyricmode {
+scWordsThree = \lyricmode {
    \set stanza = #"1. "
   Io sof -- fri -- ro cor mi -- o,
   o -- gni so -- ver -- chio'ar -- do -- re,
@@ -163,7 +163,7 @@ tenorWords = \lyricmode {
   da te gra -- di -- ta fi -- a.
 
 }
-tenorWordsB = \lyricmode {
+scWordsThreeB = \lyricmode {
    \set stanza = #"2. "
   Io gio -- i -- ro cor mi -- o,
   d'o -- gni mia tri -- sta
@@ -174,14 +174,14 @@ tenorWordsB = \lyricmode {
   da te gra -- di -- ta fi -- a.
 
 }
-tenorWordsC = \lyricmode {
+scWordsThreeC = \lyricmode {
    \set stanza = #"3. "
   Io pro -- ve -- ro cor mi -- o, i -- ra, sde -- gno'e fu -- ro -- re, i -- ra,
   sde -- gno'e fu -- ro -- re, di giu -- di ce cru -- del, d'em -- pio si -- gno -- re,
  se la ser -- vi -- tu mi -- a,
   da te gra -- di -- ta fi -- a.
 }
-tenorWordsD = \lyricmode {
+scWordsThreeD = \lyricmode {
    \set stanza = #"4. "
   Ti ser -- vi -- ro cor mi -- o, pur ch'i miei tri -- sti'ac -- cen -- ti
   pur ch'i miei tri -- sti'ac -- cen -- ti,
@@ -239,11 +239,8 @@ fru -- i -- re.
 }
 
 \midi{
-     \context {
-       \Score
-       tempoWholesPerMinute = #(ly:make-moment 100 4)
-       }
+     \tempo 4 = 100
     }
 }
 
-\version "2.10.0"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.

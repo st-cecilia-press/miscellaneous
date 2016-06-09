@@ -31,7 +31,7 @@ verseSpacer = {
   \repeat unfold 9 { s2 \noBreak } s2 \break
 }
 
-cantusChorusMusic = \relative a' {
+scChorusMusicOne = \relative a' {
   a4.^\markup{\bold Chorus} ( g8) | a4 f4 | d4 f4 | g2 \melisma |
   bf8([ a] f[ g]) \melismaEnd | e4 d | f g | g8([ f]) d4 | 
   c2~ | c | a'4.( g8) | a4 f | d f | g2 \melisma |
@@ -39,13 +39,13 @@ cantusChorusMusic = \relative a' {
   \bar "||"
 }
 
-tenorChorusMusic = \relative c {
+scChorusMusicTwo = \relative c {
   d2 | d4 f | a d, | c2 \melisma | f2 \melismaEnd | g4 a | d, c | g' a |
   c2~ | c | d, | d4 f | a d, | c2 \melisma | f2 \melismaEnd | g4 a | d, c | f g | a2\fermata
   \bar "||"
 }
 
-cantusMusic =   \relative c' {  
+scMusicOne =   \relative c' {  
   r4^\markup{\bold Verse} d | d a' | b d | b( c8[ a]) | g4 b|
   c a | g8[ f] f8[ e] | d2 
 
@@ -62,7 +62,7 @@ cantusMusic =   \relative c' {
 
 }
 
-tenorMusic = \relative a {
+scMusicTwo = \relative a {
   r4 a | a d, | d d | g( f) | e e | c d | f g | a2 
 
   r4 a | a d, | d d | g( f) | e e | c d | f g | a2~ | a |
@@ -79,9 +79,9 @@ chorusWords = \lyricmode {
   Mi -- ra -- cu -- lis ser -- ra -- to, Ex -- au -- di po -- pu -- lum.
 }
 
-wordsA = \lyricmode {
+scWordsOneA = \lyricmode {
   \set stanza = "*1."
-  \set vocNam = "*1."
+  \set shortVocalName = "*1."
 
   Con -- cur -- runt u -- ni -- ver -- si
   gau -- den -- tes po -- pu -- li
@@ -96,9 +96,9 @@ wordsA = \lyricmode {
   gra -- ti -- is re -- ple -- ti. __
 }
 
-wordsB = \lyricmode {
+scWordsOneB = \lyricmode {
   \set stanza = "2."
-  \set vocNam = "2."
+  \set shortVocalName = "2."
 
   Prin -- ce -- pes et mag -- na -- tes
   ex stir -- pe re -- gi -- a
@@ -114,9 +114,9 @@ wordsB = \lyricmode {
 
 }
 
-wordsC = \lyricmode {
+scWordsOneC = \lyricmode {
   \set stanza = "3."
-  \set vocNam = "3."
+  \set shortVocalName = "3."
 
   Prae -- la -- ti et ba -- ro -- nes,
   co -- mi -- tes in -- cli -- ti,
@@ -132,9 +132,9 @@ wordsC = \lyricmode {
 
 }
 
-wordsD = \lyricmode {
+scWordsOneD = \lyricmode {
   \set stanza = "4."
-  \set vocNam = "4."
+  \set shortVocalName = "4."
 
   Rus -- ti -- ci a -- ra -- to -- res,
   nec non no -- ta -- ri -- i,
@@ -150,9 +150,9 @@ wordsD = \lyricmode {
 
 }
 
-wordsE = \lyricmode {
+scWordsOneE = \lyricmode {
   \set stanza = "*5."
-  \set vocNam = "*5."
+  \set shortVocalName = "*5."
 
   Re -- gi -- nae, co -- mi -- tis -- sae,
   il -- lus -- tres do -- mi -- nae,
@@ -167,9 +167,9 @@ wordsE = \lyricmode {
   et re -- li -- gi -- o -- sae. __ 
 }
 
-wordsF = \lyricmode {
+scWordsOneF = \lyricmode {
   \set stanza = "*6."
-  \set vocNam = "*6."
+  \set shortVocalName = "*6."
 
   Co -- et -- us hi
   \set ignoreMelismata = ##t
@@ -188,9 +188,9 @@ wordsF = \lyricmode {
   so -- lu -- ti re -- de -- ant. __ 
 }
 
-wordsG = \lyricmode {
+scWordsOneG = \lyricmode {
   \set stanza = "7."
-  \set vocNam = "7."
+  \set shortVocalName = "7."
 
   Cunc -- ti er -- go pre -- can -- tes
   sex -- us ut -- ri -- us -- que,
@@ -235,12 +235,15 @@ wordsG = \lyricmode {
 
     \layout {
       indent = 0\mm
-      betweensystemspace = 5\mm
+      obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
     }
 
-    \midi {
-      \tempo 4 = 180 
+    
+  \midi {
+    \tempo 4 = 180
     }
+
+
   }
 
   \score {
@@ -277,17 +280,17 @@ wordsG = \lyricmode {
 
       \layout {
 	indent = 0\mm
-	betweensystemspace = 5\mm
+	obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
 	\context{
 	  \Score
-	  \override VocalName #'break-align-symbol = #'vocal-name
+	  \override VocalName.break-align-symbols = #'(vocal-name)
 	  
 	  % stolen from StanzaNumber - right-aligns extra verse numbers
-	  \override VocalName #'direction = #-1
-	  \override VocalName #'X-offset-callbacks = #`(,Side_position_interface::aligned_side) 
+	  \override VocalName.direction = #-1
+	  \override VocalName.X-offset-callbacks = #`(,ly:side-position-interface::aligned-side) 
 
 	  % positions extra verse numbers in the right place
-	  \override BreakAlignment #'break-align-orders = ##(; end-of-line:
+	  \override BreakAlignment.break-align-orders = ##(; end-of-line:
 	  (instrument-name left-edge ambitus breathing-sign
 	  clef staff-bar key-signature
 	  time-signature custos)
@@ -306,11 +309,14 @@ wordsG = \lyricmode {
 	}
       }
 
-      \midi {
-	\tempo 4 = 180 
-      }
+      
+  \midi {
+    \tempo 4 = 180
+    }
+
+
     }
   }
 
-  \version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+  \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

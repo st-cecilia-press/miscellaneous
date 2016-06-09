@@ -36,11 +36,11 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 global = {
 	\key d \major
 	\time 4/4
-	\override Score.BarNumber #'padding = #3
+	\override Score.BarNumber.padding = #3
 	 
 }
 
-sopIMusic = \transpose f d  \relative c''{ \clef treble
+scMusicOne = \transpose f d  \relative c''{ \clef treble
 	\set Staff.instrumentName = "Sop I"
 	%measuress 1-5  
 	r1 |  r4 c a bf  | c c f d  | e c c b | c2 d4 g  | 
@@ -70,7 +70,7 @@ sopIMusic = \transpose f d  \relative c''{ \clef treble
 	g2 f2 | r4 c' f d | e4. e8 d8 c b4 | c g c4. bf8 | a4 g8 f g2 | a1 \bar "|."
 }
 
-sopIIMusic = \transpose f d  \relative c'' { \clef treble
+scMusicTwo = \transpose f d  \relative c'' { \clef treble
 	\set Staff.instrumentName = "Sop II"
 	%measuress 1-5  
 	c2 a4 bf| c4 c f d | e e d4. d8 | c4 c d f | e e d2 | 
@@ -101,7 +101,7 @@ sopIIMusic = \transpose f d  \relative c'' { \clef treble
 		
 }
 	
-altoMusic = \transpose f d \relative c' { \clef "G_8"
+scMusicThree = \transpose f d \relative c' { \clef "G_8"
 	\set Staff.instrumentName = "Alto"
 	%measuress 1-5  
 	r1 | r1 | r1 | r4 c f d | e c g'2 | 
@@ -131,7 +131,7 @@ altoMusic = \transpose f d \relative c' { \clef "G_8"
 	r2 r4 f4 | c'4 a4 bf bf | a4 g f2 | e2 f2~ | f2 e2 | f1 \bar "|." 
 }
 
-tenorMusic = \transpose f d \relative c' { \clef "G_8"
+scMusicFour = \transpose f d \relative c' { \clef "G_8"
 	\set Staff.instrumentName = "Tenor"
 	%measuress 1-5  
 	r1 | r1 | r1 | r1 | r2 r4 g4 | 
@@ -161,7 +161,7 @@ tenorMusic = \transpose f d \relative c' { \clef "G_8"
 	r4 c4 f d | e c d2 | c2 r4 f,4 | c'4. g8 a4. bf8 | c4 bf8 a g4 c4 | c1 \bar "|."
 }
 
-bassMusic = \transpose f d \relative c { \clef bass
+scMusicFive = \transpose f d \relative c { \clef bass
 	\set Staff.instrumentName = "Bass"
 	%measuress 1-5  
 	r1 | r1 | r1 | r1 | r1 | 
@@ -191,7 +191,7 @@ bassMusic = \transpose f d \relative c { \clef bass
 	f e f f| c c bf bf  | c2 d4 d | c1 ~ | c1 | f1 \bar "|." 
 }
 
-sopIWords = \lyricmode {
+scWordsOneA = \lyricmode {
 Sis -- ter a -- wake, close not your eyes, 
 The day her light, the day her light dis -- clo__ _ _ ses: 
 And the bright morn -- ing doth a -- rise,
@@ -217,7 +217,7 @@ in -- to the park a may __ _ _ ing,
 in -- to the park a __ _ may -- ing.
 
 }
-sopIIWords = \lyricmode {
+scWordsTwoA = \lyricmode {
 Sis -- ter,  a -- wake, close not your eyes, close not your eyes,
 The day her light dis -- clo -- ses,
 the day her light dis -- clo -- ses:
@@ -243,7 +243,7 @@ in -- to the park a may -- ing
 in -- to the park a may __ _ _ ing,
 in -- to the park __ _ _ _ _ _ a may -- ing.
 }
-altoWords = \lyricmode {
+scWordsThreeA = \lyricmode {
 The day her light dis -- clo -- ses,
 her light dis -- clo __ _ ses:
 And the bright morn -- ing,
@@ -267,7 +267,7 @@ in -- to the park a may __ _ ing,
 in to the park a may __ _ ing, 
 a may __ _ ing. 
 }
-tenorWords = \lyricmode {
+scWordsFourA = \lyricmode {
 The day her light dis -- clo -- ses,
 And the bright morn -- ing doth a -- rise, doth a -- rise,
 Out of her bed of ro -- ses, her bed of ro -- ses.
@@ -288,7 +288,7 @@ in -- to the__ _ park a may -- ing a may __ _ _ ing,
 in -- to the park a may -- ing,
 in to the park a may __ _ _ _ _ ing.
 }
-bassWords = \lyricmode {
+scWordsFiveA = \lyricmode {
 See, See, See, the clear Sun,
 the world's bright eye,
 in at our win -- dow peep -- ing,
@@ -333,21 +333,18 @@ in -- to the park a may -- ing, a may -- ing.
         	\context Lyrics = bassLyrics { s1 } 
        	>>
 
-		  \lyricsto "sopIMusic" \context Lyrics = sopILyrics \sopIWords 
-		  \lyricsto "sopIIMusic" \context Lyrics = sopIILyrics \sopIIWords 
-		  \lyricsto "altoMusic" \context Lyrics = altoLyrics \altoWords 
-		  \lyricsto "tenorMusic" \context Lyrics = tenorLyrics \tenorWords 
-		  \lyricsto "bassMusic" \context Lyrics = bassLyrics \bassWords 
+		  \lyricsto "sopIMusic" \context Lyrics = sopILyrics \sopIWordsA 
+		  \lyricsto "sopIIMusic" \context Lyrics = sopIILyrics \sopIIWordsA 
+		  \lyricsto "altoMusic" \context Lyrics = altoLyrics \altoWordsA 
+		  \lyricsto "tenorMusic" \context Lyrics = tenorLyrics \tenorWordsA 
+		  \lyricsto "bassMusic" \context Lyrics = bassLyrics \bassWordsA 
 
 >>
 \layout {}
 
 \midi{
-     \context {
-       \Score
-       tempoWholesPerMinute = #(ly:make-moment 100 4)
-       }
+     \tempo 4 = 100
     }
 }
 
-\version "2.10.0"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.

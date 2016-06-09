@@ -25,17 +25,17 @@ global= {
   \autoBeamOff
 }
 
-cantusMusic =   \relative c'' {  
+scMusicOne =   \relative c'' {  
   d8 d c4 a | c8 c b4 c | d2 r4 | c8 b a4 g | a8 g a4 b | 
   c2 r4 | d8 d bf4 g4 | d'8 d c4 a | a2 r4 | e g a
   c8 c c4 b | a8[ b] a4 g | a2 r4 | c4 b c | d8 d c4 a |
   c8 c b4 g | g2 r4 | a8 g a4 b | c8 b a4 g | d'2 r4 |
   a8 a b4 c | d8 b c4 a | c8 b a4 g | a2 r4 | c8 c b4 g |
-  d'8 d c4 a | c8 b a4 g | a8 a g4 \times 2/3 { f8[ e d] } | f2 r4 
+  d'8 d c4 a | c8 b a4 g | a8 a g4 \tuplet 3/2 { f8[ e d] } | f2 r4 
   a8 g8 a4 b | c8 b a4 g | a2. \bar "|."
 }
 
-cantusWords =  \lyricmode {
+scWordsOneA =  \lyricmode {
   Pu -- ce -- le -- te bele et a -- ve -- nant
   Jo -- li -- e -- te, po -- lie et plai -- sant,
   La sa -- de -- te que je de -- sir tant
@@ -47,7 +47,7 @@ cantusWords =  \lyricmode {
   Je vos cri mer -- ci en sous -- pi -- rant.
 }
 
-altusMusic = 
+scMusicTwo = 
 \relative c' {
  d4 a'2 a4 a2 | a4 a2 g2 r4 a4 g2 |
  a4 g2 a4 bf2 | a2( g4) | f8([ e] d2) | e4 c2 |
@@ -57,7 +57,7 @@ altusMusic =
  d4 e2 | g8([ f] f4 e) | d2.
 }
 
-altusWords = \lyricmode {
+scWordsTwoA = \lyricmode {
   Je lan -- gui des maus d'a -- mours,
   Mieuz aim as -- sez qu'il m'o -- ci -- e 
   Que nul au -- tres maus; trop est jo -- li -- e la mort;
@@ -67,7 +67,7 @@ altusWords = \lyricmode {
   Qu'a -- mours ne m'o -- ci -- e.
 }
 
-bassusMusic = 
+scMusicThree = 
 \relative c {
   d2.( \melisma f) d c2 r4 d2.( |
   f) g( d) d2 r4 | e2. |
@@ -77,7 +77,7 @@ bassusMusic =
   d( c) d2 r4 | f2.( e) c \melismaEnd d 
 }
 
-bassusWords = \lyricmode {
+scWordsThreeA = \lyricmode {
   Do -- -
 }
 
@@ -85,7 +85,7 @@ bassusWords = \lyricmode {
 \score {
   \context ChoirStaff <<
     \context Staff = cantusStaff <<
-      \set Staff.instrument = "Triplum"
+      \set Staff.instrumentName = "Triplum"
       \context Voice = cantus {
 	<< \global \cantusMusic >> 
       }
@@ -94,7 +94,7 @@ bassusWords = \lyricmode {
     \context Lyrics = cantus { s1 }
 
     \context Staff = altusStaff <<
-      \set Staff.instrument = "Motetus"
+      \set Staff.instrumentName = "Motetus"
 
       \context Voice = altus { 
 	<< \global 
@@ -105,7 +105,7 @@ bassusWords = \lyricmode {
     \context Lyrics = altus { s1 }
 
     \context Staff = bassusStaff << \context Voice = bassus { 
-      \set Staff.instrument = "Tenor"
+      \set Staff.instrumentName = "Tenor"
       << \global
       \clef bass
       \bassusMusic >>
@@ -119,8 +119,13 @@ bassusWords = \lyricmode {
 
 >>
 
-  \midi { \tempo 4 . = 80 }
+  
+  \midi {
+    \tempo 4. = 80
+    }
+
+
   \layout { }
 }
 
-\version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.

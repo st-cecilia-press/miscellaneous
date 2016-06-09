@@ -239,15 +239,12 @@ wordsG = \lyricmode {
 
     \layout {
       indent = 0\mm
-      between-system-space = 5\mm
+      obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
     }
 
     
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 180 4)
-      }
+    \tempo 4 = 180
     }
 
 
@@ -290,17 +287,17 @@ wordsG = \lyricmode {
 
       \layout {
 	indent = 0\mm
-	between-system-space = 5\mm
+	obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
 	\context{
 	  \Score
-	  \override VocalName #'break-align-symbol = #'vocal-name
+	  \override VocalName.break-align-symbols = #'(vocal-name)
 	  
 	  % stolen from StanzaNumber - right-aligns extra verse numbers
-	  \override VocalName #'direction = #-1
-	  \override VocalName #'X-offset-callbacks = #`(,ly:side-position-interface::aligned-side) 
+	  \override VocalName.direction = #-1
+	  \override VocalName.X-offset-callbacks = #`(,ly:side-position-interface::aligned-side) 
 
 	  % positions extra verse numbers in the right place
-	  \override BreakAlignment #'break-align-orders = ##(; end-of-line:
+	  \override BreakAlignment.break-align-orders = ##(; end-of-line:
 	  (instrument-name left-edge ambitus breathing-sign
 	  clef staff-bar key-signature
 	  time-signature custos)
@@ -321,15 +318,12 @@ wordsG = \lyricmode {
 
       
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 120 4)
-      }
+    \tempo 4 = 120
     }
 
 
     }
   }
 
-  \version "2.10.10"  % necessary for upgrading to future LilyPond versions.
+  \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

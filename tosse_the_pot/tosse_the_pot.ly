@@ -34,32 +34,32 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 global = {
 	\key f \major
 	\time 12/4
-	\override Score.BarNumber #'padding = #3
+	\override Score.BarNumber.padding = #3
 	 
 }
 
-trebleMusic = \relative c'{ \clef treble
+scMusicOne = \relative c'{ \clef treble
 	\set Staff.instrumentName = "Treble"
-	\bar ":|:" f4. g8 a4 a4. bf8 c4 d4. c8 bf4 a f f f4. g8 a( bf) c4. bf8 a4 bf4. bf8 g4 a f4. r8 \bar "||" \break 
-	f2 a bf c1 c2 d2.( c4) bf2 a1. c2 bf a g1 c2 ef d1 c1. \break c2 a bf \slurDotted g2.( g4) \slurSolid f2 bf1 a2 g1 a4( bf) c2.( bf4) a2 bf2 g1 a1.( a1.) \bar ":|" \pageBreak
+	\bar ":..:" f4. g8 a4 a4. bf8 c4 d4. c8 bf4 a f f f4. g8 a( bf) c4. bf8 a4 bf4. bf8 g4 a f4. r8 \bar "||" \break 
+	f2 a bf c1 c2 d2.( c4) bf2 a1. c2 bf a g1 c2 ef d1 c1. \break c2 a bf \slurDotted g2.( g4) \slurSolid f2 bf1 a2 g1 a4( bf) c2.( bf4) a2 bf2 g1 a1.( a1.) \bar ":|." \pageBreak
 }
 
-trebleMusicB = \relative c'{ \clef treble
-	\bar ":|:" f4. g8 a4 a4. bf8 c4 d4. c8 bf4 a f f f4. g8 a( bf) c4. bf8 a4 bf4. bf8 g4 a f4. r8^\markup{ \right-align{Fine}}  \bar "||" \break 
-	f2 a bf c1 c2 d2.( c4) bf2 a1. c2 bf a g1 c2 ef d1 c1. \break c2 a bf \slurDotted g2.( g4) \slurSolid f2 bf1 a2 g1 a4( bf) c2.( bf4) a2 bf2 g1 a1.( a1.)^\markup{ \left-align{ \line{D.C. al Fine } } } \bar ":|" 
+scMusicBOne = \relative c'{ \clef treble
+	\bar ":..:" f4. g8 a4 a4. bf8 c4 d4. c8 bf4 a f f f4. g8 a( bf) c4. bf8 a4 bf4. bf8 g4 a f4. r8^\markup{ \right-align{Fine}}  \bar "||" \break 
+	f2 a bf c1 c2 d2.( c4) bf2 a1. c2 bf a g1 c2 ef d1 c1. \break c2 a bf \slurDotted g2.( g4) \slurSolid f2 bf1 a2 g1 a4( bf) c2.( bf4) a2 bf2 g1 a1.( a1.)^\markup{ \left-align{ \line{D.C. al Fine } } } \bar ":|." 
 }
 
-mediusMusic = \relative c'{ \clef treble
+scMusicTwo = \relative c'{ \clef treble
 	\set Staff.instrumentName = "Medius"
 	c4. c8 f4 f4. g8 a4 bf4. bf8 f4 f4 c c c4. c8 f4 e4. e8 f4 g4. f8 e4 f f4. r8 \bar "||" \break
 	c2 f2. g4 a1 a2 bf1 f2 f1. a2 g f e1 g2 g1 g2 e1. \break g2 f g \slurDotted e2.( d4) \slurSolid c2 d2.( e4) f2 e1 f4( g) a2.( g4) f2 f1 e2 f1.( f1.) 
 }
-tenorMusic = \relative c'{ \clef "G_8"
+scMusicThree = \relative c'{ \clef "G_8"
 	\set Staff.instrumentName = "Tenor"
 	 a4. bf8 c4 c4. c8 f4 f4. e8 d4 c4 c c a4. g8 f4 g4. g8 a4 d4. d8 c4 c c4. r8 \bar "||" \break
 	a2 c d c1 f2 f2.( e4) d2 c1. f2 f c2 c1 c2 c1 b2 c1. \break e2 c2 d2 \slurDotted c( g) \slurSolid a bf( g) c c1 c2 c f1 d2 c1 c1.( c1.) 
 }
-bassusMusic = \relative c { \clef "bass"
+scMusicFour = \relative c { \clef "bass"
 	\set Staff.instrumentName = "Basis"
 	 f4. f8 f4 f4. f8 f4 bf,4. bf8 bf4 f'4 f4 f f4. e8 d4 c4. c8 f4 bf,4. bf8 c4 f4 f,4. r8 \bar "||" \break
 	f'2 f bf,2 f'1 f2 bf,1 bf2 f'1. f2 f f2 c1 c2 g'1 g,2 c1. \break c2 f2 bf,2 \slurDotted c2.( bf4) \slurSolid a2 g1 f2 c'1 f2 f1 f2 bf, c1 f1.( f1.)  
@@ -110,16 +110,16 @@ VerseF = \lyricmode{
 }
 
 %Solfege
-trebleSolf = \lyricmode{ \set ignoreMelismata = ##t
+scSolfOne = \lyricmode{ \set ignoreMelismata = ##t
 Do Re Mi Mi Fa So La So Fa Mi Do Do Do Re Mi Fa So Fa Mi Fa Fa Re Mi Do Do Mi Fa So So La So Fa Mi So Fa Mi Re So Te La So So Mi Fa Re Re Do Fa Mi Re Mi Fa So Fa Mi Fa Re Mi
 }
-mediusSolf = \lyricmode{ \set ignoreMelismata = ##t
+scSolfTwo = \lyricmode{ \set ignoreMelismata = ##t
 So So Do Do Re Mi Fa Fa Do Do So So So So Do Ti Ti Do Re Do Ti Do Do So Do Re Mi Mi Fa Do Do Mi Re Do Ti Re Re Re Ti Re Do Re Ti La So La Ti Do Ti Do Re Mi Re Do Do Ti Do 
 }
-tenorSolf = \lyricmode{ \set ignoreMelismata = ##t
+scSolfThree = \lyricmode{ \set ignoreMelismata = ##t
 Mi Fa So So So Do Do Ti La So So So Mi Re Do Re Re Mi La La So So So Mi So La So Do Do Ti La So Do Do So So So So Fi So Ti So La So Re Mi Fa Re So So So So Do La So So 
 }
-bassusSolf = \lyricmode{ \set ignoreMelismata = ##t
+scSolfFour = \lyricmode{ \set ignoreMelismata = ##t
 Do Do Do Do Do Do Fa Fa Fa Do Do Do Do Ti La So So Do Fa Fa So Do Do Do Do Fa Do Do Fa Fa Do Do Do Do So So Re Re So So Do Fa So Fa Mi Re Do So Do Do Do Fa So Do 
 }
 
@@ -153,10 +153,7 @@ Do Do Do Do Do Do Fa Fa Fa Do Do Do Do Ti La So So Do Fa Fa So Do Do Do Do Fa Do
 
 
 \midi{
-     \context {
-       \Score
-       tempoWholesPerMinute = #(ly:make-moment 200 4)
-       }
+     \tempo 4 = 200
 }
 
 
@@ -166,4 +163,4 @@ Do Do Do Do Do Do Fa Fa Fa Do Do Do Do Ti La So So Do Fa Fa So Do Do Do Do Fa Do
 }
 
 
-\version "2.10.10"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.

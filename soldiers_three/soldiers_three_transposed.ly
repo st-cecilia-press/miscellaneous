@@ -18,7 +18,7 @@
   subtitle = "Freemens Songs of 3. Voices"
   composer = \markup { Thomas Ravenscroft }
   arranger = "arr. Elsa von Heilbronn"
-  tagline = \markup { \center-align { "© Katherine Kramp, 2002" "Permission to copy and distribute free of charge is granded, as long as this notice is retained" } }
+  tagline = \markup { \center-column { "© Katherine Kramp, 2002" "Permission to copy and distribute free of charge is granded, as long as this notice is retained" } }
 }
 
 global= {
@@ -28,8 +28,8 @@ global= {
 
 cantusMusic =   \transpose d f { \relative c' {  
   d2. e | f2 d4 cs2. | d4. e8 f4 e4.( f8) g4 |
-  f2 d4 cs2. \bar "|:" c'4. b8 a4 g4. f8 e4 |
-  f2 d4 cs2 a'4 | g4. g8 f4 e4. d8 e4 | fs4 d2~d2. \bar ":|"
+  f2 d4 cs2. \bar ".|:" c'4. b8 a4 g4. f8 e4 |
+  f2 d4 cs2 a'4 | g4. g8 f4 e4. d8 e4 | fs4 d2~d2. \bar ":|."
 } }
 
 altusMusic = 
@@ -112,14 +112,17 @@ wordsD = \lyricmode {
 
     \layout {
       indent = 0\mm
-      betweensystemspace = 5\mm
+      obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
 
     }
 
-    \midi {
-      \tempo 4 = 120
+    
+  \midi {
+    \tempo 4 = 120
     }
+
+
   }
 
-  \version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+  \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

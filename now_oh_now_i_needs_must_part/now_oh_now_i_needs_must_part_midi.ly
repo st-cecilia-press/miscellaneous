@@ -38,7 +38,7 @@ cantusMusic =   \relative c'' {
   b4 a8 g4 fs8 | e4 g8 a4 r8 | b8 d c8. c16 b8 a | g2. 
 
   c4 c8 c4 e8 | d4 e8 d4 r8 | c8. c16 b8 a8 c8 b8 | a2.
-  b4 a8 g4 fs8 | e4 g8 a4 r8 | b8 d8 c8. c16 b8 a8 | g2. \bar ":|"
+  b4 a8 g4 fs8 | e4 g8 a4 r8 | b8 d8 c8. c16 b8 a8 | g2. \bar ":|."
 }
 
 altusMusic = \relative g' {
@@ -48,7 +48,7 @@ altusMusic = \relative g' {
   g4 fs8 e4 d8 | c4 b8 d4 r8 | d8 g8 e8 r16 e16 d8. c16 | b2.  
 
   e4 e8 e4 e8 | g4 g8 g4. | e8 a g d e8. d16 | cs2.
-  g'4 fs8 e4 d8 | c4 b8 d4. | d8 g e8. e16 d8. c16 | b2. \bar ":|"
+  g'4 fs8 e4 d8 | c4 b8 d4. | d8 g e8. e16 d8. c16 | b2. \bar ":|."
 }
 
 tenorMusic = 
@@ -59,7 +59,7 @@ tenorMusic =
   d4 d8 b4 b8 | g8 g[g'] fs4. | g8 b,8 a16 g g4 fs8 | g2. 
 
   g4  g8 g4 g8 | g8 b g g4 b8 | a8 e' e a, a gs | a2.
-  d4 d8 b4 b8 | g8 g8.[ g'16] fs4. | g8 b, a16 g g4 fs8 | g2. \bar ":|"
+  d4 d8 b4 b8 | g8 g8.[ g'16] fs4. | g8 b, a16 g g4 fs8 | g2. \bar ":|."
 }
 
 bassusMusic = 
@@ -70,7 +70,7 @@ bassusMusic =
   g4 d8 e4 b8 | c4 e8 d4. | g,8 g c c d d | g,2. 
 
   c4 c8 c4 c8 | b8 g c b g4 | a8. a16 e'8 f e e | a,2.
-  g'4 d8 e4 b8 | c4 e8 d4. | g8 g c,8. c16 d8 d8 | g,2. \bar ":|"
+  g'4 d8 e4 b8 | c4 e8 d4. | g8 g c,8. c16 d8 d8 | g,2. \bar ":|."
 }
 
 
@@ -180,20 +180,17 @@ bassChorusWords = \lyricmode {
   >>
 
  % \layout {
- %   between-system-space = 5\mm
+ %   obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
  %   indent = 0\mm
  % }
 
   
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 80 4)
-      }
+    \tempo 4 = 80
     }
 
 
 }
 
-\version "2.10.10"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

@@ -33,7 +33,7 @@ global = {
 	\key ef \major
 	%\key f \major
 	\time 2/2
-	\override Score.BarNumber #'padding = #3
+	\override Score.BarNumber.padding = #3
 	 
 }
 
@@ -298,4 +298,4 @@ La La La Te La So So Fa Fa Fa Te Fa Fa Do So La Mi Fa Mi Re So Te Fa So Fa Do La
 }
 
 
-\version "2.10.0"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.

@@ -39,7 +39,7 @@ cantusB = \relative c'' {
   bf8[ c] | bf8([ a] g4) a | bf2 r4
 }
 
-cantusMusic = { 
+scMusicOne = { 
   \cantusA \cantusB
   \cantusA r4
   \cantusA r4
@@ -55,7 +55,7 @@ altusB = \relative c' {
   f8[ g] | f([ e] d4) e | f2 r4
 }
 
-altusMusic = { 
+scMusicTwo = { 
   \altusA \altusB
   \altusA r4
   \altusA r4
@@ -72,7 +72,7 @@ tenorB = \relative c' {
   bf8[ c] | d2 c4 | bf2 r4
 }
 
-tenorMusic = { 
+scMusicThree = { 
   \tenorA \tenorB
   \tenorA r4
   \tenorA r4
@@ -100,7 +100,7 @@ words = \lyricmode {
 \score {
   \context ChoirStaff <<
     \context Staff = cantusStaff <<
-      \set Staff.instrument = "Cantus"
+      \set Staff.instrumentName = "Cantus"
       \context Voice = cantus {
 	<< \global \cantusMusic >> 
       }
@@ -109,7 +109,7 @@ words = \lyricmode {
     \context Lyrics = cantus { s1 }
 
     \context Staff = altusStaff <<
-      \set Staff.instrument = "Altus"
+      \set Staff.instrumentName = "Altus"
 
       \context Voice = altus { 
 	<< \global 
@@ -120,7 +120,7 @@ words = \lyricmode {
     \context Lyrics = altus { s1 }
 
     \context Staff = tenorStaff << \context Voice = tenor { 
-      \set Staff.instrument = "Bassus"
+      \set Staff.instrumentName = "Bassus"
       << \global
       \clef "G_8"
       \tenorMusic >>
@@ -134,9 +134,14 @@ words = \lyricmode {
 
 >>
 
-\midi { \tempo 4 = 80 }
+
+  \midi {
+    \tempo 4 = 80
+    }
+
+
 \layout { }
 }
 
-\version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

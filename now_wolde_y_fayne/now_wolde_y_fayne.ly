@@ -10,7 +10,7 @@
     } }
   }
   evenFooterMarkup = \oddFooterMarkup
-  raggedbottom = ##t
+  ragged-bottom = ##t
 }
 
 \include "english.ly"
@@ -26,13 +26,13 @@ global= {
   \set Score.skipBars = ##t
   \autoBeamOff
   \key d \dorian
-  \bar ":"
+  \bar ";"
 
   \time 2/2 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 \time 3/2 s1
 
 }
 
-cantusMusic =   \relative c' {  
+scMusicOne =   \relative c' {  
   d2^\markup{ Beat \smaller \general-align #Y #DOWN \note #"2" #1 } d4 c  d a c d  e1\fermata \bar "" \break
   r4 d4 d4 f4  e c4 d e  f4. \melisma e8 c4 d  e2 c \melismaEnd \bar "" \break
   r4 a4 c4 d  e e f d  c b a2  a4 \melisma d2 cs4^\markup{\fontsize #-3 \sharp} \melismaEnd d2 \bar "" \break
@@ -41,7 +41,7 @@ cantusMusic =   \relative c' {
   \bar "|."
 }
 
-tenorMusic = \relative c {
+scMusicTwo = \relative c {
   d2 f4 e  d a' a b  c1\fermata 
   r4 d4 d d  c a bf^\markup{\fontsize #-3 \flat} g f4. \melisma g8 a4 f4  e2 \melismaEnd
   r2. a4 a b  c c d d  a g f d4  f2 \melisma e \melismaEnd
@@ -49,108 +49,108 @@ tenorMusic = \relative c {
   \bar "|."
 }
 
-cantusWordsA = \lyricmode {
+scWordsOneA = \lyricmode {
   \set stanza = "1."
-\set vocNam = "1."
+\set shortVocalName = "1."
   Now wolde y fayne sum -- mer this make
   Al on -- ly for my la -- dy's sak __
   When y her se; But nowe y am so far fro __ hir
   It wil not be. __
 }
 
-cantusWordsB = \lyricmode {
+scWordsOneB = \lyricmode {
   \set stanza = "2."
-\set vocNam = "2."
+\set shortVocalName = "2."
   Thow y be far out of her sight,
   I am her man both day and nygth __
   And so wol be. Ther -- fore y wolde, as y love __ her,
   She lo -- vyd me. __
 }
 
-cantusWordsC = \lyricmode {
+scWordsOneC = \lyricmode {
   \set stanza = "3."
-\set vocNam = "3."
+\set shortVocalName = "3."
   Whan she is mery than am y gladde;
   Whan she is sory than am y sadde, __
   And cause is whye: For he le -- veth not that lo -- vyd
   So wel as y. __
 }
 
-cantusWordsD = \lyricmode {
+scWordsOneD = \lyricmode {
   \set stanza = "4."
-\set vocNam = "4."
+\set shortVocalName = "4."
   She seith that she hath seyn it write
   That 'sel -- dyn seyn is sone for -- geit. __
   Yt is not so, For yn good feith save on -- ly __ her
   I love no moo. __
 }
 
-cantusWordsE = \lyricmode {
+scWordsOneE = \lyricmode {
   \set stanza = "5."
-\set vocNam = "5."
+\set shortVocalName = "5."
   Wher -- for y pray bothe nygth and day
   That she may cast all care a -- way __
   And leve in rest, And e -- ver mor where ever she __ be
   To love me best. __
 }
 
-cantusWordsF = \lyricmode {
+scWordsOneF = \lyricmode {
   \set stanza = "6."
-\set vocNam = "6."
+\set shortVocalName = "6."
   And y to her to be so trewe,
   And ne -- ver to chaung for no newe __
   Un -- to my ende, And that y may in her ser -- vice
   Ever to a -- ment. __
 }
 
-tenorWordsA = \lyricmode {
+scWordsTwoA = \lyricmode {
   \set stanza = "1."
-\set vocNam = "1."
+\set shortVocalName = "1."
   Now wolde y fayne sum -- mer this make
   Al on -- ly for my la -- dy's sak __
   When y her se; But nowe y am so far fro hir __
   It wil not be. __
 }
 
-tenorWordsB = \lyricmode {
+scWordsTwoB = \lyricmode {
   \set stanza = "2."
-\set vocNam = "2."
+\set shortVocalName = "2."
   Thow y be far out of her sight,
   I am her man both day and nygth __
   And so wol be. Ther -- fore y wolde, as y love her, __
   She lo -- vyd me. __
 }
 
-tenorWordsC = \lyricmode {
+scWordsTwoC = \lyricmode {
   \set stanza = "3."
-\set vocNam = "3."
+\set shortVocalName = "3."
   Whan she is mery than am y gladde;
   Whan she is sory than am y sadde, __
   And cause is whye: For he le -- veth not that lo -- vyd __
   So wel as y. __
 }
 
-tenorWordsD = \lyricmode {
+scWordsTwoD = \lyricmode {
   \set stanza = "4."
-\set vocNam = "4."
+\set shortVocalName = "4."
   She seith that she hath seyn it write
   That 'sel -- dyn seyn is sone for -- geit. __
   Yt is not so, For yn good feith save on -- ly her __
   I love no moo. __
 }
 
-tenorWordsE = \lyricmode {
+scWordsTwoE = \lyricmode {
   \set stanza = "5."
-\set vocNam = "5."
+\set shortVocalName = "5."
   Wher -- for y pray bothe nygth and day
   That she may cast all care a -- way __
   And leve in rest, And e -- ver mor where ever she be __
   To love me best. __
 }
 
-tenorWordsF = \lyricmode {
+scWordsTwoF = \lyricmode {
   \set stanza = "6."
-\set vocNam = "6."
+\set shortVocalName = "6."
   And y to her to be so trewe,
   And ne -- ver to chaung for no newe __
   Un -- to my ende, And that y may in her ser -- vice __
@@ -161,7 +161,7 @@ tenorWordsF = \lyricmode {
   <<
     \context StaffGroup <<
       \context Voice = cantus {
-	\set Staff.instrument = "Superius"
+	\set Staff.instrumentName = "Superius"
 	<< \global \clef "G_8" \cantusMusic >> 
       }
       \context Lyrics = cantusLyricsA { s1 }
@@ -172,7 +172,7 @@ tenorWordsF = \lyricmode {
       \context Lyrics = cantusLyricsF { s1 }
 
       \context Voice = tenor { 
-	\set Staff.instrument = "Tenor"
+	\set Staff.instrumentName = "Tenor"
 	<< \global \clef "G_8" \tenorMusic >> 
       }
       \context Lyrics = tenorLyricsA { s1 }
@@ -201,9 +201,9 @@ tenorWordsF = \lyricmode {
   \layout {
     \context {
       \Score
-      \override BarLine #'transparent = ##t
+      \override BarLine.transparent = ##t
     }
-    betweensystemspace = 5\mm
+    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
     \context {
       \Staff
       \remove Accidental_engraver
@@ -211,14 +211,14 @@ tenorWordsF = \lyricmode {
     }
     \context{
       \Score
-      \override VocalName #'break-align-symbol = #'vocal-name
+      \override VocalName.break-align-symbols = #'(vocal-name)
 
       % stolen from StanzaNumber - right-aligns extra verse numbers
-      \override VocalName #'direction = #-1
-      \override VocalName #'X-offset-callbacks = #`(,Side_position_interface::aligned_side) 
+      \override VocalName.direction = #-1
+      \override VocalName.X-offset-callbacks = #`(,ly:side-position-interface::aligned-side) 
 
       % positions extra verse numbers in the right place
-      \override BreakAlignment #'break-align-orders = ##(; end-of-line:
+      \override BreakAlignment.break-align-orders = ##(; end-of-line:
       (instrument-name left-edge ambitus breathing-sign
       clef staff-bar key-signature
       time-signature custos)
@@ -237,10 +237,13 @@ tenorWordsF = \lyricmode {
     }
   }
 
+  
   \midi {
     \tempo 4 = 120
-  }
+    }
+
+
 }
 
-\version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

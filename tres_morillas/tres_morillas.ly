@@ -24,30 +24,30 @@ chorusSpacer = {
 }
 
 verseSpacer = {
-  s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 \bar ":|"
+  s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 \bar ":|."
 }
 
-cantusMusicA = \relative a' {
+scMusicOne = \relative a' {
   a4 d c a f g a g f e d2 | d4 e f g8 a~ | a4 g4 a2\fermata
 }
 
-altusMusicA = \relative a' {
+scMusicTwo = \relative a' {
   a4 f e f a e f e d cs^\markup{\fontsize #-3 \sharp} d2 | f4 c d bf8 c8~ | c[ a] bf4 a2\fermata
 }
 
-tenorMusicA = \relative a {
+scMusicThree = \relative a {
   a4 bf c d d c f, c' d a d,2 | bf'4 a d, g8 f8~ | f8[ c'] d4 e2\fermata
 }
 
-cantusMusicB = \relative a' {
+scMusicBOne = \relative a' {
   a4 d c a f g a( bf) \partial 2 a2\fermata 
 }
 
-altusMusicB = \relative a' {
+scMusicBTwo = \relative a' {
   a4 g8[ f] e4 f | a e8.[ d16] e8( f4 e8) f2\fermata
 }
 
-tenorMusicB = \relative a {
+scMusicBThree = \relative a {
   a4 bf c d d c a( g) f2\fermata
 }
 
@@ -56,7 +56,7 @@ chorusWords = \lyricmode {
   A -- xa_y Fá -- ti -- ma_y __ Ma -- rién
 }
 
-wordsA = \lyricmode {
+scWordsOneA = \lyricmode {
   \set stanza = "1."
 
   Tres mo -- ri -- llas tan ga -- rri -- das
@@ -64,7 +64,7 @@ wordsA = \lyricmode {
   y ha -- llá -- ban las co -- gi -- das
 }
 
-wordsB = \lyricmode {
+scWordsOneB = \lyricmode {
   \set stanza = "2."
 
   Y ha -- llá -- ban las co -- gi -- das
@@ -73,7 +73,7 @@ wordsB = \lyricmode {
   en Ja -- én, A -- xa_y Fá -- ti -- ma_y __ Ma -- rién
 }
 
-wordsC = \lyricmode {
+scWordsOneC = \lyricmode {
   \set stanza = "3."
 
 
@@ -121,23 +121,26 @@ wordsC = \lyricmode {
 
     \layout {
       indent = 0\mm
-      betweensystemspace = 5\mm
+      obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
       \context {
 	\Staff
 	\remove Accidental_engraver
       }
     }
 
-    \midi {
-      \tempo 4 = 180 
+    
+  \midi {
+    \tempo 4 = 180
     }
+
+
   }
 
   \score {
     <<
       \context ChoirStaff <<
 	  \context Voice = cantus {
-	    <<  \verseSpacer \global { \bar "|:" \cantusMusicB \cantusMusicB \cantusMusicA } >> 
+	    <<  \verseSpacer \global { \bar ".|:" \cantusMusicB \cantusMusicB \cantusMusicA } >> 
 	  }
 
 	\context Lyrics = cantusLyricsA { s1 }
@@ -175,18 +178,21 @@ wordsC = \lyricmode {
 
     \layout {
       indent = 0\mm
-      betweensystemspace = 5\mm
+      obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
       \context {
 	\Staff
 	\remove Accidental_engraver
       }
     }
 
-    \midi {
-      \tempo 2 = 70
+    
+  \midi {
+    \tempo 2 = 70
     }
+
+
   }
 }
 
-\version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+\version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

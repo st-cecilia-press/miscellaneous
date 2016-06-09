@@ -8,7 +8,7 @@
     } }
   }
   evenFooterMarkup = \oddFooterMarkup
-  raggedbottom = ##t
+  ragged-bottom = ##t
 }
 #(set-global-staff-size 14)
 
@@ -25,7 +25,7 @@ global= {
   \time 2/2
 }
 
-cantusMusic = \relative g' {
+scMusicOne = \relative g' {
   r2 r4 g | 
   \repeat volta 2 {
     g g a a | b2 b4 g | b4. a8 b4 cs |
@@ -44,7 +44,7 @@ cantusMusic = \relative g' {
   \bar "|."
 }
 
-altusMusic = \relative c' {
+scMusicTwo = \relative c' {
   r2 r4 d |
   \repeat volta 2 {
     e g g fs g2 g4 g g4. fs8 g4 g4 |
@@ -59,7 +59,7 @@ altusMusic = \relative c' {
   \bar "|."
 }
 
-quintusMusic = \relative c' {
+scMusicThree = \relative c' {
   r2 r4 b |
   \repeat volta 2 {
     c c c c | d2 d4 d4 | d4. d8 d4 g, |
@@ -74,7 +74,7 @@ quintusMusic = \relative c' {
   \bar "|."
 }
 
-tenorMusic = \relative g {
+scMusicFour = \relative g {
   r2 r4 g |
   \repeat volta 2 {
     g g c, c g'2 g4 g | g4. d'8 b4 e |
@@ -89,7 +89,7 @@ tenorMusic = \relative g {
   \bar "|."
 }
 
-bassusMusic = \relative c {
+scMusicFive = \relative c {
   r2 r4 g |
   \repeat volta 2 {
     c c a a | g2 g4 g | g'4. d8 g4 e |
@@ -102,7 +102,7 @@ bassusMusic = \relative c {
   }
   \alternative { { g,2 r4 g' } { g,1^\markup{ \hspace #0.5 \bracket \musicglyph #"scripts.ufermata" }}}
 }
-cantusWordsA = \lyricmode {
+scWordsOneA = \lyricmode {
   \set stanza = "1."
   Now is the month of may -- ing,
   When mer -- ry lads are play -- ing,
@@ -116,7 +116,7 @@ cantusWordsA = \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ Each _
 }
 
-cantusWordsB = \lyricmode {
+scWordsOneB = \lyricmode {
   \set stanza = "2."
   The Spring, clad all in glad -- ness
   Doth laugh at Win -- ter's sad -- ness,
@@ -130,7 +130,7 @@ cantusWordsB = \lyricmode {
   Fa la la la la, fa la la la la la la la, fa la la la. And la.
 }
 
-cantusWordsC = \lyricmode {
+scWordsOneC = \lyricmode {
   \set stanza = "3."
   Fie then! why sit we mus -- sing
   Youth's sweet de -- light re -- fu -- sing? 
@@ -144,7 +144,7 @@ cantusWordsC = \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ Say _
 }
 
-altusWordsA = \lyricmode {
+scWordsTwoA = \lyricmode {
 
   \set stanza = "1."
   Now is the month of may -- ing,
@@ -159,7 +159,7 @@ altusWordsA = \lyricmode {
   Each _
 }
 
-altusWordsB = \lyricmode {
+scWordsTwoB = \lyricmode {
   \set stanza = "2."
   The Spring, clad all in glad -- ness
   Doth laugh at Win -- ter's sad -- ness,
@@ -172,7 +172,7 @@ altusWordsB = \lyricmode {
   And la.
 }
 
-altusWordsC = \lyricmode {
+scWordsTwoC = \lyricmode {
   \set stanza = "3."
   Fie then! why sit we mus -- sing
   Youth's sweet de -- light re -- fu -- sing? 
@@ -186,7 +186,7 @@ altusWordsC = \lyricmode {
   Say _
 }
 
-quintusWordsA = \lyricmode {
+scWordsThreeA = \lyricmode {
 
   \set stanza = "1."
   Now is the month of may -- ing,
@@ -200,7 +200,7 @@ quintusWordsA = \lyricmode {
   Each _
 }
 
-quintusWordsB = \lyricmode {
+scWordsThreeB = \lyricmode {
   \set stanza = "2."
   The Spring, clad all in glad -- ness
   Doth laugh at Win -- ter's sad -- ness,
@@ -213,7 +213,7 @@ quintusWordsB = \lyricmode {
   And la.
 }
 
-quintusWordsC = \lyricmode {
+scWordsThreeC = \lyricmode {
   \set stanza = "3."
   Fie then! why sit we mus -- sing
   Youth's sweet de -- light re -- fu -- sing? 
@@ -226,7 +226,7 @@ quintusWordsC = \lyricmode {
   Say _
 }
 
-tenorWordsA = \lyricmode {
+scWordsFourA = \lyricmode {
 
   \set stanza = "1."
   Now is the month of may -- ing,
@@ -240,7 +240,7 @@ tenorWordsA = \lyricmode {
   Each _
 }
 
-tenorWordsB = \lyricmode {
+scWordsFourB = \lyricmode {
   \set stanza = "2."
   The Spring, clad all in glad -- ness
   Doth laugh at Win -- ter's sad -- ness,
@@ -253,7 +253,7 @@ tenorWordsB = \lyricmode {
   And la.
 }
 
-tenorWordsC = \lyricmode {
+scWordsFourC = \lyricmode {
   \set stanza = "3."
   Fie then! why sit we mus -- sing
   Youth's sweet de -- light re -- fu -- sing? 
@@ -266,7 +266,7 @@ tenorWordsC = \lyricmode {
   Say _
 }
 
-bassusWordsA = \lyricmode {
+scWordsFiveA = \lyricmode {
 
   \set stanza = "1."
   Now is the month of may -- ing,
@@ -280,7 +280,7 @@ bassusWordsA = \lyricmode {
   Each _
 }
 
-bassusWordsB = \lyricmode {
+scWordsFiveB = \lyricmode {
   \set stanza = "2."
   The Spring, clad all in glad -- ness
   Doth laugh at Win -- ter's sad -- ness,
@@ -293,7 +293,7 @@ bassusWordsB = \lyricmode {
   And la.
 }
 
-bassusWordsC = \lyricmode {
+scWordsFiveC = \lyricmode {
   \set stanza = "3."
   Fie then! why sit we mus -- sing
   Youth's sweet de -- light re -- fu -- sing? 
@@ -309,7 +309,7 @@ bassusWordsC = \lyricmode {
 \score {
   \context ChoirStaff <<
     \context Staff = cantusStaff <<
-      \set Staff.instrument = "Cantus"
+      \set Staff.instrumentName = "Cantus"
       \context Voice = cantus {
 	<< \global \cantusMusic >> 
       }
@@ -321,7 +321,7 @@ bassusWordsC = \lyricmode {
 
 
     \context Staff = altusStaff <<
-      \set Staff.instrument = "Altus"
+      \set Staff.instrumentName = "Altus"
 
       \context Voice = altus { 
 	<< \global 
@@ -336,7 +336,7 @@ bassusWordsC = \lyricmode {
     \context Lyrics = altus { s1 }
 
     \context Staff = quintusStaff << \context Voice = quintus { 
-      \set Staff.instrument = "Quintus"
+      \set Staff.instrumentName = "Quintus"
       << \global
       \clef "G_8"
       \quintusMusic >>
@@ -349,7 +349,7 @@ bassusWordsC = \lyricmode {
 
 
   \context Staff = tenorStaff << \context Voice = tenor { 
-    \set Staff.instrument = "Tenor"
+    \set Staff.instrumentName = "Tenor"
     << \global
     \clef "G_8"
     \tenorMusic >>
@@ -362,7 +362,7 @@ bassusWordsC = \lyricmode {
 
 
 \context Staff = bassusStaff << \context Voice = bassus { 
-  \set Staff.instrument = "Bassus"
+  \set Staff.instrumentName = "Bassus"
   << \global
   \clef bass
   \bassusMusic >>
@@ -393,8 +393,13 @@ bassusWordsC = \lyricmode {
 
     >>
 
-    \midi { \tempo 4 . = 80 }
+    
+  \midi {
+    \tempo 4. = 80
+    }
+
+
     \layout { }
   }
 
-  \version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+  \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
