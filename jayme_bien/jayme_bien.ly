@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 \paper {
   oddFooterMarkup = \markup {
@@ -22,7 +37,7 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
   arranger = "Transcribed by Alain Naigeon"
 }
 
-global= {
+scGlobal= {
   \key f \major
   \time 2/2
   \set Score.skipBars = ##t
@@ -31,6 +46,8 @@ s1*35
   \once \override Staff.BarLine.transparent = ##f
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c'' {  
 bf2 c  a bf  g f1 bf2 a r2 r4 g c c d2 r4 f4 
 e8 d c bf a4 d4. c8 c2 bf4 c2 r4 g c2 bf2 a4 c4. d8 e4. d8 d2 c4 
@@ -42,6 +59,8 @@ a f g g e4. f8 g a g4. f8 f2 e4 f1
 \bar "|."
 }
 
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = \relative c' {
 r1 r1 e2 f d e c bf1 e2 d r 
 r4 c f f g2 r4 bf a8 g f e d4 g4. f8 f2 e4 f2 r4 c4 f2 e 
@@ -50,6 +69,8 @@ f4 e8 d e2 d4 g2 f4 d e4. d8 d2 c4 d f e d8 c d2 c2 r
 r r4 e4 f2 d e c bf2. e2 d8 c d2 r4 bf4 c4. bf8 c4 d c bf2 a4 bf d d bf c c a1
 }
 
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
 scMusicThree = \relative c' {
 r1 r2 bf2 c a bf g f1 | r1 r2 f2 | 
 c'4 c d f | e d8 c d2 | c2 r2 | r1 r1 r1 |
@@ -58,6 +79,8 @@ d2 c4 bf8 a | bf2 a2 | r4 bf c d | g,2 a | r1 | r1
 bf2 c | a bf g f | r2 r4 c'4 | c a bf4. a8 | g2 f4. g8 | a2 g | c d4 bf4. a8 g f g2 | f1
 }
 
+scMusicFourName = "bassus"
+scMusicFourClef = \clef "bass"
 scMusicFour = \relative g {
 r1 r r  | r2 e | f d | e c | bf1 |
 r1 | r2 bf2 | f'4 f g bf a g8 f g2 | f2 r2 | r1 |

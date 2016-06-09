@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 ficta = { \once \set suggestAccidentals = ##t }
 
@@ -24,12 +39,14 @@ ficta = { \once \set suggestAccidentals = ##t }
   tagline = ""
 }
 
-global= {
+scGlobal= {
   \autoBeamOff
   \time 3/2
   \key g \major
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c' {  
 e2 e fs | g4 f e d2 \ficta cs4 | d2 d r | e fs1 | g4 \melisma f e d2 e4 | \break
 f4 e e d d c \melismaEnd | e1 r2 | c4 \melisma b b a b g \melismaEnd | a2 a4 b cs2 | d2 r2 e2 | c2 d4 e2 f4 \break
@@ -41,6 +58,8 @@ g2 \melisma f4 e f d | d \ficta cs d \ficta cs2  b4 \melismaEnd| d1. |
       d2 r2 b4 c | d4 c b c2 d4 | c4 b a c2 b4 \melismaEnd |a 1.  \break
    }
 }
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo =   \relative c' {  
 a2 a a | g2. f2 e4 | d2 g1 | a2 a1 | g1. | \break
 \melisma \[ a2 c \] b \melismaEnd | a1 r2 | \[ g2 f \] e | d2 d4 e e2 | d2 r2 e | f2. a2. | \break

@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 %#(set-global-staff-size 14)
 \paper {
   oddFooterMarkup = \markup {
@@ -18,7 +33,7 @@
   tagline = ""
 }
 
-global= {
+scGlobal= {
   \autoBeamOff
   \time 6/8
   \key c \major
@@ -36,6 +51,8 @@ global= {
 
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c' {  
   d4 d8 f4 f8 | g4 g8 a4. | b4 c8 d4 d16([ c]) | d,4( c8) d4.
   d4 d8 f4 f8 | g4 g8 a4. | b4 c8 d4 d16([ c]) | d,4( c8) d4.
@@ -45,6 +62,8 @@ scMusicOne =   \relative c' {
   f4 g8 e4 g8 | a4 a8 bf4 g8 | bf4 g16([ f]) g4 d8 | g4 \melisma \tuplet 3/2 { f16([ e d \melismaEnd ]) } d4.
 }
 
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = 
 \relative c'' {
   d4 d8 c4 c8 | d4 d8 a4. | b4 a8 g4 c8 | a4( g8) a4.

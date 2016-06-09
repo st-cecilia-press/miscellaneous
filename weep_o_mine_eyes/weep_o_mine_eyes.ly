@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 %{
 Weep, O Mine Eyes
 ===================
@@ -28,7 +43,7 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
   tagline = ""
 }
 
-global= {
+scGlobal= {
   \set Score.skipBars = ##t
   \key a \minor
   \set Timing.defaultBarType = "!"
@@ -63,6 +78,8 @@ global= {
   
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c'' { 
 r1 |  r1 | r4  c2 b8 a | gs4 e'4. d8 c4 | b4 a4. a8 g4 | 
 g4 f4 | e1 | e2 r2 | a2 c2 | b4 e2 d4 | e2 r4 e,4 | a2 g4 c2 b8( a8) gs4 gs4 | 
@@ -73,6 +90,8 @@ a4 a | b2 e, |
 \alternative{ { g4 g4. g8 f4 | e4 d e2 | e2 } { g4 g4. g8 f4 | e4 d e2 | e1 } }
 }
 
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = \relative c' {
 r2 e2. d8 c8 b4. b8 | c8 d8 e2 e4 | e2 e4. a,8 | b4 e2 e4.
  e8 d4 | d4 c4 b2 | cs4 e2 f2 e2 a2 gs4 a4 a,4 | c2 b4 e2 d4 e8. d16 c8 b | a2 b4 e4 | f4 e4 | d2 cs2
@@ -81,6 +100,8 @@ r2 e2. d8 c8 b4. b8 | c8 d8 e2 e4 | e2 e4. a,8 | b4 e2 e4.
 \alternative{ { e4. e8 d4. c8 | b4 a4 b2 | cs2 } {e4 e4 d4. c8 | b4 a4 b2 | cs1} }
 }
 
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
 scMusicThree = \relative c' { 
 r4 c2 b8 a8 | gs4 a4. gs!16( fs gs!4) | a4 a2 gs!8 a | b8. d16 c4 b4 e4. d8 c4 b4 c4.  b8 a4 | gs!4 a2 gs!4 | a2 r4 a4 | c2 a4 a4 | e'2 a,2 | r2 e2 | f2 e4 e'2 d4 e4 b4.  a8 a2 gs4 a2 | 
 
@@ -89,6 +110,8 @@ r4 c2 b8 a8 | gs4 a4. gs!16( fs gs!4) | a4 a2 gs!8 a | b8. d16 c4 b4 e4. d8 c4 b
 
 }
 
+scMusicFourName = "bassus"
+scMusicFourClef = \clef "bass"
 scMusicFour = \relative c' {
 a2. g8 f | e2. e4 | a,2 e'4 e4 | e4. fs8 gs4 a4 | gs4 a4 e2 | c4 d | e1 | a,4. b8( cs4) d4 | a2 r2 | e'2 f2 | e4 a2 gs4 | a2 r4 a,4 | f'2 e4. e8 | d4 c4 | b2 a2 |
 

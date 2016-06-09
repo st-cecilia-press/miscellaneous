@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 %{
 Sister Awake
 ===================
@@ -33,13 +48,15 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
  #(set-global-staff-size 14)
 
-global = {
+scGlobal = {
 	\key d \major
 	\time 4/4
 	\override Score.BarNumber.padding = #3
 	 
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne = \transpose f d  \relative c''{ \clef treble
 	\set Staff.instrumentName = "Sop I"
 	%measuress 1-5  
@@ -70,6 +87,8 @@ scMusicOne = \transpose f d  \relative c''{ \clef treble
 	g2 f2 | r4 c' f d | e4. e8 d8 c b4 | c g c4. bf8 | a4 g8 f g2 | a1 \bar "|."
 }
 
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = \transpose f d  \relative c'' { \clef treble
 	\set Staff.instrumentName = "Sop II"
 	%measuress 1-5  
@@ -101,6 +120,8 @@ scMusicTwo = \transpose f d  \relative c'' { \clef treble
 		
 }
 	
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
 scMusicThree = \transpose f d \relative c' { \clef "G_8"
 	\set Staff.instrumentName = "Alto"
 	%measuress 1-5  
@@ -131,6 +152,8 @@ scMusicThree = \transpose f d \relative c' { \clef "G_8"
 	r2 r4 f4 | c'4 a4 bf bf | a4 g f2 | e2 f2~ | f2 e2 | f1 \bar "|." 
 }
 
+scMusicFourName = "bassus"
+scMusicFourClef = \clef "bass"
 scMusicFour = \transpose f d \relative c' { \clef "G_8"
 	\set Staff.instrumentName = "Tenor"
 	%measuress 1-5  
@@ -161,6 +184,8 @@ scMusicFour = \transpose f d \relative c' { \clef "G_8"
 	r4 c4 f d | e c d2 | c2 r4 f,4 | c'4. g8 a4. bf8 | c4 bf8 a g4 c4 | c1 \bar "|."
 }
 
+scMusicFiveName = "quintus"
+scMusicFiveClef = \clef "bass"
 scMusicFive = \transpose f d \relative c { \clef bass
 	\set Staff.instrumentName = "Bass"
 	%measuress 1-5  

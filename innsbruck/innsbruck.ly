@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 \paper {
   oddFooterMarkup = \markup {
     \fill-line { \line {
@@ -19,12 +34,14 @@
   tagline = ""
 }
 
-global= {
+scGlobal= {
   \key g \dorian
   \autoBeamOff
   \time 4/4
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c' {  
   r2 f2 | f4 g a2 | c2 bf | a r4 a | c4. bf8 g2 |
   a2 f2 | e2 r4 f4 | g f e f | g2 r4 \bar "" \break g4 | f g a2  
@@ -33,6 +50,8 @@ scMusicOne =   \relative c' {
   \alternative { {f2 r4} {f1} } \bar "|."
 }
 
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = 
 \relative c' {
   c1 | d4 e f2 | c4 f2( e4) | f2 r4 c4 | a a bf2 |
@@ -42,6 +61,8 @@ scMusicTwo =
   \alternative { {\partial 2. c2 r4} {a1}}
 }
 
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
 scMusicThree = 
 \relative c {
   r2 f | a4 bf c2 | a2 bf | c r4 c | c4. d8 ef2 |
@@ -52,6 +73,8 @@ scMusicThree =
 
 }
 
+scMusicFourName = "bassus"
+scMusicFourClef = \clef "bass"
 scMusicFour = 
 \relative g {
   f1 | d4 g f a | a( g8[ f] g2 ) | f2 r4 f f f ef2 |

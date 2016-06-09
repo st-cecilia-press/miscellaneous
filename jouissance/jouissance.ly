@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 \paper {
   oddFooterMarkup = \markup {
     \fill-line { \line {
@@ -23,11 +38,13 @@
   opus = "Transcribed by Steve Hendricks"
 }
 
-global= {
+scGlobal= {
   \key g \dorian
   \time 2/2
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c'' {  
     g2 g4 g | a4  bf4. a8 g f | g4 g f bf| bf bf d2~ | d4 c8 bf a4 c4~|c bf2 a4
     bf2 r4 a4~|a e g2~|g4 f8 e d4 e | f4. g8 a4 bf4 | bf8 a c bf a g g4~|
@@ -39,6 +56,8 @@ scMusicOne =   \relative c'' {
 {g1~g} }
 }
 
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = 
 \relative c' {
     d2 d4 d | d2. d4 | g,4 g a g | g' g f2~|f4 f a4. g8 | f4 e f2 |
@@ -48,6 +67,8 @@ a2. g4 | f e f2 | d4 g d f | c4. d8 ef4. d8 | bf4 d2 c4 |
 a4 d4. c8 bf a | g4 g' f ef | d2 d4 g d d1~d
 }
 
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
 scMusicThree = 
 \relative c' {
     g2 g4 bf4 | a g bf2~ | bf4 c d2 | r4 d d d | f2. e4 | d4 c8 bf c4 c | 
@@ -57,6 +78,8 @@ f2. e4 | d c8 bf c4 c | bf2 r4 d | a c g4. f8 | g4 a bf g |
 f f'4. e8 d c | bf4 ef8 d c bf a g | a2 g2 r4 g1~g
 }
 
+scMusicFourName = "bassus"
+scMusicFourClef = \clef "bass"
 scMusicFour = 
 \relative g {
     g2 g4 g | f4 g4. f8 ef d | ef4 ef d g | g g bf2~|bf4 a8 g f4 a | bf g f2 |

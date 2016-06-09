@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 \paper {
   oddFooterMarkup = \markup {
     \fill-line { \line {
@@ -19,12 +34,14 @@
 
 }
 
-global= {
+scGlobal= {
   \key c \major
   \time 3/4
   \autoBeamOff
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c'' {  
   d8 d c4 a | c8 c b4 c | d2 r4 | c8 b a4 g | a8 g a4 b | 
   c2 r4 | d8 d bf4 g4 | d'8 d c4 a | a2 r4 | e g a
@@ -47,6 +64,8 @@ scWordsOneA =  \lyricmode {
   Je vos cri mer -- ci en sous -- pi -- rant.
 }
 
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = 
 \relative c' {
  d4 a'2 a4 a2 | a4 a2 g2 r4 a4 g2 |
@@ -67,6 +86,8 @@ scWordsTwoA = \lyricmode {
   Qu'a -- mours ne m'o -- ci -- e.
 }
 
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
 scMusicThree = 
 \relative c {
   d2.( \melisma f) d c2 r4 d2.( |

@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 %{
 
 %}
@@ -34,7 +49,7 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
  #(set-global-staff-size 20)
 
-global = {
+scGlobal = {
 	\key g \major
 	\time 4/4
 	\override Score.BarNumber.padding = #3
@@ -42,6 +57,8 @@ global = {
 }
 
 	
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne = \transpose c g, \relative c' { \clef treble
 	
 	
@@ -55,6 +72,8 @@ scMusicOne = \transpose c g, \relative c' { \clef treble
 	
 }
 	
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = \transpose c g, \relative c'' { \clef "treble"
 	
 	\repeat volta 2{
@@ -69,6 +88,8 @@ scMusicTwo = \transpose c g, \relative c'' { \clef "treble"
 	
 }
 
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
 scMusicThree = \transpose c g, \relative c' { \clef "bass"
 	
 	\repeat volta 2{

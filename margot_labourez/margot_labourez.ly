@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 \version "2.18.0"
 
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
@@ -28,11 +43,13 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
  #(set-global-staff-size 16)
 
 
-global= {
+scGlobal= {
   \key g \major
   \time 2/2
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne =  
 \relative c' 
 {
@@ -51,6 +68,8 @@ scMusicOne =
 
 
 
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = 
 \relative c' 
 {
@@ -69,6 +88,8 @@ scMusicTwo =
 
 
 
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
 scMusicThree = 
 \relative c' 
 {
@@ -86,6 +107,8 @@ scMusicThree =
 
 
 
+scMusicFourName = "bassus"
+scMusicFourClef = \clef "bass"
 scMusicFour = 
 \relative c 
 {

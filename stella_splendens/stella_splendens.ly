@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 \paper {
   oddFooterMarkup = \markup {
     \fill-line { \line {
@@ -13,7 +28,7 @@
 
 \include "english.ly"
 
-global= {
+scGlobal= {
   \autoBeamOff
   \key d \minor
   \time 2/4
@@ -45,6 +60,8 @@ scChorusMusicTwo = \relative c {
   \bar "||"
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c' {  
   r4^\markup{\bold Verse} d | d a' | b d | b( c8[ a]) | g4 b|
   c a | g8[ f] f8[ e] | d2 
@@ -62,6 +79,8 @@ scMusicOne =   \relative c' {
 
 }
 
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = \relative a {
   r4 a | a d, | d d | g( f) | e e | c d | f g | a2 
 

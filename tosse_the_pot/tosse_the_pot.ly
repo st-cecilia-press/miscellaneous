@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 %{
 tossThePot
 ===================
@@ -31,13 +46,15 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
  #(set-global-staff-size 16)
 
-global = {
+scGlobal = {
 	\key f \major
 	\time 12/4
 	\override Score.BarNumber.padding = #3
 	 
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne = \relative c'{ \clef treble
 	\set Staff.instrumentName = "Treble"
 	\bar ":..:" f4. g8 a4 a4. bf8 c4 d4. c8 bf4 a f f f4. g8 a( bf) c4. bf8 a4 bf4. bf8 g4 a f4. r8 \bar "||" \break 
@@ -49,16 +66,22 @@ scMusicBOne = \relative c'{ \clef treble
 	f2 a bf c1 c2 d2.( c4) bf2 a1. c2 bf a g1 c2 ef d1 c1. \break c2 a bf \slurDotted g2.( g4) \slurSolid f2 bf1 a2 g1 a4( bf) c2.( bf4) a2 bf2 g1 a1.( a1.)^\markup{ \left-align{ \line{D.C. al Fine } } } \bar ":|." 
 }
 
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = \relative c'{ \clef treble
 	\set Staff.instrumentName = "Medius"
 	c4. c8 f4 f4. g8 a4 bf4. bf8 f4 f4 c c c4. c8 f4 e4. e8 f4 g4. f8 e4 f f4. r8 \bar "||" \break
 	c2 f2. g4 a1 a2 bf1 f2 f1. a2 g f e1 g2 g1 g2 e1. \break g2 f g \slurDotted e2.( d4) \slurSolid c2 d2.( e4) f2 e1 f4( g) a2.( g4) f2 f1 e2 f1.( f1.) 
 }
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
 scMusicThree = \relative c'{ \clef "G_8"
 	\set Staff.instrumentName = "Tenor"
 	 a4. bf8 c4 c4. c8 f4 f4. e8 d4 c4 c c a4. g8 f4 g4. g8 a4 d4. d8 c4 c c4. r8 \bar "||" \break
 	a2 c d c1 f2 f2.( e4) d2 c1. f2 f c2 c1 c2 c1 b2 c1. \break e2 c2 d2 \slurDotted c( g) \slurSolid a bf( g) c c1 c2 c f1 d2 c1 c1.( c1.) 
 }
+scMusicFourName = "bassus"
+scMusicFourClef = \clef "bass"
 scMusicFour = \relative c { \clef "bass"
 	\set Staff.instrumentName = "Basis"
 	 f4. f8 f4 f4. f8 f4 bf,4. bf8 bf4 f'4 f4 f f4. e8 d4 c4. c8 f4 bf,4. bf8 c4 f4 f,4. r8 \bar "||" \break

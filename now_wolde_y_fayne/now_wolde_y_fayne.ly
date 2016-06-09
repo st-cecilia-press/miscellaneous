@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 #(set-global-staff-size 18)
 
 \paper {
@@ -22,7 +37,7 @@
 }
 
 
-global= {
+scGlobal= {
   \set Score.skipBars = ##t
   \autoBeamOff
   \key d \dorian
@@ -32,6 +47,8 @@ global= {
 
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c' {  
   d2^\markup{ Beat \smaller \general-align #Y #DOWN \note #"2" #1 } d4 c  d a c d  e1\fermata \bar "" \break
   r4 d4 d4 f4  e c4 d e  f4. \melisma e8 c4 d  e2 c \melismaEnd \bar "" \break
@@ -41,6 +58,8 @@ scMusicOne =   \relative c' {
   \bar "|."
 }
 
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = \relative c {
   d2 f4 e  d a' a b  c1\fermata 
   r4 d4 d d  c a bf^\markup{\fontsize #-3 \flat} g f4. \melisma g8 a4 f4  e2 \melismaEnd

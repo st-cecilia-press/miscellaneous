@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 %{
 hoyComamos
 ===================
@@ -33,13 +48,15 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
  #(set-global-staff-size 13)
 
-global = {
+scGlobal = {
 	\key f \major
 	\time 3/2
 	\override Score.BarNumber.padding = #3
 	 
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne= \relative c''{ \clef treble
      \override Score.RehearsalMark.break-visibility = #begin-of-line-invisible
 	\partial 2 a4 bf4 | c2 c a4 bf | c2 c bf4 c | d2 d4 c bf2 |
@@ -49,16 +66,22 @@ scMusicOne= \relative c''{ \clef treble
      \once \override Score.RehearsalMark.self-alignment-X = #right
      \mark "D.C. al Fine " \bar ":|."
 }
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo= \relative c'{ \clef treble
 	\partial 2 fs4 g | a2 a4 g4( fs4) g4 | a2 a2 g4 a4 | bf2 bf4 a4 g2 |
 	fs2 fs2 fs4 g4 | bf2 a4 g4 fs2 | g2 g2 \bar ".|:-||" g4 a4 |
 	bf2 bf4 a4 g2 | fs2 fs2 fs4 g4 | bf2 a4 g2 fs4 | g2 g2 \bar ":|." 
 }
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
 scMusicThree = \relative c'{ \clef "G_8"
 	\partial 2 d4 d4 | f2 f4 c4 d2 | f2 f2 d4 f4 | f2 f4 f4 d2 |
 	d2 d2 d4 d4 | g4 f2 d2 d4 | d2 d2 \bar ".|:-||" d4 f4 
 	f2 f4 f4 d2 | d2 d2 d4 d4 | g4 f2 d2 d4 | d2 d2 \bar ":|."
 }
+scMusicFourName = "bassus"
+scMusicFourClef = \clef "bass"
 scMusicFour= \relative c{ \clef bass
 	\partial 2 d4 g4 | f2 f4 ef4( d) g4 | f2 f2 g4 f4 | bf2 bf4 f4 g2 |
 	d2 d2 d4 g4 | g4( bf) f g d2 | g2 g2  \bar ".|:-||" g4 f4 |

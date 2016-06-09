@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 %{
 
 %}
@@ -30,13 +45,15 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
  #(set-global-staff-size 20)
 
-global = {
+scGlobal = {
 	\key f \major
 	\time 4/2
 	\override Score.BarNumber.padding = #3
 	 
 }
 	
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne = \transpose f f \relative c' { \clef "treble"
 	\set Staff.instrumentName = "Soprano"
 	f\breve~ | f\breve g1. g2 | a1 f | bf\breve  |
@@ -50,6 +67,8 @@ scMusicOne = \transpose f f \relative c' { \clef "treble"
 }
 
 	
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = \transpose f f \relative c' { \clef "treble"
 	\set Staff.instrumentName = "Alto"
 	c1 d~ | d2 c d f~ | f e4 d f2 e | f a a4 g f e | d e f2. e8 d  e2 |
@@ -62,6 +81,8 @@ scMusicTwo = \transpose f f \relative c' { \clef "treble"
 	
 }
 
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
 scMusicThree = \transpose f f \relative c { \clef "G_8"
 	\set Staff.instrumentName = "Tenor"
 	f1 bf1~ bf2 a bf d | c\breve | f,2 f'2. e4 d c | bf2 a g1 |

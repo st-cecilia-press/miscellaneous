@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 
 % Jubilate Deo - Lassus
 
@@ -17,12 +32,14 @@
 
 #(set-global-staff-size 17)
 
-global = {
+scGlobal = {
   \key g \major
   \time 4/4
   \override Score.BarNumber.padding = #2	 
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne = \relative c''{ \clef treble \set Staff.instrumentName = "Cantus"
 	d2. d4 b e d2 c4 e4. d8 c b a4 b a2 b4. c8 d4 c~ c8 b16 a b4 c4. b16 a b4 e d2 %m1-7
 	r4 d2 d4 b e d2 c4 e4. d8 c b a4 b a4. b8 c4 b r c c c d4. c8 b a g2 g4 %m8-14
@@ -31,6 +48,8 @@ scMusicOne = \relative c''{ \clef treble \set Staff.instrumentName = "Cantus"
 	a b4. b8 a4 a fis g~ g8 fis e2 dis4 e e fis g a1 fis4 fis g a b1 %m30-36
 	g4 g a b c1 a4 a b c d1 b2 b2 c4 c c2 b1 \bar "|." %m37-43
 }
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = \relative c'' { \clef treble \set Staff.instrumentName = "Altus"
 	r2 g2~ g4 e fis g a2 g4 e fis g4. fis16 e fis4 g1 r4 g e c g'2 r %m1-7
 	r g~ g4 e fis g a2 g4 e fis g4. fis16 e fis4 g g g g a4. g8 fis4. e8 d4 d e e %m8-14
@@ -39,6 +58,8 @@ scMusicTwo = \relative c'' { \clef treble \set Staff.instrumentName = "Altus"
 	d d2 g4 f e d2 g,4. a8 b4 b cis cis d e f f  e2 d4 a e' e g2 fis %m30-36
 	e4 e2 g4~ g a g2 c, g' fis4 g4. fis16 e fis4 g d g2 g4 g g2 g1 %m37-43
 }
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
 scMusicThree = \relative c' { \clef "G_8" \set Staff.instrumentName = "Tenor"
 	r1 r r r2 d2~ d4 d b e d2 c4 e~ e8 d c b a4 b %m1-7
 	a2 b4 b e c b2 r1 d2 d4 d e4. d8 c b e d c b a4. a8 a4 r b b b %m8-14
@@ -47,6 +68,8 @@ scMusicThree = \relative c' { \clef "G_8" \set Staff.instrumentName = "Tenor"
 	g fis g d'~ d c b8 a g fis e4. fis8 g4 fis a a2 c4 c d4. cis16 b cis4 a d c2 d4 e4. dis16 cis dis4 %m30-36
 	e c2 d4 e f4. e16 d e4 f e4. b8 e4 a, b a2 g8 a b c d4 e e e e2 d1 %m37-43
 }
+scMusicFourName = "bassus"
+scMusicFourClef = \clef "bass"
 scMusicFour= \relative c' { \clef bass \set Staff.instrumentName = "Bassus"
 	r1 r r r g2. e4 fis g a2 g4 e fis g~ %m1-7
 	g8 fis16 e fis4 g2 r1 r r r4 e e e f4. e8 d4 d g4. fis8 e4. d8 %m8-14

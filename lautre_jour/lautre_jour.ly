@@ -1,3 +1,18 @@
+%score_options { "parts": , "verses": , "transposed": false }
+scDate = "2016-May-16"
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+#(ly:set-option 'midi-extension "mid")
+
+scTempo = #(ly:make-moment 140 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scTagline = ""
+scPoet = ""
+scMeter=  ""
+scCopyright = ""
 %{
 l'autre_jour
 ===================
@@ -27,12 +42,14 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
 }
 
-global= {
+scGlobal= {
   \key c \major
   \time 6/4
   \autoBeamOff
 }
 
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "treble"
 scMusicOne =   \relative g' {  
   g2 a4 g2 f4 | e2 d4 e2 f4 | g2 g4 a4( g) f |
   e2. e2 r4 | g2 f8([ e]) d4( c) b | c2. c2 c4 | c2 b4 b2 a4 | g2. g2 r4
@@ -63,6 +80,8 @@ scWordsOneA =  \lyricmode {
   car il m'aim -- me sans tre -- chier, ja pour vous ne le quer lais -- sier.
 }
 
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "treble"
 scMusicTwo = 
 \relative c' {
   c2. c2 d4 | e2 f4 e2 d4 | c2 c4 d4( c) b |
@@ -91,6 +110,8 @@ scWordsTwoA = \lyricmode {
   iert sa pipe ef -- fon -- dré -- e.
 }
 
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
 scMusicThree = 
 \relative a {
   c2. c2 c4 | b2. \melisma r | c d |
