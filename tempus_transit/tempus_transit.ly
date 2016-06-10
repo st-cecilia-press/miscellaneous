@@ -14,24 +14,8 @@ scPoet = ""
 scMeter=  ""
 scCopyright = ""
 %#(set-global-staff-size 14)
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-  ragged-bottom = ##t
-}
 \include "english.ly"
 
-\header{
-  title = "Tempus Transit gelidum"
-  tagline = ""
-}
 
 scGlobal= {
   \autoBeamOff
@@ -148,43 +132,8 @@ scWordsOneE = \lyricmode {
   uz dime ge -- bot ih nim -- mer chu -- me obz alle wi -- be hie -- zen
 }
 
-\score {
-  <<
-    \context ChoirStaff <<
-      \context Staff = cantusStaff <<
-	\context Voice = cantus { << \global \cantusMusic >> }
-      >>
-      \context Lyrics = lyricsA { s1 }
-      \context Lyrics = lyricsB { s1 }
-      \context Lyrics = lyricsC { s1 }
-      \context Lyrics = lyricsD { s1 }
-      \context Lyrics = lyricsE { s1 }
-      \context Staff = altusStaff <<
-	\context Voice = altus { << \global \altusMusic >> }
-      >>
 
-    >>
-
-    \lyricsto "cantus" \context Lyrics = lyricsA \wordsA
-    \lyricsto "cantus" \context Lyrics = lyricsB \wordsB
-    \lyricsto "cantus" \context Lyrics = lyricsC \wordsC
-    \lyricsto "cantus" \context Lyrics = lyricsD \wordsD
-    \lyricsto "cantus" \context Lyrics = lyricsE \wordsE
-
-  >>
-
-  \layout {
-    indent = 0\mm
-    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-  }
-
-  
-  \midi {
-    \tempo 4 = 120
-    }
-
-
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

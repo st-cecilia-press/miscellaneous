@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 4, "verses": 1, "transposed": false }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -6,44 +6,23 @@ scDate = "2016-May-16"
 
 scTempo = #(ly:make-moment 140 4)
 scTitle = "J'ayme bien mon amy"
-scSubtitle = ""
+scSubtitle = "Double Canon"
 scComposer = "Adrien Willaert (c. 1490-1562)"
 scArranger = ""
 scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-date = #(strftime "%m-%d-%Y" (localtime (current-time)))
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-	\fill-line { \tiny { \line{ Edition Date: \date } } } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
+
 
 \include "english.ly"
-#(set-global-staff-size 18)
+#(set-global-staff-size 20)
 
-\header{
-  title = "J'ayme bien mon amy"
-  subtitle = "Double Canon"
-  composer = "Adrien Willaert (c. 1490-1562)"
-  arranger = "Transcribed by Alain Naigeon"
-}
 
 scGlobal= {
   \key f \major
   \time 2/2
-  \set Score.skipBars = ##t
-  \set Timing.defaultBarType = "!"
-s1*35
-  \once \override Staff.BarLine.transparent = ##f
+ 
 }
 
 scMusicOneName = "cantus"
@@ -131,66 +110,8 @@ et aus -- si fais -- je luy
 et aus -- _ si __ _ _ fais -- _ _ je luy 
 }
 
-\score {
-  <<
-    \context StaffGroup = choirStaff <<
-	\context Staff = treble <<
-		\set Staff.instrumentName = "Cantus"
-		\set Staff.shortInstrumentName = "C"
-      		\context Voice = cantus { << \global \cantusMusic 	 >> }
-	>>
-      	\context Lyrics = cantusLyrics { s1 }
 
-	\context Staff = altus <<
-		\set Staff.instrumentName = "Altus"
-		\set Staff.shortInstrumentName = "A"
-      		\context Voice = altus { << \global \altusMusic >> }
-	>>
-      	\context Lyrics = altusLyrics { s1 }
-
-
-	\context Staff = tenor <<
-		\set Staff.instrumentName = "Tenor"
-		\set Staff.shortInstrumentName = "T"
-      		\context Voice = tenor { << \global \clef "G_8" \tenorMusic >> }
-	>>
-      	\context Lyrics = tenorLyrics { s1 }
-
-
-
-	\context Staff = bassus <<
-		\set Staff.instrumentName ="Bassus"
-		\set Staff.shortInstrumentName = "B"
-      		\context Voice = bassus { << \global \clef bass \bassusMusic >> }
-	>>
-      	\context Lyrics = bassusLyrics { s1 }
-
-    >>
-
-    \lyricsto "cantus" \context Lyrics = cantusLyrics \cantusWords
-    \lyricsto "altus" \context Lyrics = altusLyrics \altusWords
-    \lyricsto "tenor" \context Lyrics = tenorLyrics \tenorWords
-    \lyricsto "bassus" \context Lyrics = bassusLyrics \bassusWords
-
-
-  >>
-
-  \layout {
-    \context {
-      \Score
-      \override BarLine.transparent = ##t
-    }
-    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-    ragged-bottom = ##t
-  }
-
-  
-  \midi {
-    \tempo 2 = 68
-    }
-
-
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

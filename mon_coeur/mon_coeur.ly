@@ -9,8 +9,8 @@ scTitle = "Mon Coeur se Recommande à Vous"
 scSubtitle = ""
 scComposer = "Orlando di Lasso (1560)"
 scArranger = ""
-scTagline = ""
-scPoet = ""
+scTagline = "Version 1.0 2/7/2008"
+scPoet = "Clément Marot"
 scMeter=  ""
 scCopyright = ""
 %{
@@ -18,25 +18,7 @@ monCoeur
 ===================
 %}
 
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 
-\header{
-  title = "Mon Coeur se Recommande à Vous"
-  composer = "Orlando di Lasso (1560)"
-  poet = "Clément Marot"
-  tagline = "Version 1.0 2/7/2008"
-}
 
 \include "english.ly"
 
@@ -268,57 +250,8 @@ basssolf = \lyricmode{
 La La La Te La So So Fa Fa Fa Te Fa Fa Do So La Mi Fa Mi Re So Te Fa So Fa Do La Fa Fa Mi Re Do Fa Fa Fa Fa Do Do Fa Fa Re Mi La Fa Do So La Re Te So La Re La Re Do Do La Re Do Fa Mi La La Re La Fa Fa Do Re La Fa Fa Fa Te Te Fa Fa Do Fa Fa Fa Fa Re Re La Re Mi La Re Do Do So Re Mi Fa Mi La Fa Fa Fa Te Fa So La La Re 
 }
 
-\score{
-<<
-	\new ChoirStaff 
-		<<
-		\context Staff = sopI <<
-		\new Voice = "sopIMusic" { \global \sopIMusic }
-	>>
-		\context Lyrics = sopILyrics { s1 } 
 
-		\context Staff = sopII <<
-		\new Voice = "sopIIMusic" { \global \sopIIMusic }
-	>>
-		\context Lyrics = sopIILyrics { s1 } 
 
-		\context Staff = alto <<
-		\new Voice = "altoMusic" { \global \altoMusic }
-	>>
-		\context Lyrics = altoLyrics { s1 } 
-
-		\context Staff = tenor <<
-		\new Voice = "tenorMusic" { \global \tenorMusic }
-	>>
-		\context Lyrics = tenorLyrics { s1 } 
-
-		\context Staff = bass <<
-		\new Voice = "bassMusic" { \global \bassMusic }
-	>>
-		\context Lyrics = bassLyrics { s1 } 
-		>>
-
-		  \lyricsto "sopIMusic" \context Lyrics = sopILyrics \sopIWords 
-		  \lyricsto "sopIIMusic" \context Lyrics = sopIILyrics \sopIIWords 
-		  \lyricsto "altoMusic" \context Lyrics = altoLyrics \altoWords 
-		  \lyricsto "tenorMusic" \context Lyrics = tenorLyrics \tenorWords 
-		  \lyricsto "bassMusic" \context Lyrics = bassLyrics \bassWords 
-
->>
-
-<<<<<<< .mine
-\midi{
-     \tempo 4 = 100
-=======
-		\midi{
-			\tempo 4 = 100
-		}
-
-	\layout {}
->>>>>>> .r21
-}
- \layout {}
-}
-
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

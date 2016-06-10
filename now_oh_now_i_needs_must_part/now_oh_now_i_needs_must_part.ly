@@ -13,26 +13,10 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 3"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-  ragged-bottom = ##t
-}
 #(set-global-staff-size 18)
 
 \include "english.ly"
 
-\header{
-  title = "Now, oh now I needs must part"
-  tagline = ""
-}
 
 scGlobal= {
   \autoBeamOff
@@ -142,71 +126,8 @@ bassChorusWords = \lyricmode {
   It is she which then of -- fends.
 }
 
-\score {
-  <<
-    \context ChoirStaff <<
-      \context Voice = cantus {
-	<< \global \cantusMusic 	 >> 
-      }
-      \context Lyrics = cantusLyricsA { s1 }
-      \context Lyrics = cantusLyricsB { s1 }
-      \context Lyrics = cantusLyricsC { s1 }
 
-      \context Voice = altus {
-	<< \global \altusMusic >>
-      }
-      \context Lyrics = altusLyricsA { s1 }
-      \context Lyrics = altusLyricsB { s1 }
-      \context Lyrics = altusLyricsC { s1 }
-
-      \context Voice = tenor { 
-	\clef "G_8"
-	<< \global \tenorMusic >> 
-      }
-
-      \context Lyrics = tenorLyricsA { s1 }
-      \context Lyrics = tenorLyricsB { s1 }
-      \context Lyrics = tenorLyricsC { s1 }
-
-      \context Voice = bassus { 
-	\clef bass
-	<< \global \bassusMusic >>
-      }
-
-      \context Lyrics = bassusLyricsA { s1 }
-      \context Lyrics = bassusLyricsB { s1 }
-      \context Lyrics = bassusLyricsC { s1 }
-      \context Lyrics = bassChorusFixup { s1 }
-
-    >>
-
-    \lyricsto "cantus" \context Lyrics = cantusLyricsA { \wordsA \chorusWords }
-    \lyricsto "cantus" \context Lyrics = cantusLyricsB \wordsB 
-    \lyricsto "cantus" \context Lyrics = cantusLyricsC \wordsC
-    \lyricsto "altus" \context Lyrics = altusLyricsA { \wordsA \chorusWords }
-    \lyricsto "altus" \context Lyrics = altusLyricsB \wordsB 
-    \lyricsto "altus" \context Lyrics = altusLyricsC \wordsC
-    \lyricsto "tenor" \context Lyrics = tenorLyricsA { \wordsA \tenorChorusWords }
-    \lyricsto "tenor" \context Lyrics = tenorLyricsB \wordsB 
-    \lyricsto "tenor" \context Lyrics = tenorLyricsC \wordsC
-    \lyricsto "bassus" \context Lyrics = bassusLyricsA { \wordsA \bassChorusWords }
-    \lyricsto "bassus" \context Lyrics = bassusLyricsB \wordsB 
-    \lyricsto "bassus" \context Lyrics = bassusLyricsC \wordsC
-
-  >>
-
-  \layout {
-    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-    indent = 0\mm
-  }
-
-  
-  \midi {
-    \tempo 4 = 180
-    }
-
-
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

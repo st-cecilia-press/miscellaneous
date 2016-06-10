@@ -9,24 +9,14 @@ scTitle = "Jubilate Deo"
 scSubtitle = ""
 scComposer = "Orlandus LASSUS (1532-1594)"
 scArranger = ""
-scTagline = ""
+scTagline = "Version 1.0 2/7/2008"
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
 
 % Jubilate Deo - Lassus
 
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup {\fill-line { \line {\fromproperty #'page:page-number-string } } }
-  evenFooterMarkup = \oddFooterMarkup
-}
 
-\header {
-  title = "Jubilate Deo"
-  composer = "Orlandus LASSUS (1532-1594)"
-  tagline = "Version 1.0 2/7/2008"
-}
 
 %\autoBeamOff
 
@@ -112,36 +102,7 @@ scWordsFour= \lyricmode {
 	i -- pse est De -- us, i -- pse est De -- us, i -- pse _ _ _ _ est De -- us.
 }
 
-\score{
-  << \new ChoirStaff
-    <<
-      \context Staff = sop <<
-      \new Voice = "sopMusic" { \global \sopMusic } >>
-      \context Lyrics = sopLyrics { s1 } 
 
-      \context Staff = alto <<
-      \new Voice = "altoMusic" { \global \altoMusic } >>
-      \context Lyrics = altoLyrics { s1 } 
-
-      \context Staff = tenor <<
-      \new Voice = "tenorMusic" { \global \tenorMusic } >>
-      \context Lyrics = tenorLyrics { s1 } 
-
-      \context Staff = bass <<
-      \new Voice = "bassMusic" { \global \bassMusic } >>
-      \context Lyrics = bassLyrics { s1 } 
-    >>
-
-    \lyricsto "sopMusic" \context Lyrics = sopLyrics \sopWordsA 
-    \lyricsto "altoMusic" \context Lyrics = altoLyrics \altoWordsA 
-    \lyricsto "tenorMusic" \context Lyrics = tenorLyrics \tenorWordsA 
-    \lyricsto "bassMusic" \context Lyrics = bassLyrics \bassWordsA 
-
-  >>
-
-  \midi{\tempo 4 = 150}
-
-  \layout {}
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

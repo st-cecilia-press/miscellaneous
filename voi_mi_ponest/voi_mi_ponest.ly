@@ -18,26 +18,7 @@ scCopyright = ""
 %}
 
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup { 
-  \column{
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page"
-      \fromproperty #'page:page-number-string
-      "of 2"
-    } } 
-	\fill-line { \tiny { \line{ Edition Date: \date } } } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 
-\header{
-  title = "Voi mi ponest'"
-  composer = "Jacques Arcadelt"
-  
-}
 
 \include "english.ly"
 
@@ -138,42 +119,7 @@ che di due mor -- te,
 che di due mor -- t'io non pos -- so mo -- ri -- re, mo -- ri -- re.
 
 }
-\score{
-<<
-	\new ChoirStaff 
-		<<
-		\context Staff = sop <<
-		\new Voice = sopMusic { \global \sopMusic }
-	>>
-		\context Lyrics = sopLyrics { s1 } 
 
-		
-		
-		\context Staff = alto <<
-		\new Voice = "altoMusic" { \global \altoMusic }
-	>>
-		\context Lyrics = altoLyrics { s1 } 
-
-		\context Staff = tenor <<
-		\new Voice = "tenorMusic" { \global \tenorMusic }
-	>>
-		\context Lyrics = tenorLyrics { s1 } 
-
-        	
-       	>>
-
-		  \lyricsto "sopMusic" \context Lyrics = sopLyrics \sopWordsA 
-		 
-		  \lyricsto "altoMusic" \context Lyrics = altoLyrics \altoWordsA 
-		  \lyricsto "tenorMusic" \context Lyrics = tenorLyrics \tenorWordsA 
-		  
-
->>
-\layout {}
-
-\midi{
-     \tempo 2 = 120
-    }
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

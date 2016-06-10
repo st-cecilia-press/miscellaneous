@@ -16,28 +16,9 @@ scCopyright = ""
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 ficta = { \once \set suggestAccidentals = ##t }
 
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup {
-  \column{
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-	\fill-line { \tiny { \line{ Edition Date: \date } } } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 \include "english.ly"
 #(set-global-staff-size 17)
 
-\header{
-  title = "La Bionda Treçça"
-  composer = "Francesco Landini (14th Century)"
-  tagline = ""
-}
 
 scGlobal= {
   \autoBeamOff
@@ -158,57 +139,8 @@ Con vo -- ci as -- _ sa' pia -- to -- se t'ò chia -- ma -- to
 
 
 \book {
-\score{
-
-	\new ChoirStaff 
-	<<
-		\new Voice = "cantus" { \global \clef treble \transpose c g  \cantusMusic  }
-		\new Lyrics \lyricsto "cantus" \cantusWordsA 
-		\new Lyrics \lyricsto "cantus" \cantusWordsB 
-
-
-		\new Voice = "tenor" { \global \clef "G_8" \transpose c g \tenorMusic  }
-		\new Lyrics \lyricsto "tenor" \tenorWordsA
-		\new Lyrics \lyricsto "tenor" \tenorWordsB
-	>>
-
-
-
-\midi{
-     \tempo 2 = 100
 }
 
-\layout {
- indent = 0\cm
- \context {
-    \Voice
-    \consists "Ambitus_engraver"
-  }
-}
-
-}
-\score{
-
-	\new ChoirStaff 
-	<<
-		\new Voice = "cantus" { \global \clef treble \transpose c g  \cantusMusic  }
-		\new Lyrics \lyricsto "cantus" \cantusWordsC 
-		\new Lyrics \lyricsto "cantus" \cantusWordsD 
-
-
-		\new Voice = "tenor" { \global \clef "G_8" \transpose c g \tenorMusic  }
-		\new Lyrics \lyricsto "tenor" \tenorWordsC
-		\new Lyrics \lyricsto "tenor" \tenorWordsD
-	>>
-
-
-
-
-\layout {
- indent = 0\cm
-}
-
-}
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

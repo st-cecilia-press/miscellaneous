@@ -10,20 +10,9 @@ scSubtitle = ""
 scComposer = "Anonymous, Late 14th C"
 scArranger = ""
 scTagline = ""
-scPoet = ""
+scPoet = "From Llibre Vermell de Montserrat"
 scMeter=  ""
 scCopyright = ""
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 #(set-global-staff-size 18)
 
 \include "english.ly"
@@ -226,116 +215,11 @@ scWordsOneG = \lyricmode {
 
 \book {
 
-  \header{
-    title = "Stella Splendens"
-    poet = "From Llibre Vermell de Montserrat"
-    composer = "Anonymous, Late 14th C"
-    tagline = ""
-  }
-
-  \score {
-    <<
-      \context ChoirStaff <<
-	\context Voice = cantus {
-	  <<  \global \chorusSpacer \cantusChorusMusic 	 >> 
-	}
-	\context Lyrics = chorusLyrics { s1 }
-
-	\context Voice = tenor { 
-	  \clef bass
-	  <<  \global \chorusSpacer \tenorChorusMusic >> 
-	}
-
-      >>
-
-      \lyricsto "cantus" \context Lyrics = chorusLyrics \chorusWords
-
-    >>
-
-    \layout {
-      indent = 0\mm
-      obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-    }
-
-    
-  \midi {
-    \tempo 4 = 180
-    }
 
 
   }
 
-  \score {
-    <<
-      %      \context ChoirStaff <<
-	\context Voice = cantus {
-	  <<  \global \verseSpacer \cantusMusic 	 >> 
-	}
-	\context Lyrics = lyricsA { s1 }
-	\context Lyrics = lyricsB { s1 }
-	\context Lyrics = lyricsC { s1 }
-	\context Lyrics = lyricsD { s1 }
-	\context Lyrics = lyricsE { s1 }
-	\context Lyrics = lyricsF { s1 }
-	\context Lyrics = lyricsG { s1 }
-
-
-	\context Voice = tenor { 
-	  \clef bass
-	  <<  \global \verseSpacer \tenorMusic >> 
-	}
-
-	%      >>
-
-	\lyricsto "cantus" \context Lyrics = lyricsA \wordsA
-	\lyricsto "cantus" \context Lyrics = lyricsB \wordsB
-	\lyricsto "cantus" \context Lyrics = lyricsC \wordsC
-	\lyricsto "cantus" \context Lyrics = lyricsD \wordsD 
-	\lyricsto "cantus" \context Lyrics = lyricsE \wordsE
-	\lyricsto "cantus" \context Lyrics = lyricsF \wordsF
-	\lyricsto "cantus" \context Lyrics = lyricsG \wordsG
-
-      >>
-
-      \layout {
-	indent = 0\mm
-	obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-	\context{
-	  \Score
-	  \override VocalName.break-align-symbols = #'(vocal-name)
-	  
-	  % stolen from StanzaNumber - right-aligns extra verse numbers
-	  \override VocalName.direction = #-1
-	  \override VocalName.X-offset-callbacks = #`(,ly:side-position-interface::aligned-side) 
-
-	  % positions extra verse numbers in the right place
-	  \override BreakAlignment.break-align-orders = ##(; end-of-line:
-	  (instrument-name left-edge ambitus breathing-sign
-	  clef staff-bar key-signature
-	  time-signature custos)
-
-	  ; unbroken
-	  (instrument-name left-edge ambitus breathing-sign
-	  clef staff-bar key-signature
-	  staff
-	  time-signature custos)
-	  ; begin of line
-	  (instrument-name left-edge ambitus breathing-sign
-	  clef key-signature staff-bar
-	  time-signature vocal-name custos)
-
-	  )
-	}
-      }
-
-      
-  \midi {
-    \tempo 4 = 180
-    }
-
-
-    }
-  }
+\include "./score.ly"
 
   \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

@@ -13,26 +13,9 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 1"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 #(set-global-staff-size 17)
 
 \include "english.ly"
-\header{
-  title = "Pucelete - Je languis - Domino"
-  composer = "13th c. Motet"
-  tagline = ""
-
-}
 
 scGlobal= {
   \key c \major
@@ -103,50 +86,7 @@ scWordsThreeA = \lyricmode {
 }
 
 
-\score {
-  \context ChoirStaff <<
-    \context Staff = cantusStaff <<
-      \set Staff.instrumentName = "Triplum"
-      \context Voice = cantus {
-	<< \global \cantusMusic >> 
-      }
-    >>
 
-    \context Lyrics = cantus { s1 }
-
-    \context Staff = altusStaff <<
-      \set Staff.instrumentName = "Motetus"
-
-      \context Voice = altus { 
-	<< \global 
-	\altusMusic >> 
-      }
-    >>
-
-    \context Lyrics = altus { s1 }
-
-    \context Staff = bassusStaff << \context Voice = bassus { 
-      \set Staff.instrumentName = "Tenor"
-      << \global
-      \clef bass
-      \bassusMusic >>
-    }
-  >>
-
-  \context Lyrics = bassus { s1 }
-  \context Lyrics = cantus \lyricsto cantus \cantusWords
-  \context Lyrics = altus \lyricsto altus \altusWords
-  \context Lyrics = bassus \lyricsto bassus \bassusWords
-
->>
-
-  
-  \midi {
-    \tempo 4. = 80
-    }
-
-
-  \layout { }
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

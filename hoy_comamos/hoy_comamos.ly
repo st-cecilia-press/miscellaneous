@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 4, "verses": 40, "transposed": false }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -18,40 +18,18 @@ hoyComamos
 ===================
 %}
 
-date = #(strftime "%m-%d-%Y" (localtime (current-time)))
-
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup {
-  \column{
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 1"
-    } }
-	\fill-line { \tiny { \line{ Edition Date: \date } } } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
-
-\header{
-  title = "Oy Comamos Y Bebamos"
-  composer = "Juan del Encina (1469-c.1530)"
-  tagline = "Version 1.0 5/7/2008"
-}
 
 
 \include "english.ly"
 
 %\autoBeamOff
 
- #(set-global-staff-size 13)
+ #(set-global-staff-size 18)
 
 scGlobal = {
 	\key f \major
 	\time 3/2
-	\override Score.BarNumber.padding = #3
+	%\override Score.BarNumber.padding = #3
 	 
 }
 
@@ -204,49 +182,9 @@ scWordsFourD = \lyricmode{
 	En be -- ber bien me de -- ley -- to, da -- ca, da -- ca, be -- be -- re -- mos,
 	que ma -- ña -- "na a" -- yu -- na -- re -- mos.
 }
-\score{
-
-	\new ChoirStaff 
-		<<
-		\context Staff = sop <<
-		\new Voice = "sopMusic" { \global \sopMusic }
-	>>
-		\new Lyrics \lyricsto "sopMusic" \wordsA 
-		\new Lyrics \lyricsto "sopMusic" \wordsB 
-		\new Lyrics \lyricsto "sopMusic" \wordsC 
-		\new Lyrics \lyricsto "sopMusic" \wordsD 
-		\context Staff = alto <<
-		\new Voice = "altoMusic" { \global \altoMusic }
-	>>
-		\new Lyrics \lyricsto "altoMusic" \wordsA 
-		\new Lyrics \lyricsto "altoMusic" \wordsB 
-		\new Lyrics \lyricsto "altoMusic" \wordsC 
-		\new Lyrics \lyricsto "altoMusic" \wordsD 
-		\context Staff = tenor <<
-		\new Voice = "tenorMusic" { \global \tenorMusic }
-	>>
-		\new Lyrics \lyricsto "tenorMusic" \wordsA 
-		\new Lyrics \lyricsto "tenorMusic" \wordsB 
-		\new Lyrics \lyricsto "tenorMusic" \wordsC 
-		\new Lyrics \lyricsto "tenorMusic" \wordsD 
-		\context Staff = bass <<
-		\new Voice = "bassMusic" { \global \bassMusic }
-	>>
-		\new Lyrics \lyricsto "bassMusic" \wordsA 
-		\new Lyrics \lyricsto "bassMusic" \wordsB 
-		\new Lyrics \lyricsto "bassMusic" \wordsC 
-		\new Lyrics \lyricsto "bassMusic" \wordsD 
-
-		>>
 
 
-
-		\midi{
-			\tempo 2 = 100
-		}
-	\layout { indent = 0 }
-}
-
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 	

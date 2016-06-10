@@ -13,26 +13,10 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 1"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 
 \include "english.ly"
 #(set-global-staff-size 15)
 
-\header{
-  title = "Wee Be Three Poore Mariners"
-  composer = "Thomas Ravenscroft"
-  tagline = ""
-}
 
 scGlobal= {
   \key c \major
@@ -86,41 +70,8 @@ scWordsOneB = \lyricmode {
   round, a round, a round:
 }
 
-\score {
-  <<
-    \context ChoirStaff <<
-      \context Voice = cantus { << \global \cantusMusic >> }
-      \context Lyrics = cantusLyricsA { s1 }
-      \context Lyrics = cantusLyricsB { s1 }
-	\context Voice = altus { << \clef "G_8" \global \altusMusic >> }
-	\context Lyrics = altusLyricsA { s1 }
-	\context Lyrics = altusLyricsB { s1 }
-	\context Voice = bassus { << \clef "G_8" \global \bassusMusic >> }
-	\context Lyrics = bassusLyricsA { s1 }
-	\context Lyrics = bassusLyricsB { s1 }
-      >>
 
-      \lyricsto "cantus" \context Lyrics = cantusLyricsA \wordsA
-      \lyricsto "cantus" \context Lyrics = cantusLyricsB \wordsB
-      \lyricsto "altus" \context Lyrics = altusLyricsA \wordsA
-      \lyricsto "altus" \context Lyrics = altusLyricsB \wordsB
-      \lyricsto "bassus" \context Lyrics = bassusLyricsA \wordsA
-      \lyricsto "bassus" \context Lyrics = bassusLyricsB \wordsB
-
-    >>
-
-    \layout {
-      indent = 0\mm
-      obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-    }
-
-    
-  \midi {
-    \tempo 4 = 120
-    }
-
-
-  }
+\include "./score.ly"
 
   \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

@@ -9,7 +9,7 @@ scTitle = "Sister Awake"
 scSubtitle = ""
 scComposer = "Thomas Bateson"
 scArranger = ""
-scTagline = ""
+scTagline = "Version 1.0 3/31/2011"
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
@@ -21,26 +21,7 @@ Sister Awake
 %}
 
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup { 
-  \column{
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page"
-      \fromproperty #'page:page-number-string
-      "of 3"
-    } } 
-	\fill-line { \tiny { \line{ Edition Date: \date } } } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 
-\header{
-  title = "Sister Awake"
-  composer = "Thomas Bateson"
-  tagline = "Version 1.0 3/31/2011"
-}
 
 \include "english.ly"
 
@@ -328,48 +309,7 @@ in -- to the park a may -- ing,
 in -- to the park a may __ _ ing,
 in -- to the park a may -- ing, a may -- ing.
 }
-\score{
-<<
-	\new ChoirStaff 
-		<<
-		\context Staff = sopI <<
-		\new Voice = sopIMusic { \global \sopIMusic }
-	>>
-		\context Lyrics = sopILyrics { s1 } 
 
-		\context Staff = sopII <<
-		\new Voice = "sopIIMusic" { \global \sopIIMusic }
-	>>
-		\context Lyrics = sopIILyrics { s1 } 
-
-		\context Staff = alto <<
-		\new Voice = "altoMusic" { \global \altoMusic }
-	>>
-		\context Lyrics = altoLyrics { s1 } 
-
-		\context Staff = tenor <<
-		\new Voice = "tenorMusic" { \global \tenorMusic }
-	>>
-		\context Lyrics = tenorLyrics { s1 } 
-
-        	\context Staff = bass <<
-        	\new Voice = "bassMusic" { \global \bassMusic }
-       >>
-        	\context Lyrics = bassLyrics { s1 } 
-       	>>
-
-		  \lyricsto "sopIMusic" \context Lyrics = sopILyrics \sopIWordsA 
-		  \lyricsto "sopIIMusic" \context Lyrics = sopIILyrics \sopIIWordsA 
-		  \lyricsto "altoMusic" \context Lyrics = altoLyrics \altoWordsA 
-		  \lyricsto "tenorMusic" \context Lyrics = tenorLyrics \tenorWordsA 
-		  \lyricsto "bassMusic" \context Lyrics = bassLyrics \bassWordsA 
-
->>
-\layout {}
-
-\midi{
-     \tempo 4 = 100
-    }
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

@@ -1,12 +1,12 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 4, "verses": 3, "transposed": false }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
 scTempo = #(ly:make-moment 140 4)
-scTitle = "Es ist ein Schnee gefallen"
-scSubtitle = ""
+scTitle ="Es ist ein Schnee gefallen"
+scSubtitle = "This Evenfall 'tis snowing"
 scComposer = "Caspar Othmayr (1515-1553)"
 scArranger = ""
 scTagline = ""
@@ -16,30 +16,10 @@ scCopyright = ""
 
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup {
-  \column{
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 1"
-    } }
-    \fill-line { \tiny { \line{ Edition Date: \date } } } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 \include "english.ly"
-#(set-global-staff-size 22)
+#(set-global-staff-size 18)
 
 
-\header{
-  subtitle = "This Evenfall 'tis snowing"
-  title ="Es ist ein Schnee gefallen"
-  composer = "Caspar Othmayr (1515-1553)"
-  tagline = ""
-}
 
 scGlobal= {
   \key bf \major
@@ -78,73 +58,83 @@ scMusicFour =
   ef,2 ef4 bf'4 | f g ef f | bf,2( f'4) f | f4. f8 a4 bf | af2 af4 bf | f g ef f | bf,2.
 }
 
-
-scWordsTwoA = \lyricmode {
-  \set stanza = "1."
-  Es ist ein Schnee ge -- fal -- len
+scWordsOneA = \lyricmode {
+    \set stanza = "1."
+    Es ist ein Schnee ge -- fal -- len
   Und es ist doch nit Zeit.
   Man wirft mich mit den Bal -- len
   Der Weg ist mir ver -- schneit.
   Man wirft mich mit den Bal -- len
   Der Weg ist mir ver -- schneit.
 }
-
-scWordTwosB = \lyricmode {
-  \set stanza = "2."
-  Mein Haus hat kei -- nen Gie -- bel,
+scWordsOneB = \lyricmode {
+    \set stanza = "2."
+    Mein Haus hat kei -- nen Gie -- bel,
   Es ist mir wor -- den alt,
   Zer -- broch -- en sind die Rie -- gel,
   Mein Stüb -- lein ist mir kalt.
   Zer -- broch -- en sind die Rie -- gel,
   Mein Stüb -- lein ist mir kalt.
 }
-
-scWordsTwoC = \lyricmode {
-  \set stanza = "3."
-  Ach Lieb, laß dich er -- bar -- men,
+scWordsOneC = \lyricmode {
+    \set stanza = "3."
+    Ach Lieb, laß dich er -- bar -- men,
   Daß ich so e -- lend bin,
   Und schleuss mich in dein Ar -- me!
   So fährt der Win -- ter hin.
   Und schleuss mich in dein Ar -- me!
   So fährt der Win -- ter hin.
 }
-\score {
-  <<
-    \context ChoirStaff <<
-      \context Staff = treble <<
-	\context Voice = cantus { \voiceOne << \global \cantusMusic >> }
-	\context Voice = altus { \voiceTwo << \global \altusMusic >> }
-      >>
-      \context Lyrics = lyricsA { s1 }
-      \context Lyrics = lyricsB { s1 }
-      \context Lyrics = lyricsC { s1 }
-      \context Staff = bass <<
-	\clef "G_8"
-	\context Voice = tenor { \voiceOne << \global \tenorMusic >> }
-	\context Voice = bassus { \voiceTwo << \global \bassusMusic >> }
-      >>
 
-    >>
+scWordsTwoA = \lyricmode {
 
-    \lyricsto "altus" \context Lyrics = lyricsA \wordsA
-    \lyricsto "altus" \context Lyrics = lyricsB \wordsB
-    \lyricsto "altus" \context Lyrics = lyricsC \wordsC
-
-  >>
-
-  \layout {
-    indent = 0\mm
-    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-    \context{
-      \Score
-    }
-  }
-  
-  \midi {
-    \tempo 4 = 120
-    }
 
 }
+
+scWordsTwoB = \lyricmode {
+
+
+}
+
+scWordsTwoC = \lyricmode {
+
+
+}
+
+scWordsThreeA = \lyricmode {
+      \set stanza = "1."
+    Es ist ein Schnee ge -- fal -- len
+  Und es ist doch nit Zeit.
+  Man wirft mich mit den Bal -- len
+  Der Weg ist mir ver -- schneit.
+  Man wirft mich mit den Bal -- len
+  Der Weg ist mir ver -- schneit.
+}
+scWordsThreeB = \lyricmode {
+      \set stanza = "2."
+    Mein Haus hat kei -- nen Gie -- bel,
+  Es ist mir wor -- den alt,
+  Zer -- broch -- en sind die Rie -- gel,
+  Mein Stüb -- lein ist mir kalt.
+  Zer -- broch -- en sind die Rie -- gel,
+  Mein Stüb -- lein ist mir kalt.
+}
+scWordsThreeC = \lyricmode {
+      \set stanza = "3."
+    Ach Lieb, laß dich er -- bar -- men,
+  Daß ich so e -- lend bin,
+  Und schleuss mich in dein Ar -- me!
+  So fährt der Win -- ter hin.
+  Und schleuss mich in dein Ar -- me!
+  So fährt der Win -- ter hin.
+}
+scWordsFourA = \lyricmode {
+}
+scWordsFourB = \lyricmode {
+}
+scWordsFourC = \lyricmode {
+}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

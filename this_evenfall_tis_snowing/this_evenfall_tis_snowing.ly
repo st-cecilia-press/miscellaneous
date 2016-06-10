@@ -6,7 +6,7 @@ scDate = "2016-May-16"
 
 scTempo = #(ly:make-moment 140 4)
 scTitle = "This Evenfall 'tis snowing"
-scSubtitle = ""
+scSubtitle ="Es ist ein Schnee gefallen"
 scComposer = "Caspar Othmayr (1515-1553)"
 scArranger = ""
 scTagline = ""
@@ -16,29 +16,9 @@ scCopyright = ""
 
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup {
-  \column{
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-    \fill-line { \tiny { \line{ Edition Date: \date } } } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 \include "english.ly"
 %#(set-global-staff-size 22)
 
-\header{
-  title = "This Evenfall 'tis snowing"
-  subtitle ="Es ist ein Schnee gefallen"
-  composer = "Caspar Othmayr (1515-1553)"
-  tagline = ""
-}
 
 scGlobal= {
   \key bf \major
@@ -107,45 +87,8 @@ scWordsTwoC = \lyricmode {
   Then hold me in your arms, dear,
   Let Win -- ter fly from me!
 }
-\score {
-  <<
-    \context ChoirStaff <<
-      \context Staff = treble <<
-	\context Voice = cantus { \voiceOne << \global \cantusMusic >> }
-	\context Voice = altus { \voiceTwo << \global \altusMusic >> }
-      >>
-      \context Lyrics = lyricsA { s1 }
-      \context Lyrics = lyricsB { s1 }
-      \context Lyrics = lyricsC { s1 }
-      \context Staff = bass <<
-	\clef "G_8"
-	\context Voice = tenor { \voiceOne << \global \tenorMusic >> }
-	\context Voice = bassus { \voiceTwo << \global \bassusMusic >> }
-      >>
 
-    >>
-
-    \lyricsto "altus" \context Lyrics = lyricsA \wordsA
-    \lyricsto "altus" \context Lyrics = lyricsB \wordsB
-    \lyricsto "altus" \context Lyrics = lyricsC \wordsC
-
-  >>
-
-  \layout {
-    indent = 0\mm
-    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-    \context{
-      \Score
-    }
-  }
-
-  
-  \midi {
-    \tempo 4 = 120
-    }
-
-
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

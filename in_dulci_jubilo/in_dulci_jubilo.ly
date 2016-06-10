@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 2, "verses": 1, "transposed": false }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -7,32 +7,15 @@ scDate = "2016-May-16"
 scTempo = #(ly:make-moment 140 4)
 scTitle = "In Dulci Jubilo"
 scSubtitle = ""
-scComposer = ""
+scComposer = "Praetorius"
 scArranger = ""
 scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
-#(set-global-staff-size 18)
+#(set-global-staff-size 20)
 
 \include "english.ly"
-\header{
-  title = "In Dulci Jubilo"
-  composer = ""
-  tagline = ""
-
-}
 
 scGlobal= {
   \key f \major
@@ -132,44 +115,7 @@ scWordsTwoA = \lyricmode {
   Al -- pha es et O.
 }
 
-\score {
-  \context StaffGroup <<
-    \context Staff = cantusStaff <<
-      \set Staff.instrumentName = "Cantus"
-      \context Voice = cantus {
-	<< \global \cantusMusic >> 
-      }
-    >>
 
-    \context Lyrics = cantus { s1 }
-
-    \context Staff = altusStaff <<
-      \set Staff.instrumentName = "Altus"
-
-      \context Voice = altus { 
-	<< \global 
-	\altusMusic >> 
-      }
-    >>
-
-    \context Lyrics = altus { s1 }
-
-    \context Lyrics = cantus \lyricsto cantus \cantusWords
-    \context Lyrics = altus \lyricsto altus \altusWords
-  >>
-
-
-  
-  \midi {
-    \tempo 2 = 120
-    }
-
-
-  \layout { 
-\context {
-      \Score
-      \override BarLine.transparent = ##t
-    }}
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

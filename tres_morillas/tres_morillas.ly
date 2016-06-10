@@ -10,20 +10,9 @@ scSubtitle = ""
 scComposer = "Anonymous"
 scArranger = ""
 scTagline = ""
-scPoet = ""
+scPoet = \markup{\italic {Cancionero de Palacio}}
 scMeter=  ""
 scCopyright = ""
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 1"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 #(set-global-staff-size 16)
 
 \include "english.ly"
@@ -107,113 +96,11 @@ scWordsOneC = \lyricmode {
 
 \book {
 
-  \header{
-    title = "Tres morillas m'enamoran (en Jaén)"
-    poet = \markup{\italic {Cancionero de Palacio}}
-    composer = "Anonymous"
-    tagline = ""
-  }
-
-  \score {
-    <<
-      \context ChoirStaff <<
-	  \context Voice = cantus {
-	    <<  \chorusSpacer \global \cantusMusicA >> 
-	  }
-	\context Lyrics = cantusChorusLyrics { s1 }
-	  \context Voice = altus {
-	    << \chorusSpacer \global \altusMusicA >>
-	  }
-	\context Lyrics = altusChorusLyrics { s1 }
-
-	\context Voice = tenor { 
-	  \clef "G_8"
-	  << \chorusSpacer \global \tenorMusicA >> 
-	}
-	\context Lyrics = tenorChorusLyrics { s1 }
-
-      >>
-
-      \lyricsto "cantus" \context Lyrics = cantusChorusLyrics \chorusWords
-      \lyricsto "altus" \context Lyrics = altusChorusLyrics \chorusWords
-      \lyricsto "tenor" \context Lyrics = tenorChorusLyrics \chorusWords
-
-    >>
-
-    \layout {
-      indent = 0\mm
-      obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-      \context {
-	\Staff
-	\remove Accidental_engraver
-      }
-    }
-
-    
-  \midi {
-    \tempo 4 = 180
-    }
 
 
-  }
-
-  \score {
-    <<
-      \context ChoirStaff <<
-	  \context Voice = cantus {
-	    <<  \verseSpacer \global { \bar ".|:" \cantusMusicB \cantusMusicB \cantusMusicA } >> 
-	  }
-
-	\context Lyrics = cantusLyricsA { s1 }
-	\context Lyrics = cantusLyricsB { s1 }
-	\context Lyrics = cantusLyricsC { s1 }
-	  \context Voice = altus {
-	    << \verseSpacer \global { \altusMusicB \altusMusicB \altusMusicA } >>
-	  }
-	\context Lyrics = altusLyricsA { s1 }
-	\context Lyrics = altusLyricsB { s1 }
-	\context Lyrics = altusLyricsC { s1 }
-
-
-	\context Voice = tenor { 
-	  \clef "G_8"
-	  <<  \verseSpacer \global { \tenorMusicB \tenorMusicB \tenorMusicA } >> 
-	}
-	\context Lyrics = tenorLyricsA { s1 }
-	\context Lyrics = tenorLyricsB { s1 }
-	\context Lyrics = tenorLyricsC { s1 }
-
-      >>
-
-      \lyricsto "cantus" \context Lyrics = cantusLyricsA \wordsA
-      \lyricsto "cantus" \context Lyrics = cantusLyricsB \wordsB
-      \lyricsto "cantus" \context Lyrics = cantusLyricsC \wordsC
-      \lyricsto "altus" \context Lyrics = altusLyricsA \wordsA
-      \lyricsto "altus" \context Lyrics = altusLyricsB \wordsB
-      \lyricsto "altus" \context Lyrics = altusLyricsC \wordsC
-      \lyricsto "tenor" \context Lyrics = tenorLyricsA \wordsA
-      \lyricsto "tenor" \context Lyrics = tenorLyricsB \wordsB
-      \lyricsto "tenor" \context Lyrics = tenorLyricsC \wordsC
-
-    >>
-
-    \layout {
-      indent = 0\mm
-      obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-      \context {
-	\Staff
-	\remove Accidental_engraver
-      }
-    }
-
-    
-  \midi {
-    \tempo 2 = 70
-    }
-
-
-  }
 }
+
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

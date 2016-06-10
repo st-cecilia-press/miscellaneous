@@ -15,26 +15,9 @@ scMeter=  ""
 scCopyright = ""
 #(set-global-staff-size 18)
 
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-  ragged-bottom = ##t
-}
 
 \include "english.ly"
 
-\header{
-  title = "Now wolde y fayne"
-  composer = "Anonymous (English, mid-15th century)"
-  tagline = ""
-}
 
 
 scGlobal= {
@@ -176,93 +159,8 @@ scWordsTwoF = \lyricmode {
   Ever to a -- ment. __
 }
 
-\score {
-  <<
-    \context StaffGroup <<
-      \context Voice = cantus {
-	\set Staff.instrumentName = "Superius"
-	<< \global \clef "G_8" \cantusMusic >> 
-      }
-      \context Lyrics = cantusLyricsA { s1 }
-      \context Lyrics = cantusLyricsB { s1 }
-      \context Lyrics = cantusLyricsC { s1 }
-      \context Lyrics = cantusLyricsD { s1 }
-      \context Lyrics = cantusLyricsE { s1 }
-      \context Lyrics = cantusLyricsF { s1 }
 
-      \context Voice = tenor { 
-	\set Staff.instrumentName = "Tenor"
-	<< \global \clef "G_8" \tenorMusic >> 
-      }
-      \context Lyrics = tenorLyricsA { s1 }
-      \context Lyrics = tenorLyricsB { s1 }
-      \context Lyrics = tenorLyricsC { s1 }
-      \context Lyrics = tenorLyricsD { s1 }
-      \context Lyrics = tenorLyricsE { s1 }
-      \context Lyrics = tenorLyricsF { s1 }
-    >>
-
-    \lyricsto "cantus" \context Lyrics = cantusLyricsA \cantusWordsA
-    \lyricsto "cantus" \context Lyrics = cantusLyricsB \cantusWordsB
-    \lyricsto "cantus" \context Lyrics = cantusLyricsC \cantusWordsC
-    \lyricsto "cantus" \context Lyrics = cantusLyricsD \cantusWordsD
-    \lyricsto "cantus" \context Lyrics = cantusLyricsE \cantusWordsE
-    \lyricsto "cantus" \context Lyrics = cantusLyricsF \cantusWordsF
-    \lyricsto "tenor" \context Lyrics = tenorLyricsA \tenorWordsA
-    \lyricsto "tenor" \context Lyrics = tenorLyricsB \tenorWordsB
-    \lyricsto "tenor" \context Lyrics = tenorLyricsC \tenorWordsC
-    \lyricsto "tenor" \context Lyrics = tenorLyricsD \tenorWordsD
-    \lyricsto "tenor" \context Lyrics = tenorLyricsE \tenorWordsE
-    \lyricsto "tenor" \context Lyrics = tenorLyricsF \tenorWordsF
-
-  >>
-
-  \layout {
-    \context {
-      \Score
-      \override BarLine.transparent = ##t
-    }
-    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-    \context {
-      \Staff
-      \remove Accidental_engraver
-      \remove Time_signature_engraver
-    }
-    \context{
-      \Score
-      \override VocalName.break-align-symbols = #'(vocal-name)
-
-      % stolen from StanzaNumber - right-aligns extra verse numbers
-      \override VocalName.direction = #-1
-      \override VocalName.X-offset-callbacks = #`(,ly:side-position-interface::aligned-side) 
-
-      % positions extra verse numbers in the right place
-      \override BreakAlignment.break-align-orders = ##(; end-of-line:
-      (instrument-name left-edge ambitus breathing-sign
-      clef staff-bar key-signature
-      time-signature custos)
-
-      ; unbroken
-      (instrument-name left-edge ambitus breathing-sign
-      clef staff-bar key-signature
-      staff
-      time-signature custos)
-      ; begin of line
-      (instrument-name left-edge ambitus breathing-sign
-      clef key-signature staff-bar
-      time-signature vocal-name custos)
-
-      )
-    }
-  }
-
-  
-  \midi {
-    \tempo 4 = 120
-    }
-
-
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

@@ -9,7 +9,7 @@ scTitle = "Se la face ay pale"
 scSubtitle = ""
 scComposer = "Guillaume Dufay"
 scArranger = ""
-scTagline = ""
+scTagline = "Version 1.0 6/30/2010"
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
@@ -18,24 +18,7 @@ Se la face ay pale
 ===================
 %}
 
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 1"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 
-\header{
-  title = "Se la face ay pale"
-  composer = "Guillaume Dufay"
-  tagline = "Version 1.0 6/30/2010"
-}
 
 \include "english.ly"
 
@@ -114,37 +97,8 @@ scWordsThreeA = \lyricmode {
 Se_la face
 }
 
-\score{
-<<
-	\new ChoirStaff 
-		<<
-		\context Staff = superius <<
-		\new Voice = "superiusMusic" { \global \superiusMusic }
-	>>
-		\context Lyrics = superiusLyrics { s1 } 
 
-		\context Staff = tenor <<
-		\new Voice = "tenorMusic" { \global \tenorMusic }
-	>>
-		\context Lyrics = tenorLyrics { s1 } 
 
-		\context Staff = contratenor <<
-		\new Voice = "contratenorMusic" { \global \contratenorMusic }
-	>>
-		\context Lyrics = contratenorLyrics { s1 } 
-		>>
-
-		  \lyricsto "superiusMusic" \context Lyrics = superiusLyrics \superiusWordsA 
-		  \lyricsto "tenorMusic" \context Lyrics = tenorLyrics \tenorWordsA 
-		  \lyricsto "contratenorMusic" \context Lyrics = contratenorLyrics \contratenorWordsA 
-
->>
-
-\midi{
-     \tempo 4 = 100
-}
- \layout {}
-}
-
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

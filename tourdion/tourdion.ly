@@ -13,26 +13,9 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 1"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 #(set-global-staff-size 17)
 
 \include "english.ly"
-\header{
-  title = "Tourdion"
-  composer = "Pierre Attaingnant, 1530"
-  tagline = ""
-
-}
 
 scGlobal= {
   \key e \dorian
@@ -92,64 +75,7 @@ scWordsThreeA = \lyricmode {
   Bu -- vons bien, bu -- vons mes a -- mis, trin -- quons, bu -- vons, gaie -- ment chan -- tons!
 }
 
-\score {
-  \context ChoirStaff <<
-    \context Staff = cantus <<
-      \set Staff.instrumentName = "Cantus"
-      \context Voice = cantus {
-	<< \global \cantusMusic >> 
-      }
-    >>
 
-    \context Lyrics = cantus { s1 }
-
-    \context Staff = altus <<
-      \set Staff.instrumentName = "Altus"
-
-      \context Voice = altus { 
-	<< \global 
-	\altusMusic >> 
-      }
-    >>
-
-    \context Lyrics = altus { s1 }
-
-    \context Staff = tenor <<
-      \context Voice = tenor { 
-	\set Staff.instrumentName = "Tenor"
-	<< \global
-	\clef "G_8"
-	\tenorMusic >>
-      }
-    >>
-    \context Lyrics = tenor { s1 }
-
-    \context Staff = bassus <<
-      \context Voice = bassus { 
-	\set Staff.instrumentName = "Bassus"
-	<< \global
-	\clef bass
-	\bassusMusic >>
-      }
-
-    >>
-    \context Lyrics = bassus { s1 }
-
-
-    \context Lyrics = cantus \lyricsto cantus \cantusWords
-    \context Lyrics = altus \lyricsto altus { \altusWordsA \lowerWordsB }
-    \context Lyrics = tenor \lyricsto tenor { \tenorWordsA \lowerWordsB }
-    \context Lyrics = bassus \lyricsto bassus { \tenorWordsA \lowerWordsB }
-
-  >>
-
-  
-  \midi {
-    \tempo 4 = 280
-    }
-
-
-  \layout { }
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

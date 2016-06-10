@@ -13,28 +13,12 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
+\include "./score.ly"
+
 \version "2.18.0"
 
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup { 
-  \column{
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } } 
-	\fill-line { \tiny { \line{ Edition Date: \date } } } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 
-\header{
-  title = "Margot Labourez Les Vignes"
-  composer = "Jacques Arcadelt"
-}
 
 %\include "english.ly"
 
@@ -250,78 +234,6 @@ scWordsThreeE = \lyricmode {
 \verseCI
 }
 \book{
-\score{
-
-	\context ChoirStaff <<
-		\context Staff = treble <<
-			\clef treble
-		   \context Voice = cantus {  <<  \global  \cantusMusic  >> }
-		>>
-		\new Lyrics \lyricsto "cantus" \cantusWordsA 
-		\new Lyrics \lyricsto "cantus" \cantusWordsB 
-
-		\context Staff = trebleB <<
-			\clef treble
-		   \context Voice = altus {  << \global \altusMusic  >> }
-		>>
-		\new Lyrics \lyricsto "altus" \cantusWordsA 
-		\new Lyrics \lyricsto "altus" \cantusWordsB 
-		\context Staff = bass <<
-			\clef bass
-			\context Voice = tenor { \voiceOne << \global \tenorMusic >> }
-			\context Voice = bass { \voiceTwo << \global \bassusMusic >> }
-		>>
-		\new Lyrics \lyricsto "tenor" \tenorWordsA 
-		\new Lyrics \lyricsto "tenor" \tenorWordsB 
-
-	>>
 
 
-
-\midi{
-     \tempo 2 = 100
-}
-
-\layout {indent = 0\mm
-}
-
-}
-
-
-\score{
-
-	\context ChoirStaff <<
-		\context Staff = treble <<
-			\clef treble
-		   \context Voice = cantus {  <<  \global  \cantusMusic  >> }
-		>>
-		\new Lyrics \lyricsto "cantus" \cantusWordsC 
-		\new Lyrics \lyricsto "cantus" \cantusWordsD 
-		\new Lyrics \lyricsto "cantus" \cantusWordsE 
-
-		\context Staff = trebleB <<
-			\clef treble
-		   \context Voice = altus {  << \global \altusMusic  >> }
-		>>
-		\new Lyrics \lyricsto "altus" \cantusWordsC 
-		\new Lyrics \lyricsto "altus" \cantusWordsD 
-		\new Lyrics \lyricsto "altus" \cantusWordsE 
-		\context Staff = bass <<
-			\clef bass
-			\context Voice = tenor { \voiceOne << \global \tenorMusic >> }
-			\context Voice = bass { \voiceTwo << \global \bassusMusic >> }
-		>>
-		\new Lyrics \lyricsto "tenor" \tenorWordsC 
-		\new Lyrics \lyricsto "tenor" \tenorWordsD 
-		\new Lyrics \lyricsto "tenor" \tenorWordsE 
-
-	>>
-
-
-
-
-\layout {indent = 0\mm
-}
-
-}
  }

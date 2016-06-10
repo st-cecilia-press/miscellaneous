@@ -19,28 +19,9 @@ l'autre_jour
 %}
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup {
-  \column{
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-	\fill-line { \tiny { \line{ Edition Date: \date } } } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 #(set-global-staff-size 18)
 
 \include "english.ly"
-\header{
-  title = "L'autre jour / Au tens pascour / In seculum"
-  tagline = ""
-
-}
 
 scGlobal= {
   \key c \major
@@ -132,47 +113,7 @@ scWordsThreeA = \lyricmode {
 }
 
 
-\score {
-  \context ChoirStaff <<
-    \context Staff = cantusStaff <<
-      \set Staff.instrumentName = "Altus"
-      \context Voice = cantus {
-	<< \clef "G_8" \global \cantusMusic >> 
-      }
-    >>
 
-    \context Lyrics = cantus { s1 }
-
-    \context Staff = tenorStaff <<
-      \set Staff.instrumentName = "Tenor"
-
-      \context Voice = tenor { 
-	<< \clef "G_8" \global \tenorMusic >> 
-      }
-    >>
-
-    \context Lyrics = tenor { s1 }
-
-    \context Staff = bassusStaff << \context Voice = bassus { 
-      \set Staff.instrumentName = "Bassus"
-      << \clef "G_8" \global \bassusMusic >>
-    }
-  >>
-
-  \context Lyrics = bassus { s1 }
-  \context Lyrics = cantus \lyricsto cantus \cantusWords
-  \context Lyrics = tenor \lyricsto tenor \tenorWords
-  \context Lyrics = bassus \lyricsto bassus \bassusWords
-
->>
-
-
-  \midi {
-    \tempo 4 = 200
-    }
-
-
-\layout { }
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

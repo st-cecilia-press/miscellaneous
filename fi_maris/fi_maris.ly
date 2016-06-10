@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 3, "verses": 1, "transposed": false }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -10,40 +10,17 @@ scSubtitle = ""
 scComposer = "Late 13th C."
 scArranger = ""
 scTagline = ""
-scPoet = ""
+scPoet = "Adam de la Halle"
 scMeter=  ""
 scCopyright = ""
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 1"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 \include "english.ly"
-#(set-global-staff-size 18)
+#(set-global-staff-size 20)
 
-\header{
-  title = "Fi, Maris de vostre amour"
-  composer = "Late 13th C."
-  poet = "Adam de la Halle"
-  tagline = ""
-}
 
 scGlobal= {
   \autoBeamOff
   \key bf \major
   \time 3/4
-
-  s2. \noBreak s2. \noBreak s2. \noBreak s2. \noBreak s2. \noBreak s2. \break
-  s2. \noBreak s2. \noBreak s2. \noBreak s2. \noBreak
-  s2. \noBreak s2. \noBreak s2. \noBreak s2. \break
-  s2. \noBreak s2. \noBreak s2. \noBreak s2. \noBreak s2. \noBreak s2. \break
-  s2. \noBreak s2. \noBreak s2. \noBreak s2. \noBreak s2. \noBreak s2. \break
 
 }
 
@@ -118,51 +95,16 @@ words = \lyricmode {
   Car __ j'ai __ a -- mi!
 }
 
-\score {
-  \context ChoirStaff <<
-    \context Staff = cantusStaff <<
-      \set Staff.instrumentName = "Cantus"
-      \context Voice = cantus {
-	<< \global \cantusMusic >> 
-      }
-    >>
-
-    \context Lyrics = cantus { s1 }
-
-    \context Staff = altusStaff <<
-      \set Staff.instrumentName = "Altus"
-
-      \context Voice = altus { 
-	<< \global 
-	\altusMusic >> 
-      }
-    >>
-
-    \context Lyrics = altus { s1 }
-
-    \context Staff = tenorStaff << \context Voice = tenor { 
-      \set Staff.instrumentName = "Bassus"
-      << \global
-      \clef "G_8"
-      \tenorMusic >>
-    }
-  >>
-
-  \context Lyrics = tenor { s1 }
-  \context Lyrics = cantus \lyricsto cantus \words
-  \context Lyrics = altus \lyricsto altus \words
-  \context Lyrics = tenor \lyricsto tenor \words
-
->>
-
-
-  \midi {
-    \tempo 4 = 80
-    }
-
-
-\layout { }
+scWordsOneA = \lyricmode {
+  \words
 }
+scWordsTwoA = \lyricmode {
+  \words
+}
+scWordsThreeA = \lyricmode {
+  \words
+}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

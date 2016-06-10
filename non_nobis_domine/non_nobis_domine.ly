@@ -13,26 +13,9 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 1"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 %#(set-global-staff-size 17)
 
 \include "english.ly"
-\header{
-  title = "Non nobis Domine"
-  composer = "William Byrd"
-  tagline = ""
-
-}
 
 scGlobal= {
   \key d \major
@@ -95,47 +78,7 @@ scWordsThreeA = \lyricmode {
   no -- mi -- ni tu -- o da glo -- ri -- am. Non am. __
 }
 
-\score {
-  \context ChoirStaff <<
-    \context Staff = altusStaff <<
-      \set Staff.instrumentName = "Cantus"
-      \context Voice = altus {
-	<< \global \altusMusic >> 
-      }
-    >>
 
-    \context Lyrics = altus { s1 }
-
-    \context Staff = tenorStaff <<
-      \set Staff.instrumentName = "Altus"
-
-      \context Voice = tenor { 
-	<< \global \clef "G_8" \tenorMusic >> 
-      }
-    >>
-
-    \context Lyrics = tenor { s1 }
-
-    \context Staff = bassusStaff << \context Voice = bassus { 
-      \set Staff.instrumentName = "Bassus"
-      << \global \clef bass \bassusMusic >>
-    }
-  >>
-
-  \context Lyrics = bassus { s1 }
-  \context Lyrics = altus \lyricsto altus \altusWords
-  \context Lyrics = tenor \lyricsto tenor \tenorWords
-  \context Lyrics = bassus \lyricsto bassus \bassusWords
-
->>
-
-
-  \midi {
-    \tempo 4. = 80
-    }
-
-
-\layout { }
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

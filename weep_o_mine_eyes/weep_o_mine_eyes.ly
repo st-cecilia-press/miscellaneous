@@ -20,28 +20,9 @@ http://gateway.proquest.com.proxy.lib.umich.edu/openurl?ctx_ver=Z39.88-2003&res_
 %}
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup {
-  \column{
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-	\fill-line { \tiny { \line{ Edition Date: \date } } } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 \include "english.ly"
 #(set-global-staff-size 16)
 
-\header{
-  title = "Weep, O Mine Eyes"
-  composer = "John Bennet (1599)"
-  tagline = ""
-}
 
 scGlobal= {
   \set Score.skipBars = ##t
@@ -156,58 +137,7 @@ you, that I may drowne me in you.
 }
 
 
-\score {
-  <<
-    \context StaffGroup = choirStaff <<
-      \context Staff = treble <<
-	\set Staff.instrumentName = "Cantus"
-	\context Voice = cantus { << \global \cantusMusic >> }
-      >>
-      \context Lyrics = cantusLyrics { s1 }
 
-      \context Staff = altus <<
-	\set Staff.instrumentName = "Altus"
-	\context Voice = altus { << \global \altusMusic >> }
-      >>
-      \context Lyrics = altusLyrics { s1 }
-
-      \context Staff = tenor <<
-	\set Staff.instrumentName = "Tenor"
-	\clef "G_8"
-	\context Voice = tenor { << \global \tenorMusic >> }
-      >>
-
-      \context Lyrics = tenorLyrics { s1 }
-      
-      \context Staff = bass <<
-	\set Staff.instrumentName = "Bassus"
-	\clef bass
-	\context Voice = bassus { << \global \bassusMusic >> }
-      >>
-
-      \context Lyrics = bassusLyrics { s1 }
-    >>
-
-    \lyricsto "cantus" \context Lyrics = cantusLyrics \cantusWords
-    \lyricsto "altus" \context Lyrics = altusLyrics \altusWords
-    \lyricsto "tenor" \context Lyrics = tenorLyrics \tenorWords
-    \lyricsto "bassus" \context Lyrics = bassusLyrics \bassusWords
-
-  >>
-
-  \layout {
-	  \context {
-		  \Score
-			  \override BarLine.transparent = ##t
-	  }
-  }
-
-
-    \midi {
-	    \tempo 4 = 80
-    }
-
-
-}
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

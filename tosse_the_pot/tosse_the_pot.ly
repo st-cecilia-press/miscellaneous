@@ -20,25 +20,7 @@ tossThePot
 
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup {
-  \column{
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-	\fill-line { \tiny { \line{ Edition Date: \date } } } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
 
-\header{
-  title = "Tosse The Pot"
-  composer = "Thomas Ravenscroft (1614)"
-}
 
 \include "english.ly"
 
@@ -146,44 +128,8 @@ scSolfFour = \lyricmode{ \set ignoreMelismata = ##t
 Do Do Do Do Do Do Fa Fa Fa Do Do Do Do Ti La So So Do Fa Fa So Do Do Do Do Fa Do Do Fa Fa Do Do Do Do So So Re Re So So Do Fa So Fa Mi Re Do So Do Do Do Fa So Do 
 }
 
-\score{
-
-					 \new ChoirStaff 
-					 <<
-					 \context Staff = treble <<
-					 \new Voice = "trebleMusic" { \global \trebleMusic \trebleMusicB}
-		  >>
-					 \context Staff = medius <<
-					 \new Voice = "mediusMusic" { \global \mediusMusic \mediusMusic}
-		  >>
-					 \new Lyrics \lyricsto "trebleMusic" { \Chorus \VerseA \Chorus \VerseD} 
-		  \new Lyrics \lyricsto "trebleMusic" { \blankChorus \VerseB \blankChorus \VerseE} 
-		  \new Lyrics \lyricsto "trebleMusic" { \blankChorus \VerseC \blankChorus \VerseF} 
-		  %		\new Lyrics \lyricsto "trebleMusic" { \Chorus \VerseA} 
-		  %		\new Lyrics \lyricsto "trebleMusic" { \blankChorus \VerseB} 
-		  %		\new Lyrics \lyricsto "trebleMusic" { \blankChorus \VerseC} 
-		  %		\new Lyrics \lyricsto "trebleMusic" { \blankChorus \VerseD} 
-		  %		\new Lyrics \lyricsto "trebleMusic" { \blankChorus \VerseE} 
-		  %		\new Lyrics \lyricsto "trebleMusic" { \blankChorus \VerseF} 
-		  \context Staff = tenor <<
-					 \new Voice = "tenorMusic" { \global \tenorMusic \tenorMusic}
-		  >>
-					 \context Staff = bassus <<
-					 \new Voice = "bassusMusic" { \global \bassusMusic \bassusMusic}
-		  >>
-					 >>
 
 
-
-\midi{
-     \tempo 4 = 200
-}
-
-
-
-
-\layout {}
-}
-
+\include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

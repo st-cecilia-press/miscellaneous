@@ -9,7 +9,7 @@ scTitle = "Sumer is icumen in"
 scSubtitle = ""
 scComposer = "John of Fornsete (?), c 1226"
 scArranger = ""
-scTagline = ""
+scTagline = "" 
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
@@ -20,25 +20,6 @@ sumer_is_icumen_in
 
 date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
-\paper {
-  #(set-paper-size "letter")
-  oddFooterMarkup = \markup {
-  \column{
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 1"
-    } }
-	\fill-line { \tiny { \line{ Edition Date: \date } } } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-}
-    \header{
-	title = "Sumer is icumen in"
-	    composer = "John of Fornsete (?), c 1226"
-	    tagline = "" 
-    }
     \include "english.ly"
 %#(set-global-staff-size 18)
 
@@ -79,46 +60,11 @@ accompWords = \lyricmode {
 \book {
 
 
-    \score {
-
-	<<
-	    \context Voice = primary << \global \primaryMusic >>
-	    \context Lyrics = primaryLyrics {s1 }
-	\lyricsto "primary" \context Lyrics = primaryLyrics \primaryWords
-	    >>
-	    \layout {
-		indent = 0\mm
-		    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-	    }
-	
-	  \midi {
-	    \tempo 4 = 130
-	    }
 
 
-    }
-
-
-    \score {
-	<<
-	   \context Voice = accomp << { \time 6/8 \autoBeamOff \key c \major } \accompMusic >>
-	   \context Lyrics = accompLyrics { s1 }
-	\lyricsto "accomp" \context Lyrics = accompLyrics \accompWords
-	    	>>
-	    \layout {
-		indent = 0\mm
-		    obsolete-between-system-space = 5\mm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-	    }
-	
-  \midi {
-    \tempo 4 = 90
-    }
-
-
-	\header {
-	    piece = "Accompaniment"
-	}
     }
 }
+\include "./score.ly"
+
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
 

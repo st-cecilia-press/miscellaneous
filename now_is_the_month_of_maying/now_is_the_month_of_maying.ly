@@ -13,27 +13,9 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 2"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-  ragged-bottom = ##t
-}
 #(set-global-staff-size 14)
 
 \include "english.ly"
-\header{
-  title = "Now is the month of maying"
-  composer = "Thomas Morley"
-  tagline = ""
-
-}
 
 scGlobal= {
   \key c \major
@@ -331,100 +313,7 @@ scWordsFiveC = \lyricmode {
   Say _
 }
 
-\score {
-  \context ChoirStaff <<
-    \context Staff = cantusStaff <<
-      \set Staff.instrumentName = "Cantus"
-      \context Voice = cantus {
-	<< \global \cantusMusic >> 
-      }
-    >>
 
-    \context Lyrics = cantusLyricsA { s1 }
-    \context Lyrics = cantusLyricsB { s1 }
-    \context Lyrics = cantusLyricsC { s1 }
-
-
-    \context Staff = altusStaff <<
-      \set Staff.instrumentName = "Altus"
-
-      \context Voice = altus { 
-	<< \global 
-	\altusMusic >> 
-      }
-    >>
-
-    \context Lyrics = altusLyricsA { s1 }
-    \context Lyrics = altusLyricsB { s1 }
-    \context Lyrics = altusLyricsC { s1 }
-
-    \context Lyrics = altus { s1 }
-
-    \context Staff = quintusStaff << \context Voice = quintus { 
-      \set Staff.instrumentName = "Quintus"
-      << \global
-      \clef "G_8"
-      \quintusMusic >>
-    }
-  >>
-
-  \context Lyrics = quintusLyricsA { s1 }
-  \context Lyrics = quintusLyricsB { s1 }
-  \context Lyrics = quintusLyricsC { s1 }
-
-
-  \context Staff = tenorStaff << \context Voice = tenor { 
-    \set Staff.instrumentName = "Tenor"
-    << \global
-    \clef "G_8"
-    \tenorMusic >>
-  }
-
-  \context Lyrics = tenorLyricsA { s1 }
-  \context Lyrics = tenorLyricsB { s1 }
-  \context Lyrics = tenorLyricsC { s1 }
->>
-
-
-\context Staff = bassusStaff << \context Voice = bassus { 
-  \set Staff.instrumentName = "Bassus"
-  << \global
-  \clef bass
-  \bassusMusic >>
-}
-
-\context Lyrics = bassusLyricsA { s1 }
-\context Lyrics = bassusLyricsB { s1 }
-\context Lyrics = bassusLyricsC { s1 }
-
->>
-
-
-\lyricsto "cantus" \context Lyrics = cantusLyricsA \cantusWordsA
-\lyricsto "cantus" \context Lyrics = cantusLyricsB \cantusWordsB
-\lyricsto "cantus" \context Lyrics = cantusLyricsC \cantusWordsC
-\lyricsto "altus" \context Lyrics = altusLyricsA \altusWordsA
-\lyricsto "altus" \context Lyrics = altusLyricsB \altusWordsB
-\lyricsto "altus" \context Lyrics = altusLyricsC \altusWordsC
-\lyricsto "quintus" \context Lyrics = quintusLyricsA \quintusWordsA
-\lyricsto "quintus" \context Lyrics = quintusLyricsB \quintusWordsB
-\lyricsto "quintus" \context Lyrics = quintusLyricsC \quintusWordsC
-\lyricsto "tenor" \context Lyrics = tenorLyricsA \tenorWordsA
-\lyricsto "tenor" \context Lyrics = tenorLyricsB \tenorWordsB
-\lyricsto "tenor" \context Lyrics = tenorLyricsC \tenorWordsC
-\lyricsto "bassus" \context Lyrics = bassusLyricsA \bassusWordsA
-\lyricsto "bassus" \context Lyrics = bassusLyricsB \bassusWordsB
-\lyricsto "bassus" \context Lyrics = bassusLyricsC \bassusWordsC
-
-    >>
-
-    
-  \midi {
-    \tempo 4. = 80
-    }
-
-
-    \layout { }
-  }
+\include "./score.ly"
 
   \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
