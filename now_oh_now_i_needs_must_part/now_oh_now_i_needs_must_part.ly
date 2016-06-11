@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 4, "verses": 3, "transposed": false }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -7,77 +7,72 @@ scDate = "2016-May-16"
 scTempo = #(ly:make-moment 140 4)
 scTitle = "Now, oh now I needs must part"
 scSubtitle = ""
-scComposer = ""
+scComposer = "John Dowland"
 scArranger = ""
 scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-#(set-global-staff-size 18)
+#(set-global-staff-size 16)
 
 \include "english.ly"
 
 
 scGlobal= {
   \autoBeamOff
-  \time 6/8
+  \time 6/2
   \key g \major
-  s2. \noBreak s2. \noBreak s2. \noBreak s2. \break 
-  s2. \noBreak s2. \noBreak s2. \noBreak s2. \pageBreak
-  s2. \noBreak s2. \noBreak s2. \noBreak s2. \break 
-  s2. \noBreak s2. \noBreak s2. \noBreak s2. \pageBreak
-  s2. \noBreak s2. \noBreak s2. \noBreak s2. \break 
-  s2. \noBreak s2. \noBreak s2. \noBreak s2. \break
+
 }
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c'' {  
-  b4 a8 g4 fs8 | e4 g8 a4 r8 | b4 d8 c4 b8 | a4 b8 a4 r8 |
-  b4 a8 g4 fs8 | e4 g8 a4 r8 | b8 d c8. c16 b8 a | g2. 
-  b4 a8 g4 fs8 | e4 g8 a4 r8 | b4 d8 c4 b8 | a4 b8 a4 r8 |
-  b4 a8 g4 fs8 | e4 g8 a4 r8 | b8 d c8. c16 b8 a | g2. 
+  b1 a2 g1 fs2 | e1 g2 a1 r2 | b1 d2 c1 b2 | a1 b2 a1 r2 |
+  b1 a2 g1 fs2 | e1 g2 a1 r2 | b2 d c2. c4 b2 a | g\breve.
+  b1 a2 g1 fs2 | e1 g2 a1 r2 | b1 d2 c1 b2 | a1 b2 a1 r2 |
+  b1 a2 g1 fs2 | e1 g2 a1 r2 | b2 d c2. c4 b2 a | g\breve.  \bar "||" 
 
-  c4 c8 c4 e8 | d4 e8 d4 r8 | c8. c16 b8 a8 c8 b8 | a2.
-  b4 a8 g4 fs8 | e4 g8 a4 r8 | b8 d8 c8. c16 b8 a8 | g2. \bar ":|."
+  c1 c2 c1 e2 | d1 e2 d1 r2 | c2. c4 b2 a2 c2 b2 | a\breve.
+  b1 a2 g1 fs2 | e1 g2 a1 r2 | b2 d2 c2. c4 b2 a2 | g\breve. \bar ":|."
 }
 
 scMusicTwoName = "altus"
 scMusicTwoClef = \clef "treble"
 scMusicTwo = \relative g' {
-  g4 fs8 e4 d8 | c4 b8 d4. | d4 g8 g4 g8 | fs4 g8 fs4 r8 |
-  g4 fs8 e4 d8 | c4 b8 d4 r8 | d8 g8 e8 r16 e16 d8. c16 | b2.  
-  g'4 fs8 e4 d8 | c4 b8 d4. | d4 g8 g4 g8 | fs4 g8 fs4 r8 |
-  g4 fs8 e4 d8 | c4 b8 d4 r8 | d8 g8 e8 r16 e16 d8. c16 | b2.  
+  g1 fs2 e1 d2 | c1 b2 d1. | d1 g2 g1 g2 | fs1 g2 fs1 r2 |
+  g1 fs2 e1 d2 | c1 b2 d1 r2 | d2 g2 e2. e4 d2. c4 | b\breve.   \bar "||"
+  g'1 fs2 e1 d2 | c1 b2 d1. | d1 g2 g1 g2 | fs1 g2 fs1 r2 |
+  g1 fs2 e1 d2 | c1 b2 d1 r2 | d2 g2 e2 r4 e4 d2. c4 | b\breve.   \bar "||"
 
-  e4 e8 e4 e8 | g4 g8 g4. | e8 a g d e8. d16 | cs2.
-  g'4 fs8 e4 d8 | c4 b8 d4. | d8 g e8. e16 d8. c16 | b2. \bar ":|."
+  e1 e2 e1 e2 | g1 g2 g1. | e2 a g d e2. d4 | cs\breve.
+  g'1 fs2 e1 d2 | c1 b2 d1. | d2 g e2. e4 d2. c4 | b\breve. \bar ":|."
 }
 
 scMusicThreeName = "tenor"
 scMusicThreeClef = \clef "G_8"
 scMusicThree = 
 \relative c' {
-  d4 d8 b4 b8 | g8 g8[g'] fs4. | g4 b,8 e4 d8 | d4 d8 d4.
-  d4 d8 b4 b8 | g8 g[g'] fs4. | g8 b,8 a16 g g4 fs8 | g2. 
-  d'4 d8 b4 b8 | g8 g8[g'] fs4. | g4 b,8 e4 d8 | d4 d8 d4.
-  d4 d8 b4 b8 | g8 g[g'] fs4. | g8 b,8 a16 g g4 fs8 | g2. 
+  d1 d2 b1 b2 | g2  g2 \melisma g' \melismaEnd fs1. | g1 b,2 e1 d2 | d1 d2 d1.
+  d1 d2 b1 b2 | g2 g \melisma g' \melismaEnd fs1. | g2 b,2 a4 g g1 fs2 | g\breve.  \bar "||"
+  d'1 d2 b1 b2 | g2  g2 \melisma g' \melismaEnd fs1. | g1 b,2 e1 d2 | d1 d2 d1.
+  d1 d2 b1 b2 | g2 g \melisma g' \melismaEnd fs1. | g2 b,2 a4 g g1 fs2 | g\breve.  \bar "||"
 
-  g4  g8 g4 g8 | g8 b g g4 b8 | a8 e' e a, a gs | a2.
-  d4 d8 b4 b8 | g8 g8.[ g'16] fs4. | g8 b, a16 g g4 fs8 | g2. \bar ":|."
+  g1  g2 g1 g2 | g2 b g g1 b2 | a2 e' e a, a gs | a\breve.
+  d1 d2 b1 b2 | g2 g2. g'4 fs1. | g2 b, a4 g g1 fs2 | g\breve. \bar ":|."
 }
 
 scMusicFourName = "bassus"
 scMusicFourClef = \clef "bass"
 scMusicFour = 
 \relative g {
-  g4 d8 e4 b8 | c4 e8 d4. | g4 g8 c4 g8 | d4 g,8 d'4.
-  g4 d8 e4 b8 | c4 e8 d4. | g,8 g c c d d | g,2. 
-  g'4 d8 e4 b8 | c4 e8 d4. | g4 g8 c4 g8 | d4 g,8 d'4.
-  g4 d8 e4 b8 | c4 e8 d4. | g,8 g c c d d | g,2. 
+  g1 d2 e1 b2 | c1 e2 d1. | g1 g2 c1 g2 | d1 g,2 d'1.
+  g1 d2 e1 b2 | c1 e2 d1. | g,2 g c c d d | g,\breve.  \bar "||"
+  g'1 d2 e1 b2 | c1 e2 d1. | g1 g2 c1 g2 | d1 g,2 d'1.
+  g1 d2 e1 b2 | c1 e2 d1. | g,2 g c c d d | g,\breve.  \bar "||"
 
-  c4 c8 c4 c8 | b8 g c b g4 | a8. a16 e'8 f e e | a,2.
-  g'4 d8 e4 b8 | c4 e8 d4. | g8 g c,8. c16 d8 d8 | g,2. \bar ":|."
+  c1 c2 c1 c2 | b2 g c b g1 | a2. a4 e'2 f e e | a,\breve.
+  g'1 d2 e1 b2 | c1 e2 d1. | g2 g c,2. c4 d2 d2 | g,\breve. \bar ":|."
 }
 
 
@@ -85,7 +80,7 @@ wordsA = \lyricmode {
   \set stanza = "1."
   Now, oh now I needs must part, Part -- ing though I ab -- sent mourn.
   Ab -- sense can no joy im -- part; joy once fled can -- not re -- turn.
-  While I live I needs must love, Love lies not where hope is goine.
+  While I live I needs must love, Love lies not where hope is gone.
   Now at last des -- pair doth prove Love di -- vi -- ded lov -- eth none.
 }
 
@@ -105,28 +100,74 @@ wordsC = \lyricmode {
   Him des -- pair doth cause to lie, Woth both liv'd and di -- eth true.
 }
 
-chorusWords = \lyricmode {
+chorusWordsOne = \lyricmode {
   Sad des -- pair doth drive me hence;
   This des -- pair un -- kind -- ness sends.
   If that part -- ing be of -- fence,
   It is she which then of -- fends.
 }
 
-scChorusWordsThree = \lyricmode {
+chorusWordsThree = \lyricmode {
   Sad des -- pair doth drive me hence;
   This des -- pair, des -- pair un -- kind -- ness sends.
   If that part -- ing be of -- fence,
   It is she which then of -- fends.
 }
 
-bassChorusWords = \lyricmode {
+chorusWordsFour = \lyricmode {
   Sad des -- pair doth drive me hence, me hence;
   This des -- pair un -- kind -- ness sends.
   If that part -- ing be of -- fence,
   It is she which then of -- fends.
 }
 
+scWordsOneA = \lyricmode {
+  \wordsA 
+}
+scWordsOneB = \lyricmode {
+  \wordsB \chorusWordsOne
+  
+}
+scWordsOneC = \lyricmode {
+  \wordsC
+  
+}
+scWordsTwoA = \lyricmode {
+  \wordsA
+  
+}
+scWordsTwoB = \lyricmode {
+  \wordsB \chorusWordsOne
+  
+}
+scWordsTwoC = \lyricmode {
+  \wordsC
+  
+}
+scWordsThreeA = \lyricmode {
+  \wordsA
+  
+}
+scWordsThreeB = \lyricmode {
+  \wordsB \chorusWordsThree
+  
+}
+scWordsThreeC = \lyricmode {
+  \wordsC
+  
+}
+scWordsFourA = \lyricmode {
+  \wordsA
+  
+}
+scWordsFourB = \lyricmode {
+  \wordsB \chorusWordsFour
+  
+}
+scWordsFourC = \lyricmode {
+  \wordsC
 
+}
 \include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.

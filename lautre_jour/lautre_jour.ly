@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 3, "verses": 1, "transposed": true }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -17,11 +17,14 @@ scCopyright = ""
 l'autre_jour
 ===================
 %}
-date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
-#(set-global-staff-size 18)
+
+#(set-global-staff-size 19)
 
 \include "english.ly"
+
+scTransposeFrom =  g 
+scTransposeTo =  a 
 
 scGlobal= {
   \key c \major
@@ -30,7 +33,8 @@ scGlobal= {
 }
 
 scMusicOneName = "cantus"
-scMusicOneClef = \clef "treble"
+scMusicOneClef = \clef "G_8"
+scMusicOneClefTransposed = \clef "treble"
 scMusicOne =   \relative g' {  
   g2 a4 g2 f4 | e2 d4 e2 f4 | g2 g4 a4( g) f |
   e2. e2 r4 | g2 f8([ e]) d4( c) b | c2. c2 c4 | c2 b4 b2 a4 | g2. g2 r4
@@ -41,7 +45,7 @@ scMusicOne =   \relative g' {
   g2 f4 e2 d4 | c2 b4 g2 a4 | c2 d4 e2 f4 | g2. g2 r4 |
   g2 f8([ e]) d4( c) b | c2. c2 r4 | e2 f4 d2 d4 | e2 f4 g2 f4 | e2 d4 c2 d4 |
   e2. e2 r4 | g4 g f e2 f4 | g2. g2 r4 | c,2 d4 e2 d4 | c2. c2 r4 |
-  g'2 f4 e2 d4 | e2 f4 g a g \time 9/4 e8([ d]) c4 f8([ e]) d2. e2. \time 6/4 f1.\fermata
+  g'2 f4 e2 d4 | e2 f4 g a g \time 9/4 e8([ d]) c4 f8([ e]) d2. e2. \time 6/4 f1.
   \bar "|."
 }
 
@@ -62,7 +66,8 @@ scWordsOneA =  \lyricmode {
 }
 
 scMusicTwoName = "altus"
-scMusicTwoClef = \clef "treble"
+scMusicTwoClef = \clef "G_8"
+scMusicTwoClefTransposed = \clef "treble"
 scMusicTwo = 
 \relative c' {
   c2. c2 d4 | e2 f4 e2 d4 | c2 c4 d4( c) b |
@@ -74,7 +79,7 @@ scMusicTwo =
   c2. b2 r4 | g'2 f8([ e]) d4( c) b | c2. b2 a4 | g2. g2 a4  
   c2 b4 a2 b4 | c2. c2 r4 | e2 c4 d2 f4 | e2 d4 c2 d4 | e2 f4 g2 f4 |
   e2. e2 r4 | d2 d4 e2 d4 | c2. c2 r4 | g'2 f4 e2 f4 | g2. g2 e4 |
-  c2 d4 e2 f4 | e2. d2 d4 \time 9/4 c2 b4 d(b) a b2. \time 6/4 c1.\fermata
+  c2 d4 e2 f4 | e2. d2 d4 \time 9/4 c2 b4 d(b) a b2. \time 6/4 c1.
   \bar "|."
 }
 
@@ -93,9 +98,10 @@ scWordsTwoA = \lyricmode {
 
 scMusicThreeName = "tenor"
 scMusicThreeClef = \clef "G_8"
+scMusicThreeClefTransposed = \clef "G_8"
 scMusicThree = 
 \relative a {
-  c2. c2 c4 | b2. \melisma r | c d |
+  c2. c2 c4 | b2. r | c d |
   e r c b c r c b d r |
   c d c r b a a r a c |
   a r g a c r c a c r |
@@ -104,12 +110,12 @@ scMusicThree =
   c b c r c b d r |
   c d c r b a a r a c |
   a r g a c r c a c r |
-  c b a r \time 9/4 c g g \time 6/4 f1.\fermata
-  \melismaEnd \bar "|."
+  c b a r \time 9/4 c g g \time 6/4 f1.
+   \bar "|."
 }
 
 scWordsThreeA = \lyricmode {
-  In se -- cu -- lum __
+  In se -- cu -- lum 
 }
 
 

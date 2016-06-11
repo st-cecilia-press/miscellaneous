@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 4, "verses": 1, "transposed": false }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -30,7 +30,7 @@ scGlobal = {
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
-scMusicOne = \relative c''{ \clef treble \set Staff.instrumentName = "Cantus"
+scMusicOne = \relative c''{ 
 	d2. d4 b e d2 c4 e4. d8 c b a4 b a2 b4. c8 d4 c~ c8 b16 a b4 c4. b16 a b4 e d2 %m1-7
 	r4 d2 d4 b e d2 c4 e4. d8 c b a4 b a4. b8 c4 b r c c c d4. c8 b a g2 g4 %m8-14
 	g2 r4 d' d d e4. d8 c b a g fis4 a b g g g a4. g8 fis4 fis g g e g~ g fis g b d2 d4 g, %m15-22
@@ -40,7 +40,7 @@ scMusicOne = \relative c''{ \clef treble \set Staff.instrumentName = "Cantus"
 }
 scMusicTwoName = "altus"
 scMusicTwoClef = \clef "treble"
-scMusicTwo = \relative c'' { \clef treble \set Staff.instrumentName = "Altus"
+scMusicTwo = \relative c'' { 
 	r2 g2~ g4 e fis g a2 g4 e fis g4. fis16 e fis4 g1 r4 g e c g'2 r %m1-7
 	r g~ g4 e fis g a2 g4 e fis g4. fis16 e fis4 g g g g a4. g8 fis4. e8 d4 d e e %m8-14
 	e e f4. e8 d4 b c4. d8 e2 r4 d d d e4. d8 cis4 cis d d~ d d g e d1 r4 b d2 %m15-22
@@ -50,7 +50,7 @@ scMusicTwo = \relative c'' { \clef treble \set Staff.instrumentName = "Altus"
 }
 scMusicThreeName = "tenor"
 scMusicThreeClef = \clef "G_8"
-scMusicThree = \relative c' { \clef "G_8" \set Staff.instrumentName = "Tenor"
+scMusicThree = \relative c' { 
 	r1 r r r2 d2~ d4 d b e d2 c4 e~ e8 d c b a4 b %m1-7
 	a2 b4 b e c b2 r1 d2 d4 d e4. d8 c b e d c b a4. a8 a4 r b b b %m8-14
 	c4. b8 a4 a b g2 g4 g a4. g8 fis4 fis g4. fis8 e4 e'2 a, b c4. b8 a4 a g2 r4 g b2 %m15-22
@@ -60,7 +60,7 @@ scMusicThree = \relative c' { \clef "G_8" \set Staff.instrumentName = "Tenor"
 }
 scMusicFourName = "bassus"
 scMusicFourClef = \clef "bass"
-scMusicFour= \relative c' { \clef bass \set Staff.instrumentName = "Bassus"
+scMusicFour= \relative c' {
 	r1 r r r g2. e4 fis g a2 g4 e fis g~ %m1-7
 	g8 fis16 e fis4 g2 r1 r r r4 e e e f4. e8 d4 d g4. fis8 e4. d8 %m8-14
 	c2 d r c c4 c d4. c8 b4 b c4. b8 a2 d g c,4 c d2 r4 g b2 g %m15-22
@@ -93,7 +93,7 @@ scWordsThreeA = \lyricmode {
 	qui -- a Do -- _ _ _ _ _ _ mi -- nus, i -- pse est De -- _ _ _ us, i -- pse est De -- _ _ _ us,
 	i -- pse est De -- _ _ _ us, i -- _ _ pse est De -- us, _ _ _ _ i -- pse est De -- us.
 }
-scWordsFour= \lyricmode {
+scWordsFourA = \lyricmode {
 	Ju -- bi -- la -- te De -- o, o -- mnis ter -- _ _ _ ra,
 	ser -- vi -- te Do -- _ _ mi -- no, _ _ _ _ _
 	ser -- vi -- te Do -- _ _ mi -- no, _ _ in lae -- ti -- ti -- a.

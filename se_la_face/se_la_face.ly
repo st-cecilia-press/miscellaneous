@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 3, "verses": 1, "transposed": true }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -24,19 +24,23 @@ Se la face ay pale
 
 %\autoBeamOff
 
- #(set-global-staff-size 13)
+ #(set-global-staff-size 16)
+scTransposeFrom =  c 
+scTransposeTo =  g, 
 
 scGlobal = {
 	\key g \major
 	\time 3/4
-	\override Score.BarNumber.padding = #3
+	
 	 
 }
 
-scMusicOneName = "cantus"
+
+scMusicOneName = "superius"
 scMusicOneClef = \clef "treble"
-scMusicOne = \transpose c g, \relative c''{ \clef treble
-	\set Staff.instrumentName = "Superius"
+scMusicOneClefTransposed = \clef "treble"
+scMusicOne =  \relative c''{ 
+	
 
 c2 c4 | d2 e4 | e8 d c b4 a8 | b2 r4 | c8 c b a4 f8 | e2 r4 | d'2 d4 |
 e2 d4 | c8 b g c b a | c2 r4 | f,4 f8 f4 f8 | c2. | r8 c  d e f4 | r8 c'4 a8 f4 |
@@ -45,10 +49,11 @@ c2 a8 g | f4 e d | c r8 g' e c | r g'e g r c | b a \tuplet 3/2 { c r c, } e f | 
 }
 
 	
-scMusicTwoName = "altus"
-scMusicTwoClef = \clef "treble"
-scMusicTwo = \transpose c g, \relative c' { \clef "G_8"
-	\set Staff.instrumentName = "Tenor"
+scMusicTwoName = "tenor"
+scMusicTwoClef = \clef "G_8"
+scMusicTwoClefTransposed = \clef "G_8"
+scMusicTwo = \relative c' { 
+	
 
 c2 c4 | b2 a4 | c8 d e4 f | e4 d2 | c4 g8 a4 b8 | c2 r4 | g'2 g4 |
 c,2 b4 | c8 d e f d4 | c2 r4 | a'4 a8 a4 a8 | g2 r8 c, d e f4 d | c r d | c g g'8 g |
@@ -56,10 +61,11 @@ g g c,4 r8 d | c4 bf a | g r r | c2 b4 | c2 d4 | e4 c r | g'8 g e f g4 | r c, d8
 f e c g a b c e4 c8 g' e | c r g' e g f | d4 c r8 d | c a4 b8 c a | g c4 e8 d4 | c2.
 }
 
-scMusicThreeName = "tenor"
+scMusicThreeName = "contratenor"
 scMusicThreeClef = \clef "G_8"
-scMusicThree = \transpose c g, \relative c' { \clef "F"
-	\set Staff.instrumentName = "Contratenor"
+scMusicThreeClefTransposed = \clef "bass"
+scMusicThree = \relative c' { 
+	
 c,2 c4| g'2 c4 | r4  g'4 d4 | g4. fs | g8 e4 c8 d4 | c4 c,2 | r4 g'2 |
 r8 g' e c r g | a b c4 g | c, r r | d'2 d4 | e2 g4~| g d2 | ef4 c b | ef d r |
 c g'8 g4 f8 | e4 d cs | d2 g4 | e c g | r8 g'4 e8 f e | c4 g'8 e c4 | g4 r g | c r8 c, f e |

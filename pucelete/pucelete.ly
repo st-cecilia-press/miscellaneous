@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 3, "verses": 1, "transposed": false }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -52,37 +52,37 @@ scMusicTwoClef = \clef "treble"
 scMusicTwo = 
 \relative c' {
  d4 a'2 a4 a2 | a4 a2 g2 r4 a4 g2 |
- a4 g2 a4 bf2 | a2( g4) | f8([ e] d2) | e4 c2 |
+ a4 g2 a4 bf2 | a2 g4 | f8[ e] d2 | e4 c2 |
  d4 e2 | d2 r4 | d'2. | c2. | a2. |
- f2. g2. | f8([ e] d2) | c2 r4 d4 c2 |
+ f2. g2. | f8[ e] d2 | c2 r4 d4 c2 |
  d4 c2 | d4 e2 | f2. | e2 r4 g4 g2 | a4 b2 | c2. | d2 r4 d,4 c2 |
- d4 e2 | g8([ f] f4 e) | d2.
+ d4 e2 | g8[ f] f4 e | d2.
 }
 
 scWordsTwoA = \lyricmode {
   Je lan -- gui des maus d'a -- mours,
-  Mieuz aim as -- sez qu'il m'o -- ci -- e 
-  Que nul au -- tres maus; trop est jo -- li -- e la mort;
+  Mieuz aim as -- sez qu'il m'o -- ci -- _ e __ _ 
+  Que nul au -- tres maus; trop est jo -- li -- e la __ _ mort;
   A -- le -- giés moi,
   douce a -- mi -- e
   Ces -- te ma -- la -- di -- e
-  Qu'a -- mours ne m'o -- ci -- e.
+  Qu'a -- mours ne m'o -- ci --  _ _ e.
 }
 
 scMusicThreeName = "tenor"
-scMusicThreeClef = \clef "G_8"
+scMusicThreeClef = \clef "bass"
 scMusicThree = 
 \relative c {
-  d2.( \melisma f) d c2 r4 d2.( |
-  f) g( d) d2 r4 | e2. |
-  c d2 r4 d2.( f d) |
-  f( g) a( g2) r4 d2.( |
-  f) e c( a2) r4 c2. |
-  d( c) d2 r4 | f2.( e) c \melismaEnd d 
+  d2. \melisma f d c2 r4 d2. |
+  f g d d2 r4 | e2. |
+  c d2 r4 d2. f d |
+  f g a g2 r4 d2. |
+  f e c a2 r4 c2. |
+  d c d2 r4 | f2. e c \melismaEnd d 
 }
 
 scWordsThreeA = \lyricmode {
-  Do -- -
+  Domino 
 }
 
 

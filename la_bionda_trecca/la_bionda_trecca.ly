@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 2, "verses": 2, "transposed": true }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -13,22 +13,23 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-date = #(strftime "%m-%d-%Y" (localtime (current-time)))
-ficta = { \once \set suggestAccidentals = ##t }
+
 
 \include "english.ly"
 #(set-global-staff-size 17)
-
+scTransposeFrom =  c 
+scTransposeTo =  g 
 
 scGlobal= {
   \autoBeamOff
   \time 3/2
-  \key g \major
+  \key c \major
 }
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
-scMusicOne =   \relative c' {  
+scMusicOneClefTransposed = \clef "treble"
+cantus =   \relative c' {  
 e2 e fs | g4 f e d2 \ficta cs4 | d2 d r | e fs1 | g4 \melisma f e d2 e4 | \break
 f4 e e d d c \melismaEnd | e1 r2 | c4 \melisma b b a b g \melismaEnd | a2 a4 b cs2 | d2 r2 e2 | c2 d4 e2 f4 \break
 g2 \melisma f4 e f d | d \ficta cs d \ficta cs2  b4 \melismaEnd| d1. |
@@ -39,9 +40,11 @@ g2 \melisma f4 e f d | d \ficta cs d \ficta cs2  b4 \melismaEnd| d1. |
       d2 r2 b4 c | d4 c b c2 d4 | c4 b a c2 b4 \melismaEnd |a 1.  \break
    }
 }
-scMusicTwoName = "altus"
-scMusicTwoClef = \clef "treble"
-scMusicTwo =   \relative c' {  
+scMusicOne = { \cantus \cantus }
+scMusicTwoName = "tenor"
+scMusicTwoClef = \clef "G_8"
+scMusicTwoClefTransposed = \clef "G_8"
+tenor =   \relative c' {  
 a2 a a | g2. f2 e4 | d2 g1 | a2 a1 | g1. | \break
 \melisma \[ a2 c \] b \melismaEnd | a1 r2 | \[ g2 f \] e | d2 d4 e e2 | d2 r2 e | f2. a2. | \break
 \[ g2 \melisma a \] g | f2. e2. \melismaEnd | d1. |
@@ -52,8 +55,9 @@ a2 a a | g2. f2 e4 | d2 g1 | a2 a1 | g1. | \break
    }
 
 }
+scMusicTwo = { \tenor \tenor }
 
-scWordsOneA = \lyricmode {
+wordsOneA = \lyricmode {
   \set stanza = "1. 5."
 La bion -- da tre -- _ _ çça, __ _ 
 del fin' or co -- lo -- re
@@ -65,7 +69,7 @@ O -- ve ri -- don __ _  le per -- le_e va -- _ _ ghi __ _ _
 fio -- ri.
 }
 
-scWordsOneB = \lyricmode {
+wordsOneB = \lyricmode {
 \set stanza = "4."
 E so glief -- fet -- _ _ ti __ _ 
 del mie ma -- ma -- ggio -- ri.
@@ -76,7 +80,7 @@ mi __ _ sfa --  ce
 E non si cu -- _ ra, per -- ch'io mi __ _ _ sco -- _ _ 
 lo -- ri.
 }
-scWordsOneC = \lyricmode {
+wordsOneC = \lyricmode {
 \set stanza = "1. 5."
 La bion -- da tre -- _ _ çça, __ _ 
 del fin' or co -- lo -- re
@@ -87,7 +91,7 @@ A dun -- que __ _ _ _ a -- mor che sai lo sta -- to mi -- o
 Che mi fa nel __ _ fo -- co es -- ser __ _ _ be -- _  a -- to
 
 }
-scWordsOneD = \lyricmode {
+wordsOneD = \lyricmode {
 \set stanza = "4."
 Ore per me vi __ _ _ ti __ _ veg -- gia_a giu -- sto gra -- to
 Ac -- _ _ ciò che me non ven -- gni -- a_in do -- lo -- re.
@@ -96,7 +100,10 @@ De'! fa che __ _ _ _ _nel bel vi -- so_il __ _ qual __ _ i --  o
 Con vo -- ci as -- _ sa' pia -- to -- se __ _ _ t'ò chia -- ma -- to
 }
 
-scWordsTwoA = \lyricmode {
+scWordsOneA = { \wordsOneA \wordsOneC }
+scWordsOneB = { \wordsOneB \wordsOneD }
+
+wordsTwoA = \lyricmode {
 \set stanza = "1. 5."
 La bion -- da tre -- çça, __ _ 
 del fin' or co -- lo -- re
@@ -106,7 +113,7 @@ me -- ço'l co -- re.
 om -- _ bra __ _ fa -- _ _ ce,
 O -- ve ri -- don __ _  le per -- le_e va -- ghi __ _  fio -- ri.
 }
-scWordsTwoB = \lyricmode {
+wordsTwoB = \lyricmode {
 \set stanza = "4."
 E so glief -- fet -- ti __ _ 
 del mie ma -- ma -- ggio -- ri.
@@ -116,7 +123,7 @@ ve -- de_a -- mo --  re.
 mi __ _ sfa -- _ _ ce
 E non si cu -- _ ra, per -- ch'io mi  sco -- _ lo -- ri.
 }
-scWordsTwoC = \lyricmode {
+wordsTwoC = \lyricmode {
 \set stanza = "1. 5."
 La bion -- da tre -- çça, __ _ 
 del fin' or co -- lo -- re
@@ -126,7 +133,7 @@ me -- ço'l co -- re.
 A dun -- que __ _ a -- mor che sai lo sta -- to mi -- _ _ o
 Che mi fa nel __ _ fo -- co es -- ser be -- _  a -- to
 }
-scWordsTwoD = \lyricmode {
+wordsTwoD = \lyricmode {
 \set stanza = "4."
 Ore per me vi ti __ _ veg -- gia_a giu -- sto gra -- to
 Ac -- _ _ ciò che me non ven -- gni -- a_in do -- lo -- re.
@@ -136,10 +143,8 @@ Con vo -- ci as -- _ sa' pia -- to -- se t'ò chia -- ma -- to
 
 }
 
-
-
-\book {
-}
+scWordsTwoA = { \wordsTwoA \wordsTwoC }
+scWordsTwoB = { \wordsTwoB \wordsTwoD }
 
 \include "./score.ly"
 
