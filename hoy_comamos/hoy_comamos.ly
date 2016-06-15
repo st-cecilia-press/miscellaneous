@@ -4,7 +4,7 @@ scDate = "2016-May-16"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 100 2)
 scTitle = "Oy Comamos Y Bebamos"
 scSubtitle = ""
 scComposer = "Juan del Encina (1469-c.1530)"
@@ -13,10 +13,7 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-%{
-hoyComamos
-===================
-%}
+
 
 
 
@@ -47,7 +44,7 @@ scMusicOne= \relative c''{ \clef treble
 scMusicTwoName = "altus"
 scMusicTwoClef = \clef "treble"
 scMusicTwo= \relative c'{ \clef treble
-	\partial 2 fs4 g | a2 a4 g4( fs4) g4 | a2 a2 g4 a4 | bf2 bf4 a4 g2 |
+	\partial 2 fs4 g | a2 a4 g4\melisma fs4\melismaEnd g4 | a2 a2 g4 a4 | bf2 bf4 a4 g2 |
 	fs2 fs2 fs4 g4 | bf2 a4 g4 fs2 | g2 g2 \bar ".|:-||" g4 a4 |
 	bf2 bf4 a4 g2 | fs2 fs2 fs4 g4 | bf2 a4 g2 fs4 | g2 g2 \bar ":|." 
 }
@@ -61,9 +58,9 @@ scMusicThree = \relative c'{ \clef "G_8"
 scMusicFourName = "bassus"
 scMusicFourClef = \clef "bass"
 scMusicFour= \relative c{ \clef bass
-	\partial 2 d4 g4 | f2 f4 ef4( d) g4 | f2 f2 g4 f4 | bf2 bf4 f4 g2 |
-	d2 d2 d4 g4 | g4( bf) f g d2 | g2 g2  \bar ".|:-||" g4 f4 |
-	bf2 bf4 f4 g2 | d2 d2 d4 g4 | g4( bf4) f4 g4 d2 | g2 g2 \bar ":|."
+	\partial 2 d4 g4 | f2 f4 ef4\melisma d\melismaEnd g4 | f2 f2 g4 f4 | bf2 bf4 f4 g2 |
+	d2 d2 d4 g4 | g4\melisma bf\melismaEnd f g d2 | g2 g2  \bar ".|:-||" g4 f4 |
+	bf2 bf4 f4 g2 | d2 d2 d4 g4 | g4\melisma bf4\melismaEnd f4 g4 d2 | g2 g2 \bar ":|."
 }
 
 scWordsOneA = \lyricmode{

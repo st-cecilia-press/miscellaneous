@@ -4,7 +4,7 @@ scDate = "2016-May-16"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 110 4)
 scTitle ="Es ist ein Schnee gefallen"
 scSubtitle = "This Evenfall 'tis snowing"
 scComposer = "Caspar Othmayr (1515-1553)"
@@ -14,7 +14,7 @@ scPoet = ""
 scMeter=  ""
 scCopyright = ""
 
-date = #(strftime "%m-%d-%Y" (localtime (current-time)))
+
 
 \include "english.ly"
 #(set-global-staff-size 18)

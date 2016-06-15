@@ -21,43 +21,44 @@ scTagline = ""
 scGlobal= {
   \autoBeamOff
   \key c \major
+  \time 2/2
 }
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 cantus =   \relative c' {  
-  \time 2/2
+  
   e4 e e2 g2 e4 e g4. g8 a4 b c2 r4
   g a4. a8 a4 g c4. c8 b4 b4 a4 g a \ficta fs g2 r4 
   g4\f a g e2 d e4 e4 
   \time 3/2 a4. g8 f4 e8 e d2  \time 2/2 e1
-  \bar ":|"
+  
 }
 
-scMusicOne = { \repeat volta 2{ \cantus} \pageBreak \repeat volta 2 {\cantus} }
+scMusicOne = { \repeat volta 2{ \cantus } \pageBreak \repeat volta 2 {\cantus} }
 
 tenor = 
 \relative c' {
-  \time 2/2
+ 
   c4 c c2 e2 c4 c e e d d c2 r4
   c c4. c8 c4 b a4. a8 g4 g c b a a g2 r4 
   g c c c2 b c4 c
   \time 3/2 c4. c8 d4 g,8 a b c d b  \time 2/2 c1
-  \bar ":|"
+  
 }
 
 scMusicTwoName = "tenor"
 scMusicTwoClef = \clef "G_8"
-scMusicTwo = { \repeat volta 2{ \tenor} \repeat volta 2{ \tenor } }
+scMusicTwo = { \repeat volta 2 { \tenor} \repeat volta 2{ \tenor } }
 
 bassus = 
 \relative c {
-  \time 2/2
+  
   c4 c c2 c c4 c c e f g c,2 r4
   c c4. c8 c4 d e f g g, a b c d g, 
   g g'2 f4  e c2 g' c,4 c
   \time 3/2 f4. e8 d4 c8 c8 g'2 \time 2/2 c,1
-  \bar ":|"
+  
 }
 
 scMusicThreeName = "bassus"

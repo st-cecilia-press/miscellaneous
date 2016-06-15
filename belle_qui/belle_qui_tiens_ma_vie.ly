@@ -13,7 +13,7 @@ scDate = "2016-May-16"
 
 \include "english.ly"
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 110 4)
 scTitle = "Belle Qui Tiens Ma Vie"
 scSubtitle = ""
 scComposer = "Thoinot Arbeau"

@@ -8,7 +8,7 @@ scDate = "2016-May-16"
 #(set-global-staff-size 20)
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 100 2)
+scTempo = #(ly:make-moment 160 1)
 scTitle = "Dindirín, dindirín"
 scSubtitle = ""
 scComposer = "Anonymous (c. 1500)"
@@ -26,31 +26,18 @@ scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOne = \relative c'{
   \time 3/1 
-  f1 f f | e e f | g g f | e\breve f1 | g e e | d\breve.^"Fine"
+  f1 f f | e e f | g g f | e\breve f1 | g e e | d\breve.
   \bar "||" \break
   \time 2/1
   d'1  d | a a a a | g\breve e1 e | f f e e | f a g\breve f\breve
   \break
   \time 3/1
   f\breve f1 f\breve f1 f\breve f1 f\breve. e\breve f1 |
-  g\breve g1 | g\breve f1 | e\breve f1 | g e e | d\breve.^"D.C."
+  g\breve g1 | g\breve f1 | e\breve f1 | g e e | d\breve.
   \bar "|."
   
 }
-cantusMusicChorusA =   \relative c' {  
-  \time 3/4 
-  f4 f f | e e f | g g f | e2 f4 | g e e | d2.^"Fine"
-  \bar "||"
-}
 
-cantusMusicVerseChorusB = \relative c'' {
-  \time 2/2 d4 
-  d | a a a a | g2 e4 e | f f e e | f( a g2 ) f2
-  \break \time 3/4 f2
-  f4 f2 f4 f2 f4 f2. e2 f4 |
-  g2 g4 | g2 f4 | e2 f4 | g e e | d2.^"D.C."
-  \bar "|."
-}
 
 scMusicTwoName = "altus"
 scMusicTwoClef = \clef "treble"
@@ -62,7 +49,7 @@ scMusicTwo =   \relative c' {
   d1 d | f f f f | g\breve g1 g | a a g g | f1. d2 e\breve   f\breve
   \time 3/1
   d\breve d1 | d\breve d1 | d\breve d1 | d\breve. | c\breve d1 | 
-  e\breve e1 | e\breve d1 | cs\breve d1 | b  cs cs | d\breve. \bar "|."
+  e\breve e1 | e\breve d1 | cs\breve d1 | b  cs cs | d\breve. \bar ":|."
 }
 
 
@@ -75,7 +62,7 @@ scMusicThree =   \relative c' {
     a1 a | d d d d | d\breve c1 c | c c c c | c\longa  c\breve
   \time 3/1
   bf\breve bf1 bf\breve bf1 bf\breve bf1 a\breve. | a\breve a1 |
-  c\breve c1 c\breve a1 a\breve a1 | g a a | a\breve. \bar "|."
+  c\breve c1 c\breve a1 a\breve a1 | g a a | a\breve. \bar ":|."
   
 }
 
@@ -89,57 +76,9 @@ scMusicFour =   \relative c {
     d1 d | d d d d | g\breve c,1 c | f f c c | f\breve c  f 
   \time 3/1
   bf,\breve bf1 | bf\breve bf1 | bf\breve bf1 | d\breve. | a\breve d1 |
-  c\breve c1 | c\breve d1 | a\breve d1 | e a, a | d\breve. \bar "|."
-}
-bassusMusicChorusA = 
-\relative c {
-  \time 3/1
-  d1 d d | a a d | c c d | a\breve d1 | e a, a | d\breve. \bar "||"
-  
+  c\breve c1 | c\breve d1 | a\breve d1 | e a, a | d\breve. \bar ":|."
 }
 
-bassusMusicVerseChorusB = 
-\relative c {
-  \time 2/2
- 
-  d1 d | d d d d | g\breve c,1 c | f f c c | f\breve c  f 
-  \time 3/4
-  bf,\breve bf1 | bf\breve bf1 | bf\breve bf1 | d\breve. | a\breve d1 |
-  c\breve c1 | c\breve d1 | a\breve d1 | e a, a | d\breve. \bar "|."
-}
-
-
-
-wordsChorusB = \lyricmode {
-
-}
-
-wordsVerseA = \lyricmode {
-  \set stanza = "1."
-  Je me le -- vé_un bel ma -- tin, 
-  Ma -- ti -- na -- ta per la pra -- ta;
-
-  En -- con -- tré le rui -- se -- ñor
-  Que can -- ta -- ba so la ra -- ma.
-}
-
-wordsVerseB = \lyricmode {
-  \set stanza = "2."
-  En -- con -- tré le rui -- se -- ñor
-  Que can -- ta -- ba so la ra -- ma.
-  
-  “Rui -- se -- ñor, le rui -- se -- ñor,
-  Fác -- te -- me_a -- ques -- ta_em -- ba -- xa -- ta.”
-}
-
-wordsVerseC = \lyricmode {
-  \set stanza = "3."
-  “Rui -- se -- ñor, le rui -- se -- ñor,
-  Fác -- te -- me_a -- ques -- ta_em -- ba -- xa -- ta.
-
-  Y dí -- ga -- lo_a mon a -- mi
-  Que je ya só ma -- ri -- ta -- ta.”
-}
 
 emptyChorus = \lyricmode {
   _ _ _ _ _ _ _ _ _  _ _ _ _ _ _

@@ -4,8 +4,8 @@ scDate = "2016-May-16"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
-scTitle = "Fi, Maris de vostre amour"
+scTempo = #(ly:make-moment 110 4)
+scTitle = "Fi, Maris De Vostre Amour"
 scSubtitle = ""
 scComposer = "Late 13th C."
 scArranger = ""
@@ -19,7 +19,7 @@ scCopyright = ""
 
 scGlobal= {
   \autoBeamOff
-  \key bf \major
+  \key f \major
   \time 3/4
 
 }
@@ -28,7 +28,7 @@ cantusA = \relative c' {
   f2 g8[ a] | bf2 bf8[ c] | d2 d16[ c bf8] | c2 
 }
 cantusB = \relative c'' {
-  bf8[ c] | bf8([ a] g4) a | bf2 r4
+  bf8[ c] | bf8[ a] \melisma g4\melismaEnd a | bf2 r4
 }
 
 scMusicOneName = "cantus"
@@ -46,7 +46,7 @@ altusA = \relative c'' {
   bf2 bf16[ a g8] | f2 g4 | a2 a16[ g16 f8] | g2
 }
 altusB = \relative c' {
-  f8[ g] | f([ e] d4) e | f2 r4
+  f8[ g] | f[ e] \melisma d4 \melismaEnd e | f2 r4
 }
 
 scMusicTwoName = "altus"

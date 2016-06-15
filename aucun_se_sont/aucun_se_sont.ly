@@ -1,4 +1,4 @@
-%score_options {"parts": 3, "verse": 1, "transposed": true}
+%score_options {"parts": 3, "verses": 1, "transposed": true}
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -43,7 +43,7 @@ scMusicOne =   \relative c' {
    c,2 \ficta bf a | c4 c c2 c4 \ficta bf | a2 e' d4 d | f4 f f2 e | d1 r2 | a2 b c | d e f | 
    e4 d e2 e8 d c4 | g'1 r2 | g4 g f8 e d4 e2 | f4 f f2 g | f4 e d2 e4 f | g4 g f2 f8 e d4 | c1 r2 
    e4 d e f g2 | g4 a g g e e | c2 f g4 f | e d e f e8 d c4 | d1 r2 | e4 e e2 f4 g | 
-   a4 g e2 f4 e | d1 e4 d | c1 r2 | e4 c e2 g | f2 e8 d c4 e2 | g4 a g8 f e4 d2 | f1.
+   a4 g e2 f4 e | d1 e4 d | c1 r2 | e4 c e2 g | f2 e8 d c4 e2 | g4 a g8 f e4 d2 | f1. \bar "|."
 }
 
 scMusicTwoName = "tenor"
@@ -57,21 +57,21 @@ scMusicTwo =   \relative c' {
    f1 r2 | f1 f2 | e4 d c2 b | c \ficta bf c | d e f | e d c | b c d |
    e1 r2 | c2 bf a | g a g | f1 g2 | bf1 c2 | d4 c d2 e | f1 f8 e d4 |
    e4 f e d c2 | d2 d e | f f d | e1 r2 | g1 f2 | e4 d c2 d |
-   e4 d e2 e8 d c4 | b1 r2 | c4 \ficta bf c2 d | e1 e8 d c4 | f1 e2 | d c b | c1.
+   e4 d e2 e8 d c4 | b1 r2 | c4 \ficta bf c2 d | e1 e8 d c4 | f1 e2 | d c b | c1. \bar "|."
 }
 
 superTe = \relative c {
    f1 f2 | a1 r2 | f1 a2 | g1 f2 | a1 f2 | g1 r2 |
    a1 c2 | c1 r2 | d1 c2 | c1 g2 | bf1 a2| g1 r2 | f1 g2 |
    a1 r2 | g1 a2 | f1 g2 | a1 bf2 | g1 r2 | a1 bf2 |
-   a1 r2 | g1 f2 | f1 g2 | a1 g2 | f1 r2 | g1 g2 |
+   a1 r2 | g1 f2 | f1 g2 | a1 g2 | f1 r2 | g1 g2 | 
 }
 
 scMusicThreeName = "bassus"
 scMusicThreeClef = \clef "G_8"
 scMusicThreeClefTransposed = \clef "G_8"
 scMusicThree =   {  
-   \superTe f1 r2 \superTe f1.
+   \superTe f1 r2 \superTe f1. \bar "|."
 }
 
 

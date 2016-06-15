@@ -45,6 +45,15 @@
               
             }
             
+            <<
+              
+              
+              
+                \new Lyrics \lyricsto "one" { \scWordsOneA } 
+                
+              
+            >>
+            
           >>
          
           \new Staff = \scMusicTwoName <<
@@ -60,6 +69,15 @@
               
             }
             
+            <<
+              
+              
+              
+                \new Lyrics \lyricsto "two" { \scWordsTwoA } 
+                
+              
+            >>
+            
           >>
          
           \new Staff = \scMusicThreeName <<
@@ -74,6 +92,15 @@
               
               
             }
+            
+            <<
+              
+              
+              
+                \new Lyrics \lyricsto "three" { \scWordsThreeA } 
+                
+              
+            >>
             
           >>
          
@@ -138,6 +165,15 @@
               
             }
             
+            <<
+              
+              
+              
+                \new Lyrics \lyricsto "one" { \scWordsOneA } 
+                
+              
+            >>
+            
           >>
          
           \new Staff = \scMusicTwoName <<
@@ -155,6 +191,15 @@
               
             }
             
+            <<
+              
+              
+              
+                \new Lyrics \lyricsto "two" { \scWordsTwoA } 
+                
+              
+            >>
+            
           >>
          
           \new Staff = \scMusicThreeName <<
@@ -171,6 +216,15 @@
                } 
               
             }
+            
+            <<
+              
+              
+              
+                \new Lyrics \lyricsto "three" { \scWordsThreeA } 
+                
+              
+            >>
             
           >>
          
