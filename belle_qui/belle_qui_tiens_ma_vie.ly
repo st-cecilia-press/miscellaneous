@@ -1,47 +1,59 @@
-\paper {
-  oddFooterMarkup = \markup {
-    \fill-line { \line {
-      \italic \fromproperty #'header:title
-      " - Page "
-      \fromproperty #'page:page-number-string
-      " of 1"
-    } }
-  }
-  evenFooterMarkup = \oddFooterMarkup
+%score_options {"parts": 4, "verses": 4, "transposed": false}
+scDate = "2016-May-16"
+
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+
+#(set-global-staff-size 16)
+#(ly:set-option 'midi-extension "mid")
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #16
 }
 
 \include "english.ly"
-#(set-global-staff-size 13)
 
-\header{
-  title = "Belle qui tiens ma vie"
-  composer = \markup { From Arbeau's \italic Orchesography}
-  tagline = ""
-}
+scTempo = #(ly:make-moment 140 4)
+scTitle = "Belle Qui Tiens Ma Vie"
+scSubtitle = ""
+scComposer = "Thoinot Arbeau"
+scArranger = ""
+scMeter = ""
+scPoet = ""
+scCopyright = ""
+scTagline = ""
 
-global= {
+
+\include "english.ly"
+
+
+scGlobal = {
   \key g \dorian
-  \repeat unfold 4 { s1 \noBreak s1 \noBreak s1 \noBreak s1 \break }
-  \bar ":|"
+  \autoBeamOff
 }
 
-cantusMusic =   \relative c'' {  
+scMusicOneName = "cantus"
+scMusicOneClef = \clef "G_8"
+cantus =   \relative c' {  
 
   g2 g4 fs g a bf2 bf4 d c bf bf a bf2
   g2 g4 fs g a bf2 bf4 d c bf bf a bf2
-  bf2 a4 a g g fs2 d2 e8( f) g4 g fs g2    
-  bf2 a4 a g g fs2 d2 e8( f) g4 g fs g2  
+  bf2 a4 a g g fs2 d2 e8[ f] g4 g fs g2    
+  bf2 a4 a g g fs2 d2 e8[ f] g4 g fs g2  
 }
 
-altusMusic = 
-\relative c' {
+scMusicTwoName = "altus"
+scMusicTwoClef = \clef "G_8"
+altus = \relative c' {
   d2 d4 d d f f2 f4 f e f g f f2 
   d2 d4 d d f f2 f4 f e f g f f2 
   f2 f4 f d ef d2 f2 c4 d d d b2
   bf2 f'4 f d ef d2 f e4 d d d d2
 }
 
-tenorMusic = 
+scMusicThreeName = "tenor"
+scMusicThreeClef = \clef "G_8"
+tenor = 
 \relative c' {
   bf2 bf4 a bf c d2 d4 bf g d' c c d2
   bf2 bf4 a bf c d2 d4 bf g d' c c d2
@@ -49,7 +61,9 @@ tenorMusic =
   d' c4 d bf c a2 bf g4 bf a a g2
 }
 
-bassusMusic = 
+scMusicFourName = "bassus"
+scMusicFourClef = \clef "bass"
+bassus = 
 \relative g {
   g2 g4 d g f bf,2 bf4 bf c d ef f bf,2
   g'2 g4 d g f bf,2 bf4 bf c d ef f bf,2
@@ -57,10 +71,13 @@ bassusMusic =
   g' f4 d g c, d2 bf c4 g d' d g,2
 }
 
+scMusicOne = {\cantus  \bar ":|."\pageBreak \bar ":..:" \cantus \bar ":|."}
+scMusicTwo = {\altus \pageBreak \altus}
+scMusicThree = {\tenor \pageBreak \tenor}
+scMusicFour = {\bassus \pageBreak \bassus}
 
 wordsA = \lyricmode {
-  \set stanza = "*1. "
-  \set vocNam = "*1. "
+  \set stanza = "1."
   Bel -- le qui tiens ma vi -- e cap -- ti -- ve dans tes yeux,
   Qui m'a l'â -- me ra -- vi -- e d'un sou -- ris gra -- ci -- eux,
   Viens tôt me se -- cou -- rir, ou me fau -- dra mou -- rir,
@@ -69,8 +86,7 @@ wordsA = \lyricmode {
 }
 
 wordsB = \lyricmode {
-  \set stanza = "*2."
-  \set vocNam = "*2."
+  \set stanza = "2."
   Pour -- quoi fuis tu, mig -- nar -- de, si je suis près de toi,
   Quand tes yeux je re -- gar -- de je me perde de -- dans moi,
   Car tes per -- fec -- ti -- ons chan -- gent mes ac -- ti -- ons,
@@ -79,7 +95,6 @@ wordsB = \lyricmode {
 
 wordsC = \lyricmode {
   \set stanza = "3."
-  \set vocNam = "3."
   Tes beau -- tés et ta gra -- ce et tes di -- vins pro -- pos,
   Ont é -- chauf -- fé la gla -- ce qui me ge -- lait les os,
   Et ont rem -- pli mon coeur d'une am -- ou -- reuse ar -- deur.
@@ -88,7 +103,6 @@ wordsC = \lyricmode {
 
 wordsD = \lyricmode {
   \set stanza = "4."
-  \set vocNam = "4."
   Mon â -- me vou -- lait ê -- tre li -- bre de pas -- si -- on,
   Mais l'a -- mour s'est fait maî -- tre de mes af -- fec -- ti -- ons,
   Et a mis sou sa loi et mon coer et ma foi,
@@ -96,8 +110,7 @@ wordsD = \lyricmode {
 }
 
 wordsE = \lyricmode {
-  \set stanza = "*5."
-  \set vocNam = "*5."
+  \set stanza = "5."
   Ap -- pro -- che donc ma bel -- le, ap -- pro -- che toi mon bien,
   Ne me sois plus re -- bel -- le puis -- que mon coeur est tien,
   Pour mon mal ap -- pais -- er don -- ne moi un bais -- er,
@@ -106,7 +119,6 @@ wordsE = \lyricmode {
 
 wordsF = \lyricmode {
   \set stanza = "6."
-  \set vocNam = "6."
   Je meurs, mon An -- ge -- let -- te, je meus en te bai -- sant,
   Ta bou -- che tant dou -- cet -- te va mon bien ra -- vis -- sant,
   A ce coup mes e -- sprits sont tous d'a -- mour é -- pris.
@@ -115,93 +127,32 @@ wordsF = \lyricmode {
 
 wordsG = \lyricmode {
   \set stanza = "7."
-  \set vocNam = "7."
   Plu -- tôt on ver -- ra l'on -- de con -- tre -- ment re -- cu -- ler,
   Et plu -- tôt l'oeil du mon -- de Ces -- se -- ra de brû -- ler,
   Que l'a -- mour qui m'é -- point dé -- crois -- se d'un seul point.
   Que l'a -- mour qui m'é -- point dé -- crois -- se d'un seul point.
 }
 
-\score {
-  <<
-    \new DrumStaff \with {
-      drumStyleTable = #percussion-style
-      \remove Clef_engraver
-      \remove Time_signature_engraver
-      \remove Bar_engraver
-      \remove Staff_symbol_engraver 
-      \override StaffSymbol #'line-count = #1
-    } { 
-      \drummode {
-	tri4^\markup{Battemant du tambour} tri8[ tri] tri4 tri8[ tri]
-      }
-    }
-    \context ChoirStaff <<
-      \context Staff = treble <<
-	\context Voice = cantus { \voiceOne << \global \cantusMusic >> }
-	\context Voice = altus { \voiceTwo << \global \altusMusic >> }
-      >>
-      \context Lyrics = lyricsA { s1 }
-      \context Lyrics = lyricsB { s1 }
-      \context Lyrics = lyricsC { s1 }
-      \context Lyrics = lyricsD { s1 }
-      \context Lyrics = lyricsE { s1 }
-      \context Lyrics = lyricsF { s1 }
-      \context Lyrics = lyricsG { s1 }
-      \context Staff = bass <<
-	\clef bass
-	\context Voice = tenor { \voiceOne << \global \tenorMusic >> }
-	\context Voice = bassus { \voiceTwo << \global \bassusMusic >> }
-      >>
+scWordsOneA = {\wordsA \pageBreak \wordsE}
+scWordsOneB = {\wordsB \pageBreak \wordsF}
+scWordsOneC = {\wordsC \pageBreak \wordsG}
+scWordsOneD = {\wordsD}
 
-    >>
+scWordsTwoA = {}
+scWordsTwoB = {}
+scWordsTwoC = {}
+scWordsTwoD = {}
 
-    \lyricsto "cantus" \context Lyrics = lyricsA \wordsA
-    \lyricsto "cantus" \context Lyrics = lyricsB \wordsB
-    \lyricsto "cantus" \context Lyrics = lyricsC \wordsC
-    \lyricsto "cantus" \context Lyrics = lyricsD \wordsD
-    \lyricsto "cantus" \context Lyrics = lyricsE \wordsE
-    \lyricsto "cantus" \context Lyrics = lyricsF \wordsF
-    \lyricsto "cantus" \context Lyrics = lyricsG \wordsG
+scWordsThreeA = {\wordsA \pageBreak \wordsE}
+scWordsThreeB = {\wordsB \pageBreak \wordsF}
+scWordsThreeC = {\wordsC \pageBreak \wordsG}
+scWordsThreeD = {\wordsD}
 
-  >>
+scWordsFourA = {}
+scWordsFourB = {}
+scWordsFourC = {}
+scWordsFourD = {}
 
-  \layout {
-    indent = 0\mm
-    betweensystemspace = 5\mm
-
-    \context{
-      \Score
-      \override VocalName #'break-align-symbol = #'vocal-name
-
-      % stolen from StanzaNumber - right-aligns extra verse numbers
-      \override VocalName #'direction = #-1
-      \override VocalName #'X-offset-callbacks = #`(,Side_position_interface::aligned_side) 
-
-      % positions extra verse numbers in the right place
-      \override BreakAlignment #'break-align-orders = ##(; end-of-line:
-      (instrument-name left-edge ambitus breathing-sign
-      clef staff-bar key-signature
-      time-signature custos)
-
-      ; unbroken
-      (instrument-name left-edge ambitus breathing-sign
-      clef staff-bar key-signature
-      staff
-      time-signature custos)
-      ; begin of line
-      (instrument-name left-edge ambitus breathing-sign
-      clef key-signature staff-bar
-      time-signature vocal-name custos)
-
-      )
-    }
-  }
-
-  \midi {
-    \tempo 4 = 120
-  }
-}
-
-\version "2.6.3"  % necessary for upgrading to future LilyPond versions.
+\include "./score.ly"
+\version "2.18.2"  % necessary for upgrading to future LilyPond versions.
 
