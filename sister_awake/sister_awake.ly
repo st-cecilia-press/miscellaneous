@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 5, "verses": 1, "transposed": true }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -20,26 +20,27 @@ Sister Awake
              "aste" Alto line measure 46
 %}
 
-date = #(strftime "%m-%d-%Y" (localtime (current-time)))
-
 
 \include "english.ly"
 
 %\autoBeamOff
 
- #(set-global-staff-size 14)
+ #(set-global-staff-size 18)
 
 scGlobal = {
-	\key d \major
+	\key f \major
 	\time 4/4
-	\override Score.BarNumber.padding = #3
+	
 	 
 }
+scTransposeFrom =  f 
+scTransposeTo =  d 
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
-scMusicOne = \transpose f d  \relative c''{ \clef treble
-	\set Staff.instrumentName = "Sop I"
+scMusicOneClefTransposed = \clef "treble"
+scMusicOne = \relative c''{ 
+	
 	%measuress 1-5  
 	r1 |  r4 c a bf  | c c f d  | e c c b | c2 d4 g  | 
 	%measuress 6-10 
@@ -68,10 +69,11 @@ scMusicOne = \transpose f d  \relative c''{ \clef treble
 	g2 f2 | r4 c' f d | e4. e8 d8 c b4 | c g c4. bf8 | a4 g8 f g2 | a1 \bar "|."
 }
 
-scMusicTwoName = "altus"
+scMusicTwoName = "quintus"
 scMusicTwoClef = \clef "treble"
-scMusicTwo = \transpose f d  \relative c'' { \clef treble
-	\set Staff.instrumentName = "Sop II"
+scMusicTwoClefTransposed = \clef "treble"
+scMusicTwo = \relative c'' { 
+	
 	%measuress 1-5  
 	c2 a4 bf| c4 c f d | e e d4. d8 | c4 c d f | e e d2 | 
 	%measuress 6-10 
@@ -101,10 +103,11 @@ scMusicTwo = \transpose f d  \relative c'' { \clef treble
 		
 }
 	
-scMusicThreeName = "tenor"
-scMusicThreeClef = \clef "G_8"
-scMusicThree = \transpose f d \relative c' { \clef "G_8"
-	\set Staff.instrumentName = "Alto"
+scMusicThreeName = "altus"
+scMusicThreeClef = \clef "treble"
+scMusicThreeClefTransposed = \clef "G_8"
+scMusicThree = \relative c' { 
+	
 	%measuress 1-5  
 	r1 | r1 | r1 | r4 c f d | e c g'2 | 
 	%measuress 6-10 
@@ -133,10 +136,11 @@ scMusicThree = \transpose f d \relative c' { \clef "G_8"
 	r2 r4 f4 | c'4 a4 bf bf | a4 g f2 | e2 f2~ | f2 e2 | f1 \bar "|." 
 }
 
-scMusicFourName = "bassus"
-scMusicFourClef = \clef "bass"
-scMusicFour = \transpose f d \relative c' { \clef "G_8"
-	\set Staff.instrumentName = "Tenor"
+scMusicFourName = "tenor"
+scMusicFourClef = \clef "G_8"
+scMusicFourClefTransposed = \clef "G_8"
+scMusicFour = \relative c' { 
+	
 	%measuress 1-5  
 	r1 | r1 | r1 | r1 | r2 r4 g4 | 
 	%measuress 6-10 
@@ -165,10 +169,11 @@ scMusicFour = \transpose f d \relative c' { \clef "G_8"
 	r4 c4 f d | e c d2 | c2 r4 f,4 | c'4. g8 a4. bf8 | c4 bf8 a g4 c4 | c1 \bar "|."
 }
 
-scMusicFiveName = "quintus"
+scMusicFiveName = "bassus"
 scMusicFiveClef = \clef "bass"
-scMusicFive = \transpose f d \relative c { \clef bass
-	\set Staff.instrumentName = "Bass"
+scMusicFiveClefTransposed = \clef "bass"
+scMusicFive =  \relative c { \clef bass
+	
 	%measuress 1-5  
 	r1 | r1 | r1 | r1 | r1 | 
 	%measuress 6-10 
@@ -184,7 +189,7 @@ scMusicFive = \transpose f d \relative c { \clef bass
 	%measuress 31-35 
 	c4 c f2| d2 a'4 a | d,2 f | bf,2 bf  | bf bf | 
 	%measuress 36-40 
-	c2 c4 c | f2. e4 | d2. c4 | bf1 ~ | bf1 ~ | 
+	c2 c4 c | f2. e4 | d2. c4 | bf1 ~ | bf1 | 
 	%measuress 41-45 
 	c1 ~| c1 | f1 \bar"||" \time 3/4  f4 e d| c2 c4 | 
 	%measuress 46-50 

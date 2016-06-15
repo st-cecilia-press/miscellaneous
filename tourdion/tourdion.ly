@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 4, "verses": 1, "transposed": false }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -13,12 +13,15 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-#(set-global-staff-size 17)
-
+#(set-global-staff-size 19)
+\paper {
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #24
+}
 \include "english.ly"
 
 scGlobal= {
-  \key e \dorian
+  \key d \dorian
   \time 3/2
   \autoBeamOff
 }
@@ -26,10 +29,10 @@ scGlobal= {
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c' {  
-  e4 fs g a g fs | e2. fs4 g a | b a g g a fs |
-  g2 ( fs4 e) d2 | e4 fs g a g fs | e2 g fs | e1 d2 | e1.^\markup{Fine} \fermata \bar ":..:" 
-  b'2. a4 b cs | b1 b2 | d4 cs b a g fs | g2.( fs4) e2 | 
-  b'2. a4 b cs | b2 a4 g fs2 | e1 d2 | e1.^\markup"Da Capo" \bar ":|."
+  d4 e f g f e | d2. e4 f g | a g f f g e |
+  f2 \melisma e4 d\melismaEnd c2 | d4 e f g f e | d2 f e | d1 c2 | d1. \bar ":..:" 
+  a'2. g4 a b | a1 a2 | c4 b a g f e | f2.\melisma e4\melismaEnd d2 | 
+  a'2. g4 a b | a2 g4 f e2 | d1 c2 | d1. \bar ":|."
 }
 
 scWordsOneA =  \lyricmode {
@@ -40,41 +43,51 @@ scWordsOneA =  \lyricmode {
 }
 
 scMusicTwoName = "altus"
-scMusicTwoClef = \clef "treble"
+scMusicTwoClef = \clef "G_8"
 scMusicTwo = 
 \relative c' {
-  b1 b2 | e1 e2 | d1 e2 | e2 a1 | g1 e2 | b4 a b cs d2 | b b1 | b1.\fermata \bar ":..:"
-  g'1 g2 | g1 g2 | fs1 fs2 | e1 e2 | d1 d2 | d1 d2 | b2 b1 | b1  b2 \bar ":|."
+  a1 a2 | d1 d2 | c1 d2 | d2 g1 | f1 d2 | a4 g a b c2 | a a1 | a1. \bar ":..:"
+  f'1 f2 | f1 f2 | e1 e2 | d1 d2 | c1 c2 | c1 c2 | a2 a1 | a1  a2 \bar ":|."
 }
 
 scMusicThreeName = "tenor"
 scMusicThreeClef = \clef "G_8"
 scMusicThree = 
 \relative g {
-  g1 e2 | b'1 b2 | b b c | b1 a2 | b1 b2 | g1 a2 | g fs4 (e fs2) | e1.\fermata \bar ":..:"
-   e'1 e2 d1 d2 d1 d2 b1 b2 b1 b2 b1 a2 g fs1 e1 e2 \bar ":|."
+  f1 d2 | a'1 a2 | a a bf | a1 g2 | a1 a2 | f1 g2 | f e4 \melisma d e2\melismaEnd | d1.\bar ":..:"
+   d'1 d2 c1 c2 c1 c2 a1 a2 a1 a2 a1 g2 f e1 d1 d2 \bar ":|."
 }
 
 scMusicFourName = "bassus"
 scMusicFourClef = \clef "bass"
 scMusicFour = 
 \relative e {
-  e1 e2 e1 e2 | g2 b a | e2 fs1 | e1 e2 | e1 d2 | e b1 | e1.\fermata \bar ":..:"
-  e1 e2 | g1 g2 | d1 d2 | e1 e2 | g1 g2 | g1 d2 | e2 b1 | e1 e2 \bar ":|."
+  d1 d2 d1 d2 | f2 a g | d2 e1 | d1 d2 | d1 c2 | d a1 | d1. \bar ":..:"
+  d1 d2 | f1 f2 | c1 c2 | d1 d2 | f1 f2 | f1 c2 | d2 a1 | d1 d2 \bar ":|."
+}
+lowerWordsA = \lyricmode{
+  Bu -- vons bien, bu -- vons mes a -- mis, trin -- quons, bu -- vons, gaie -- ment chan -- tons!
+ 
 }
 
-scWordsTwoA = \lyricmode {
-  Le bon vin nous a ren -- du gais, chan -- tons, ou -- bli -- ons nos pei -- nes, chan -- tons!
-}
-
-lowerWordsBA = \lyricmode {
+lowerWordsB = \lyricmode {
   En man -- geant d'un gras jam -- bon, à ce fla -- con fai -- sons la guer -- re!
 }
 
-scWordsThreeA = \lyricmode {
-  Bu -- vons bien, bu -- vons mes a -- mis, trin -- quons, bu -- vons, gaie -- ment chan -- tons!
+
+scWordsTwoA = \lyricmode {
+  Le bon vin nous a ren -- du gais, chan -- tons, ou -- bli -- ons nos pei -- nes, chan -- tons!
+  \lowerWordsB
 }
 
+
+
+scWordsThreeA = \lyricmode {
+  \lowerWordsA \lowerWordsB
+}
+scWordsFourA = \lyricmode {
+  \lowerWordsA \lowerWordsB
+}
 
 \include "./score.ly"
 

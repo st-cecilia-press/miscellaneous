@@ -38,16 +38,16 @@ scMusicTwoName = "altus"
 scMusicTwoClef = \clef "treble"
 scMusicTwo = 
 \relative c' {
-  \partial 4 f4 | g f f bf, | c2 c4 f4 | ef d c4 c4 | bf2( f'4) f | f4. f8 ef4 d |
-  g2 g4 f | f d ef c | d( c8[ bf] c4) c | f4. f8 f4 f | af2 af4 f | f d ef c | d2.
+  \partial 4 f4 | g f f bf, | c2 c4 f4 | ef d c4 c4 | bf2\melisma f'4\melismaEnd f | f4. f8 ef4 d |
+  g2 g4 f | f d ef c | d\melisma c8[ bf] c4 \melismaEnd c | f4. f8 f4 f | af2 af4 f | f d ef c | d2.
 }
 
 scMusicThreeName = "tenor"
 scMusicThreeClef = \clef "G_8"
 scMusicThree = 
 \relative c' {
-  \partial 4 bf4 | bf4. c8 d4 ef | f2 f4 f | c d ef f | d4.( c8 bf4) bf | c4. c8 c4 d |
-  ef2 ef4 d4 | c bf bf a | bf(a8[ g] f4) f | c'4. c8 c4 d | ef2 ef4 d | c bf bf a | bf2.
+  \partial 4 bf4 | bf4. c8 d4 ef | f2 f4 f | c d ef f | d4.\melisma c8 bf4 \melismaEnd bf | c4. c8 c4 d |
+  ef2 ef4 d4 | c bf bf a | bf \melisma a8[ g] f4\melismaEnd f | c'4. c8 c4 d | ef2 ef4 d | c bf bf a | bf2.
 }
 
 scMusicFourName = "bassus"
@@ -55,7 +55,7 @@ scMusicFourClef = \clef "bass"
 scMusicFour = 
 \relative g {
   \partial 4 bf4 | g bf bf g | f2 f4 f4 | a bf c f, | bf2. bf4 | f4. f8 a4 bf |
-  ef,2 ef4 bf'4 | f g ef f | bf,2( f'4) f | f4. f8 a4 bf | af2 af4 bf | f g ef f | bf,2.
+  ef,2 ef4 bf'4 | f g ef f | bf,2\melisma f'4\melismaEnd f | f4. f8 a4 bf | af2 af4 bf | f g ef f | bf,2.
 }
 
 scWordsOneA = \lyricmode {
@@ -104,27 +104,27 @@ scWordsTwoC = \lyricmode {
 scWordsThreeA = \lyricmode {
       \set stanza = "1."
     Es ist ein Schnee ge -- fal -- len
-  Und es ist doch nit Zeit.
+  Und es ist doch nit Zeit. __
   Man wirft mich mit den Bal -- len
-  Der Weg ist mir ver -- schneit.
+  Der Weg ist mir ver -- schneit. __
   Man wirft mich mit den Bal -- len
   Der Weg ist mir ver -- schneit.
 }
 scWordsThreeB = \lyricmode {
       \set stanza = "2."
     Mein Haus hat kei -- nen Gie -- bel,
-  Es ist mir wor -- den alt,
+  Es ist mir wor -- den alt, __
   Zer -- broch -- en sind die Rie -- gel,
-  Mein Stüb -- lein ist mir kalt.
+  Mein Stüb -- lein ist mir kalt. __
   Zer -- broch -- en sind die Rie -- gel,
   Mein Stüb -- lein ist mir kalt.
 }
 scWordsThreeC = \lyricmode {
       \set stanza = "3."
     Ach Lieb, laß dich er -- bar -- men,
-  Daß ich so e -- lend bin,
+  Daß ich so e -- lend bin, __
   Und schleuss mich in dein Ar -- me!
-  So fährt der Win -- ter hin.
+  So fährt der Win -- ter hin. __
   Und schleuss mich in dein Ar -- me!
   So fährt der Win -- ter hin.
 }

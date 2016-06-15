@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 3, "verses": 1, "transposed": false }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -17,7 +17,7 @@ scCopyright = ""
 
 %}
 
-date = #(strftime "%m-%d-%Y" (localtime (current-time)))
+
 
 
 \include "english.ly"
@@ -29,18 +29,18 @@ date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 scGlobal = {
 	\key f \major
 	\time 4/2
-	\override Score.BarNumber.padding = #3
+	
 	 
 }
 	
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
-scMusicOne = \transpose f f \relative c' { \clef "treble"
-	\set Staff.instrumentName = "Soprano"
+scMusicOne =  \relative c' { \clef "treble"
+	
 	f\breve~ | f\breve g1. g2 | a1 f | bf\breve  |
 	a1 r2 c2 | c c c c | d1 c | a2 bf g1 | f r2 a |
 	a g f e | f1 r2 c | d2. c4 d e f2~ | f4 e8 d e2 f1 |
-	r2 a bf c | d c c bf | c1. d2 | bf1 a | c\breve |
+	r2 a bf c | d c c bf | c1. d2 | bf1 a \break | c\breve |
 	bf2 a g f | bf1 a2 f | c'1. c2 | d d c1 | c2 c c bf | c1 a2 a |
 	a g a2. bf4 | c2. bf4 a2 g | f1. e4 d | e1 r2 f2 | e c c'1 ~ |
 	c1 a1 | r2 c1 bf2 | a2 a g1~ | g f1~ | f\breve ~ | f\breve \bar "|."
@@ -50,8 +50,8 @@ scMusicOne = \transpose f f \relative c' { \clef "treble"
 	
 scMusicTwoName = "altus"
 scMusicTwoClef = \clef "treble"
-scMusicTwo = \transpose f f \relative c' { \clef "treble"
-	\set Staff.instrumentName = "Alto"
+scMusicTwo =  \relative c' { \clef "treble"
+	
 	c1 d~ | d2 c d f~ | f e4 d f2 e | f a a4 g f e | d e f2. e8 d  e2 |
 	f1 r2 a2 | a a g a | bf1 g2 a~ | a4 g f2. e8 d e2 | f1 r2 c'2 | 
 	c2. bf4 a2 g | a\breve | r2 f2 g a bf1 a | r2 f2 g a |
@@ -64,8 +64,8 @@ scMusicTwo = \transpose f f \relative c' { \clef "treble"
 
 scMusicThreeName = "tenor"
 scMusicThreeClef = \clef "G_8"
-scMusicThree = \transpose f f \relative c { \clef "G_8"
-	\set Staff.instrumentName = "Tenor"
+scMusicThree = \relative c { \clef "G_8"
+	
 	f1 bf1~ bf2 a bf d | c\breve | f,2 f'2. e4 d c | bf2 a g1 |
 	f1 r2 f | f f c' f, | bf1 c | c2 d c1 | f,\breve |
 	r2 c'2 f,2 c' | d d c f, | bf1. a2 | g1 f~ | f r2 a2

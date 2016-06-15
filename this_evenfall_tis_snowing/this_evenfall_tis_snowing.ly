@@ -1,4 +1,4 @@
-%score_options { "parts": , "verses": , "transposed": false }
+%score_options { "parts": 4, "verses": 3, "transposed": false }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -14,10 +14,9 @@ scPoet = ""
 scMeter=  ""
 scCopyright = ""
 
-date = #(strftime "%m-%d-%Y" (localtime (current-time)))
 
 \include "english.ly"
-%#(set-global-staff-size 22)
+#(set-global-staff-size 19)
 
 
 scGlobal= {
@@ -37,16 +36,16 @@ scMusicTwoName = "altus"
 scMusicTwoClef = \clef "treble"
 scMusicTwo = 
 \relative c' {
-  \partial 4 f4 | g f f bf, | c2 c4 f4 | ef d c4 c4 | bf2( f'4) f | f4. f8 ef4 d |
-  g2 g4 f | f d ef c | d( c8[ bf] c4) c | f4. f8 f4 f | af2 af4 f | f d ef c | d2.
+  \partial 4 f4 | g f f bf, | c2 c4 f4 | ef d c4 c4 | bf2\melisma f'4\melismaEnd f | f4. f8 ef4 d |
+  g2 g4 f | f d ef c | d\melisma c8[ bf] c4 \melismaEnd c | f4. f8 f4 f | af2 af4 f | f d ef c | d2.
 }
 
 scMusicThreeName = "tenor"
 scMusicThreeClef = \clef "G_8"
 scMusicThree = 
 \relative c' {
-  \partial 4 bf4 | bf4. c8 d4 ef | f2 f4 f | c d ef f | d4.( c8 bf4) bf | c4. c8 c4 d |
-  ef2 ef4 d4 | c bf bf a | bf(a8[ g] f4) f | c'4. c8 c4 d | ef2 ef4 d | c bf bf a | bf2.
+  \partial 4 bf4 | bf4. c8 d4 ef | f2 f4 f | c d ef f | d4.\melisma c8 bf4 \melismaEnd bf | c4. c8 c4 d |
+  ef2 ef4 d4 | c bf bf a | bf \melisma a8[ g] f4\melismaEnd f | c'4. c8 c4 d | ef2 ef4 d | c bf bf a | bf2.
 }
 
 scMusicFourName = "bassus"
@@ -54,11 +53,11 @@ scMusicFourClef = \clef "bass"
 scMusicFour = 
 \relative g {
   \partial 4 bf4 | g bf bf g | f2 f4 f4 | a bf c f, | bf2. bf4 | f4. f8 a4 bf |
-  ef,2 ef4 bf'4 | f g ef f | bf,2( f'4) f | f4. f8 a4 bf | af2 af4 bf | f g ef f | bf,2.
+  ef,2 ef4 bf'4 | f g ef f | bf,2\melisma f'4\melismaEnd f | f4. f8 a4 bf | af2 af4 bf | f g ef f | bf,2.
 }
 
 
-scWordsTwoA = \lyricmode {
+wordsA = \lyricmode {
   \set stanza = "1."
   This E -- ven -- fall 'tis snow -- ing,
   Long ere the frost is due; __
@@ -68,7 +67,7 @@ scWordsTwoA = \lyricmode {
   Does Win -- ter whis -- tle through.
 }
 
-scWordsTwoB = \lyricmode {
+wordsB = \lyricmode {
   \set stanza = "2."
   My chim -- ney does but sput -- ter,
   It grows ex -- ceed -- ing old; __
@@ -78,7 +77,7 @@ scWordsTwoB = \lyricmode {
   My tin -- y room so cold.
 }
 
-scWordsTwoC = \lyricmode {
+wordsC = \lyricmode {
   \set stanza = "3."
   Ah, Love, does it not grieve you
   That I so wretch -- ed be? __
@@ -88,6 +87,21 @@ scWordsTwoC = \lyricmode {
   Let Win -- ter fly from me!
 }
 
+scWordsOneA = {\wordsA}
+scWordsOneB = {\wordsB}
+scWordsOneC = {\wordsC}
+
+scWordsTwoA = {}
+scWordsTwoB = {}
+scWordsTwoC = {}
+
+scWordsThreeA = {\wordsA}
+scWordsThreeB = {\wordsB}
+scWordsThreeC = {\wordsC}
+
+scWordsFourA = {}
+scWordsFourB = {}
+scWordsFourC = {}
 \include "./score.ly"
 
 \version "2.18.0"  % necessary for upgrading to future LilyPond versions.
