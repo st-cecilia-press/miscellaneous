@@ -4,10 +4,6 @@ scDate = "2016-May-16"
 \include "../include/sc_layout_vocal.ly"
 scStaffSize = 17
 #(ly:set-option 'midi-extension "mid")
-\paper{ 
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #15
-}
 
 \include "english.ly"
 scTempo = #(ly:make-moment 140 4)

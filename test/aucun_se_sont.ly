@@ -3,10 +3,6 @@ scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
-\paper {
-  %will be different in different pieces
-  %system-system-spacing.minimum-distance = #16
-}
 \include "english.ly"
 scStaffSizeTranspose  = 18
 scStaffSize = 18
@@ -33,7 +29,7 @@ scGlobal= {
 scTransposeFrom =  c 
 scTransposeTo =  d 
 
-scMinimumSystemSpacingTranspose  = #16
+scMinimumSystemSpacingTranspose = #16
 scMinimumSystemSpacing = #16
 
 scMusicOneName = "cantus"

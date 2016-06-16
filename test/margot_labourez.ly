@@ -30,7 +30,7 @@ scGlobal= {
   \time 4/2
 }
 
-scMinimumSystemSpacingTranspose  = #16
+scMinimumSystemSpacingTranspose = #16
 scMinimumSystemSpacing = #16
 
 scMusicOneName = "cantus"

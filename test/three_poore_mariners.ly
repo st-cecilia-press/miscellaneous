@@ -18,10 +18,6 @@ scCopyright = ""
 scStaffSizeTranspose  = 15
 scStaffSize = 14
 
-\paper {
-  %will be different in different pieces
-  %system-system-spacing.minimum-distance = #18
-}
 scGlobal= {
   \key c \major
   \time 2/2
@@ -29,7 +25,7 @@ scGlobal= {
 scTransposeFrom =  c 
 scTransposeTo =  e 
 
-scMinimumSystemSpacingTranspose  = #18
+scMinimumSystemSpacingTranspose = #18
 scMinimumSystemSpacing = #18
 
 scMusicOneName = "cantus"

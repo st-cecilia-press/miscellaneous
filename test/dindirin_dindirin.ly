@@ -18,10 +18,6 @@ scPoet = ""
 scMeter=  ""
 scCopyright = ""
 
-\paper{ 
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #22
-}
 
 scGlobal= {
   \key d \minor

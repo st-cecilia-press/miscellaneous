@@ -27,7 +27,7 @@ scGlobal = {
   \time 4/4
   	 
 }
-scMinimumSystemSpacing = #16
+scMinimumSystemSpacing = #18
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

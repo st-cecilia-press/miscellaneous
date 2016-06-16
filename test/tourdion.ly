@@ -14,10 +14,6 @@ scPoet = ""
 scMeter=  ""
 scCopyright = ""
 scStaffSize = 19
-\paper {
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #24
-}
 \include "english.ly"
 
 scGlobal= {

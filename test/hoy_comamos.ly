@@ -15,10 +15,6 @@ scMeter=  ""
 scCopyright = ""
 
 
-\paper{ 
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #30
-}
 
 \include "english.ly"
 

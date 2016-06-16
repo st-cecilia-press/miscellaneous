@@ -5,10 +5,6 @@ scDate = "2016-May-16"
 
 scStaffSize = 17
 #(ly:set-option 'midi-extension "mid")
-\paper{ 
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #26
-}
 \include "english.ly"
 
 

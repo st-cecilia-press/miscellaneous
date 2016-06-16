@@ -17,10 +17,6 @@ scTagline = ""
 scStaffSize = 18
 \include "english.ly"
 
-\paper {
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #20
-}
 
 scGlobal= {
   \autoBeamOff

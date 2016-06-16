@@ -18,10 +18,6 @@ monCoeur
 ===================
 %}
 
-\paper{ 
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #10
-}
 
 \include "english.ly"
 
@@ -41,7 +37,7 @@ scGlobal = {
 }
 scMusicOneClef = \clef "treble"
 scMusicOneClefTransposed = \clef "treble"
-scMinimumSystemSpacingTranspose  = #10
+scMinimumSystemSpacingTranspose = #10
 scMinimumSystemSpacing = #10
 
 scMusicOneName = "superius"
