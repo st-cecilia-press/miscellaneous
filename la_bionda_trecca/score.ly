@@ -6,6 +6,7 @@
         top-margin = 0.5\in
         left-margin = 0.5\in
         right-margin = 0.5\in
+        last-bottom-spacing = #'((basic-distance . 4) (padding . 4) (stretchability . 1))
         oddFooterMarkup = \markup { 
         \column{
           \fill-line { \line {
@@ -87,7 +88,11 @@
           >>
          
         >>
-        \layout { }
+        \layout { 
+          
+            #(layout-set-staff-size scStaffSize )
+          
+        }
         \midi {
           \context {
             \Score
@@ -106,6 +111,7 @@
         top-margin = 0.5\in
         left-margin = 0.5\in
         right-margin = 0.5\in
+        last-bottom-spacing = #'((basic-distance . 4) (padding . 4) (stretchability . 1))
         oddFooterMarkup = \markup { 
         \column{
           \fill-line { \line {
@@ -191,7 +197,11 @@
           >>
          
         >>
-        \layout { }
+        \layout { 
+          
+            #(layout-set-staff-size scStaffSizeTranspose )
+          
+        }
         \midi {
           \context {
             \Score

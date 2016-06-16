@@ -1,3 +1,13 @@
+alle_psallite
+aucun_se_sont
+belle_qui
+blow_thy_horne
+can_she_excuse
+come_again
+come_merry_lads
+deo_gracias
+dindirin_dindirin
+edi_beo
 ennatus
 est_ist_ein_schnee
 fi_maris
@@ -17,6 +27,7 @@ now_is_the_month_of_maying
 now_oh_now_i_needs_must_part
 now_wolde_y_fayne
 organum_alleluya
+pastime_with_good_company
 pucelete
 se_la_face
 sister_awake
@@ -24,6 +35,7 @@ soldiers_three
 stella_splendens
 sumer_is_icumen_in
 tempus_transit
+there_is_no_rose
 this_evenfall_tis_snowing
 three_poore_mariners
 tosse_the_pot

@@ -8,7 +8,8 @@ scDate = "2016-May-16"
   %system-system-spacing.minimum-distance = #16
 }
 \include "english.ly"
-#(set-global-staff-size 18)
+scStaffSizeTranspose  = 18
+scStaffSize = 18
 
 scTempo = #(ly:make-moment 100 2)
 

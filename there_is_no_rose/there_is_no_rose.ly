@@ -13,7 +13,7 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-%#(set-global-staff-size 14)
+scStaffSize = 14
 \include "english.ly"
 
 
@@ -23,7 +23,7 @@ scCopyright = ""
     \Staff \RemoveEmptyStaves
   }
 }
-#(set-global-staff-size 18)
+scStaffSize = 18
 
 scGlobal= {
   \key f \major

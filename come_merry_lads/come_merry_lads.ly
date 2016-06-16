@@ -2,7 +2,7 @@
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
-#(set-global-staff-size 18)
+scStaffSize = 18
 #(ly:set-option 'midi-extension "mid")
 \paper{ 
   %will be different in different pieces

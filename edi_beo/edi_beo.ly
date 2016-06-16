@@ -3,7 +3,7 @@ scDate = "2016-May-16"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
-#(set-global-staff-size 20)
+scStaffSize = 20
 
 \include "english.ly"
 #(ly:set-option 'midi-extension "mid")

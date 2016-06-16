@@ -15,11 +15,12 @@ scMeter=  ""
 scCopyright = ""
 
 \include "english.ly"
-#(set-global-staff-size 15)
+scStaffSizeTranspose  = 15
+scStaffSize = 14
 
 \paper {
   %will be different in different pieces
-  system-system-spacing.minimum-distance = #25
+  %system-system-spacing.minimum-distance = #18
 }
 scGlobal= {
   \key c \major

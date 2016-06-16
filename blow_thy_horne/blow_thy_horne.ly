@@ -14,7 +14,7 @@ scPoet = ""
 scCopyright = ""
 scTagline = ""
 
-#(set-global-staff-size 18)
+scStaffSize = 18
 \include "english.ly"
 
 

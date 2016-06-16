@@ -7,25 +7,17 @@ File.open('./temp.txt','r') do |file|
        dir.chomp!
        t_file = Tempfile.new('filename_temp.txt')
        File.open("./#{dir}/#{dir}.ly", 'r') do |f|
-           bracket_num = 0
+         transpose_flag = false
          f.each_line{|line| 
-           if line.match(/^\s*\\paper\s*{/) 
-               bracket_num = 1
-               next
-           elsif line.match(/^\s*\\header\s*{/) 
-               bracket_num = 1
-               next
-           elsif line.match(/^\s*\\score\s*{/) 
-               bracket_num = 1
-               next
-           elsif bracket_num > 0
-               bracket_num = bracket_num + line.scan(/{/).count
-               bracket_num = bracket_num - line.scan(/}/).count
-               next
-           elsif line.match(/^\s*\\version/) 
-               line = "\\include \"./score.ly\"\n\n#{line}"
-           end
-           t_file.puts line
+            if line.match(/%score_options/)
+               transpose_flag = true if line.match(/true/) 
+            elsif   line.match(/set-global-staff-size/) 
+              num = line.scan(/\d/).join('')
+              line = "scStaffSize = #{num}"
+              line = "scStaffSizeTranspose  = #{num}\n" + line if transpose_flag
+
+            end
+            t_file.puts line
          }
        end
        t_file.close
