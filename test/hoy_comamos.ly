@@ -1,4 +1,4 @@
-%score_options { "parts": 4, "verses": 40, "transposed": false }
+%score_options { "parts": 4, "verses": 4, "transposed": false }
 scDate = "2016-May-16"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -15,7 +15,10 @@ scMeter=  ""
 scCopyright = ""
 
 
-
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #30
+}
 
 \include "english.ly"
 
@@ -29,6 +32,8 @@ scGlobal = {
 	%\override Score.BarNumber.padding = #3
 	 
 }
+
+scMinimumSystemSpacing = #30
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

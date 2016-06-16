@@ -28,6 +28,8 @@ scGlobal= {
   \autoBeamOff
 }
 
+scMinimumSystemSpacing = #14
+
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c' {  

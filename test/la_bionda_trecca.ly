@@ -14,6 +14,10 @@ scPoet = ""
 scMeter=  ""
 scCopyright = ""
 
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #16
+}
 
 \include "english.ly"
 scStaffSizeTranspose  = 17
@@ -26,6 +30,9 @@ scGlobal= {
   \time 3/2
   \key c \major
 }
+
+scMinimumSystemSpacingTranspose  = #16
+scMinimumSystemSpacing = #16
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

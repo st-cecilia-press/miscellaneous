@@ -16,11 +16,11 @@ scCopyright = ""
 
 \include "english.ly"
 scStaffSizeTranspose  = 15
-scStaffSize = 15
+scStaffSize = 14
 
 \paper {
   %will be different in different pieces
-  system-system-spacing.minimum-distance = #25
+  %system-system-spacing.minimum-distance = #18
 }
 scGlobal= {
   \key c \major
@@ -28,6 +28,9 @@ scGlobal= {
 }
 scTransposeFrom =  c 
 scTransposeTo =  e 
+
+scMinimumSystemSpacingTranspose  = #18
+scMinimumSystemSpacing = #18
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

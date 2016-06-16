@@ -16,6 +16,10 @@ scCopyright = ""
 \include "english.ly"
 scStaffSize = 20
 
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #20
+}
 
 scGlobal= {
   \autoBeamOff
@@ -30,6 +34,8 @@ cantusA = \relative c' {
 cantusB = \relative c'' {
   bf8[ c] | bf8[ a] \melisma g4\melismaEnd a | bf2 r4
 }
+
+scMinimumSystemSpacing = #20
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

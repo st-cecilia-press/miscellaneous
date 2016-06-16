@@ -37,6 +37,9 @@ scGlobal = {
 }
 
 
+scMinimumSystemSpacingTranspose  = 16
+scMinimumSystemSpacing = #16
+
 scMusicOneName = "superius"
 scMusicOneClef = \clef "treble"
 scMusicOneClefTransposed = \clef "treble"

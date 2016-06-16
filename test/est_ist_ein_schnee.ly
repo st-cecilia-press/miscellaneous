@@ -14,7 +14,10 @@ scPoet = ""
 scMeter=  ""
 scCopyright = ""
 
-
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #16
+}
 
 \include "english.ly"
 scStaffSize = 18
@@ -26,6 +29,8 @@ scGlobal= {
   \autoBeamOff
   \time 4/4
 }
+
+scMinimumSystemSpacing = #16
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

@@ -41,6 +41,8 @@ tenorChorus = \relative c {
   
 }
 
+scMinimumSystemSpacing = #16
+
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 cantusVerse =   \relative c' {  

@@ -30,6 +30,8 @@ scStaffSize = 20
 	  
     }
 
+scMinimumSystemSpacing = #16
+
 scMusicOneName = "melody"
 scMusicOneClef = \clef "treble"
 scMusicOne = \relative c'' {

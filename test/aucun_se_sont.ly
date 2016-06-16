@@ -33,7 +33,7 @@ scGlobal= {
 scTransposeFrom =  c 
 scTransposeTo =  d 
 
-scMinimumSystemSpacingTranspose  = 16
+scMinimumSystemSpacingTranspose  = #16
 scMinimumSystemSpacing = #16
 
 scMusicOneName = "cantus"

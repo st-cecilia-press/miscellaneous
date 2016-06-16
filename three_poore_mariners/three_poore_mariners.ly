@@ -29,6 +29,9 @@ scGlobal= {
 scTransposeFrom =  c 
 scTransposeTo =  e 
 
+scMinimumSystemSpacingTranspose  = 18
+scMinimumSystemSpacing = #18
+
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOneClefTransposed = \clef "treble"

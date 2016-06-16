@@ -18,6 +18,10 @@ l'autre_jour
 ===================
 %}
 
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #16
+}
 
 scStaffSizeTranspose  = 19
 scStaffSize = 19
@@ -32,6 +36,9 @@ scGlobal= {
   \time 6/4
   \autoBeamOff
 }
+
+scMinimumSystemSpacingTranspose  = #16
+scMinimumSystemSpacing = #16
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "G_8"

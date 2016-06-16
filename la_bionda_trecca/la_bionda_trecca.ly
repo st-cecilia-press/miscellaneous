@@ -31,6 +31,9 @@ scGlobal= {
   \key c \major
 }
 
+scMinimumSystemSpacingTranspose  = 16
+scMinimumSystemSpacing = #16
+
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOneClefTransposed = \clef "treble"

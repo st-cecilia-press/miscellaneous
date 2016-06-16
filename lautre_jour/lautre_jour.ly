@@ -37,6 +37,9 @@ scGlobal= {
   \autoBeamOff
 }
 
+scMinimumSystemSpacingTranspose  = 16
+scMinimumSystemSpacing = #16
+
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "G_8"
 scMusicOneClefTransposed = \clef "treble"

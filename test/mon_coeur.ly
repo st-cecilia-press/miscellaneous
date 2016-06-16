@@ -18,7 +18,10 @@ monCoeur
 ===================
 %}
 
-
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #10
+}
 
 \include "english.ly"
 
@@ -33,11 +36,14 @@ scGlobal = {
 	\key f \major
 	%\key f \major
 	\time 2/2
-	\override Score.BarNumber.padding = #3
+	
 	 
 }
 scMusicOneClef = \clef "treble"
 scMusicOneClefTransposed = \clef "treble"
+scMinimumSystemSpacingTranspose  = #10
+scMinimumSystemSpacing = #10
+
 scMusicOneName = "superius"
 scMusicOne = \relative c''{ 
 	

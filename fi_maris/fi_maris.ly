@@ -35,6 +35,8 @@ cantusB = \relative c'' {
   bf8[ c] | bf8[ a] \melisma g4\melismaEnd a | bf2 r4
 }
 
+scMinimumSystemSpacing = #20
+
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOne = { 

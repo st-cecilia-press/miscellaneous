@@ -34,6 +34,8 @@ scGlobal = {
 	 
 }
 
+scMinimumSystemSpacing = #16
+
 scMusicOneName = "treble"
 scMusicOneClef = \clef "treble"
 treble = \relative c'{ \clef treble

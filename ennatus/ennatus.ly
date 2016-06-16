@@ -31,6 +31,8 @@ scGlobal = {
   %will be different in different pieces
   system-system-spacing.minimum-distance = #16
 }
+scMinimumSystemSpacing = #16
+
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOne = \relative c''{ 

@@ -32,6 +32,8 @@ scGlobal = {
   \override Score.BarNumber.padding = #2	 
 }
 
+scMinimumSystemSpacing = #16
+
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOne = \relative c''{ 
