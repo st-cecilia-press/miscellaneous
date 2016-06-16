@@ -14,12 +14,16 @@ scPoet = ""
 scMeter=  ""
 scCopyright = ""
 
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #16
+}
 
 \include "english.ly"
 
 %\autoBeamOff
 
-scStaffSizeTranspose  = 20
+scStaffSizeTranspose  = 19
 scStaffSize = 20
 
 scGlobal = {
@@ -41,12 +45,12 @@ cantus = \relative c' { \clef treble
 	c4 c c b | a1 | b4 }
 	
 	\repeat volta 2{
-	  d d d~ | d8 d f4 e2 | d2 r4 d4 | d4 b c8 b a g | a b c d c4 c | d4 c8 b a2 | b4
+	  d d d~ | d8 d f4 e2 | d2 r4 d4 | d4 b c8 b a g | a b c d c4 c | d4 c8 b a2 | b4 s2.
 	}
 	
 	
 }
-scMusicOne = { \cantus s2. \cantus }
+scMusicOne = { \cantus  \cantus }
 
 altus = \relative c'' { 
   \repeat volta 2{
@@ -56,13 +60,13 @@ altus = \relative c'' {
   
   
   \repeat volta 2{
-    b4 b4 b4~ |  b8 b d4 cs2 | d2 r4 b4 | b g a8 b c b | a g a2 g4 | fs4 g2 fs4 | g4
+    b4 b4 b4~ |  b8 b d4 cs2 | d2 r4 b4 | b g a8 b c b | a g a2 g4 | fs4 g2 fs4 | g4 s2.
   }
 }
 scMusicTwoName = "altus"
 scMusicTwoClef = \clef "treble"
 scMusicTwoClefTransposed = \clef "treble"
-scMusicTwo =  { \altus s2.  \pageBreak  \altus }
+scMusicTwo =  { \altus   \pageBreak  \altus }
 	
 
 
@@ -77,12 +81,12 @@ tenor =  \relative c' {
 	}
 	
 	\repeat volta 2{
-	  g4 g g~ g8 g d4 a'2 | d,2 r4 g4 | g4 g f2~ | f2 e2 | d1 | g4
+	  g4 g g~ g8 g d4 a'2 | d,2 r4 g4 | g4 g f2~ | f2 e2 | d1 | g4 s2.
 	}
 	
 	
 }
-scMusicThree = { \tenor s2. \tenor }
+scMusicThree = { \tenor  \tenor }
 
 
 

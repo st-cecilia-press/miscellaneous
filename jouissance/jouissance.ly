@@ -7,16 +7,20 @@ scDate = "2016-May-16"
 scTempo = #(ly:make-moment 140 4)
 scTitle = "Jouissance Vous Donneray"
 scSubtitle = "I will give you joy"
-scComposer = "Music by Claudin de Sermisy (1490-1562)"
+scComposer = "Claudin de Sermisy (1490-1562)"
 scArranger = ""
 scTagline = ""
-scPoet = "from Chansons nouvelles, 1527"
+scPoet = "Chansons nouvelles, 1527"
 scMeter=  ""
 scCopyright = ""
 
 \include "english.ly"
 scStaffSize = 20
 
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #16
+}
 
 scGlobal= {
   \key g \dorian

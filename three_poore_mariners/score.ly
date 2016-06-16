@@ -1,4 +1,9 @@
-\book {
+
+
+    
+      #(set-global-staff-size scStaffSize )
+    
+    \book {
       
       \paper {
         print-page-number = ##f
@@ -116,9 +121,6 @@
          
         >>
         \layout { 
-          
-            #(layout-set-staff-size scStaffSize )
-          
         }
         \midi {
           \context {
@@ -128,7 +130,12 @@
         }
       }
     }
-  \book {
+  
+
+    
+      #(set-global-staff-size scStaffSizeTranspose )
+    
+    \book {
       
       \bookOutputSuffix "transposed"
       
@@ -254,9 +261,6 @@
          
         >>
         \layout { 
-          
-            #(layout-set-staff-size scStaffSizeTranspose )
-          
         }
         \midi {
           \context {

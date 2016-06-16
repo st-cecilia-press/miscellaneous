@@ -1,4 +1,9 @@
-\book {
+
+
+    
+      #(set-global-staff-size scStaffSize )
+    
+    \book {
       
       \paper {
         print-page-number = ##f
@@ -131,9 +136,6 @@
          
         >>
         \layout { 
-          
-            #(layout-set-staff-size scStaffSize )
-          
         }
         \midi {
           \context {

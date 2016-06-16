@@ -5,7 +5,7 @@ scDate = "2016-May-16"
 
 scTempo = #(ly:make-moment 180 4)
 
-scTitle = "Blow thy horne hunter"
+scTitle = "Blow Thy Horne Hunter"
 scSubtitle = ""
 scComposer = "William Cornysh"
 scArranger = ""
@@ -17,6 +17,10 @@ scTagline = ""
 scStaffSize = 18
 \include "english.ly"
 
+\paper {
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #20
+}
 
 scGlobal= {
   \autoBeamOff

@@ -7,9 +7,9 @@ scDate = "2016-May-16"
 \include "english.ly"
 scStaffSize = 18
 #(ly:set-option 'midi-extension "mid")
-\paper{ 
+\paper {
   %will be different in different pieces
- % Don't know how to get this to work. system-system-spacing.basic-distance = #2
+  system-system-spacing.minimum-distance = #16
 }
 scTempo = #(ly:make-moment 100 2)
 scTitle = "Come Again"

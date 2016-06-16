@@ -5,7 +5,7 @@ scDate = "2016-May-16"
 \include "../include/sc_layout_vocal.ly"
 
 \include "english.ly"
-scStaffSize = 20
+scStaffSize = 17
 #(ly:set-option 'midi-extension "mid")
 
 scTempo = #(ly:make-moment 160 1)
@@ -17,6 +17,11 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
+
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #22
+}
 
 scGlobal= {
   \key d \minor
@@ -59,7 +64,7 @@ scMusicThree =   \relative c' {
     \time 3/1
   a1 a a | a a a | c c a | a\breve a1 | g a a | a\breve.
   \bar "||"
-    a1 a | d d d d | d\breve c1 c | c c c c | c\longa  c\breve
+    a1 a | d d d d | d\breve c1 c | c c c c | c\breve ~ c\breve  c\breve
   \time 3/1
   bf\breve bf1 bf\breve bf1 bf\breve bf1 a\breve. | a\breve a1 |
   c\breve c1 c\breve a1 a\breve a1 | g a a | a\breve. \bar ":|."

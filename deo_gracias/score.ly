@@ -1,4 +1,9 @@
-\book {
+
+
+    
+      #(set-global-staff-size scStaffSize )
+    
+    \book {
       
       \paper {
         print-page-number = ##f
@@ -59,15 +64,6 @@
                 \new Lyrics \lyricsto "one" { \scWordsOneC } 
                 
               
-                \new Lyrics \lyricsto "one" { \scWordsOneD } 
-                
-              
-                \new Lyrics \lyricsto "one" { \scWordsOneE } 
-                
-              
-                \new Lyrics \lyricsto "one" { \scWordsOneF } 
-                
-              
             >>
             
           >>
@@ -96,15 +92,6 @@
                 
               
                 \new Lyrics \lyricsto "two" { \scWordsTwoC } 
-                
-              
-                \new Lyrics \lyricsto "two" { \scWordsTwoD } 
-                
-              
-                \new Lyrics \lyricsto "two" { \scWordsTwoE } 
-                
-              
-                \new Lyrics \lyricsto "two" { \scWordsTwoF } 
                 
               
             >>
@@ -137,24 +124,12 @@
                 \new Lyrics \lyricsto "three" { \scWordsThreeC } 
                 
               
-                \new Lyrics \lyricsto "three" { \scWordsThreeD } 
-                
-              
-                \new Lyrics \lyricsto "three" { \scWordsThreeE } 
-                
-              
-                \new Lyrics \lyricsto "three" { \scWordsThreeF } 
-                
-              
             >>
             
           >>
          
         >>
         \layout { 
-          
-            #(layout-set-staff-size scStaffSize )
-          
         }
         \midi {
           \context {

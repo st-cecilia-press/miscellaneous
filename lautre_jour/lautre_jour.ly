@@ -18,6 +18,10 @@ l'autre_jour
 ===================
 %}
 
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #16
+}
 
 scStaffSizeTranspose  = 19
 scStaffSize = 19

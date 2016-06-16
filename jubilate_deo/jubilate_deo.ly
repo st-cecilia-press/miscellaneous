@@ -16,11 +16,15 @@ scCopyright = ""
 
 % Jubilate Deo - Lassus
 
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #16
+}
 
 
 %\autoBeamOff
 
-scStaffSize = 17
+scStaffSize = 16
 
 scGlobal = {
   \key g \major

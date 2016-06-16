@@ -27,7 +27,10 @@ scGlobal = {
   \time 4/4
   	 
 }
-
+\paper{ 
+  %will be different in different pieces
+  system-system-spacing.minimum-distance = #16
+}
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOne = \relative c''{ 
