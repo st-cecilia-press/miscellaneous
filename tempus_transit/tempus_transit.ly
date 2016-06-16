@@ -13,7 +13,7 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-scStaffSize = 14
+scStaffSize = 20
 \include "english.ly"
 
 

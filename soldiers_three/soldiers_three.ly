@@ -16,10 +16,6 @@ scCopyright = ""
 
 \include "english.ly"
 scStaffSize = 18
-\paper {
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #27
-}
 
 pickupAs = \markup { \lower #12 \normalsize {As}} 
 
@@ -28,7 +24,7 @@ scGlobal= {
   \time 6/4
 }
 
-scMinimumSystemSpacing = #27
+scMinimumSystemSpacing = #30
 
 scMusicOneName = "treble"
 scMusicOneClef = \clef "treble"

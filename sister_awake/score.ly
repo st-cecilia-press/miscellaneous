@@ -6,6 +6,9 @@
     \book {
       
       \paper {
+        
+          system-system-spacing.minimum-distance = \scMinimumSystemSpacing
+        
         print-page-number = ##f
         print-first-page-number = ##f
         top-margin = 0.5\in
@@ -179,6 +182,9 @@
       \bookOutputSuffix "transposed"
       
       \paper {
+        
+          system-system-spacing.minimum-distance = \scMinimumSystemSpacingTranspose
+        
         print-page-number = ##f
         print-first-page-number = ##f
         top-margin = 0.5\in

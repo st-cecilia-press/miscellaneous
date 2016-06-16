@@ -14,10 +14,6 @@ scPoet = \markup{\italic {Cancionero de Palacio}}
 scMeter=  ""
 scCopyright = ""
 scStaffSize = 17
-\paper {
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #24
-}
 
 \include "english.ly"
 
@@ -29,7 +25,7 @@ scGlobal= {
 
 
 
-scMinimumSystemSpacing = #24
+scMinimumSystemSpacing = #25
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

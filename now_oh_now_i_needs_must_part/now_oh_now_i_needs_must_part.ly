@@ -31,7 +31,7 @@ scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c'' {  
   b1 a2 g1 fs2 | e1 g2 a1 r2 | b1 d2 c1 b2 | a1 b2 a1 r2 |
-  b1 a2 g1 fs2 | e1 g2 a1 r2 | b2 d c2. c4 b2 a | g\breve.
+  b1 a2 g1 fs2 | e1 g2 a1 r2 | b2 d c2. c4 b2 a | g\breve. \break
   b1 a2 g1 fs2 | e1 g2 a1 r2 | b1 d2 c1 b2 | a1 b2 a1 r2 |
   b1 a2 g1 fs2 | e1 g2 a1 r2 | b2 d c2. c4 b2 a | g\breve.  \bar "||" 
 

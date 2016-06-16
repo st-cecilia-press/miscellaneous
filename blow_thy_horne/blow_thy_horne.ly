@@ -17,10 +17,6 @@ scTagline = ""
 scStaffSize = 18
 \include "english.ly"
 
-\paper {
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #20
-}
 
 scGlobal= {
   \autoBeamOff
@@ -28,7 +24,7 @@ scGlobal= {
   \time 2/2
 }
 
-scMinimumSystemSpacing = #20
+scMinimumSystemSpacing = #22
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

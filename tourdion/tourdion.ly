@@ -14,10 +14,6 @@ scPoet = ""
 scMeter=  ""
 scCopyright = ""
 scStaffSize = 19
-\paper {
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #24
-}
 \include "english.ly"
 
 scGlobal= {
@@ -39,8 +35,8 @@ scMusicOne =   \relative c' {
 
 scWordsOneA =  \lyricmode {
   Quand je bois du vin clai -- ret, a -- mi tout tour -- ne, tour -- ne, tour -- ne,
-  tour -- ne, aus -- si de -- sor -- mais je bois An -- jou ou Ar -- bois,
-  chan -- tons et bu -- vons, à ce fla -- con fai -- sons la guer -- re,
+  tour -- ne, aus -- si de -- sor -- mais je bois An -- jou ou Ar -- bois.
+  Chan -- tons et bu -- vons, à ce fla -- con fai -- sons la guer -- re,
   chan -- tons et bu -- vons, mes a -- mis, bu -- vons donc!
 }
 

@@ -14,10 +14,6 @@ scPoet = ""
 scMeter=  ""
 scCopyright = ""
 
-\paper{ 
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #16
-}
 
 \include "english.ly"
 
@@ -35,7 +31,7 @@ scGlobal = {
 scTransposeFrom =  c 
 scTransposeTo =  g, 
 	
-scMinimumSystemSpacingTranspose  = 16
+scMinimumSystemSpacingTranspose = #16
 scMinimumSystemSpacing = #16
 
 scMusicOneName = "cantus"

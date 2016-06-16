@@ -72,7 +72,7 @@ tenorVerse = \relative a {
 
 
 }
-scMusicTwo = { \bar ":..:" \tenorChorus \bar "||" \tenorVerse \bar ":|." \pageBreak \bar ":..:"  \tenorChorus \bar "||" \tenorVerse \bar ":|."}
+scMusicTwo = { \tenorChorus \bar "||" \tenorVerse \bar ":|." \pageBreak \bar ":..:"  \tenorChorus \bar "||" \tenorVerse \bar ":|."}
 chorusWords = \lyricmode {
   Stel -- la splen -- dens in mon -- te ut so -- lis ra -- di -- um,  
   Mi -- ra -- cu -- lis ser -- ra -- to, Ex -- au -- di po -- pu -- lum.

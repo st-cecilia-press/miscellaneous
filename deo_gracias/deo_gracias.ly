@@ -6,10 +6,6 @@ scDate = "2016-May-16"
 scStaffSize = 18
 
 #(ly:set-option 'midi-extension "mid")
-\paper{ 
-  %will be different in different pieces
-  %system-system-spacing.minimum-distance = #14
-}
 
 \layout {
   \context {

@@ -7,10 +7,6 @@ scDate = "2016-May-16"
 scStaffSizeTranspose  = 20
 scStaffSize = 20
 #(ly:set-option 'midi-extension "mid")
-\paper{ 
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #16
-}
 
 \include "english.ly"
 
@@ -35,7 +31,7 @@ scGlobal= {
 scTransposeFrom =  d 
 scTransposeTo =  a 
 
-scMinimumSystemSpacingTranspose  = 16
+scMinimumSystemSpacingTranspose = #16
 scMinimumSystemSpacing = #16
 
 scMusicOneName = "cantus"

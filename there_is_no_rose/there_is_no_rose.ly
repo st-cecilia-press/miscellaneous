@@ -13,17 +13,17 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-scStaffSize = 14
+scStaffSize = 19
+scMinimumSystemSpacing = #20
 \include "english.ly"
 
 
 \layout {
-
    \context {
     \Staff \RemoveEmptyStaves
   }
 }
-scStaffSize = 18
+
 
 scGlobal= {
   \key f \major
@@ -115,7 +115,7 @@ wordsVerseE = \lyricmode {
 }
 
 
-scMinimumSystemSpacing = #16
+
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

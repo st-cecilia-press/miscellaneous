@@ -24,8 +24,8 @@ Se la face ay pale
 
 %\autoBeamOff
 
-scStaffSizeTranspose  = 19
-scStaffSize = 19
+scStaffSizeTranspose  = 18
+scStaffSize = 18
 scTransposeFrom =  c 
 scTransposeTo =  g, 
 
@@ -37,8 +37,8 @@ scGlobal = {
 }
 
 
-scMinimumSystemSpacingTranspose  = 16
-scMinimumSystemSpacing = #16
+scMinimumSystemSpacingTranspose = #20
+scMinimumSystemSpacing = #20
 
 scMusicOneName = "superius"
 scMusicOneClef = \clef "treble"

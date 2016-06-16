@@ -15,10 +15,6 @@ scMeter=  ""
 scCopyright = ""
 scStaffSize = 20
 
-\paper{ 
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #14
-}
 
 \include "english.ly"
 

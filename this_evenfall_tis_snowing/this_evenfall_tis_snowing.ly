@@ -16,7 +16,7 @@ scCopyright = ""
 
 
 \include "english.ly"
-scStaffSize = 19
+scStaffSize = 18
 
 
 scGlobal= {

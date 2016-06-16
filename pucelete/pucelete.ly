@@ -13,7 +13,7 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-scStaffSize = 17
+scStaffSize = 18
 
 \include "english.ly"
 
@@ -23,7 +23,7 @@ scGlobal= {
   \autoBeamOff
 }
 
-scMinimumSystemSpacing = #16
+scMinimumSystemSpacing = #20
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

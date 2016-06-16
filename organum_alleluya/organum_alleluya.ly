@@ -25,7 +25,7 @@ scGlobal= {
   
 }
 
-scMinimumSystemSpacing = #16
+scMinimumSystemSpacing = #18
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "G_8"

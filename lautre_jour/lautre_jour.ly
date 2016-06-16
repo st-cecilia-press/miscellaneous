@@ -18,10 +18,6 @@ l'autre_jour
 ===================
 %}
 
-\paper{ 
-  %will be different in different pieces
-  system-system-spacing.minimum-distance = #16
-}
 
 scStaffSizeTranspose  = 19
 scStaffSize = 19
@@ -37,7 +33,7 @@ scGlobal= {
   \autoBeamOff
 }
 
-scMinimumSystemSpacingTranspose  = 16
+scMinimumSystemSpacingTranspose = #16
 scMinimumSystemSpacing = #16
 
 scMusicOneName = "cantus"
