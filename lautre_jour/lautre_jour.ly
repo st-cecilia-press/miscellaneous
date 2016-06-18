@@ -4,7 +4,7 @@ scDate = "2016-May-16"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 200 4)
 scTitle = "L'autre jour / Au tens pascour / In seculum"
 scSubtitle = ""
 scComposer = ""
@@ -40,16 +40,16 @@ scMusicOneName = "cantus"
 scMusicOneClef = \clef "G_8"
 scMusicOneClefTransposed = \clef "treble"
 scMusicOne =   \relative g' {  
-  g2 a4 g2 f4 | e2 d4 e2 f4 | g2 g4 a4( g) f |
-  e2. e2 r4 | g2 f8([ e]) d4( c) b | c2. c2 c4 | c2 b4 b2 a4 | g2. g2 r4
+  g2 a4 g2 f4 | e2 d4 e2 f4 | g2 g4 a4\melisma g\melismaEnd f |
+  e2. e2 r4 | g2 f8[ e] d4\melisma c\melismaEnd b | c2. c2 c4 | c2 b4 b2 a4 | g2. g2 r4
   c2 b4 d2 d4 | c2. c2 r4 | d2 c4 e2 f4 | e2 d4 e2 d4 | e2 f4 g2 f4
   e2. e2 r4 | d2 d4 e2 d4 | c2. c2 r4 | c2 d4 e2 f4 | g2. g2 r4
   c,2. d2. | e2 r4 e2 f4 | g2 g4 f8[ \melisma e] d4 \melismaEnd e4 | f2. f2 r4
   g2 e4 c2 d4 e2 f4 e2 f4 | g2 f8[ e] d2 c4 | e2. e2 r4 |
   g2 f4 e2 d4 | c2 b4 g2 a4 | c2 d4 e2 f4 | g2. g2 r4 |
-  g2 f8([ e]) d4( c) b | c2. c2 r4 | e2 f4 d2 d4 | e2 f4 g2 f4 | e2 d4 c2 d4 |
+  g2 f8[ e] d4\melisma c\melismaEnd b | c2. c2 r4 | e2 f4 d2 d4 | e2 f4 g2 f4 | e2 d4 c2 d4 |
   e2. e2 r4 | g4 g f e2 f4 | g2. g2 r4 | c,2 d4 e2 d4 | c2. c2 r4 |
-  g'2 f4 e2 d4 | e2 f4 g a g \time 9/4 e8([ d]) c4 f8([ e]) d2. e2. \time 6/4 f1.
+  g'2 f4 e2 d4 | e2 f4 g a g \time 9/4 e8[ d] c4 f8[ e] d2. e2. \time 6/4 f1.
   \bar "|."
 }
 
@@ -74,16 +74,16 @@ scMusicTwoClef = \clef "G_8"
 scMusicTwoClefTransposed = \clef "treble"
 scMusicTwo = 
 \relative c' {
-  c2. c2 d4 | e2 f4 e2 d4 | c2 c4 d4( c) b |
+  c2. c2 d4 | e2 f4 e2 d4 | c2 c4 d4\melisma c\melismaEnd b |
   a2. a2 r4 | c2 d4 e2 f4 | g2. g2 a4 | g2 f4 e2 f4 | d2. d2 r4
-  g2 f8([ e]) d2 b4 | c2. c2 b4 | d2 c4 e2 f4 | e2 d4 e2 f4 | e2 d4 c2 d4
+  g2 f8[ e] d2 b4 | c2. c2 b4 | d2 c4 e2 f4 | e2 d4 e2 f4 | e2 d4 c2 d4
   e2. e2 r4 | g2 f4 e2 f4 | g2. g2 a4 | g2 f4 e2 d4 | c2. c2 r4
-  g'2 f4 e2 c4 | e2. e2 d4 | c2 b4 d( c) b | c2. c2 r4
+  g'2 f4 e2 c4 | e2. e2 d4 | c2 b4 d\melisma c\melismaEnd b | c2. c2 r4
   g'2 a4 g2 f4 | e2 d4 e2 d4 | c2 b8[ a] g2 g4 | a2 g4 a2 b4 |
-  c2. b2 r4 | g'2 f8([ e]) d4( c) b | c2. b2 a4 | g2. g2 a4  
+  c2. b2 r4 | g'2 f8[ e] d4\melisma c\melismaEnd b | c2. b2 a4 | g2. g2 a4  
   c2 b4 a2 b4 | c2. c2 r4 | e2 c4 d2 f4 | e2 d4 c2 d4 | e2 f4 g2 f4 |
   e2. e2 r4 | d2 d4 e2 d4 | c2. c2 r4 | g'2 f4 e2 f4 | g2. g2 e4 |
-  c2 d4 e2 f4 | e2. d2 d4 \time 9/4 c2 b4 d(b) a b2. \time 6/4 c1.
+  c2 d4 e2 f4 | e2. d2 d4 \time 9/4 c2 b4 d \melisma b\melismaEnd a b2. \time 6/4 c1.
   \bar "|."
 }
 

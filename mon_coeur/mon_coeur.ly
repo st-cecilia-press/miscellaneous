@@ -4,7 +4,7 @@ scDate = "2016-May-16"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 100 2)
 scTitle = "Mon Coeur se Recommande à Vous"
 scSubtitle = ""
 scComposer = "Orlando di Lasso (1560)"
@@ -31,7 +31,7 @@ scTransposeTo =  ef
 scGlobal = {
 	\key f \major
 	%\key f \major
-	\time 2/2
+	\time 4/2
 	
 	 
 }
@@ -44,23 +44,23 @@ scMusicOneName = "superius"
 scMusicOne = \relative c''{ 
 	
 	%measuress 1-5  
-	r1 |  r4 d d g,  | d'4. d8 f4 d  | d2 r4 g  | g c, f4. f8  | 
+	r\breve |  r2 d d g,  | d'2. d4 f2 d  | d1 r2 g  | g c, f2. f4  | 
 	%measuress 6-10 
-	d4 ef d2 | r2 r4 a  | bf2. bf4  | a a a g  | f2 g  | 
+	d2 ef d1 | r1 r2 a  | bf1. bf2  | a a a g  | f1 g  | 
 	%measuress 11-15 
-	r2 r4 d'4  | ef2. d4 | c f2 d4 | d4 bf2 g4 | r4 c4 d4. e8 | 
+	r1 r2 d'2  | ef1. d2 | c f1 d2 | d2 bf1 g2 | r2 c2 d2. e4 | 
 	%measuress 16-20 
-	f4 f d d | f1 | r2 r4 d4 | d8 d d cs d4 f4 | f ef d bf | | 
+	f2 f d d | f\breve | r1 r2 d2 | d4 d d cs d2 f2 | f ef d bf | | 
 	%measuress 21-25 
-	\ficta ef \ficta ef! d4. c8 | bf a bf4 a d  | f4. f8 f4 d4 | ef c d2 | d1 | 
+	\ficta ef \ficta ef! d2. c4 | bf a bf2 a d  | f2. f4 f2 d2 | ef c d1 | d\breve | 
 	%measuress 26-30 
-	r1 | r2 r4 d4 | d f8 f4 d8 c bf | a2 r2 | r2 r4 a4 | 
+	r\breve | r1 r2 d2 | d f4 f2 d4 c bf | a1 r1 | r1 r2 a2 | 
 	%measuress 31-35 
-	d8 d d d f4 d4 | ef d r4 f | f4. f8 d4 d8 d8 ~ | d d8 cs4 d d | d f f ef | 
+	d4 d d d f2 d2 | ef d r2 f | f2. f4 d2 d4 d4 ~ | d d4 cs2 d d | d f f ef | 
 	%measuress 36-40 
-	d c d2 ~ | d2 r2 | r1 | r4 a4 a a | bf bf4. a8 g4 | | 
+	d c d1 ~ | d1 r1 | r\breve | r2 a2 a a | bf bf2. a4 g2 | | 
 	%measuress 41-42 
-	f8 d g2 \ficta fs4 | g1 \bar "|."
+	f4 d g1 \ficta fs2 | g\breve \bar "|."
 }
 
 scMusicTwoClef = \clef "treble"
@@ -69,23 +69,23 @@ scMusicTwoName = "quinta"
 scMusicTwo = \relative c'' { 
 	
 	%measuress 1-5  
-	r2 d2  | d4 g, bf8 c d e  | f4. f8 d4 bf  | a2 r4 bf4  | \ficta ef2 d |
+	r1 d1  | d2 g, bf4 c d e  | f2. f4 d2 bf  | a1 r2 bf2  | \ficta ef1 d |
 	%measuress 6-10 
-	bf2. bf4  | a g4. \ficta fs16 e \ficta fs!4 | g d' f2 ~ | f4 e d2 ~ | d4 c bf bf | 
+	bf1. bf2  | a g2. \ficta fs8 e \ficta fs!2 | g d' f1 ~ | f2 e d1 ~ | d2 c bf bf | 
 	%measuress 11-15 
-	g2. f4 | r4 c' f, bf | a a f f'4 ~  | f4 d4. c8 bf4 ~ | bf8 a16 g a4 bf bf | 
+	g1. f2 | r2 c' f, bf | a a f f'2 ~  | f2 d2. c4 bf2 ~ | bf4 a8 g a2 bf bf | 
 	%measuress 16-20 
-	d d f2 | d2 c4 a | bf8 bf bf a a4 a | bf8 bf bf a a4 d	 | c c a g | 
+	d d f1 | d1 c2 a | bf4 bf bf a a2 a | bf4 bf bf a a2 d	 | c c a g | 
 	%measuress 21-25 
-	g8 g g4. \ficta fs16 e \ficta fs!4  | g2 r4 a4 | d4. d8 c4 f | bf, g bf a8 a8	 | bf4. bf8 g4 f | 
+	g4 g g2. \ficta fs8 e \ficta fs!2  | g1 r2 a2 | d2. d4 c2 f | bf, g bf a4 a4	 | bf2. bf4 g2 f | 
 	%measuress 26-30 
-	bf  a f4. g8 | a2 a4 f | bf bf8 d4 bf8 a g | fs4 a bf a8 d8 ~	 | d8 bf a g fs4 f'? |
+	bf  a f2. g4 | a1 a2 f | bf bf4 d2 bf4 a g | fs2 a bf a4 d4 ~	 | d4 bf a g fs2 f'? |
 	%measuress 31-35 
-	f8 f f f d4 bf | bf2 a4 d | d2 bf4 bf8 bf | a bf a4 a a | bf d c4. c8 | 
+	f4 f f f d2 bf | bf1 a2 d | d1 bf2 bf4 bf | a bf a2 a a | bf d c2. c4 | 
 	%measuress 36-40 
-	a4 g a a | b b c2 ~ | c4 bf a g | a2 r4 d4 | f8 f d4 d bf ~ | 
+	a2 g a a | b b c1 ~ | c2 bf a g | a1 r2 d2 | f4 f d2 d bf ~ | 
 	%measuress 41-42 
-	bf8 c8 d2 a4  | b1  
+	bf4 c4 d1 a2  | b\breve  
 		
 }
 scMusicThreeClef = \clef "treble"
@@ -94,23 +94,23 @@ scMusicThreeName = "contratenor"
 scMusicThree = \relative c' { 
 	
 	%measure 1 - 5  
-	g'2 g4 d | bf'2 g4 bf ~ | bf a8 g a4 g4 ~ | g8 \ficta fs16 e \ficta fs!4  g2 | r2 f2 | 
+	g'1 g2 d | bf'1 g2 bf ~ | bf a4 g a2 g2 ~ | g4 \ficta fs8 e \ficta fs!2  g1 | r1 f1 | 
 	%measure 6-10  
-	f4 g f4. f8  | f4 ef d2 ~  | d2 r2 | r1 | r2 d2 | 
+	f2 g f2. f4  | f2 ef d1 ~  | d1 r1 | r\breve | r1 d1 | 
 	%measure 11-15  
-	ef2. d4 | c2 r4 f4 | f f a bf | f f4. e16 d e4 | f2 f4 f | 
+	ef1. d2 | c1 r2 f2 | f f a bf | f f2. e8 d e2 | f1 f2 f | 
 	%measure 16-20  
-	bf2. bf4 | f4 bf a f | f8 f g e f4 d | f8 f g e f4 f4 ~ | f8 c g'4 f d | 
+	bf1. bf2 | f2 bf a f | f4 f g e f2 d | f4 f g e f2 f2 ~ | f4 c g'2 f d | 
 	%measure 21-25  
-	g, g d'2 | d4 d f4. f8 | a4 bf a8 a bf a | g f g4. \ficta fs16 e \ficta fs!4   | g4 g bf a  | 
+	g, g d'1 | d2 d f2. f4 | a2 bf a4 a bf a | g f g2. \ficta fs8 e \ficta fs!2   | g2 g bf a  | 
 	%measure 26-30  
-	g c, d d  | e2 f4 a | g d8 bf4 bf8 f' g | d4 fs g \ficta f!8 bf8 ~  | bf8 f f d d2 | 
+	g c, d d  | e1 f2 a | g d4 bf2 bf4 f' g | d2 fs g \ficta f!4 bf4 ~  | bf4 f f d d1 | 
 	%measure 31-35  
-	bf'4 bf8 bf bf bf f f | g4 f2 f4 | bf4. bf,8 f' f g g | f g e4 d d | f4 bf a g | 
+	bf'2 bf4 bf bf bf f f | g2 f1 f2 | bf2. bf,4 f' f g g | f g e2 d d | f2 bf a g | 
 	%measure 36-40  
-	fs g4. \ficta fs!16 e \ficta fs!4  | g4 g a a | g4. g8 e4 d | e2 f2 | f4 g f ef | 
+	fs g2. \ficta fs!8 e \ficta fs!2  | g2 g a a | g2. g4 e2 d | e1 f1 | f2 g f ef | 
 	%measure 41-42  
-	d d d2 ~ | d1  
+	d d d1 ~ | d\breve  
 }
 scMusicFourClef = \clef "G_8"
 scMusicFourClefTransposed = \clef "G_8"
@@ -118,23 +118,23 @@ scMusicFourName = "tenor"
 scMusicFour = \relative c' {
 	
 	%measure 1-5
-	r1 | r1 | r4 d4 d g, | d'4. d8 c bf bf4 ~ | bf4 a bf2 | 
+	r\breve | r\breve | r2 d2 d g, | d'2. d4 c bf bf2 ~ | bf2 a bf1 | 
 	%measure 6-10  
-	r4 bf4 bf d | c4. g8 bf4 a | g2 r4 d'4 | f2. \ficta ef4 | d2. g,4 | 
+	r2 bf2 bf d | c2. g4 bf2 a | g1 r2 d'2 | f1. \ficta ef2 | d1. g,2 | 
 	%measure 11-15  
-	g c bf8 g bf4 ~ | bf8 a16 g a4 bf2 | c2 d2 ~ | d4 d4 bf2 | c2 bf4 bf ~ | 
+	g c bf4 g bf2 ~ | bf4 a8 g a2 bf1 | c1 d1 ~ | d2 d2 bf1 | c1 bf2 bf ~ | 
 	%measure 16-20  
-	bf f'2  bf,4 ~ | bf f'2 c4 | d8 d d cs d4 f | bf,8 bf g a d4 bf | a g d'4. g,8 | 
+	bf f'1  bf,2 ~ | bf f'1 c2 | d4 d d cs d2 f | bf,4 bf g a d2 bf | a g d'2. g,4 | 
 	%measure 21-25  
-	bf4 c a2 | g4 g d'4. d8 | d4 bf f' bf,  | \ficta ef2 d2 ~ | d4 g,4 d'4. d8 | 
+	bf2 c a1 | g2 g d'2. d4 | d2 bf f' bf,  | \ficta ef1 d1 ~ | d2 g,2 d'2. d4 | 
 	%measure 26-30  
-	d d f4. f8 d4 ~ | d8 \ficta cs16 \ficta b! \ficta cs!4 d2   | r1 | r4 d4 d d8 f8 ~ | f8 d c bf a2 | 
+	d d f2. f4 d2 ~ | d4 \ficta cs8 \ficta b! \ficta cs!2 d1   | r\breve | r2 d2 d d4 f4 ~ | f4 d c bf a1 | 
 	%measure 31-35  
-	r4 bf4 bf8 bf bf bf | bf4. bf8 c4 bf8 bf8 | bf bf f' f d bf d4 ~ | d4 a4 f'2 | bf,4 bf f' c  | 
+	r2 bf2 bf4 bf bf bf | bf2. bf4 c2 bf4 bf4 | bf bf f' f d bf d2 ~ | d2 a2 f'1 | bf,2 bf f' c  | 
 	%measure 36-40  
-	d ef d2 ~ | d4 d f f  | e? d cs d ~ | d8 \ficta cs16 \ficta b! \ficta cs!4 d d | d g, bf2 ~ | 
+	d ef d1 ~ | d2 d f f  | e? d cs d ~ | d4 \ficta cs8 \ficta b! \ficta cs!2 d d | d g, bf1 ~ | 
 	%measure 41-42  
-	bf4 bf a a  | g1  
+	bf2 bf a a  | g\breve  
 }
 
 scMusicFiveClef = \clef "bass"
@@ -143,23 +143,23 @@ scMusicFiveName = "bassus"
 scMusicFive = \relative c' { 
 	
 	%measure 1-5
-	r1 | r1 | r2 r4 d4 | d d, ef4. d8 | c4 c bf bf' | 
+	r\breve | r\breve | r1 r2 d2 | d d, ef2. d4 | c2 c bf bf' | 
 	%measure 5-10  
-	bf ef, bf'4. bf,8 | f'4 c d2 | r1 | r4 a'4 bf2 ~ | bf4 a g2 | 
+	bf ef, bf'2. bf,4 | f'2 c d1 | r\breve | r2 a'2 bf1 ~ | bf2 a g1 | 
 	%measure 11-15  
-	c,2 ef4 bf | c2 bf2  | f'2 d4 bf | bf'4. a8 g2 | f2 bf, | 
+	c,1 ef2 bf | c1 bf1  | f'1 d2 bf | bf'2. a4 g1 | f1 bf, | 
 	%measure 16-20  
-	r4 bf4 bf'2 | r4 bf,4 f' f | bf8 bf g a d,2 | r2 r4 bf4 | f'4 c4 d g | 
+	r2 bf2 bf'1 | r2 bf,2 f' f | bf4 bf g a d,1 | r1 r2 bf2 | f'2 c2 d g | 
 	%measure 21-25  
-	ef c d2 | g,2 r2 | r1 | r2 r4 d'4 | g4. f8 f4 d | 
+	ef c d1 | g,1 r1 | r\breve | r1 r2 d'2 | g2. f4 f2 d | 
 	%measure 26-30  
-	g f bf2 | a2 d,2 | r1 | r4 d4 g d8 bf8 ~ | bf8 bf f' g d2 | 
+	g f bf1 | a1 d,1 | r\breve | r2 d2 g d4 bf4 ~ | bf4 bf f' g d1 | 
 	%measure 31-35			 | 
-	r2 bf4 bf8 bf | \ficta ef8 \ficta ef!  bf bf f'4 bf, | r4 bf'4 bf8 bf g g  | d g a4 d,2 | r1 | 
+	r1 bf2 bf4 bf | \ficta ef4 \ficta ef!  bf bf f'2 bf, | r2 bf'2 bf4 bf g g  | d g a2 d,1 | r\breve | 
 	%measure 36-40  
-	r1 | g2 f4 f | c' g a bf | a2 r4 d,4 | bf4 bf' bf \ficta ef, | 
+	r\breve | g1 f2 f | c' g a bf | a1 r2 d,2 | bf2 bf' bf \ficta ef, | 
 	%measure 41-42  
-	bf4. c8 d4 d | g,1  
+	bf2. c4 d2 d | g,\breve  
 }
 
 scWordsOneA = \lyricmode {

@@ -4,7 +4,7 @@ scDate = "2016-May-16"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 110 4)
 scTitle = "Jubilate Deo"
 scSubtitle = ""
 scComposer = "Orlandus LASSUS (1532-1594)"
