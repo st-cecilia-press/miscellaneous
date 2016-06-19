@@ -40,7 +40,7 @@ cantus =   \relative c' {
   d2 d4 c  d a c d  e1
   r4 d4 d4 f4  e c4 d e  f4. \melisma e8 c4 d  e2 c \melismaEnd 
   r4 a4 c4 d  e e f d  c b a2  a4 \melisma d2 \ficta cs4 \melismaEnd d2 
-  r4 b  c d a2 \melisma  b4 c a4 f2 g4 a c4. b8 b4 a8[ b c d] e4. \ficta cs8  d1 \melismaEnd 
+  r4 b  c d a2 \melisma  b4 c a4 f4 ~ f4 g4 a c4 ~ c8 b8 b4 a8[ b c d] \time 2/4 e4. \ficta cs8 \time 4/4  d1 \melismaEnd 
 
   
 }

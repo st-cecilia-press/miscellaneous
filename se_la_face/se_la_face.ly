@@ -4,7 +4,7 @@ scDate = "2016-May-16"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 120 4)
 scTitle = "Se la face ay pale"
 scSubtitle = ""
 scComposer = "Guillaume Dufay"

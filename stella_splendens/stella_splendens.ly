@@ -58,7 +58,7 @@ cantusVerse =   \relative c' {
   
 
 }
-scMusicOne = { \bar ":..:" \cantusChorus \bar "||" \cantusVerse \bar ":|." \pageBreak \bar ":..:"  \cantusChorus \bar "||" \cantusVerse \bar ":|."}
+scMusicOne = { \cantusChorus \bar "||" \cantusVerse \bar ":|." \pageBreak \bar ":..:"  \cantusChorus \bar "||" \cantusVerse \bar ":|."}
 
 scMusicTwoName = "tenor"
 scMusicTwoClef = \clef "G_8"

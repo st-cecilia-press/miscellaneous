@@ -32,7 +32,7 @@ cantus =   \relative c' {
   d4 d8 f4 f8 | g4 g8 a4. | b4 c8 d4 d16[ c] | d,4 \melisma c8 \melismaEnd d4.
   d4 d8 f4 f8 | g4 g8 a4. | b4 c8 d4 d16[ c] | d,4 \melisma c8 \melismaEnd d4.
   d4 d8 f4 g8 | bf4 \melisma a8 \melismaEnd g4 \melisma f8 \melismaEnd | a4 bf8 c4 g8 | bf4 \melisma a8\melismaEnd g4 \melisma  f8 \melismaEnd  |
-  d4 d8 f4 g8 | bf4 \melisma  a8 \melismaEnd  g4 \melisma  f8 \melismaEnd  | a4 bf8 c4 g8 | bf4 \melisma  a8 \melismaEnd  g8 \melisma  f8 \melismaEnd  \bar "" g8 |
+  d4 d8 f4 g8 | bf4 \melisma  a8 \melismaEnd  g4 \melisma  f8 \melismaEnd  | a4 bf8 c4 g8 | bf4 \melisma  a8 \melismaEnd  g8[  f8 ]  \bar "" g8 |
   f4 g8 e4 g8 | a4 a8 bf4 g8 | bf4 g16 [ f]   g4 d8 | g4 \melisma  f8 \melismaEnd  g4 g8 |
   f4 g8 e4 g8 | a4 a8 bf4 g8 | bf4 g16  [ f]  g4 d8 | g4  \melisma \tuplet 3/2 { f16  [ e d ]   }   \melismaEnd d4. \bar ":|."
 }

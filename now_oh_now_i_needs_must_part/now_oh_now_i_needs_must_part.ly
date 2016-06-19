@@ -4,7 +4,7 @@ scDate = "2016-May-16"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 140 2)
 scTitle = "Now, oh now I needs must part"
 scSubtitle = ""
 scComposer = "John Dowland"
