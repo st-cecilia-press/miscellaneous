@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #LILYPOND="/Applications/LilyPond.app/Contents/Resources/bin/lilypond --include $PWD/include"
-RUBY="/home/mrio/.rvm/rubies/ruby-2.2.3-rby/bin/ruby"
+RUBY="ruby"
 LILYPOND="lilypond --include $PWD/include"
 
 
