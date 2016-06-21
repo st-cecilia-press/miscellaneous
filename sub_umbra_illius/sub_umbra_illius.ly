@@ -4,9 +4,9 @@ scDate = "20-Jun-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
-scStaffSizeTranspose = 19 
+scStaffSizeTranspose = 18
 
-scStaffSize = 19 
+scStaffSize = 18
 #(ly:set-option 'midi-extension "mid")
 
 \include "english.ly"
@@ -35,7 +35,7 @@ scTransposeTo =  g'
 
 
 scMinimumSystemSpacingTranspose = #8
-scMinimumSystemSpacing = #8
+scMinimumSystemSpacing = #12
 
 
 scMusicOneName = "superius"
@@ -114,7 +114,7 @@ a2 g f f e f f c'1. bf2 a g f g2 ~ g4 f4 f1 e2 f\breve ~ f\breve
 scMusicThreeName = "bassus"
 scMusicThreeClef = \clef "bass"
 
-scMusicThreeClefTransposed = \clef "treble"
+scMusicThreeClefTransposed = \clef "G_8"
 
 scMusicThree =   \relative c {  
   r\breve c1 d2 f2 ~ f2 f2 e f d\breve
