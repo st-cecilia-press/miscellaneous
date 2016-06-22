@@ -1,10 +1,10 @@
 %score_options { "parts": 3, "verses": 5, "transposed": false }
-scDate = "2016-May-16"
+scDate = "20-Jun-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 110 4)
 scTitle = "There is No Rose of Swych Vertu"
 scSubtitle = ""
 scComposer = "Anon (c. 1420)"

@@ -1,10 +1,10 @@
 %score_options { "parts": 3, "verses": 2, "transposed": true }
-scDate = "2016-May-16"
+scDate = "20-Jun-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 100 2)
 scTitle = "Wee Be Three Poore Mariners"
 scSubtitle = ""
 scComposer = "Thomas Ravenscroft"

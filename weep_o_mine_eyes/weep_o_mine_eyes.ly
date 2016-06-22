@@ -1,10 +1,10 @@
 %score_options { "parts": 4, "verses": 1, "transposed": false }
-scDate = "2016-May-16"
+scDate = "20-Jun-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 60 4)
 scTitle = "Weep, O Mine Eyes"
 scSubtitle = ""
 scComposer = "John Bennet (1599)"

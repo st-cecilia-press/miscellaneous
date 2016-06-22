@@ -1,10 +1,10 @@
 %score_options { "parts": 5, "verses": 1, "transposed": true }
-scDate = "2016-May-16"
+scDate = "20-Jun-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 105 4)
 scTitle = "Sister Awake"
 scSubtitle = ""
 scComposer = "Thomas Bateson"
@@ -31,6 +31,7 @@ scStaffSize = 18
 scGlobal = {
 	\key f \major
 	\time 4/4
+	\autoBeamOff
 	
 	 
 }
@@ -50,13 +51,13 @@ scMusicOne = \relative c''{
 	%measuress 6-10 
 	 e f d c4 ~ |c8 bf g4 a4 c | d e f2 | e2 r4 f ~ |f e f d |
 	%measuress 11-15 
-	c g a8 bf c a | d4 g2 g4 | g1 | r1 | c,4 d8 e8 f4 e4 | 
+	c g a8[ bf c a ] | d4 g2 g4 | g1 | r1 | c,4 d8 e8 f4 e4 | 
 	%measuress 16-20 
 	d4 d d, e8 f8  | g4 a4 g2 | a2 r2 | c2 r2 | r4 a2 f8 g8 | 
 	%measuress 21-25 
 	a4 bf a d | c c d d | e2 c4 bf8 a8 | bf4 a g g | r2 c4 c8 c8 | 
 	%measuress 26-30 
-	d4 f e8 d e4 | f2 c4 bf8 a8 | bf4 bf g g | g4. a8 b2 | c4 g g g | 
+	d4 f e8[ d] e4 | f2 c4 bf8 a8 | bf4 bf g g | g4. a8 b2 | c4 g g g | 
 	%measuress 31-35 
 	c2 a2 ~ |a2 a4. g8 | f2 r4 a4 | bf2. a4 | g2 f2 |
 	%measuress 36-40 
@@ -70,7 +71,7 @@ scMusicOne = \relative c''{
 	%measuress 56-60 
 	r4 f'4 d e|  f c d2 | c2 r2 | r2 r4 c4 | a bf c a | 
 	%measuress 61-66 
-	g2 f2 | r4 c' f d | e4. e8 d8 c b4 | c g c4. bf8 | a4 g8 f g2 | a1 \bar "|."
+	g2 f2 | r4 c' f d | e4. e8 d8[ c] b4 | c g c4. bf8 | a4 g8[ f] g2 | a1 \bar "|."
 }
 
 scMusicTwoName = "quintus"
@@ -89,7 +90,7 @@ scMusicTwo = \relative c'' {
 	%measuress 21-25 
 	c4 d c bf | a c c b | c2 r2 | r2 c4 bf8 a | bf4 a g g | 
 	%measuress 26-30 
-	f4 f8 f g4 bf | a4 a r2 | f'4 e8 d e4 d8 c | b4. c8 d2 | e1 | 
+	f4 f8 f g4 bf | a4 a r2 | f'4 e8 d e4 d8[ c] | b4. c8 d2 | e1 | 
 	%measuress 31-35 
 	r4 c c c | f d d cs | d2 r4 c4 | d2. c4 | bf2. a4 | 
 	%measuress 36-40 
@@ -103,7 +104,7 @@ scMusicTwo = \relative c'' {
 	%measuress 56-60 
 	e4 c bf2 | c2 r2 | r4 c a bf | c a g2 | a2 r4 f4 | 
 	%measuress 61-66 
-	bf4 g a a| g8 f e4 f2 | r4 c' f d  | e8 d c bf a bf c4 | c1 | c1 \bar "|." 
+	bf4 g a a| g8[ f] e4 f2 | r4 c' f d  | e8[ d c bf] a[ bf] c4 | c1 | c1 \bar "|." 
 		
 }
 	
@@ -121,7 +122,7 @@ scMusicThree = \relative c' {
 	%measuress 16-20 
 	d4 e8 f8 g4. f8| e4 f2 e4 | f2 r2 | e2 r2 | f2 r4 a4 ~ | 
 	%measuress 21-25 
-	a4 f8 g a4 f8 g | a4 g g4. f8 | e2 r2 | r2 c4 c8 c | d4 f e e | 
+	a4 f8 g a4 f8[ g] | a4 g g4. f8 | e2 r2 | r2 c4 c8 c | d4 f e e | 
 	%measuress 26-30 
 	r2 bf'4 a8 g | a4 f g g | r1 | r2 g2 | g2 r4 e4 | 
 	%measuress 31-35 
@@ -131,7 +132,7 @@ scMusicThree = \relative c' {
 	%measuress 41-45 
 	e2 f2 ~ | f2 e2 | f1 \bar "||" \time 3/4 f4 g f | e2 g4 | 
 	%measuress 46-50 
-	g2 g4 | g2 g8 a | bf4. bf8 bf4 | g4 g2 \bar "||" \time 4/4 g2 e4 e8 e | 
+	g2 g4 | g2 g8[ a] | bf4. bf8 bf4 | g4 g2 \bar "||" \time 4/4 g2 e4 e8 e | 
 	%measuress 51-55 
 	f4 a g f | e2 r2 | r2 r4 c4 | f4 d4 e4 f | f e f2 | 
 	%measuress 56-60 
@@ -166,11 +167,11 @@ scMusicFour = \relative c' {
 	%measuress 46-50 
 	d2 d4 | c2 a4 | d4. e8 f4 | c4 d2 \bar "||" \time 4/4 c2 c4 c8 bf8 | 
 	%measuress 51-55 
-	a8 g f4 g a8 bf | c4 c f d | e f f e | f2 r2 | r4 c4 a bf | 
+	a8[ g] f4 g a8[ bf] | c4 c f d | e f f e | f2 r2 | r4 c4 a bf | 
 	%measuress 56-60 
-	c a g2 | f4 f bf4 a8 g | a8 bf c4 f,4. f8 | g4 a8 bf c2 | r1 | 
+	c a g2 | f4 f bf4 a8[ g] | a8 bf c4 f,4. f8 | g4 a8[ bf] c2 | r1 | 
 	%measuress 61-66 
-	r4 c4 f d | e c d2 | c2 r4 f,4 | c'4. g8 a4. bf8 | c4 bf8 a g4 c4 | c1 \bar "|."
+	r4 c4 f d | e c d2 | c2 r4 f,4 | c'4. g8 a4. bf8 | c4 bf8[ a] g4 c4 | c1 \bar "|."
 }
 
 scMusicFiveName = "bassus"
@@ -208,19 +209,19 @@ scMusicFive =  \relative c { \clef bass
 
 scWordsOneA = \lyricmode {
 Sis -- ter a -- wake, close not your eyes, 
-The day her light, the day her light dis -- clo__ _ _ ses: 
+The day her light, the day her light dis -- clo -- _ _ ses: 
 And the bright morn -- ing doth a -- rise,
-and the bright morn __ _ _ _ ing doth a -- rise,
+and the bright morn --  ing doth a -- rise,
 Out of her bed of ro -- ses,
 out of her bed of ro -- ses.
 See, See, the clear Sun, 
 the world's bright eye, the world's bright eye,
-In at our win -- dow peep -- ing,
-in at our win -- dow peep __ _ _ ing,
-in at our win -- dow peep -- ing peep __ _ _ ing.
+In at our win -- dow pee -- ping,
+in at our win -- dow pee --  _ ping,
+in at our win -- dow pee -- ping pee -- _ _ ping.
 Lo! how he blush -- eth to es -- py,
-Us i -- dle wen -- ches sleep __ _ _ ing,
-us i -- dle wen -- ches sleep --ing.
+Us i -- dle wen -- ches slee -- _ _ ping,
+us i -- dle wen -- ches slee -- ping.
 There -- fore a -- wake,
 make haste__ _ I say, 
 And let us with -- out stay -- ing,
@@ -228,8 +229,8 @@ All in our gowns of green so gay
 In -- to the park a may -- ing,
 in -- to the park a may -- ing,
 in -- to the park a may -- ing,
-in -- to the park a may __ _ _ ing,
-in -- to the park a __ _ may -- ing.
+in -- to the park a may __  _ ing,
+in -- to the park a __  may -- ing.
 
 }
 scWordsTwoA = \lyricmode {
@@ -243,20 +244,20 @@ her bed of ro -- ses.
 See, See, the clear Sun,
 the world's bright eye,
 the world's bright eye.
-In at our win -- dow peep -- ing,
-in at our win -- dow peep -- ing,
-in at our win -- dow __ _ peep __ _ _ ing.
+In at our win -- dow pee -- ping,
+in at our win -- dow pee -- ping,
+in at our win -- dow __  pee -- _ _ ping.
 Lo! how he blush -- eth to es -- py
-Us i -- dle wench -- es sleep -- ing
-us i -- dle wench -- es sleep __ _ _ _ _ _ ing
+Us i -- dle wench -- es slee -- ping
+us i -- dle wench -- es slee -- _ _ _ _ _ ping
 There -- fore a -- wake,
 make haste__ _ I say,
 And let us with -- out stay -- ing,
 In -- to the park a may -- ing,
 in -- to the park a may -- ing,
 in -- to the park a may -- ing
-in -- to the park a may __ _ _ ing,
-in -- to the park __ _ _ _ _ _ a may -- ing.
+in -- to the park a may __  _ ing,
+in -- to the park __  _ a may -- ing.
 }
 scWordsThreeA = \lyricmode {
 The day her light dis -- clo -- ses,
@@ -267,20 +268,20 @@ doth a -- rise doth a -- rise,
 Out of her bed of ro -- ses,
 out of her bed of ro__ _ _ ses.
 See, See, See the clear Sun, 
-the__ _ world's the world's bright eye,
-In at our win -- dow peep -- ing,
-in at our win -- dow peep -- ing
+the __  world's the world's bright eye,
+In at our win -- dow pee -- ping,
+in at our win -- dow pee -- ping
 peep -- ing.
 Lo! how he blush -- eth to es -- py,
-Us i -- dle wench -- es sleep __ _ _ ing,
-us i -- dle wench -- es sleep __ _ _ ing.
-There -- fore a -- wake, make haste I say, And __ _ let us with -- out stay -- ing,
+Us i -- dle wench -- es slee -- _ _ ping,
+us i -- dle wench -- es slee -- _ _ ping.
+There -- fore a -- wake, make haste I say, And __ let us with -- out stay -- ing,
 All in our gowns of green so gay
-In -- to the park a may __ _ ing,
-in -- to the park a may __ ing
-in -- to the park a may __ _ ing,
-in to the park a may __ _ ing, 
-a may __ _ ing. 
+In -- to the park a may -- _ ing,
+in -- to the park a may -- ing
+in -- to the park a may -- _ ing,
+in to the park a may -- _ ing, 
+a may -- _ ing. 
 }
 scWordsFourA = \lyricmode {
 The day her light dis -- clo -- ses,
@@ -288,34 +289,34 @@ And the bright morn -- ing doth a -- rise, doth a -- rise,
 Out of her bed of ro -- ses, her bed of ro -- ses.
 See, See the clear Sun,
 the world's bright eye,
-In at our win -- dow peep -- ing,
-in at our win -- dow peep -- ing
-in at our win -- dow peep -- ing.
+In at our win -- dow pee -- ping,
+in at our win -- dow pee -- ping
+in at our win -- dow pee -- ping.
 Lo! how he blush -- eth to es -- py, to es -- py, 
-Us i -- dle wench -- es sleep -- ing,
-us i -- dle wench -- es sleep __ _ ing.
+Us i -- dle wench -- es slee -- ping,
+us i -- dle wench -- es slee -- _ ping.
 There -- fore a -- wake, make haste I say,
 And let us with -- out stay -- ing, 
-All in our gowns __ _ of green so __ _ gay 
-In -- to the park a may __ _ ing,
+All in our gowns __ of green so __ gay 
+In -- to the park a may -- _ ing,
 in -- to the park a may -- ing,
-in -- to the__ _ park a may -- ing a may __ _ _ ing,
+in -- to the __ park a may -- ing a may -- _  ing,
 in -- to the park a may -- ing,
-in to the park a may __ _ _ _ _ ing.
+in to the park a may --  _ _ _ ing.
 }
 scWordsFiveA = \lyricmode {
 See, See, See, the clear Sun,
 the world's bright eye,
-in at our win -- dow peep -- ing,
-in at our win -- dow peep -- ing.
+in at our win -- dow pee -- ping,
+in at our win -- dow pee -- ping.
 Lo! how he blush -- eth to es -- py
-Us i -- dle wench -- es sleep -- ing,
-us i -- dle wench -- es sleep __ ing.
+Us i -- dle wench -- es slee -- ping,
+us i -- dle wench -- es slee -- _ ping.
 There -- fore a -- wake,
 make haste I say,
 And let us with -- out stay -- ing,
 in -- to the park a may -- ing,
-in -- to the park a may __ _ ing,
+in -- to the park a may -- _ ing,
 in -- to the park a may -- ing, a may -- ing.
 }
 

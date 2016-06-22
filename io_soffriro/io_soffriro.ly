@@ -1,10 +1,10 @@
 %score_options { "parts": 3, "verses": 4, "transposed": true }
-scDate = "2016-May-16"
+scDate = "20-Jun-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 100 4)
 scTitle = "Io soffriro cor mio"
 scSubtitle = ""
 scComposer = "Giovanni Croce Chiozzotto"
@@ -17,7 +17,7 @@ scCopyright = ""
 
 \include "english.ly"
 
-%\autoBeamOff
+
 
 scStaffSizeTranspose  = 19
 scStaffSize = 20
@@ -25,7 +25,7 @@ scStaffSize = 20
 scGlobal = {
 	\key c \major
 	\time 4/4
-	
+	\autoBeamOff
 	 
 }
 scTransposeFrom =  c 

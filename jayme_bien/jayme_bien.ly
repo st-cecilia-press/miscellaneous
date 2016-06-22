@@ -1,10 +1,10 @@
 %score_options { "parts": 4, "verses": 1, "transposed": false }
-scDate = "2016-May-16"
+scDate = "20-Jun-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 120 4)
 scTitle = "J'ayme bien mon amy"
 scSubtitle = "Double Canon"
 scComposer = "Adrien Willaert (c. 1490-1562)"
@@ -30,12 +30,12 @@ scMinimumSystemSpacing = #20
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOne =   \relative c'' {  
-bf2 c  a bf  g f1 bf2 a r2 r4 g c c d2 r4 f4 
+bf2 c  a bf  g f2 ~ | f2 bf2 a r2 r4 g c c d2 r4 f4 
 e8 d c bf a4 d4. c8 c2 bf4 c2 r4 g c2 bf2 a4 c4. d8 e4. d8 d2 c4 
 f4. e8 d4 c4. bf8 a g a2 r1 r2 d c4 bf8 a bf2 a4 d2 c4
-a bf4. a8 a2 g4 a c bf a8 g a2 g r2 r2 r4 
-bf c2 a  bf2 g f2. bf2 a8 g a2 r4 f g4. f8 g4 a g f2 e4 f a 
-a f g g e4. f8 g a g4. f8 f2 e4 f1 
+a bf4. a8 a4 ~ a4 g4 a c bf a8 g a2 g r2 r2 r4 
+bf c2 a  bf2 g f2. bf4 ~ bf4 a8 g a2 r4 f g4. f8 g4 a g f4 ~ f4 e4 f a 
+a f g g e4. f8 g a g4 ~ g8 f8 f2 e4 f1 
 
 \bar "|."
 }
@@ -43,11 +43,11 @@ a f g g e4. f8 g a g4. f8 f2 e4 f1
 scMusicTwoName = "altus"
 scMusicTwoClef = \clef "treble"
 scMusicTwo = \relative c' {
-r1 r1 e2 f d e c bf1 e2 d r 
+r1 r1 e2 f d e c bf2 ~ bf2 e2 d r 
 r4 c f f g2 r4 bf a8 g f e d4 g4. f8 f2 e4 f2 r4 c4 f2 e 
 d4 f4. g8 a4. g8 g2 f4 bf4. a8 g4 f4. e8 d c d2 r2 r r g2
-f4 e8 d e2 d4 g2 f4 d e4. d8 d2 c4 d f e d8 c d2 c2 r 
-r r4 e4 f2 d e c bf2. e2 d8 c d2 r4 bf4 c4. bf8 c4 d c bf2 a4 bf d d bf c c a1
+f4 e8 d e2 d4 g2 f4 d e4. d8 d4 ~ d4 c4 d f e d8 c d2 c2 r 
+r r4 e4 f2 d e c bf2. e4 ~ e4 d8 c d2 r4 bf4 c4. bf8 c4 d c bf4 ~ bf4 a4 bf d d bf c c a1
 }
 
 scMusicThreeName = "tenor"
@@ -57,7 +57,7 @@ r1 r2 bf2 c a bf g f1 | r1 r2 f2 |
 c'4 c d f | e d8 c d2 | c2 r2 | r1 r1 r1 |
 d2 f e d | r2 d c4 bf8 a bf2 | a2 r2 | r1 |
 d2 c4 bf8 a | bf2 a2 | r4 bf c d | g,2 a | r1 | r1
-bf2 c | a bf g f | r2 r4 c'4 | c a bf4. a8 | g2 f4. g8 | a2 g | c d4 bf4. a8 g f g2 | f1
+bf2 c | a bf g f | r2 r4 c'4 | c a bf4. a8 | g2 f4. g8 | a2 g | c d4 bf4 ~ bf8 a8 g f g2 | f1
 }
 
 scMusicFourName = "bassus"

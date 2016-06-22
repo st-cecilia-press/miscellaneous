@@ -1,5 +1,5 @@
 %score_options { "parts": 3, "verses": 3, "transposed": false }
-scDate = "2016-May-16"
+scDate = "20-Jun-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
@@ -8,7 +8,7 @@ scStaffSize = 17
 \include "english.ly"
 
 
-scTempo = #(ly:make-moment 140 4)
+scTempo = #(ly:make-moment 105 4)
 scTitle = "Pastime with good company"
 scSubtitle = ""
 scComposer = "Henry VIII (1513)"
@@ -34,26 +34,26 @@ scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOne =   \relative g' { 
   bf4. bf8 bf4. bf8 | a8.[ bf16 a8]  g f4. f8 | bf4. bf8 a4. g8 | f8 g \ficta fs16 [e  \ficta fs!8] g2 \bar "||"
-  bf4. bf8 bf4. bf8 | a8.[ bf16 a8] g f4. f8 | bf4. bf8 a8. [ bf16 a8 ] g8 | f8 [ g] fs16 [ e  fs!8 ] g4. f8 | 
+  bf4. bf8 bf4. bf8 | a8.[ bf16 a8] g f4. f8 | bf4. bf8 a8. [ bf16 a8 ] g8 | f8 [ g] \ficta fs16 [ e  \ficta fs!8 ] g4. \ficta f8 | 
   g4 a bf4. f8 | g4 a bf4.  bf8 | c8.[ bf16 a8] g8  f4. f8 | g4 a bf4. bf8 | 
-  g4 a bf4. bf8 | a[ g] fs16 [ g a fs! ] g2 \bar "|."
+  g4 a bf4. bf8 | a[ g] \ficta fs16 [ g a \ficta fs! ] g2 \bar "|."
 }
 
 scMusicTwoName = "tenor"
 scMusicTwoClef = \clef "G_8"
-scMusicTwo = \relative c' { \set suggestAccidentals = ##t
-  d4. d8 d4. d8 | c8.[ d16 c8] bf a4. a8 | d4. d8 c4. bf8 | a8[ bf] a4 g2 \bar "||"
-  d'4. d8 d4. d8 | c8.[ d16 c8] bf a4. a8 | d4. d8 c4. bf8 | a8 [ bf] a4 g4. g8 | 
-  bf4 c d4. d8 | bf4 c d4. d8 | c8. [ d16 c8 ] bf8  a4. f8 | 
-  bf4 c d4. d8 | bf4 c d4. d8 | c8 [ bf] a4 g2\bar "|."
+scMusicTwo = \relative c' { 
+  d4. d8 d4. d8 | c8.[ d16 c8]  bf a4. a8 | d4. d8 c4. bf8 | a8[  bf] a4 g2 \bar "||"
+  d'4. d8 d4. d8 | c8.[ d16 c8] bf a4. a8 | d4. d8 c4. bf8 | a8 [  bf] a4 g4. g8 | 
+  bf4 c d4. d8 |  bf4 c d4. d8 | c8. [ d16 c8 ]  bf8  a4. f8 | 
+  bf4 c d4. d8 |  bf4 c d4. d8 | c8 [  bf] a4 g2\bar "|."
 }
 
 scMusicThreeName = "bassus"
 scMusicThreeClef = \clef "bass"
-scMusicThree = \relative f { \set suggestAccidentals = ##t
-  g4. g8 g4. d8 | f4. g8 d4. d8 | bf4. bf8 f'4. g8 | d8[ ef] d4 g,2 \bar "||"
-  g'4. g8 g4. d8 | f4. g8 d4. d8 | bf4. bf8 f'4. g8 | d8[ ef] d4 g,4.  g8 | 
-  ef'4 c bf4. bf8 | ef4 c bf4. bf8 | f'4. g8 d4. d8 | ef4 c bf4. bf8 | ef4 c bf4.  g'8 | c,[ ef] d4 g,2 \bar "|."
+scMusicThree = \relative f { 
+  g4. g8 g4. d8 | f4. g8 d4. d8 | bf4. bf8 f'4. g8 | d8[ \ficta ef] d4 g,2 \bar "||"
+  g'4. g8 g4. d8 | f4. g8 d4. d8 | bf4. bf8 f'4. g8 | d8[ \ficta ef] d4 g,4.  g8 | 
+  \ficta ef'4 c bf4. bf8 | \ficta ef4 c bf4. bf8 | f'4. g8 d4. d8 | \ficta ef4 c bf4. bf8 | \ficta ef4 c bf4.  g'8 | c,[ \ficta ef] d4 g,2 \bar "|."
 
 }
 

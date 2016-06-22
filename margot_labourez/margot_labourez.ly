@@ -1,5 +1,5 @@
 %score_options { "parts": 4, "verses": 5, "transposed": true }
-scDate = "2016-May-16"
+scDate = "20-Jun-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
@@ -20,8 +20,8 @@ scCopyright = ""
 \include "english.ly"
 
 
-scStaffSizeTranspose  = 19
-scStaffSize = 19
+scStaffSizeTranspose  = 18
+scStaffSize = 18
 scTransposeFrom =  f 
 scTransposeTo =  g 
 
