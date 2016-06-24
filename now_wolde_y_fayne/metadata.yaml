@@ -1,7 +1,7 @@
 title: Now Wolde Y Fayne
 diamm_link: http://www.diamm.ac.uk/jsp/Descriptions?op=ITEM&itemKey=72409 
 manuscripts: 
-  - archive: Bodleian Library (GB-Ob)
-    shelfmark: MS. Ashmole 191
+  - archive: 'Bodleian Library [GB-Ob]'
+    shelfmark: 'MS. Ashmole 191'
     images_source:
       - http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=1178

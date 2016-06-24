@@ -1,8 +1,8 @@
 title: Se La Face ay Payle
 diamm_link:  http://www.diamm.ac.uk/jsp/Descriptions?op=ITEM&itemKey=42091
 manuscripts: 
-  - archive: Herzog August Bibliothek (D-W)
-    shelfmark: Cod. Guelf. 287 Extrav.
+  - archive: 'Herzog August Bibliothek [D-W]'
+    shelfmark: 'Cod. Guelf. 287 Extrav.'
     images_source:
       - http://diglib.hab.de/mss/287-extrav/start.htm?image=00096
       - http://diglib.hab.de/mss/287-extrav/start.htm?image=00097

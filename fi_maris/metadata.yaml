@@ -1,7 +1,7 @@
 title: Fi Maris
 diamm_link: http://www.diamm.ac.uk/jsp/Descriptions?op=SOURCE&sourceKey=896#contents 
 manuscripts: 
-  - archive: Bibliothèque Nationale (F-PN)
-    shelfmark: fonds français 25566 
+  - archive: 'Bibliothèque Nationale [F-PN]'
+    shelfmark: 'fonds français 25566'
     images_source:
       - http://gallica.bnf.fr/ark:/12148/btv1b6001348v/f73.item 
