@@ -7,17 +7,11 @@ File.open('./temp.txt','r') do |file|
        dir.chomp!
        t_file = Tempfile.new('filename_temp.txt')
        File.open("./#{dir}/metadata.yaml", 'r') do |f|
+        count = 0
          f.each_line{|line| 
-          if line.match(/archive/) 
-            split = line.split(':',2)
-            split[1].strip!
-            split[1].sub!(/\(/,'[')
-            split[1].sub!(/\)/,']')
-            line = split[0] + ": '#{split[1]}'"
-          elsif line.match(/shelfmark/) 
-            split = line.split(':',2)
-            split[1].strip!
-            line = split[0] + ": '#{split[1]}'"
+          count = count + 1
+          if count == 2 and line !~ /composer/
+            line = "composer: Anonymous\n" + line
           end
             t_file.puts line
          }
