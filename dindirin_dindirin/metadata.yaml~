@@ -1,8 +1,9 @@
 title: Dindirin Dindirin
+composer: Anonymous
 diamm_link: http://www.diamm.ac.uk/jsp/Descriptions?op=SOURCE&sourceKey=1157
 manuscripts: 
-  - archive: Palacio Real, Biblioteca (E-Mp)
-    shelfmark: 1335 (olim: 2-I-5)
+  - archive: 'Palacio Real, Biblioteca [E-Mp]'
+    shelfmark: '1335 (olim: 2-I-5)'
     images_source:
       - http://imslp.nl/imglnks/usimg/1/14/IMSLP403748-PMLP304828-cancionero_palacio1.pdf
       -http://petrucci.mus.auth.gr/imglnks/usimg/9/95/IMSLP403749-PMLP304828-cancionero_palacio2.pdf
