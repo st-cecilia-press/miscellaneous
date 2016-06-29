@@ -1,6 +1,7 @@
+---
 title: Iacob Scalam -- Pax Eterna -- Terribilis
 composer: Petrus Wilhelmi Grudencz
-diamm_link: http://www.diamm.ac.uk/jsp/Descriptions?op=ITEM&itemKey=13381 
-manuscripts: 
-  - archive: Mestske Muzeum (CZ-CHRm)
-    shelfmark: 12580
+manuscripts:
+- diamm: 13381
+  name: CZ-CHRm 12580
+  position: ''

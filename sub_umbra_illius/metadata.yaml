@@ -1,9 +1,11 @@
+---
 title: Sub Umbra Illius
 composer: Jacobus Clemens non Papa
 books:
-  - title: Premier Livre Dv Recveil Des Flevrs Prodvictes De La Divine Mvsicqve a Trois Parties De par Clemens non Papa Thomas Cricquillon & aultres excellens Musichiens 
-    date: 1560
-    image_source:
-      - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/34.jpg
-      - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/82.jpg
-      - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/130.jpg 
+- title: Premier Livre Dv Recveil Des Flevrs Prodvictes De La Divine Mvsicqve a Trois
+    Parties De par Clemens non Papa Thomas Cricquillon & aultres excellens Musichiens
+  date: 1560
+  image_source:
+  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/34.jpg
+  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/82.jpg
+  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/130.jpg

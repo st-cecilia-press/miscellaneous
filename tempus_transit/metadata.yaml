@@ -1,9 +1,10 @@
+---
 title: Tempus Transit Gellidum
 composer: Anonymous
-diamm_link:  
-manuscripts: 
-  - archive: 'Bayerische Staatsbibliothek [D-Mbs]'
-    shelfmark: 'Clm MSS 4660'
-    images_source:
-      - http://daten.digitale-sammlungen.de/bsb00085130/image_126
-      - http://daten.digitale-sammlungen.de/bsb00085130/image_127
+manuscripts:
+- images_source:
+  - http://daten.digitale-sammlungen.de/bsb00085130/image_126
+  - http://daten.digitale-sammlungen.de/bsb00085130/image_127
+  diamm: 
+  name: Carmina Burana
+  position: ''

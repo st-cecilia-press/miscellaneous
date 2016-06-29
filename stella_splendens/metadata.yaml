@@ -1,8 +1,9 @@
+---
 title: Stella Splendens
 composer: Anonymous
-diamm_link: http://www.diamm.ac.uk/jsp/Descriptions?op=ITEM&itemKey=284
-manuscripts: 
-  - archive: 'Monasterio de S Maria [E-MO]'
-    shelfmark: 'MS 1'
-    images_source:
-      - http://petrucci.mus.auth.gr/imglnks/usimg/9/97/IMSLP297165-PMLP481806-llibre_vermell_de_montserrat.pdf
+manuscripts:
+- images_source:
+  - http://petrucci.mus.auth.gr/imglnks/usimg/9/97/IMSLP297165-PMLP481806-llibre_vermell_de_montserrat.pdf
+  diamm: 284
+  name: Llibre Vermell
+  position: ''

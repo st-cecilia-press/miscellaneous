@@ -1,12 +1,13 @@
-title: 'Aucun se sont / A Dieu Commant / Super Te'
+---
+title: Aucun Se Sont / A Dieu Commant / Super Te
 composer: Adam de la Halle
-diamm_link: http://www.diamm.ac.uk/jsp/Descriptions?op=ITEM&itemKey=3635 
-manuscripts: 
-  - archive: 'Faculté de Médecine [F-MO]'
-    shelfmark: 'H 196'
-    image_source: 
-      - http://manuscrits.biu-montpellier.fr/images/196288rZ.jpg 
-      - http://manuscrits.biu-montpellier.fr/images/196288vZ.jpg 
-      - http://manuscrits.biu-montpellier.fr/images/196289rZ.jpg 
-      - http://manuscrits.biu-montpellier.fr/images/196289vZ.jpg 
-      - http://manuscrits.biu-montpellier.fr/images/196290rZ.jpg 
+manuscripts:
+- image_source:
+  - http://manuscrits.biu-montpellier.fr/images/196288rZ.jpg
+  - http://manuscrits.biu-montpellier.fr/images/196288vZ.jpg
+  - http://manuscrits.biu-montpellier.fr/images/196289rZ.jpg
+  - http://manuscrits.biu-montpellier.fr/images/196289vZ.jpg
+  - http://manuscrits.biu-montpellier.fr/images/196290rZ.jpg
+  diamm: 3635
+  name: Montpellier Codex
+  position: ''

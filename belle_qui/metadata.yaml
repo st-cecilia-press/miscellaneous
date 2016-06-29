@@ -1,8 +1,10 @@
-image_source: 
-composer: Anonymous
-  - http://memory.loc.gov/musdi/219/0062.tif
-  - http://memory.loc.gov/musdi/219/0063.tif
-  - http://memory.loc.gov/musdi/219/0064.tif 
-  - http://memory.loc.gov/musdi/219/0065.tif 
-  - http://memory.loc.gov/musdi/219/0066.tif
-  - http://memory.loc.gov/musdi/219/0067.tif
+---
+title: Belle Qui Tiens Ma Vie
+composer: Thoinot Arbeau
+image_source:
+- http://memory.loc.gov/musdi/219/0062.tif
+- http://memory.loc.gov/musdi/219/0063.tif
+- http://memory.loc.gov/musdi/219/0064.tif
+- http://memory.loc.gov/musdi/219/0065.tif
+- http://memory.loc.gov/musdi/219/0066.tif
+- http://memory.loc.gov/musdi/219/0067.tif

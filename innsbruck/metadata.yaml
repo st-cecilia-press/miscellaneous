@@ -1,10 +1,12 @@
+---
 title: Innsbruck Ich Mus
 composer: Heinrich Isaac
 books:
-  - title: Ein außbund schöner Teutscher Liedlein zu singen, vnd auff allerley Jnstrument, zugebrauchen, sonderlich außerlesen
-    date: 1560
-    image_source:
-      - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/41.jpg
-      - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/185.jpg
-      - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/341.jpg
-      - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/499.jpg
+- title: Ein außbund schöner Teutscher Liedlein zu singen, vnd auff allerley Jnstrument,
+    zugebrauchen, sonderlich außerlesen
+  date: 1560
+  image_source:
+  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/41.jpg
+  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/185.jpg
+  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/341.jpg
+  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/499.jpg

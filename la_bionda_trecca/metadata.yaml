@@ -1,8 +1,9 @@
+---
 title: La Bionda Trecca
 composer: Francesco Landini
-diamm_link: http://www.diamm.ac.uk/jsp/Descriptions?op=ITEM&itemKey=15654
-manuscripts: 
-  - archive: 'Biblioteca Medicea-Laurenziana [I-Fl]'
-    shelfmark: 'MS Mediceo Palatino 87'
-    images_source:
-      - http://ks.imslp.info/files/imglnks/usimg/b/bb/IMSLP411443-PMLP666472-Squarcialupi_Codex.pdf
+manuscripts:
+- images_source:
+  - http://ks.imslp.info/files/imglnks/usimg/b/bb/IMSLP411443-PMLP666472-Squarcialupi_Codex.pdf
+  diamm: 15654
+  name: Codex Squarcialupi
+  position: ''

@@ -1,9 +1,10 @@
+---
 title: L'autre Jour
 composer: Anonymous
-diamm_link: http://www.diamm.ac.uk/jsp/Descriptions?op=ITEM&itemKey=2663
-manuscripts: 
-  - archive: 'Staatsbibliothek [D-BAs]'
-    shelfmark: 'Lit. 115 [olim: Ed.IV.6]'
-    images_source:
-      - http://digital.bib-bvb.de/webclient/StreamGate?folder_id=0&dvs=1462978101965~604
-      - http://digital.bib-bvb.de/webclient/StreamGate?folder_id=0&dvs=1462978037156~776 
+manuscripts:
+- images_source:
+  - http://digital.bib-bvb.de/webclient/StreamGate?folder_id=0&dvs=1462978101965~604
+  - http://digital.bib-bvb.de/webclient/StreamGate?folder_id=0&dvs=1462978037156~776
+  diamm: 2663
+  name: Bamberg Codex
+  position: ''

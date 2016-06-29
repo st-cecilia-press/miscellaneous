@@ -1,8 +1,9 @@
+---
 title: Edi Beo Thu
 composer: Anonymous
-diamm_link: http://www.diamm.ac.uk/jsp/Descriptions?op=ITEM&itemKey=2400 
-manuscripts: 
-  - archive: 'Corpus Christi College [GB-Occ]'
-    shelfmark: 'MS 59 (olim: E. 59)'
-    images_source:
-      - http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=1623
+manuscripts:
+- images_source:
+  - http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=1623
+  diamm: 2400
+  name: GB-Occ MS 59
+  position: ''

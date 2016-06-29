@@ -1,9 +1,10 @@
+---
 title: Pastime With Good Company
 composer: Anonymous
-diamm_link:  
-manuscripts: 
-  - archive: 'British Library [GB-Lbl]'
-    shelfmark: 'Add. MS 31922'
-    images_source:
-      - http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17274
-      - http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17275
+manuscripts:
+- images_source:
+  - http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17274
+  - http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17275
+  diamm: 
+  name: Henry VIII Manuscript
+  position: ''

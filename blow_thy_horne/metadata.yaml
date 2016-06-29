@@ -1,9 +1,10 @@
+---
 title: Blow Thy Horne Hunter
 composer: Anonymous
-diamm_link:  
-manuscripts: 
-  - archive: 'British Library [GB-Lbl]'
-    shelfmark: 'Add. MS 31922'
-    images_source:
-      - http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17324
-      - http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17325
+manuscripts:
+- images_source:
+  - http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17324
+  - http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17325
+  diamm: 
+  name: Henry VIII Manuscript
+  position: ''
