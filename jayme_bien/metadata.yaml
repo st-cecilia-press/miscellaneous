@@ -1,7 +1,16 @@
 ---
 title: J'ayme Bien Mon Ami
 composer: Adrien Wilaret
+voicings:
+- SATB
 books:
-- title: Motetti novi e chanzoni franciose a quatro sopra doi
-  date: 1520
-  image_source: http://petrucci.mus.auth.gr/imglnks/usimg/5/5e/IMSLP407643-PMLP659969-antico_1520.pdf
+- slug: willaert_motetti_novi_e_chanzoni_franciose
+  images: 
+    - url: http://petrucci.mus.auth.gr/imglnks/usimg/5/5e/IMSLP407643-PMLP659969-antico_1520.pdf
+      filename: jayme_bien.png
+      name: Jayme Bien Facsimile Page 1
+      description: On page 62 of linked pdf
+    - url: http://petrucci.mus.auth.gr/imglnks/usimg/5/5e/IMSLP407643-PMLP659969-antico_1520.pdf
+      filename: jayme_bien2.png
+      name: Jayme Bien Facsimile Page 2
+      description: On page 63 of linked pdf

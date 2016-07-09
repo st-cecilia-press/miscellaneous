@@ -1,13 +1,32 @@
 ---
 title: Aucun Se Sont / A Dieu Commant / Super Te
 composer: Adam de la Halle
+voicings: 
+- TTT
+- AAA
+- AAT
 manuscripts:
-- image_source:
-  - http://manuscrits.biu-montpellier.fr/images/196288rZ.jpg
-  - http://manuscrits.biu-montpellier.fr/images/196288vZ.jpg
-  - http://manuscrits.biu-montpellier.fr/images/196289rZ.jpg
-  - http://manuscrits.biu-montpellier.fr/images/196289vZ.jpg
-  - http://manuscrits.biu-montpellier.fr/images/196290rZ.jpg
+- images:
+  - url: http://manuscrits.biu-montpellier.fr/images/196288rZ.jpg
+    filename: 196288rZ.jpg
+    name: Aucun Se Sont Facsimile Page 1
+    description:
+  - url: http://manuscrits.biu-montpellier.fr/images/196288vZ.jpg
+    filename: 196288vZ.jpg
+    name: Aucun Se Sont Facsimile Page 2
+    description:
+  - url: http://manuscrits.biu-montpellier.fr/images/196289rZ.jpg
+    filename: 196289rZ.jpg
+    name: Aucun Se Sont Facsimile Page 3
+    description:
+  - url: http://manuscrits.biu-montpellier.fr/images/196289vZ.jpg
+    filename: 196289vZ.jpg
+    name: Aucun Se Sont Facsimile Page 4
+    description:
+  - url: http://manuscrits.biu-montpellier.fr/images/196290rZ.jpg
+    filename: 196290rZ.jpg
+    name: Aucun Se Sont Facsimile Page 5
+    description:
   diamm: 3635
   name: Montpellier Codex
-  position: ''
+  position: 'No. 246, fol(s)/pages 288-290'

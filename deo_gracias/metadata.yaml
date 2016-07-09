@@ -1,10 +1,18 @@
 ---
 title: Deo Gracias (Agincourt Carol)
 composer: Anonymous
+voicings: 
+- ATB
 manuscripts:
 - images_source:
-  - http://bodley30.bodley.ox.ac.uk:8180/luna/servlet/s/8z1zqq
-  - http://bodley30.bodley.ox.ac.uk:8180/luna/servlet/s/44y0bk
-  diamm: 
+  - url: http://bodley30.bodley.ox.ac.uk:8180/luna/servlet/s/8z1zqq
+    filename: bodley_archseldenb26_17v.jpg
+    name: Agincourt Carol Facsimile Page 1
+    description:  
+  - url: http://bodley30.bodley.ox.ac.uk:8180/luna/servlet/s/44y0bk
+    filename: bodley_archseldenb26_18r.jpg
+    name: Agincourt Carol Facsimile Page 2
+    description:  
+  diamm: 6316
   name: The Selden Carol Book
-  position: ''
+  position: 'No. 26'

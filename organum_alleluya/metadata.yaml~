@@ -1,4 +1,18 @@
-image_source: 
-  - http://manuscrits.biu-montpellier.fr/images/196009rZ.jpg 
-  - http://manuscrits.biu-montpellier.fr/images/196009vZ.jpg
-diamm_link: http://www.diamm.ac.uk/jsp/Descriptions?op=ITEM&itemKey=1702
+---
+title: Alleluya Nativitas
+composer: Perotin
+voicings:
+- TTT
+manuscripts:
+- images:
+  - url: http://manuscrits.biu-montpellier.fr/images/196009rZ.jpg
+    filename: 196009rZ.jpg
+    name: Alleluya Nativitas Page 1
+    description: 
+  - url: http://manuscrits.biu-montpellier.fr/images/196009vZ.jpg
+    filename: 196009vZ.jpg
+    name: Alleluya Nativitas Page 2
+    description: 
+  diamm: 1702
+  name: Montpellier Codex
+  position: 'No. 7, fol(s)/pages 9-12v'

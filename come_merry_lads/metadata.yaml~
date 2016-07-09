@@ -1,7 +1,7 @@
+---
 title: Come Merry Lads
 composer: Henry Youll
-rism: https://opac.rism.info/search?id=00000990069684
+voicings:
+- SST
 books:
-  - title: Canzonets to three voyces
-    date: 1608
-    image_source:
+- slug: youll_canzonets_to_three_voyces

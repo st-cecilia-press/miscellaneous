@@ -1,9 +1,16 @@
 ---
 title: We Be Souldiers Three
 composer: Thomas Ravenscroft
+voicings:
+- SAT
 books:
-- title: Deuteromelia
-  date: 1609
-  image_source:
-  - http://www.pbm.com/~lindahl/ravenscroft/deuteromelia/deut_08.html
-  - http://www.pbm.com/~lindahl/ravenscroft/deuteromelia/deut_09.html
+- slug: 'ravenscroft_deuteromelia',
+  images:
+  - url: http://www.pbm.com/~lindahl/ravenscroft/deuteromelia/deut_08.html
+    filename: deut_08.gif
+    name:
+    description:
+  - url: http://www.pbm.com/~lindahl/ravenscroft/deuteromelia/deut_09.html
+    filename: deut_09.gif
+    name:
+    description:

@@ -1,10 +1,18 @@
 ---
 title: L'autre Jour
 composer: Anonymous
+voicings:
+- AAT
 manuscripts:
-- images_source:
-  - http://digital.bib-bvb.de/webclient/StreamGate?folder_id=0&dvs=1462978101965~604
-  - http://digital.bib-bvb.de/webclient/StreamGate?folder_id=0&dvs=1462978037156~776
+- images:
+  - url: http://digital.bib-bvb.de/view/bvbmets/viewer.0.5.jsp?folder_id=0&dvs=1467889800487~890&pid=2957869&locale=en&usePid1=true&usePid2=true#
+    filename: 7r.jpg
+    name: L'autre Jour Page 1
+    description:
+  - url: http://digital.bib-bvb.de/view/bvbmets/viewer.0.5.jsp?folder_id=0&dvs=1467889800487~890&pid=2957869&locale=en&usePid1=true&usePid2=true#
+    filename: 7v.jpg
+    name: L'autre Jour Page 2
+    description:
   diamm: 2663
   name: Bamberg Codex
-  position: ''
+  position: No. 12, fol(s)/pages 7-7v

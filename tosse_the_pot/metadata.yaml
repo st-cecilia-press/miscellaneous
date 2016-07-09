@@ -1,9 +1,16 @@
 ---
 title: Of Ale (Tosse the Pot)
 composer: Thomas Ravenscroft
+voicings:
+- SATB
 books:
-- title: A Brief Discourse
-  date: 1614
-  image_source:
-  - http://www.pbm.com/~lindahl/ravenscroft/brief/brief77.gif
-  - http://www.pbm.com/~lindahl/ravenscroft/brief/brief78.gif
+- slug: ravenscroft_a_brief_discourse
+  images:
+  - url: http://www.pbm.com/~lindahl/ravenscroft/brief/brief77.gif
+    filename: brief77.gif
+    name: Tosee the Pot Facsimile Page 1
+    description:
+  - url: http://www.pbm.com/~lindahl/ravenscroft/brief/brief78.gif
+    filename: brief78.gif
+    name: Tosee the Pot Facsimile Page 2
+    description:

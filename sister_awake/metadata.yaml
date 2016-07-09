@@ -1,8 +1,24 @@
 ---
 title: Sister Awake
 composer: Thomas Bateson
+voicings:
+- SSATB
 books:
-- title: The First Set of English Madrigals to 3, 4, 5, and 6 Voices
-  date: 1604
-  image_source:
-  - http://eebo.chadwyck.com/search/full_rec?SOURCE=pgimages.cfg&ACTION=ByID&ID=V150783
+- slug: bateson_first_set_of_english_madrigals
+  images:
+    - url:
+      filename: sister_awake_altus.tif
+      name: Altus part for Sister Awake
+      description: From EEBO
+    - url:
+      filename: sister_awake_tenor.tif
+      name: Tenor part for Sister Awake
+      description: From EEBO
+    - url:
+      filename: sister_awake_quintus.tif
+      name: Quintus part for Sister Awake
+      description: From EEBO
+    - url:
+      filename: sister_awake_bassus.tif
+      name: Bassus part for Sister Awake
+      description: From EEBO

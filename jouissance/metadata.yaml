@@ -4,5 +4,20 @@ composer: Claudin Sermisy
 books:
 - title: 37 Chansons musicales a quatre parties
   date: 1528
-  image_source:
-  - http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
+  images:
+  - url: http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
+    filename: jouissance_superius1.jpg
+    name: Jouissance: Page 1 of Superius Part 
+    description: On page 6 of Linked pdf
+  - url: http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
+    filename: jouissance_superius2.jpg
+    name: Jouissance: Page 2 of Superius Part 
+    description: On page 7 of Linked pdf
+  - url: http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
+    filename: jouissance_contratenor1.jpg
+    name: Jouissance: Page 1 of Contratenor Part 
+    description: On page 23 of Linked pdf
+  - url: http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
+    filename: jouissance_contratenor1.jpg
+    name: Jouissance: Page 2 of Contratenor Part 
+    description: On page 24 of Linked pdf

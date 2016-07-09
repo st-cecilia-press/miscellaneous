@@ -1,8 +1,14 @@
+---
 title: Alle Psallite
 composer: Anonymous
-diamm_link:  http://www.diamm.ac.uk/jsp/Descriptions?op=ITEM&itemKey=3711 
-manuscripts: 
-  - archive: 'Faculté de Médecine [F-MO]'
-    shelfmark: 'H 196'
-    images_source:
-      - http://manuscrits.biu-montpellier.fr/images/196390rZ.jpg
+voicings:
+- SAT
+manuscripts:
+- images:
+  - url: http://manuscrits.biu-montpellier.fr/images/196390rZ.jpg
+    filename: 196390rZ.jpg 
+    name: Alle Psallite Facsimile
+    description: 
+  diamm: 3711
+  name: Montpellier Codex
+  position: 'No. 322, fol(s)/pages 392-392v'

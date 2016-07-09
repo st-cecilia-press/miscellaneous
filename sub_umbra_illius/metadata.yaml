@@ -1,11 +1,21 @@
 ---
 title: Sub Umbra Illius
 composer: Jacobus Clemens non Papa
+voicings:
+- TTB
+- SSA
 books:
-- title: Premier Livre Dv Recveil Des Flevrs Prodvictes De La Divine Mvsicqve a Trois
-    Parties De par Clemens non Papa Thomas Cricquillon & aultres excellens Musichiens
-  date: 1560
-  image_source:
-  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/34.jpg
-  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/82.jpg
-  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/130.jpg
+- slug: 'phalese_premier_livre_du_recueil_des_fleurs'
+  images:
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/34.jpg
+    filename: 34.jpg
+    name: Sub Umbra Superius Facsimile
+    description:
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/82.jpg
+    filename: 82.jpg
+    name: Sub Umbra Media Vox Facsimile
+    description:
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/130.jpg
+    filename: 130.jpg
+    name: Sub Umbra Bassus Facsimile
+    description:

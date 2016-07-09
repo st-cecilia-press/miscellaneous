@@ -1,7 +1,19 @@
+---
 title: Fi Maris
-diamm_link: http://www.diamm.ac.uk/jsp/Descriptions?op=SOURCE&sourceKey=896#contents 
-manuscripts: 
-  - archive: Bibliothèque Nationale (F-PN)
-    shelfmark: fonds français 25566 
-    images_source:
-      - http://gallica.bnf.fr/ark:/12148/btv1b6001348v/f73.item 
+composer: Anonymous
+voicings: 
+- SSA
+- SST
+manuscripts:
+- images:
+  - url: http://gallica.bnf.fr/ark:/12148/btv1b6001348v/f73.item
+    filename: fi_maris.jpg
+    name: Fi Maris Facsimile Page 1
+    description:
+  - url: http://gallica.bnf.fr/ark:/12148/btv1b6001348v/f74.item 
+    filename: fi_maris2.jpg
+    name: Fi Maris Facsimile Page 2
+    description:
+  diamm: 3156 
+  name: F-PN fonds français 25566
+  position: 'No. 6, fol(s)/pages 33-33v'

@@ -1,9 +1,33 @@
+---
 title: Belle Qui Tiens Ma Vie
 composer: Thoinot Arbeau
-image_source: 
-  - http://memory.loc.gov/musdi/219/0062.tif
-  - http://memory.loc.gov/musdi/219/0063.tif
-  - http://memory.loc.gov/musdi/219/0064.tif 
-  - http://memory.loc.gov/musdi/219/0065.tif 
-  - http://memory.loc.gov/musdi/219/0066.tif
-  - http://memory.loc.gov/musdi/219/0067.tif
+voicings:
+- SATB
+books:
+- slug: orchesographie
+  images:
+  - url: http://memory.loc.gov/musdi/219/0062.tif
+    filename: 0062.tif
+    name: Belle Qui Page 1
+    description: 
+  - url: http://memory.loc.gov/musdi/219/0063.tif
+    filename: 0063.tif
+    name: Belle Qui Page 2
+    description: 
+  - url: http://memory.loc.gov/musdi/219/0064.tif
+    filename: 0064.tif
+    name: Belle Qui Page 3
+    description: 
+  - url: http://memory.loc.gov/musdi/219/0065.tif
+    filename: 0065.tif
+    name: Belle Qui Page 4
+    description: 
+  - url: http://memory.loc.gov/musdi/219/0066.tif
+    filename: 0066.tif
+    name: Belle Qui Page 5
+    description: 
+  - url: http://memory.loc.gov/musdi/219/0067.tif
+    filename: 0067.tif
+    name: Belle Qui Page 6
+    description: 
+    

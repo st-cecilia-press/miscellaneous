@@ -1,9 +1,18 @@
 ---
 title: Stella Splendens
 composer: Anonymous
+voicings: 
+- ST
 manuscripts:
-- images_source:
-  - http://petrucci.mus.auth.gr/imglnks/usimg/9/97/IMSLP297165-PMLP481806-llibre_vermell_de_montserrat.pdf
+- images:
+  - url: http://petrucci.mus.auth.gr/imglnks/usimg/9/97/IMSLP297165-PMLP481806-llibre_vermell_de_montserrat.pdf
+    filename: stella_splendens.png
+    name: Stella Splendens Facsimile Page 1
+    description: On page of 46 linked PDF
+  - url: http://petrucci.mus.auth.gr/imglnks/usimg/9/97/IMSLP297165-PMLP481806-llibre_vermell_de_montserrat.pdf
+    filename: stella_splendens2.png
+    name: Stella Splendens Facsimile Page 2
+    description: On page of 47 linked PDF
   diamm: 284
   name: Llibre Vermell
-  position: ''
+  position: 'No. 2, fol(s)/pages 22v-23'

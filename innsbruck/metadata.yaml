@@ -1,12 +1,24 @@
 ---
 title: Innsbruck Ich Mus
 composer: Heinrich Isaac
+voicings:
+- SATB
 books:
-- title: Ein außbund schöner Teutscher Liedlein zu singen, vnd auff allerley Jnstrument,
-    zugebrauchen, sonderlich außerlesen
-  date: 1560
+- slug: 'ein_aussbund_schoner_teutscher_liedlein'
   image_source:
-  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/41.jpg
-  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/185.jpg
-  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/341.jpg
-  - http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/499.jpg
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/41.jpg
+    filename: innsbruck_sop.jpg
+    name: Facsimile of Soprano Part of Innsbruck
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/185.jpg
+    filename: innsbruck_alto.jpg
+    name: Facsimile of Soprano Part of Innsbruck
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/341.jpg
+    filename: innsbruck_tenor.jpg
+    name: Facsimile of Soprano Part of Innsbruck
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/499.jpg
+    filename: innsbruck_bass.jpg
+    name: Facsimile of Soprano Part of Innsbruck
+    description: 

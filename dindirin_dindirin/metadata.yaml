@@ -1,11 +1,15 @@
 ---
 title: Dindirin Dindirin
 composer: Anonymous
+voicings:
+- SATB
+- SAAB
 manuscripts:
-- images_source:
-  - http://imslp.nl/imglnks/usimg/1/14/IMSLP403748-PMLP304828-cancionero_palacio1.pdf
-  - http://petrucci.mus.auth.gr/imglnks/usimg/9/95/IMSLP403749-PMLP304828-cancionero_palacio2.pdf
-  - http://ks.imslp.info/files/imglnks/usimg/a/ac/IMSLP403750-PMLP304828-cancionero_palacio3.pdf
+- images:
+  - url: http://ks.imslp.info/files/imglnks/usimg/a/ac/IMSLP403750-PMLP304828-cancionero_palacio3.pdf
+    filename: dindirin.png
+    name: Dindirin facsimile
+    description: On Page 25 of linked pdf
   diamm: 
   name: Canconiero de Palacio
   position: ''

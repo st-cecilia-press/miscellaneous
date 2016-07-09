@@ -1,9 +1,14 @@
 ---
 title: Alle Psallite
 composer: Anonymous
+voicings:
+- SAT
 manuscripts:
-- images_source:
-  - http://manuscrits.biu-montpellier.fr/images/196390rZ.jpg
+- images:
+  - url: http://manuscrits.biu-montpellier.fr/images/196390rZ.jpg
+    filename: 196390rZ.jpg 
+    name: Alle Psallite Facsimile
+    description: 
   diamm: 3711
   name: Montpellier Codex
-  position: ''
+  position: 'No. 322, fol(s)/pages 392-392v'

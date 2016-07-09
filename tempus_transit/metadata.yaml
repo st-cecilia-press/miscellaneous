@@ -1,10 +1,18 @@
 ---
 title: Tempus Transit Gellidum
 composer: Anonymous
+voicings:
+- SS
 manuscripts:
-- images_source:
-  - http://daten.digitale-sammlungen.de/bsb00085130/image_126
-  - http://daten.digitale-sammlungen.de/bsb00085130/image_127
+- images:
+  - url: http://daten.digitale-sammlungen.de/bsb00085130/image_126
+    filename: tempus_transit.jpg
+    name: Tempus Transit facsimile page 1
+    description:
+  - url: http://daten.digitale-sammlungen.de/bsb00085130/image_127
+    filename: tempus_transit2.jpg
+    name: Tempus Transit facsimile page 2
+    description: 
   diamm: 
   name: Carmina Burana
   position: ''

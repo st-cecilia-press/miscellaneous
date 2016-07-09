@@ -1,9 +1,14 @@
 ---
 title: There is No Rose of Swich Virtue
 composer: Anonymous
+voicings:
+- SAT
 manuscripts:
-- images_source:
-  - http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=346
+- images:
+  - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=346
+    filename: there_is_no_rose.jpg
+    name: There is No Rose Facsimile
+    description: 
   diamm: 14574
   name: Agincourt Roll
-  position: ''
+  position: No. 13, fol(s)/pages roll

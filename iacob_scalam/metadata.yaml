@@ -1,7 +1,10 @@
 ---
 title: Iacob Scalam -- Pax Eterna -- Terribilis
 composer: Petrus Wilhelmi Grudencz
+voicings:
+- TTT
+- SSS
 manuscripts:
 - diamm: 13381
   name: CZ-CHRm 12580
-  position: ''
+  position: 'No. 74, fol(s)/pages 328'

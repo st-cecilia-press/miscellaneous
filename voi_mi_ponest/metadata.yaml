@@ -1,10 +1,20 @@
 ---
 title: Voi Mi Ponest
 composer: Jacques Arcadelt
+voicings:
+- SST
 books:
-- title: Il primo libro di madrigali d'Archadelt a tre voci
-  date: 1542
-  image_source:
-  - http://ks.imslp.info/files/imglnks/usimg/a/a2/IMSLP278562-PMLP414651-01-canto.pdf
-  - http://imslp.nl/imglnks/usimg/1/13/IMSLP278563-PMLP414651-02-tenore.pdfo      -
-    http://conquest.imslp.info/files/imglnks/usimg/8/8a/IMSLP278564-PMLP414651-03-basso.pdf
+- slug: 'arcadelt_il_primo_libro_di_madrigali'
+  images:
+  - url: http://ks.imslp.info/files/imglnks/usimg/a/a2/IMSLP278562-PMLP414651-01-canto.pdf
+    filename: voi_mi_ponest_canto.png
+    name: Facimile of Canto Part of Voi Me Ponest
+    description: On page 7 of linked pdf
+  - url: http://imslp.nl/imglnks/usimg/1/13/IMSLP278563-PMLP414651-02-tenore.pdfo  
+    filename: voi_mi_ponest_tenore.png
+    name: Facimile of Canto Part of Voi Me Ponest
+    description: On page 7 of linked pdf
+  - url: http://conquest.imslp.info/files/imglnks/usimg/8/8a/IMSLP278564-PMLP414651-03-basso.pdf
+    filename: voi_mi_ponest_basso.png
+    name: Facimile of Canto Part of Voi Me Ponest
+    description: On page 7 of linked pdf
