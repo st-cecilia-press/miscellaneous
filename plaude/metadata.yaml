@@ -1,7 +1,10 @@
 ---
 title: Plaude Euge Theotocos
 composer: Petrus Wilhelmi Grudencz
+voicings:
+- STB
+- SAT
 manuscripts:
 - diamm: 6842
   name: D-LEu MS 1236
-  position: ''
+  position: 'No. 8, fol(s)/pages 139-139v'

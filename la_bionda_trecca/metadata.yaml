@@ -1,9 +1,19 @@
 ---
 title: La Bionda Trecca
 composer: Francesco Landini
+voicings:
+- AT
+- SA
 manuscripts:
-- images_source:
-  - http://ks.imslp.info/files/imglnks/usimg/b/bb/IMSLP411443-PMLP666472-Squarcialupi_Codex.pdf
-  diamm: 15654
+- images:
+  - url: http://ks.imslp.info/files/imglnks/usimg/b/bb/IMSLP411443-PMLP666472-Squarcialupi_Codex.pdf
+    filename: la_bionda_trecca.png
+    name: Facsimile of La Bionda Trecca Page 1
+    description: On Page 256 of Linked PDF
+  - url: http://ks.imslp.info/files/imglnks/usimg/b/bb/IMSLP411443-PMLP666472-Squarcialupi_Codex.pdf
+    filename: la_bionda_trecca2.png
+    name: Facsimile of La Bionda Trecca Page 2
+    description: On Page 257 of Linked PDF
+  diamm: 15575
   name: Codex Squarcialupi
-  position: ''
+  position: 'No. 176, fol(s)/pages 126v-127'

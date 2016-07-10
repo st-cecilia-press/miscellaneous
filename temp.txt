@@ -1,12 +1,3 @@
-./can_she_excuse/metadata.yaml
-./tempus_transit/metadata.yaml
-./soldiers_three/metadata.yaml
-./dindirin_dindirin/metadata.yaml
-./sub_umbra_illius/metadata.yaml
-./this_evenfall_tis_snowing/metadata.yaml
-./sumer_is_icumen_in/metadata.yaml
-./aucun_se_sont/metadata.yaml
-./fi_maris/metadata.yaml
 ./jouissance/metadata.yaml
 ./now_is_the_month_of_maying/metadata.yaml
 ./tourdion/metadata.yaml

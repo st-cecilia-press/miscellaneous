@@ -1,9 +1,15 @@
 ---
 title: Edi Beo Thu
 composer: Anonymous
+voicings: 
+- SS
+- SA
 manuscripts:
-- images_source:
-  - http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=1623
+- images:
+  - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=1623
+    filename:
+    name:
+    description:
   diamm: 2400
   name: GB-Occ MS 59
-  position: ''
+  position: 'No. 2, fol(s)/pages 113v'

@@ -1,8 +1,29 @@
 ---
 title: Now Is the Month of Maying
 composer: Thomas Morley
+voicings: 
+- SATTB
+- SSTTB
 books:
-- title: The First book of Balletts to Five Voyces
-  date: 1595
-  image_source:
-  - http://imslp.nl/imglnks/usimg/b/bd/IMSLP278911-PMLP60454-morley_the_first_booke.pdf
+- slug: 'morley_first_book_of_balletts'
+  images:
+  - url: http://imslp.nl/imglnks/usimg/b/bd/IMSLP278911-PMLP60454-morley_the_first_booke.pdf
+    filename: now_is_cantus.png
+    name: Facsimile for Cantus Part of Now Is the Month of Maying
+    description: On Page 5 of Linked Pdf
+  - url: http://imslp.nl/imglnks/usimg/b/bd/IMSLP278911-PMLP60454-morley_the_first_booke.pdf
+    filename: now_is_altus.png
+    name: Facsimile for Altus Part of Now Is the Month of Maying
+    description: On Page of 36 Linked Pdf
+  - url: http://imslp.nl/imglnks/usimg/b/bd/IMSLP278911-PMLP60454-morley_the_first_booke.pdf
+    filename: now_is_quintus.png
+    name: Facsimile for Quintus Part of Now Is the Month of Maying
+    description: On Page 21 of Linked Pdf
+  - url: http://imslp.nl/imglnks/usimg/b/bd/IMSLP278911-PMLP60454-morley_the_first_booke.pdf
+    filename: now_is_tenor.png
+    name: Facsimile for Tenor Part of Now Is the Month of Maying
+    description: On Page 52 of Linked Pdf
+  - url: http://imslp.nl/imglnks/usimg/b/bd/IMSLP278911-PMLP60454-morley_the_first_booke.pdf
+    filename: now_is_bassus.png
+    name: Facsimile for Bassus Part of Now Is the Month of Maying
+    description: On Page 68 of Linked Pdf
