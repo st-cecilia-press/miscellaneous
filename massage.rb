@@ -27,16 +27,11 @@ directories.each do  |dir|
   t_file = Tempfile.new('filename_temp.txt')
   metadata = YAML.load_file("./#{dir}/metadata.yaml")
   if metadata["manuscripts"]
-    diamm = nil
-    diamm = metadata["diamm_link"].scan(/\d/).join('').to_i if metadata["diamm_link"] =~ /ITEM/
-    metadata.delete("diamm_link")
-    metadata["manuscripts"][0]["diamm"] = diamm
-    shelfmark = metadata["manuscripts"][0]["shelfmark"]
-    man = manuscripts.find{ |manuscript| manuscript[:shelfmark] == shelfmark }
-    metadata["manuscripts"][0]["name"] = man[:name]
-    metadata["manuscripts"][0].delete("shelfmark")
-    metadata["manuscripts"][0].delete("archive")
-    metadata["manuscripts"][0]["position"] = ''
+    if metadata["manuscripts"][0]["images"] 
+      metadata["mauscripts"][0]["images"].each |image|
+        
+      end
+    end
   end 
   t_file.puts metadata.to_yaml
   

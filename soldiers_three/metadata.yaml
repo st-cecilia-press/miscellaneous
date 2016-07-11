@@ -4,7 +4,7 @@ composer: Thomas Ravenscroft
 voicings:
 - SAT
 books:
-- slug: 'ravenscroft_deuteromelia',
+- slug: 'ravenscroft_deuteromelia'
   images:
   - url: http://www.pbm.com/~lindahl/ravenscroft/deuteromelia/deut_08.html
     filename: deut_08.gif
