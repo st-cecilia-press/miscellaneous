@@ -1,5 +1,5 @@
 %score_options {"parts": 4, "verses": 4, "transposed": false}
-scDate = "DATE"
+scDate = "12-Jul-2016"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
