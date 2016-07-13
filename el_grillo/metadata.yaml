@@ -1,0 +1,16 @@
+---
+title: El Grillo
+composer: Josquin
+voicings:
+- SATB
+books:
+- slug: 'petrucci_frottole_iii'
+  images:
+  - url: http://conquest.imslp.info/files/imglnks/usimg/c/c0/IMSLP306302-PMLP495480-frottole_3.pdf
+    filename: el_grillo1.jpg
+    name: El Grillo Facsimile Page 1
+    description: On Page 122 of Linked pdf
+  - url: http://conquest.imslp.info/files/imglnks/usimg/c/c0/IMSLP306302-PMLP495480-frottole_3.pdf
+    filename: el_grillo2.jpg
+    name: El Grillo Facsimile Page 2
+    description: On Page 123 of Linked pdf
