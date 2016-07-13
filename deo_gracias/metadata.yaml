@@ -4,7 +4,7 @@ composer: Anonymous
 voicings: 
 - ATB
 manuscripts:
-- images_source:
+- images:
   - url: http://bodley30.bodley.ox.ac.uk:8180/luna/servlet/s/8z1zqq
     filename: bodley_archseldenb26_17v.jpg
     name: Agincourt Carol Facsimile Page 1
