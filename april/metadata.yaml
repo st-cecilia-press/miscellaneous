@@ -1,0 +1,24 @@
+---
+title: April is in My Mistress Face
+composer: Thomas Morley
+voicings: 
+- SATB
+books:
+- slug: 'morley_madrigals_to_4_voyces'
+  images:
+  - url: http://hz.imslp.info/files/imglnks/usimg/c/cf/IMSLP278908-PMLP452822-madrigalls_to_foure_voyces.pdf
+    filename: april_cantus.jpg
+    name: Facsimile for Soprano Part April
+    description: On Page 3 of Linked Pdf
+  - url: http://hz.imslp.info/files/imglnks/usimg/c/cf/IMSLP278908-PMLP452822-madrigalls_to_foure_voyces.pdf
+    filename: april_altus.jpg
+    name: Facsimile for Altus Part April
+    description: On Page 25 of Linked Pdf
+  - url: http://hz.imslp.info/files/imglnks/usimg/c/cf/IMSLP278908-PMLP452822-madrigalls_to_foure_voyces.pdf
+    filename: april_tenor.jpg
+    name: Facsimile for Tenor Part April
+    description: On Page 45 of Linked Pdf
+  - url: http://hz.imslp.info/files/imglnks/usimg/c/cf/IMSLP278908-PMLP452822-madrigalls_to_foure_voyces.pdf
+    filename: april_bassus.png
+    name: Facsimile for Bass Part April
+    description: On Page 64 of Linked Pdf
