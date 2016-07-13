@@ -1,0 +1,28 @@
+---
+title: Sing We and Chant It
+composer: Thomas Morley
+voicings: 
+- SSATB
+books:
+- slug: 'morley_first_book_of_balletts'
+  images:
+  - url: http://imslp.nl/imglnks/usimg/b/bd/IMSLP278911-PMLP60454-morley_the_first_booke.pdf
+    filename: sing_we_cantus.png
+    name: Facsimile for Cantus Part of Sing We and Chant It
+    description: On Page 5 of Linked Pdf
+  - url: http://imslp.nl/imglnks/usimg/b/bd/IMSLP278911-PMLP60454-morley_the_first_booke.pdf
+    filename: sing_we_altus.png
+    name: Facsimile for Altus Part of Sing We and Chant It
+    description: On Page of 36 Linked Pdf
+  - url: http://imslp.nl/imglnks/usimg/b/bd/IMSLP278911-PMLP60454-morley_the_first_booke.pdf
+    filename: sing_we_quintus.png
+    name: Facsimile for Quintus Part of Sing We and Chant It
+    description: On Page 21 of Linked Pdf
+  - url: http://imslp.nl/imglnks/usimg/b/bd/IMSLP278911-PMLP60454-morley_the_first_booke.pdf
+    filename: sing_we_tenor.png
+    name: Facsimile for Tenor Part of Sing We and Chant It
+    description: On Page 52 of Linked Pdf
+  - url: http://imslp.nl/imglnks/usimg/b/bd/IMSLP278911-PMLP60454-morley_the_first_booke.pdf
+    filename: sing_we_bassus.png
+    name: Facsimile for Bassus Part of Sing We and Chant It
+    description: On Page 68 of Linked Pdf
