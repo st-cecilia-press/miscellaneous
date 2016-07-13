@@ -5,7 +5,7 @@ voicings:
 - SATB
 books:
 - slug: 'ein_aussbund_schoner_teutscher_liedlein'
-  image_source:
+  images:
   - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/41.jpg
     filename: innsbruck_sop.jpg
     name: Facsimile of Soprano Part of Innsbruck
