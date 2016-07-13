@@ -1,0 +1,24 @@
+---
+title: La La La 
+composer: Pierre Certon
+voicings:
+- SATB
+books:
+- slug: 'attaignant_chansons_nouvelles_tiers_livre'
+  image_source:
+    - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00086196/page/8.jpg
+    filename: la_la_la_superius.jpg
+    name: Facsimile of Soprano Part of La La La
+    description: 
+    - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00086196/page/40.jpg
+    filename: la_la_la_contra.jpg
+    name: Facsimile of Contratenor Part of La La La
+    description: 
+    - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00086196/page/9.jpg
+    filename: la_la_la_tenor.jpg
+    name: Facsimile of Tenor Part of La La La
+    description: 
+    - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00086196/page/41.jpg
+    filename: la_la_la_bassus.jpg
+    name: Facsimile of Bassus Part of La La La
+    description: 
