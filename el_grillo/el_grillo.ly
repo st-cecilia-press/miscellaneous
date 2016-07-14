@@ -9,7 +9,7 @@ scStaffSize = 19
 
 \include "english.ly"
 
-scTempo = #(ly:make-moment 120 4)
+scTempo = #(ly:make-moment 120 1)
 scTitle = "El Grillo"
 scSubtitle = ""
 scComposer = "Josquin des Prez"

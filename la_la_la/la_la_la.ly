@@ -9,7 +9,7 @@ scStaffSize = 16
 
 \include "english.ly"
 
-scTempo = #(ly:make-moment 120 4)
+scTempo = #(ly:make-moment 120 2)
 scTitle = "La La La"
 scSubtitle = ""
 scComposer = "Pierre Certon"
