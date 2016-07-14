@@ -1,0 +1,24 @@
+---
+title: O Occhi Manza Mia
+composer: Orlando Di Lasso
+voicings: 
+- SATB
+books:
+- slug: lassus_libro_de_villanelle
+  images:
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00075511/page/23.jpg
+    filename: o_occhi_cantus.jpg
+    name: O Ochhi Cantus Facsimile
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00075511/page/73.jpg
+    filename: o_occhi_altus.jpg
+    name: OOcchi Altus Facsimile
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00075511/page/113.jpg
+    filename: o_occhi_tenor.jpg
+    name: O Occhi Tenor Facsimile
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00075511/page/161.jpg
+    filename: o_occhi_bassus.jpg
+    name: O Occhi Bassus Facsimile
+    description: 
