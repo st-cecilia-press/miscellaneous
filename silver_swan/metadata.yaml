@@ -1,0 +1,28 @@
+---
+title: The Silver Swan
+composer: Orlando Gibbons
+voicings: 
+- SATTB
+books:
+- slug: 'gibbons_first_set_of_madrigals'
+  images:
+  - url: http://javanese.imslp.info/files/imglnks/usimg/6/6f/IMSLP278890-PMLP272093-gibbons_the_first_set_of_madrigals.pdf
+    filename: silver_swan_cantus.jpg
+    name: Facsimile for Cantus Part of The Silver Swan
+    description: On Page 3 of Linked Pdf
+  - url: http://javanese.imslp.info/files/imglnks/usimg/6/6f/IMSLP278890-PMLP272093-gibbons_the_first_set_of_madrigals.pdf
+    filename: silver_swan_altus.jpg
+    name: Facsimile for Altus Part of The Silver Swan
+    description: On Page 15 of Linked Pdf
+  - url: http://javanese.imslp.info/files/imglnks/usimg/6/6f/IMSLP278890-PMLP272093-gibbons_the_first_set_of_madrigals.pdf
+    filename: silver_swan_quintus.jpg
+    name: Facsimile for Quintus Part of The Silver Swan
+    description: On Page 30 of Linked Pdf
+  - url: http://javanese.imslp.info/files/imglnks/usimg/6/6f/IMSLP278890-PMLP272093-gibbons_the_first_set_of_madrigals.pdf
+    filename: silver_swan_tenor.jpg
+    name: Facsimile for Tenor Part of The Silver Swan
+    description: On Page 46 of Linked Pdf
+  - url: http://javanese.imslp.info/files/imglnks/usimg/6/6f/IMSLP278890-PMLP272093-gibbons_the_first_set_of_madrigals.pdf
+    filename: silver_swan_bassus.jpg
+    name: Facsimile for Bassus Part of The Silver Swan
+    description: On Page 58 of Linked Pdf
