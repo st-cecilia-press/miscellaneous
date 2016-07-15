@@ -3,3 +3,22 @@ title: Weep, O Mine Eyes
 composer: John Bennet
 voicings:
 - SATB
+books:
+- slug: 'bennet_madrigals_to_four_voices'
+  images:
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:4778:9
+    filename: weep_cantus.tif
+    name: Facsimile of Cantus of Weep O Mine Eyes
+    description:
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:4778:21
+    filename: weep_altus.tif
+    name: Facsimile of Altus of Weep O Mine Eyes
+    description:
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:4778:34
+    filename: weep_tenor.tif
+    name: Facsimile of Tenor of Weep O Mine Eyes
+    description:
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:4778:46
+    filename: weep_bassus.tif
+    name: Facsimile of Bassus of Weep O Mine Eyes
+    description:
