@@ -4,7 +4,7 @@ scDate = "DATE"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
-scStaffSize = 19 
+scStaffSize = 18
 #(ly:set-option 'midi-extension "mid")
 
 \include "english.ly"
@@ -68,7 +68,7 @@ f1 \repeat volta 2{  % 1
  e4. f8 g4 g4 |  % 24
  r4  c8 c8 g4 a4 |  % 25
  e4 f4 g8   bf8   a4 |  % 26
- g4 f2 (  e4 )  |  % 27
+ g4 f2   e4   |  % 27
  f2 r2  |  % 28
  r4  a4 a4 b4 |  % 29
  c4 g4 a2 |  % 30
@@ -130,12 +130,12 @@ scMusicTwo =    \relative c' {
  e2 r4  c'4 ~  |  % 23
  c4 g4 e4. f8 |  % 24
  g4 g4 r4  c8 c8 |  % 25
- g4 a4 e4 (  f4 )  |  % 26
+ g4 a4 e4   f4   |  % 26
  e4 c4 c2 |  % 27
  c2 r2  |  % 28
  r4  f4 f4 d4 |  % 29
  c4 c4 r4  d4 ~  |  % 30
- d8   c8   c2 (  b4 )  |  % 31
+ d8   c8   c2   b4  |  % 31
  c2 g'2 |  % 32
  \time 3/4
  a2 g4 |  % 33
@@ -200,7 +200,7 @@ scMusicThree =    \relative c' {
  f4 c'4 d4 e4 |  % 28
  f4 c4 r2  |  % 29
  r2  r4  a4 |  % 30
- c4 g4 (  a4 g8   f8 )    |  % 31
+ c4 g4   a4 g8   f8   |  % 31
  g2 c2 |  % 32
  \time 3/4
  c2 c4 |  % 33
@@ -306,10 +306,21 @@ scWordsOneA = \lyricmode {
 Fair Phy -- llis I saw sit -- ting all a -- lone 
 Feed -- ing her flock near to the moun -- tain -- side.
 Fair side
-The shep -- herds knew not whit -- her she was gone,
-But af -- ter her lo -- ver A -- myn -- tas hied.
-Up and down he wandered whilst she was missing;
-When he found her, O then they fell a kissing.
+The shep -- herds knew not, they knew not whit -- her she was gone,
+But af -- ter her lo -- ver, her lo -- ver, But af -- ter her lo -- ver
+A -- myn -- tas hied.
+Up and down he wan -- dered,
+Up and down he wan -- dered,
+Up and down he wan -- dered,
+Up and down he wan -- dered,
+Up and down he wan -- _ dered.
+whilst she was mis -- sing,
+When he found her, 
+O then they fell a kis -- sing, a kis -- sing.
+O then they fell a kis -- sing.
+
+kis -- sing
+
 }
     
   
@@ -317,7 +328,26 @@ When he found her, O then they fell a kissing.
   
   
 scWordsTwoA = \lyricmode {
+Feed -- ing her flock near to the moun -- tain -- side.
+side.
+The shep -- herds knew not whi -- ther she was gone.
+But af -- ter her lo -- ver, her -- lo -- ver,
+But af -- ter her lo -- ver
+A -- myn -- tas hied.
 
+Up and down
+Up and down he wan -- dered,
+Up and down he wan -- dered,
+Up and down he wan -- dered,
+Up and down he wan -- _ dered,
+he wan -- dered.
+
+whilst she was mis -- sing,
+When he found __ _ her, 
+O then they fell a kis -- sing.
+O then they fell a kis -- sing, a kis -- sing.
+O then they fell a kis -- sing.
+kis -- sing.
 }
     
   
@@ -325,7 +355,29 @@ scWordsTwoA = \lyricmode {
   
   
 scWordsThreeA = \lyricmode {
+Feed -- ing her flock near to the moun -- tain -- side.
+side.
+The shep -- herds knew not, they knew not whi -- ther she was gone.
+But af -- ter her lo -- ver, her -- lo -- ver,
+But af -- ter her lo -- ver
+A -- myn -- tas hied.
 
+Up and down he wan -- dered,
+Up and down,
+Up and down he wan -- dered,
+Up and down he wan -- dered,
+Up and down he wan -- dered,
+Up and down he wan -- dered, 
+Up and down he wan -- dered.
+
+whilst she was mis -- sing,
+When he found __ _ _ _ her, 
+O then they fell a kis -- sing.
+O then they fell a kis -- sing, a kis -- sing.
+O then they fell a kis -- sing.
+
+Up and down he
+kis -- sing.
 }
     
   
@@ -333,7 +385,24 @@ scWordsThreeA = \lyricmode {
   
   
 scWordsFourA = \lyricmode {
+Feed -- ing her flock near to the moun -- tain -- side.
+side.
+The shep -- herds knew not whi -- ther she was gone.
+But af -- ter her lo -- ver, 
+But af -- ter her lo -- ver
+A -- myn -- tas hied.
 
+Up and down he wan -- dered, 
+he wan -- dered,
+Up and down he wan -- dered, 
+whilst she was mis -- sing,
+When he found her, 
+O then they fell a kis -- sing.
+O then they fell a kis -- sing, a kis -- sing.
+O then they fell a kis -- sing.
+
+Up and
+kis -- sing
 }
     
   
