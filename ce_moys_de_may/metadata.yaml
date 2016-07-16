@@ -1,0 +1,27 @@
+---
+title: Ce Moys de May
+composer: Clément Janequin
+voicings:
+- SATB
+books:
+- slug: 'attaignant_chansons_vieilles_esleves_iii'
+  images:
+  notes: http://ustc.ac.uk/index.php/record/27762
+- slug: 'attaignant_31_chansons_musicale'
+  images:
+  - url: http://gallica.bnf.fr/ark:/12148/btv1b550071332/f22.highres
+    filename: ce_moys_de_may_superius.jpg 
+    name: Facsimile of Superius part of Ce Moys de May
+    description:
+  - url: http://gallica.bnf.fr/ark:/12148/btv1b550071332/f86.highres
+    filename: ce_moys_de_may_contra.jpg 
+    name: Facsimile of Contratenor part of Ce Moys de May
+    description:
+  - url: http://gallica.bnf.fr/ark:/12148/btv1b550071332/f54.highres
+    filename: ce_moys_de_may_tenor.jpg 
+    name: Facsimile of Tenor part of Ce Moys de May
+    description:
+  - url: http://gallica.bnf.fr/ark:/12148/btv1b550071332/f118.highres
+    filename: ce_moys_de_may_bassus.jpg 
+    name: Facsimile of Bassus part of Ce Moys de May
+    description:
