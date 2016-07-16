@@ -1,0 +1,24 @@
+---
+title: Au Joly Jeu
+composer: Clément Janequin
+voicings:
+- SATB
+books:
+- slug: 'attaignant_chansons_nouvelles_tiers_livre'
+  images:
+  - url: http://gallica.bnf.fr/ark:/12148/btv1b550071332/f24.highres
+    filename: au_joly_jeu_superius.jpg
+    name: Facsimile of Soprano Part of Au Joly Jeu
+    description: 
+  - url: http://gallica.bnf.fr/ark:/12148/btv1b550071332/f88.highres
+    filename: au_joly_jeu_contra.jpg
+    name: Facsimile of Contratenor Part of Au Joly Jeu
+    description: 
+  - url: http://gallica.bnf.fr/ark:/12148/btv1b550071332/f56.highres
+    filename: au_joly_jeu_tenor.jpg
+    name: Facsimile of Tenor Part of La La La
+    description: 
+  - url: http://gallica.bnf.fr/ark:/12148/btv1b550071332/f120.highres
+    filename: au_joly_jeu_bassus.jpg
+    name: Facsimile of Bassus Part of La La La
+    description: 
