@@ -4,7 +4,7 @@ composer: Clément Janequin
 voicings:
 - SATB
 books:
-- slug: 'attaignant_chansons_nouvelles_tiers_livre'
+- slug: 'attaignant_31_chansons_musicale'
   images:
   - url: http://gallica.bnf.fr/ark:/12148/btv1b550071332/f24.highres
     filename: au_joly_jeu_superius.jpg
