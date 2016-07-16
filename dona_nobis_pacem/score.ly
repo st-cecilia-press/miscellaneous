@@ -65,54 +65,6 @@
             
           >>
          
-          \new Staff = \scMusicTwoName <<
-            \set Staff.midiInstrument = #"oboe"
-            \new Voice = "two" {
-              
-              \scGlobal 
-              
-               \scMusicTwoClef
-              
-                \scMusicTwo
-              
-              
-            }
-            
-            <<
-              
-              
-              
-                \new Lyrics \lyricsto "two" { \scWordsTwoA } 
-                
-              
-            >>
-            
-          >>
-         
-          \new Staff = \scMusicThreeName <<
-            \set Staff.midiInstrument = #"oboe"
-            \new Voice = "three" {
-              
-              \scGlobal 
-              
-               \scMusicThreeClef
-              
-                \scMusicThree
-              
-              
-            }
-            
-            <<
-              
-              
-              
-                \new Lyrics \lyricsto "three" { \scWordsThreeA } 
-                
-              
-            >>
-            
-          >>
-         
         >>
         \layout { 
         }
