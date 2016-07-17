@@ -34,7 +34,7 @@ scMinimumSystemSpacing = #8
 
 
 scMusicOneName = "cantus"
-scMusicOneClef = \clef "soprano"
+scMusicOneClef = \clef "treble"
 
 scMusicOne =   \relative c' {  
   \once \hide Staff.TimeSignature
