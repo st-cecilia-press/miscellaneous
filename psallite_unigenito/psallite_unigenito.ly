@@ -67,7 +67,7 @@ c4 g c2 ~ c2 r2 c8 c bf bf c2~ c2 r2
 a8 a a c bf bf c4 | c8 c bf bf c c c bf
 c8 c c bf c4. a8 bf8 a g g f2~ f1 r1 r2 a4. g8
 a4 bf c4. c8 a4 c bf a g8 g f4 c'4. c8 a4 g g2 r4 c4 g c
-c2 ~
+\extendLV #7 c2 \laissezVibrer
 }
 
 scMusicFourName = "bassus"
