@@ -2,8 +2,7 @@
 title: Jouissance Vous Donnerai
 composer: Claudin Sermisy
 books:
-- title: 37 Chansons musicales a quatre parties
-  date: 1528
+- slug: attaignant_37_chansons_musicales
   images:
   - url: http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
     filename: jouissance_superius1.jpg
