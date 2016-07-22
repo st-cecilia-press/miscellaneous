@@ -6,6 +6,7 @@ scDate = "20-Jun-2016"
 \include "english.ly"
 scStaffSizeTranspose  = 18
 scStaffSize = 18
+#(ly:set-option 'midi-extension "mid")
 
 scTempo = #(ly:make-moment 100 2)
 
