@@ -14,8 +14,8 @@ for folder in $(ls -d */ | egrep -v '(include|test)'); do
      then
         $RUBY ./include/midi_mp3.rb --mp3 "./${folder}${folder%%/}-transposed.mid";
      fi
-#    $RUBY ./include/score.ly.erb $ly_file -o ./${folder}score.ly
-#    $LILYPOND --include $PWD/${folder} --output=./${folder} $ly_file; 
+    $RUBY ./include/score.ly.erb ./${folder}${folder%%/}.ly -o ./${folder}score.ly
+    $LILYPOND --include $PWD/${folder} --output=./${folder} ./${folder}${folder%%/}.ly; 
 
 done
 
