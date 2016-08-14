@@ -1,10 +1,10 @@
 %score_options {"parts": 4, "verses": 1, "transposed": false}
-scDate = "15-Jul-2016"
+scDate = "14-Aug-2016"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
-scStaffSize = 19 
+scStaffSize = 18
 #(ly:set-option 'midi-extension "mid")
 
 \include "english.ly"

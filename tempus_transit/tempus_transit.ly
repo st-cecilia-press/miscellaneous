@@ -1,5 +1,5 @@
 %score_options { "parts": 2, "verses": 3, "transposed": false }
-scDate = "20-Jun-2016"
+scDate = "13-Aug-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
@@ -13,7 +13,7 @@ scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
-scStaffSize = 20
+scStaffSize = 19
 \include "english.ly"
 
 
@@ -24,7 +24,7 @@ scGlobal= {
 
 }
 
-scMinimumSystemSpacing = #16
+scMinimumSystemSpacing = #14
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
@@ -46,15 +46,15 @@ tenor =
   d4 c8 c8[ bf] a | bf4 \melisma  a8 \melismaEnd  bf4. | d4 c8 c4 a16[ g] | f4. f
   d'4 c8 c8[ bf] a | bf4 \melisma  a8 \melismaEnd  bf4. | d4 c8 c4 a16[ g] | f4. f4 g8
   bf4 bf8 bf[ a] g | a4 a8 a8[ g] e | f4 f8 g4 e16[ d] | d4 \melisma  c8 \melismaEnd  d4 g8 | 
-  bf4 bf8 bf[ a] g | a4 a8 a8[ g] e | f4 f8 g4 e16[ d] | d4. d \bar ":|."
+  bf4 bf8 bf[ a] g | a4 a8 a8[ g] e | f4 f8 g4 e16[ d] | d4. d 
 }
 
-scMusicOne = { \cantus \pageBreak \cantus}
-scMusicTwo = { \tenor \tenor}
+scMusicOne = { \repeat volta 2{ \cantus } \pageBreak \bar ":..:" \repeat volta 2{ \cantus} }
+scMusicTwo = { \repeat volta 2{ \tenor } \repeat volta 2{ \tenor }}
 
 wordsA = \lyricmode {
   \set stanza = "1."
-  TEM -- PUS Tran -- sit ge -- li -- dum
+  Tem -- pus Tran -- sit ge -- li -- dum
   mun -- dus re -- no -- va -- tur
 
   ver -- que re -- dit flo -- ri -- dum

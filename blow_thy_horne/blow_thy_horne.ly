@@ -1,5 +1,5 @@
 %score_options {"parts": 3, "verses": 4, "transposed": false}
-scDate = "20-Jun-2016"
+scDate = "14-Aug-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
@@ -14,7 +14,7 @@ scPoet = ""
 scCopyright = ""
 scTagline = ""
 
-scStaffSize = 18
+scStaffSize = 17
 \include "english.ly"
 
 
@@ -24,7 +24,7 @@ scGlobal= {
   \time 2/2
 }
 
-scMinimumSystemSpacing = #22
+scMinimumSystemSpacing = #18
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

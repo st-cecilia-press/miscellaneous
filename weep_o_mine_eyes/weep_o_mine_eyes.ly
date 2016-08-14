@@ -21,7 +21,7 @@ http://gateway.proquest.com.proxy.lib.umich.edu/openurl?ctx_ver=Z39.88-2003&res_
 
 
 \include "english.ly"
-scStaffSize = 19
+scStaffSize = 18
 
 
 scGlobal= {

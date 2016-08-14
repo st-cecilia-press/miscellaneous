@@ -16,7 +16,7 @@ scCopyright = ""
 
 
 \include "english.ly"
-scStaffSize = 18
+scStaffSize = 17
 
 
 scGlobal= {
@@ -25,7 +25,7 @@ scGlobal= {
   \time 4/4
 }
 
-scMinimumSystemSpacing = #16
+scMinimumSystemSpacing = #14
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

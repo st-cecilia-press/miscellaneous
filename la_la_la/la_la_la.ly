@@ -1,10 +1,10 @@
 %score_options {"parts": 4, "verses": 2, "transposed": false}
-scDate = "15-Jul-2016"
+scDate = "13-Aug-2016"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
-scStaffSize = 16
+scStaffSize = 15
 #(ly:set-option 'midi-extension "mid")
 
 \include "english.ly"
@@ -35,7 +35,7 @@ scGlobal= {
 
 
 
-scMinimumSystemSpacing = #14
+scMinimumSystemSpacing = #13
 
 
 scMusicOneName = "cantus"
@@ -148,7 +148,7 @@ scMusicFour =   \relative c' {
  g2. g4 d2 ef2 |  % 10
  c2 d2 g1 |  % 11
  g2. g4 g2 g2 |  % 12
- f2 g2 d2 g2 |  % 13
+ \ficta fs2 g2 d2 g2 |  % 13
  g2 bf2 f2 g2 |  % 14
  d2 ef2 bf2 bf2 |  % 15
  c2 d2 g,1 |  % 16

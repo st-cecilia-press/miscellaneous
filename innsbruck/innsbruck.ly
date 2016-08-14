@@ -1,5 +1,5 @@
 %score_options { "parts": 4, "verses": 3, "transposed": false }
-scDate = "20-Jun-2016"
+scDate = "13-Aug-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
@@ -32,7 +32,7 @@ scMusicOne =   \relative c' {
   r2 f2 | f4 g a2 | c2 bf | a r4 a | c4. bf8 g2 |
   a2 f2 | e2 r4 f4 | g f e f | g2 r4 \bar "" \break g4 | f g a2  
   c2 bf | a r4 a c4. bf8 g2 a f e r4 \bar ".|:" \break
-  \repeat volta 2 { e4 f g a2( | bf4. a8[ g f] g4~ | g8 f8 f2) e4 }
+  \repeat volta 2 { e4 f g a2\melisma | bf4. a8[ g f] g4~ | g8 f8 f2\melismaEnd e4 }
   \alternative { {f2 r4 s4} {f1} } \bar "|."
 }
 
@@ -40,10 +40,10 @@ scMusicTwoName = "altus"
 scMusicTwoClef = \clef "G_8"
 scMusicTwo = 
 \relative c' {
-  c1 | d4 e f2 | c4 f2( e4) | f2 r4 c4 | a a bf2 |
-  a4 a2( g8[ f]) | g2 r4 d' | d d c d | bf2 r4 d | d e f2 |
-  c4 f2( e4) | f2 r4 c | a a bf2 | a4 a2( g8[ f]) | g2 r4 \bar ".|:"
-  \repeat volta 2 { g'4 f e f2~( f4. e8[ d c] d4 | c bf) c2 } 
+  c1 | d4 e f2 | c4 f2\melisma e4\melismaEnd | f2 r4 c4 | a a bf2 |
+  a4 a2\melisma g8[ f]\melismaEnd | g2 r4 d' | d d c d | bf2 r4 d | d e f2 |
+  c4 f2\melisma e4\melismaEnd | f2 r4 c | a a bf2 | a4 a2\melisma g8[ f]\melismaEnd | g2 r4 \bar ".|:"
+  \repeat volta 2 { g'4 f e f2~ \melisma f4. e8[ d c] d4 | c bf \melismaEnd c2 } 
   \alternative { {c2 r4 s4 } {a1}}
 }
 
@@ -52,9 +52,9 @@ scMusicThreeClef = \clef "G_8"
 scMusicThree = 
 \relative c {
   r2 f | a4 bf c2 | a2 bf | c r4 c | c4. d8 ef2 |
-  d4 c2( bf4^\markup{\fontsize #-3 \natural}) c2 r4 a4 bf a g a g2 r4 g a bf c2 |
-  f, bf c r4 c | c4. d8 ef2 | d4 c2( bf4^\markup{\fontsize #-3 \natural}) | c2 r4 \bar ".|:"
-  \repeat volta 2 { c4 a bf c2( | d4 bf4. a8[ g f] | e4 f) g2 }
+  d4 c2\melisma \ficta b4\melismaEnd c2 r4 a4 bf a g a g2 r4 g a bf c2 |
+  f, bf c r4 c | c4. d8 ef2 | d4 c2 \melisma \ficta b4\melismaEnd | c2 r4 \bar ".|:"
+  \repeat volta 2 { c4 a bf c2 \melisma | d4 bf4. a8[ g f] | e4 f \melismaEnd g2 }
   \alternative { {f2 r4 s4 } { f1 }}
 
 }
@@ -63,10 +63,10 @@ scMusicFourName = "bassus"
 scMusicFourClef = \clef "bass"
 scMusicFour = 
 \relative g {
-  f1 | d4 g f a | a( g8[ f] g2 ) | f2 r4 f f f ef2 |
+  f1 | d4 g f a | a\melisma g8[ f] g2 \melismaEnd | f2 r4 f f f ef2 |
   f d c r4 d4 | g, d' e d | g,2 r4 g' | d g f a |
-  a( g8[ f] g2) | f r4 f f f ef2 f d c r4 \bar ".|:"
-  \repeat volta 2 { c4 d g f2 bf,2 r4 bf4 | c4( d) c2 }
+  a\melisma g8[ f] g2\melismaEnd | f r4 f f f ef2 f d c r4 \bar ".|:"
+  \repeat volta 2 { c4 d g f2 bf,2 r4 bf4 | c4 \melisma d \melismaEnd c2 }
   \alternative { {f,2 r4 s4} { f1 }}
 }
 

@@ -1,12 +1,12 @@
 %score_options {"parts": 4, "verses": 4, "transposed": false}
-scDate = "20-Jun-2016"
+scDate = "14-Aug-2016"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
 
 \include "english.ly"
-scStaffSize = 18
+scStaffSize = 17
 #(ly:set-option 'midi-extension "mid")
 
 scTempo = #(ly:make-moment 100 2)
@@ -34,7 +34,7 @@ scMusicOne =   \relative c' {
 \repeat volta 2 {
 d2 a' d c2. b4 a2 | a g f e1. | c'2 a4 bf2 g4 a1 f2 | g e e d1. }
 \repeat volta 2{
-a'2 a a a a4 a2 b4 | c1 bf2 a1 r2 | c2 a4 bf2 g4 a1 bf2 | a2 d d cs1.}
+a'2 a a a a4 a2 b4 | c1 bf2 a1 r2 | \break c2 a4 bf2 g4 a1 bf2 | a2 d d cs1.}
 \break
 \repeat volta 2{
 a4. a8 a4 a2 a4 a2 a4 a2. | b4. b8 b4 b2 b4 b2 b4 b2 b4 | a2 a4 a a a a2 a2 a4 g4 | fs4. g8 a4 b4 g a fs1 d2 }
@@ -86,7 +86,7 @@ No, no, where sha -- dows do for bo -- dies stand,
 thou may'st be ab -- us'd if thy sight be dim.
 Wilt thou be thus ab -- u -- sed still, 
 see -- ing that she will right thee ne -- ver
-if thou canst not or come her will, 
+if thou canst not o'er -- come her will, 
 thy love will be thus fruit -- less e -- ver.
 }
 scWordsOneB = \lyricmode {
@@ -123,7 +123,7 @@ No, no, where __ _ sha -- dows do, where sha -- dows do for bo -- dies stand,
 thou may'st be ab -- us'd, ab -- us'd __ if thy sight be dim.
 Wilt thou be thus ab -- u --sed still, _
 see -- ing that she will right thee ne -- ver
-if thou canst not or come her will, 
+if thou canst not o'er -- come her will, 
 thy love will be thus fruit -- less e -- ver.
 }
 scWordsTwoB = \lyricmode {
@@ -160,7 +160,7 @@ No, _ no, no where sha -- dows do for bo -- _ dies, for bo -- dies stand,
 thou may'st be ab -- us'd if __ _ thy sight, thy sight be __ _ dim.
 Wilt thou be thus ab -- u -- sed still, 
 see -- ing that she will right thee ne -- ver
-if thou canst not or come her will, 
+if thou canst not o'er -- come her will, 
 thy love will be thus fruit -- less e -- ver.
 }
 scWordsThreeB = \lyricmode {
@@ -197,7 +197,7 @@ No, _ no, where sha -- dows do for bo -- _ dies stand,
 thou may'st be ab -- us'd if thy sight be dim.
 Wilt thou be thus ab -- u --sed still, 
 see -- ing that she will right thee ne -- ver
-if thou canst not or come her will, 
+if thou canst not o'er -- come her will, 
 thy love will be thus fruit -- less e -- ver.
 }
 scWordsFourB = \lyricmode {

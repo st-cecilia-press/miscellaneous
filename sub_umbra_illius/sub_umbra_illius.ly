@@ -1,12 +1,12 @@
 %score_options {"parts": 3, "verses": 1, "transposed": true}
-scDate = "20-Jun-2016"
+scDate = "13-Aug-2016"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
-scStaffSizeTranspose = 18
+scStaffSizeTranspose = 17
 
-scStaffSize = 18
+scStaffSize = 17
 #(ly:set-option 'midi-extension "mid")
 
 \include "english.ly"
@@ -34,7 +34,7 @@ scTransposeFrom =  f
 scTransposeTo =  g' 
 
 
-scMinimumSystemSpacingTranspose = #8
+scMinimumSystemSpacingTranspose = #12
 scMinimumSystemSpacing = #12
 
 

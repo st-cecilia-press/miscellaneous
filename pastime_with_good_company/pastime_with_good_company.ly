@@ -1,9 +1,9 @@
 %score_options { "parts": 3, "verses": 3, "transposed": false }
-scDate = "20-Jun-2016"
+scDate = "13-Aug-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
-scStaffSize = 17
+scStaffSize = 16
 #(ly:set-option 'midi-extension "mid")
 \include "english.ly"
 
@@ -28,13 +28,13 @@ scGlobal= {
 
 }
 
-scMinimumSystemSpacing = #26
+scMinimumSystemSpacing = #25
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOne =   \relative g' { 
-  bf4. bf8 bf4. bf8 | a8.[ bf16 a8]  g f4. f8 | bf4. bf8 a4. g8 | f8 g \ficta fs16 [e  \ficta fs!8] g2 \bar "||"
-  bf4. bf8 bf4. bf8 | a8.[ bf16 a8] g f4. f8 | bf4. bf8 a8. [ bf16 a8 ] g8 | f8 [ g] \ficta fs16 [ e  \ficta fs!8 ] g4. \ficta f8 | 
+  bf4. bf8 bf4. bf8 | a8.[ bf16 a8]  g f4. f8 | bf4. bf8 a4. g8 | \ficta fs8 g \ficta fs!16 [e  \ficta fs!8] g2 \bar "||"
+  bf4. bf8 bf4. bf8 | a8.[ bf16 a8] g f4. f8 | bf4. bf8 a8. [ bf16 a8 ] g8 | \ficta fs8 [ g] \ficta fs!16 [ e  \ficta fs!8 ] g4. \ficta f8 | 
   g4 a bf4. f8 | g4 a bf4.  bf8 | c8.[ bf16 a8] g8  f4. f8 | g4 a bf4. bf8 | 
   g4 a bf4. bf8 | a[ g] \ficta fs16 [ g a \ficta fs! ] g2 \bar "|."
 }

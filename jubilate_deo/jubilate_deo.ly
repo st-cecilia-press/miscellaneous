@@ -1,5 +1,5 @@
 %score_options { "parts": 4, "verses": 1, "transposed": false }
-scDate = "20-Jun-2016"
+scDate = "13-Aug-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
@@ -25,10 +25,10 @@ scStaffSize = 16
 scGlobal = {
   \key g \major
   \time 4/4
-  \override Score.BarNumber.padding = #2	 
+  	 
 }
 
-scMinimumSystemSpacing = #16
+scMinimumSystemSpacing = #13
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

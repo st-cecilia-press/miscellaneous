@@ -1,5 +1,5 @@
 %score_options { "parts": 2, "verses": 3, "transposed": true }
-scDate = "20-Jun-2016"
+scDate = "13-Aug-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
@@ -44,7 +44,7 @@ cantus =   \relative c' {
 
   
 }
-scMusicOne = { \cantus \bar "||" \pageBreak \cantus \bar "|."}
+scMusicOne = { \cantus \bar ":|:" \pageBreak \bar ":..:" \cantus \bar ":|."}
 
 scMusicTwoName = "altus"
 scMusicTwoClef = \clef "G_8"
@@ -56,7 +56,7 @@ altus = \relative c {
   r4 d f g  e4 \melisma d2 f4  g a f2 a4 b c2 a4 g a f e2  d1 \melismaEnd
   
 }
-scMusicTwo = {\altus  \bar "||" \altus \bar "|."}
+scMusicTwo = {\altus   \altus }
 
 wordsOneA = \lyricmode {
   \set stanza = "1."

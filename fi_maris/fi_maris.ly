@@ -1,5 +1,5 @@
 %score_options { "parts": 3, "verses": 1, "transposed": false }
-scDate = "20-Jun-2016"
+scDate = "14-Aug-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
@@ -7,10 +7,10 @@ scDate = "20-Jun-2016"
 scTempo = #(ly:make-moment 110 4)
 scTitle = "Fi, Maris De Vostre Amour"
 scSubtitle = ""
-scComposer = "Late 13th C."
+scComposer = "Adam de la Halle"
 scArranger = ""
 scTagline = ""
-scPoet = "Adam de la Halle"
+scPoet = ""
 scMeter=  ""
 scCopyright = ""
 \include "english.ly"

@@ -1,10 +1,10 @@
 %score_options {"parts": 4, "verses": 4, "transposed": false}
-scDate = "20-Jun-2016"
+scDate = "14-Aug-2016"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
-scStaffSize = 16
+scStaffSize = 15
 #(ly:set-option 'midi-extension "mid")
 
 \include "english.ly"
@@ -28,7 +28,7 @@ scGlobal = {
   \autoBeamOff
 }
 
-scMinimumSystemSpacing = #16
+scMinimumSystemSpacing = #12
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "G_8"

@@ -1,5 +1,6 @@
 
 
+      #(set-default-paper-size "letter")
     
       #(set-global-staff-size scStaffSize )
     
@@ -12,8 +13,9 @@
         print-page-number = ##f
         print-first-page-number = ##f
         top-margin = 0.5\in
-        left-margin = 0.5\in
-        right-margin = 0.5\in
+        left-margin = 0.75\in
+        right-margin = 0.75\in
+        right-bottom = 0.5\in
         last-bottom-spacing = #'((basic-distance . 4) (padding . 4) (stretchability . 1))
         oddFooterMarkup = \markup { 
         \column{
@@ -108,6 +110,7 @@
     }
   
 
+      #(set-default-paper-size "letter")
     
       #(set-global-staff-size scStaffSizeTranspose )
     
@@ -122,8 +125,9 @@
         print-page-number = ##f
         print-first-page-number = ##f
         top-margin = 0.5\in
-        left-margin = 0.5\in
-        right-margin = 0.5\in
+        left-margin = 0.75\in
+        right-margin = 0.75\in
+        right-bottom = 0.5\in
         last-bottom-spacing = #'((basic-distance . 4) (padding . 4) (stretchability . 1))
         oddFooterMarkup = \markup { 
         \column{

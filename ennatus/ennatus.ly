@@ -1,5 +1,5 @@
 %score_options { "parts": 4, "verses": 1, "transposed": false }
-scDate = "20-Jun-2016"
+scDate = "14-Aug-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
@@ -9,7 +9,7 @@ scTitle = "En natus est Emanuel"
 scSubtitle = ""
 scComposer = "Michael PRAETORIUS (1571-1621)"
 scArranger = ""
-scTagline = "Version 1.0 2/7/2008"
+scTagline = ""
 scPoet = ""
 scMeter=  ""
 scCopyright = ""
@@ -20,7 +20,7 @@ scCopyright = ""
 
 %\autoBeamOff
 
-scStaffSize = 19
+scStaffSize = 18
 
 scGlobal = {
   \key f \major

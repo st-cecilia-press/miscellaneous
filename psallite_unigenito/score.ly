@@ -1,5 +1,6 @@
 
 
+      #(set-default-paper-size "letter")
     
       #(set-global-staff-size scStaffSize )
     
@@ -12,8 +13,9 @@
         print-page-number = ##f
         print-first-page-number = ##f
         top-margin = 0.5\in
-        left-margin = 0.5\in
-        right-margin = 0.5\in
+        left-margin = 0.75\in
+        right-margin = 0.75\in
+        right-bottom = 0.5\in
         last-bottom-spacing = #'((basic-distance . 4) (padding . 4) (stretchability . 1))
         oddFooterMarkup = \markup { 
         \column{
@@ -61,6 +63,9 @@
                 \new Lyrics \lyricsto "one" { \scWordsOneA } 
                 
               
+                \new Lyrics \lyricsto "one" { \scWordsOneB } 
+                
+              
             >>
             
           >>
@@ -83,6 +88,9 @@
               
               
                 \new Lyrics \lyricsto "two" { \scWordsTwoA } 
+                
+              
+                \new Lyrics \lyricsto "two" { \scWordsTwoB } 
                 
               
             >>
@@ -109,6 +117,9 @@
                 \new Lyrics \lyricsto "three" { \scWordsThreeA } 
                 
               
+                \new Lyrics \lyricsto "three" { \scWordsThreeB } 
+                
+              
             >>
             
           >>
@@ -131,6 +142,9 @@
               
               
                 \new Lyrics \lyricsto "four" { \scWordsFourA } 
+                
+              
+                \new Lyrics \lyricsto "four" { \scWordsFourB } 
                 
               
             >>

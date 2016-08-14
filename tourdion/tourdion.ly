@@ -1,5 +1,5 @@
 %score_options { "parts": 4, "verses": 1, "transposed": false }
-scDate = "20-Jun-2016"
+scDate = "13-Aug-2016"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
@@ -22,7 +22,7 @@ scGlobal= {
   \autoBeamOff
 }
 
-scMinimumSystemSpacing = #24
+scMinimumSystemSpacing = #20
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"

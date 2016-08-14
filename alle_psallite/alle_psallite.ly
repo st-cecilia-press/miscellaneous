@@ -1,11 +1,11 @@
 %score_options {"parts": 3, "verses": 1, "transposed": true}
-scDate = "20-Jun-2016"
+scDate = "13-Aug-2016"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
-scStaffSizeTranspose  = 20
-scStaffSize = 20
+scStaffSizeTranspose  = 19
+scStaffSize = 19
 #(ly:set-option 'midi-extension "mid")
 
 \include "english.ly"
@@ -82,7 +82,7 @@ scWordsTwoA = \lyricmode {
 }
 scMusicThreeName = "tenor"
 scMusicThreeClef = \clef "bass"
-scMusicThreeClefTransposed = \clef "bass"
+scMusicThreeClefTransposed = \clef "G_8"
 scMusicThree = 
 \relative c {
   d4. f4 e8 d4. e4. d4. r4. | d4. f4 e8 d4. e d r4. d f e g f e d r |

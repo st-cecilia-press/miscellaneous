@@ -1,5 +1,5 @@
 %score_options {"parts": 1, "verses": 1, "transposed": false}
-scDate = "16-Jul-2016"
+scDate = "15-Aug-2016"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -29,8 +29,8 @@ scGlobal= {
 
 
 
-scMinimumSystemSpacingTranspose = #8
-scMinimumSystemSpacing = #8
+
+scMinimumSystemSpacing = #13
 
 
 scMusicOneName = "cantus"
