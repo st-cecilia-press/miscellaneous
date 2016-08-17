@@ -1,9 +1,1 @@
-./jouissance/metadata.yaml
-./now_is_the_month_of_maying/metadata.yaml
-./tourdion/metadata.yaml
-./pastime_with_good_company/metadata.yaml
-./margot_labourez/metadata.yaml
-./la_bionda_trecca/metadata.yaml
-./plaude/metadata.yaml
-./edi_beo/metadata.yaml
-./weep_o_mine_eyes/metadata.yaml
+Bleh
