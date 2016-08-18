@@ -7,11 +7,11 @@ voicings:
 manuscripts:
 - images:
   - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17324
-    filename: blow_thy_horn_1.jpg
+    filename: blow_thy_horne_1.jpg
     name: Page 1 of Blow Thy Horn Facsimile
     description:
   - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17325
-    filename: blow_thy_horn_2.jpg
+    filename: blow_thy_horne_2.jpg
     name: Page 2 of Blow Thy Horn Facsimile
     description:
   diamm: 
