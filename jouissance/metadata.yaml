@@ -1,6 +1,8 @@
 ---
 title: Jouissance Vous Donnerai
 composer: Claudin Sermisy
+voicings:
+- SATB
 books:
 - slug: attaignant_37_chansons_musicales
   images:
