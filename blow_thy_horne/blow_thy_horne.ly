@@ -15,6 +15,7 @@ scCopyright = ""
 scTagline = ""
 
 scStaffSize = 17
+#(ly:set-option 'midi-extension "mid")
 \include "english.ly"
 
 
