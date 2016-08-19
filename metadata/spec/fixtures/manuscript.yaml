@@ -1,0 +1,14 @@
+---
+title: Alle Psallite
+composer: Anonymous
+voicings:
+- SAT
+manuscripts:
+- images:
+  - url: http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png
+    filename: file.jpg 
+    name: Alle Psallite Facsimile
+    description: 
+  diamm: 3711
+  name: Montpellier Codex
+  position: 'No. 322, fol(s)/pages 392-392v'
