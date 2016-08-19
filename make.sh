@@ -5,7 +5,7 @@ RUBY="ruby"
 LILYPOND="lilypond --include $PWD/include"
 
 
-for folder in $(ls -d */ | egrep -v '(include|test)'); do 
+for folder in $(ls -d */ | egrep -v '(include|test|metadata)'); do 
      #if [ -e "./${folder}${folder%%/}.mid" ]
      #then
      #   $RUBY ./include/midi_mp3.rb --mp3 "./${folder}${folder%%/}.mid";
