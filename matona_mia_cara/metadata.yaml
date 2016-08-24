@@ -1,0 +1,40 @@
+---
+title: Matona Mia Cara
+composer: Orlando Di Lasso
+voicings: 
+- SATB
+books:
+- slug: lassus_libro_de_villanelle
+  images:
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00075511/page/18.jpg
+    filename: matona_cantus1.jpg
+    name: Matona Cantus Facsimile Page 1
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00075511/page/19.jpg
+    filename: matona_cantus2.jpg
+    name: Matona Cantus Facsimile Page 2
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00075511/page/68.jpg
+    filename: matona_altus1.jpg
+    name: Matona Altus Facsimile Page 1
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00075511/page/69.jpg
+    filename: matona_altus2.jpg
+    name: Matona Altus Facsimile Page 2
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00075511/page/108.jpg
+    filename: matona_tenor1.jpg
+    name: Matona Tenor Facsimile Page 1
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00075511/page/109.jpg
+    filename: matona_tenor2.jpg
+    name: Matona Tenor Facsimile Page 2
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00075511/page/156.jpg
+    filename: matona_bassus1.jpg
+    name: Matona Bassus Facsimile Page 1
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00075511/page/157.jpg
+    filename: matona_bassus2.jpg
+    name: Matona Bassus Facsimile Page 2
+    description: 
