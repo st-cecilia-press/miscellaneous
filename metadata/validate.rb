@@ -1,4 +1,6 @@
+require 'pry'
 require 'yaml'
+require 'uri'
 require "net/http"
 def validate(metadata) 
   return "Fail: Need Title" if metadata["title"].empty? 
@@ -31,17 +33,27 @@ def image_error?(images)
   return false
 end
 def url_resolves?(url_text)
-  url = URI.parse(url_text)
-  req = Net::HTTP.new(url.host, url.port)
-  res = req.request_head(url.path) 
-  if res.code == "200"
-   return true 
-  else
-    return false
+  uri = URI.parse(url_text)
+  http = Net::HTTP.new(uri.host, uri.port)
+  res = http.request_head(uri.path) 
+  http.start do
+    path = (uri.path.empty?) ? '/' : uri.path
+    http.request_get(path) do |response|
+      case response
+      when Net::HTTPSuccess then
+         return true
+      when Net::HTTPRedirection then
+         return true
+      else
+        return false
+      end
+    end
   end
+  #binding.pry
+  #if res.code == "200"
+  # return true 
+  #else
+  #  return false
+  #end
 end
 
-input_file = ARGV[0]
-abort 'need yaml file' if input_file.nil?
-metadata = YAML.load_file(input_file)  
-puts validate(metadata)
