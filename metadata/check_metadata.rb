@@ -1,4 +1,4 @@
-require 'validate'
+require_relative 'validate'
 
 input_file = ARGV[0]
 abort 'need yaml file' if input_file.nil?
