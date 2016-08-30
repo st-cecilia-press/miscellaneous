@@ -2,11 +2,11 @@
 title: Chi passa per sta strada
 composer: Filippo Azzaiolo 
 voicings:
--SATB 
+- SATB 
 books:
 - slug: azzaiolo_primo_libro_de_viollotte
   images:
-      - url: http://www.bibliotecamusica.it/cmbm/images/ripro/gaspari/_R/R282/R282_015.jpg
+  - url: http://www.bibliotecamusica.it/cmbm/images/ripro/gaspari/_R/R282/R282_015.jpg
     filename: chi_passa_cantus.jpg
     name: Chi Passa Cantus Facsimile
     description: 

@@ -1,4 +1,3 @@
-require 'pry'
 require 'yaml'
 require 'uri'
 require "net/http"
@@ -49,11 +48,5 @@ def url_resolves?(url_text)
       end
     end
   end
-  #binding.pry
-  #if res.code == "200"
-  # return true 
-  #else
-  #  return false
-  #end
 end
 
