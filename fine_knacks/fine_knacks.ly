@@ -9,7 +9,7 @@ scStaffSize = 16
 
 \include "english.ly"
 
-scTempo = #(ly:make-moment 100 4)
+scTempo = #(ly:make-moment 100 2)
 scTitle = "Fine knacks for ladies"
 scSubtitle = ""
 scComposer = "John Dowland"
