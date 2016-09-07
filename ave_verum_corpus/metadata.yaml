@@ -1,10 +1,10 @@
 ---
 title: Ave Verum Corpus
 composer: William Byrd
-voicings: 
+voicings:
 - SATB
 books:
-- slug: 'byrd_gradualia'
+- slug: byrd_gradualia
   images:
   - url: http://conquest.imslp.info/files/imglnks/usimg/e/e1/IMSLP322049-PMLP248883-Byrd_-_Gradualia_I_-Superius-.pdf
     filename: ave_verum_corpus_superius.jpg
@@ -22,3 +22,8 @@ books:
     filename: ave_verum_corpus_bassus.jpg
     name: Facsimile for Bassus Part of Ave Verum Corpus
     description: On Page 41 of Linked Pdf
+language: 
+- Latin
+tags:
+- sacred
+- motet

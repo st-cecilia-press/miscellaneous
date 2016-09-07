@@ -1,7 +1,11 @@
 ---
 title: In Dulci Jubilo
 composer: Michael Praetorius
-voicings: 
+voicings:
 - SS
 books:
 - slug: praetorius_musae_sione_ix
+language: 
+- Latin
+tags: 
+- holiday

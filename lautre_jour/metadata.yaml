@@ -5,14 +5,18 @@ voicings:
 - AAT
 manuscripts:
 - images:
-  - url: http://digital.bib-bvb.de/view/bvbmets/viewer.0.5.jsp?folder_id=0&dvs=1467889800487~890&pid=2957869&locale=en&usePid1=true&usePid2=true#
+  - url: http://digital.bib-bvb.de/webclient/StreamGate?folder_id=0&dvs=1473193157704~869
     filename: 7r.jpg
     name: L'autre Jour Page 1
-    description:
-  - url: http://digital.bib-bvb.de/view/bvbmets/viewer.0.5.jsp?folder_id=0&dvs=1467889800487~890&pid=2957869&locale=en&usePid1=true&usePid2=true#
+    description: 
+  - url: http://digital.bib-bvb.de/webclient/StreamGate?folder_id=0&dvs=1473193030320~805 
     filename: 7v.jpg
     name: L'autre Jour Page 2
-    description:
+    description: 
   diamm: 2663
   name: Bamberg Codex
   position: No. 12, fol(s)/pages 7-7v
+language: 
+- French
+tags: 
+- motet

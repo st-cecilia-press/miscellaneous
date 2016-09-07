@@ -1,7 +1,7 @@
 ---
 title: Stella Splendens
 composer: Anonymous
-voicings: 
+voicings:
 - ST
 manuscripts:
 - images:
@@ -15,4 +15,7 @@ manuscripts:
     description: On page of 47 linked PDF
   diamm: 284
   name: Llibre Vermell
-  position: 'No. 2, fol(s)/pages 22v-23'
+  position: No. 2, fol(s)/pages 22v-23
+language:
+- Latin
+tags: 

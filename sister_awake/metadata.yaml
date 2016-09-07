@@ -6,19 +6,23 @@ voicings:
 books:
 - slug: bateson_first_set_of_english_madrigals
   images:
-    - url:
-      filename: sister_awake_altus.tif
-      name: Altus part for Sister Awake
-      description: From EEBO
-    - url:
-      filename: sister_awake_tenor.tif
-      name: Tenor part for Sister Awake
-      description: From EEBO
-    - url:
-      filename: sister_awake_quintus.tif
-      name: Quintus part for Sister Awake
-      description: From EEBO
-    - url:
-      filename: sister_awake_bassus.tif
-      name: Bassus part for Sister Awake
-      description: From EEBO
+  - url: http://eebo.chadwyck.com/home
+    filename: sister_awake_altus.tif
+    name: Altus part for Sister Awake
+    description: From EEBO
+  - url: http://eebo.chadwyck.com/home
+    filename: sister_awake_tenor.tif
+    name: Tenor part for Sister Awake
+    description: From EEBO
+  - url: http://eebo.chadwyck.com/home
+    filename: sister_awake_quintus.tif
+    name: Quintus part for Sister Awake
+    description: From EEBO
+  - url: http://eebo.chadwyck.com/home
+    filename: sister_awake_bassus.tif
+    name: Bassus part for Sister Awake
+    description: From EEBO
+language: 
+- English
+tags: 
+- madrigal

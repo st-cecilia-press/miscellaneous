@@ -8,15 +8,15 @@ books:
   images:
   - url: http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
     filename: jouissance_superius1.jpg
-    name: Jouissance Page 1 of Superius Part 
+    name: Jouissance Page 1 of Superius Part
     description: On page 6 of Linked pdf
   - url: http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
     filename: jouissance_superius2.jpg
-    name: Jouissance Page 2 of Superius Part 
+    name: Jouissance Page 2 of Superius Part
     description: On page 7 of Linked pdf
   - url: http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
     filename: jouissance_contratenor1.jpg
-    name: Jouissance Page 1 of Contratenor Part 
+    name: Jouissance Page 1 of Contratenor Part
     description: On page 23 of Linked pdf
   - url: http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
     filename: jouissance_contratenor2.jpg
@@ -24,18 +24,21 @@ books:
     description: On page 24 of Linked pdf
   - url: http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
     filename: jouissance_tenor1.jpg
-    name: Jouissance Page 1 of Tenor Part 
+    name: Jouissance Page 1 of Tenor Part
     description: On page 40 of Linked pdf
   - url: http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
     filename: jouissance_tenor2.jpg
-    name: Jouissance Page 2 of Tenor Part 
+    name: Jouissance Page 2 of Tenor Part
     description: On page 41 of Linked pdf
   - url: http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
     filename: jouissance_bass1.jpg
-    name: Jouissance Page 1 of Bassus Part 
+    name: Jouissance Page 1 of Bassus Part
     description: On page 57 of Linked pdf
   - url: http://hz.imslp.info/files/imglnks/usimg/c/ce/IMSLP274790-PMLP446272-attaingnant_37_chansons_completo.pdf
     filename: jouissance_bass2.jpg
-    name: Jouissance Page 2 of Bassus Part 
+    name: Jouissance Page 2 of Bassus Part
     description: On page 58 of Linked pdf
-  
+language: 
+- French
+tags: 
+- chanson

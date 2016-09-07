@@ -11,3 +11,7 @@ books:
     filename: come_again.png
     name: Come Again Facsimile
     description: On page 20 of linked pdf
+language: 
+- English
+tags: 
+- madrigal

@@ -1,8 +1,8 @@
 ---
 title: Chi passa per sta strada
-composer: Filippo Azzaiolo 
+composer: Filippo Azzaiolo
 voicings:
-- SATB 
+- SATB
 books:
 - slug: azzaiolo_primo_libro_de_viollotte
   images:
@@ -22,3 +22,6 @@ books:
     filename: chi_passa_bassus.jpg
     name: Chi Passa Bassus Facsimile
     description: 
+language: 
+- Italian
+tags: 

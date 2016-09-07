@@ -1,15 +1,14 @@
 ---
-title: Edi Beo Thu
+title: Edi beo thu hevene quene
 composer: Anonymous
-voicings: 
+voicings:
 - SS
 - SA
 manuscripts:
-- images:
-  - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=1623
-    filename:
-    name:
-    description:
-  diamm: 2400
+- diamm: 2400
   name: GB-Occ MS 59
-  position: 'No. 2, fol(s)/pages 113v'
+  position: No. 2, fol(s)/pages 113v
+notes: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=1623
+language: 
+- English
+tags: 

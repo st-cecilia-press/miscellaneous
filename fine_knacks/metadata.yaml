@@ -10,3 +10,7 @@ books:
     filename: fine_knacks.jpg
     name: Fine Knacks Facsimile
     description: pg 15 in pdf
+language: 
+- English
+tags: 
+- madrigal

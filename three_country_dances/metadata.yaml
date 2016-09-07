@@ -13,8 +13,12 @@ books:
   - url: http://www.pbm.com/~lindahl/ravenscroft/pammelia/pam_37.html
     filename: pam_37.gif
     name: Three Country Dances Facsimile Page 1
-    description:
+    description: 
   - url: http://www.pbm.com/~lindahl/ravenscroft/pammelia/pam_38.html
     filename: pam_38.gif
     name: Three Country Dances Facsimile Page 2
-    description:
+    description: 
+language: 
+- English
+tags: 
+- round

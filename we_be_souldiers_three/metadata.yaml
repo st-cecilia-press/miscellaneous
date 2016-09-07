@@ -4,13 +4,16 @@ composer: Thomas Ravenscroft
 voicings:
 - SAT
 books:
-- slug: 'ravenscroft_deuteromelia'
+- slug: ravenscroft_deuteromelia
   images:
   - url: http://www.pbm.com/~lindahl/ravenscroft/deuteromelia/deut_08.html
     filename: deut_08.gif
     name: We Be Souldiers Three Page 1
-    description:
+    description: 
   - url: http://www.pbm.com/~lindahl/ravenscroft/deuteromelia/deut_09.html
     filename: deut_09.gif
     name: We Be Souldiers Three Page 2
-    description:
+    description: 
+language: 
+- English
+tags: 

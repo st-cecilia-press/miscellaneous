@@ -1,7 +1,7 @@
 ---
 title: O Occhi Manza Mia
 composer: Orlando di Lasso
-voicings: 
+voicings:
 - SATB
 books:
 - slug: lassus_libro_de_villanelle
@@ -22,3 +22,7 @@ books:
     filename: o_occhi_bassus.jpg
     name: O Occhi Bassus Facsimile
     description: 
+language: 
+- Italian
+tags: 
+- madrigal

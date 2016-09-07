@@ -4,3 +4,7 @@ composer: Anonymous
 voicings:
 - SSS
 - TTT
+language: 
+- Latin
+tags: 
+- round

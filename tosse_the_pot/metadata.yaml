@@ -9,8 +9,11 @@ books:
   - url: http://www.pbm.com/~lindahl/ravenscroft/brief/brief77.gif
     filename: brief77.gif
     name: Tosee the Pot Facsimile Page 1
-    description:
+    description: 
   - url: http://www.pbm.com/~lindahl/ravenscroft/brief/brief78.gif
     filename: brief78.gif
     name: Tosee the Pot Facsimile Page 2
-    description:
+    description: 
+language: 
+- English
+tags: 

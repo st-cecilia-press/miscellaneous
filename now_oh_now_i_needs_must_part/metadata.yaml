@@ -1,7 +1,7 @@
 ---
-title: Now Oh Now I Needs Must Part
+title: Now oh now I needs must part
 composer: John Dowland
-voicings: 
+voicings:
 - SATB
 books:
 - slug: dowland_first_book_of_songs
@@ -10,3 +10,7 @@ books:
     filename: now_oh_now.png
     name: Facsimile of Now Oh Now
     description: Page 9 in linked pdf
+language: 
+- English
+tags: 
+- madrigal

@@ -1,16 +1,68 @@
-{ title: "The First Set of English Madrigals to 3, 4, 5, and 6 Voices", date: 1604},
-{ title: "Deuteromelia", date: 1609},
-{ title: "Canzonette a Tre Voce", date: 1601},
-{ title: "First Book of Songs or Ayres", date: 1597},
-{ title: "TIERS LIVRE DES CHANSONS A QVATRE CINCQ ET six parties, nouuellement composées par Orlando di Lassus", date: 1566},
-{ title: "Canzonets to three voyces", date: 1608},
-{ title: "Motetti novi e chanzoni franciose a quatro sopra doi", date: 1520},
-{ title: "A Brief Discourse", date: 1614},
-{ title: "Musae Sione IX", date: 1610},
-{ title: "Ein außbund schöner Teutscher Liedlein zu singen, vnd auff allerley Jnstrument, zugebrauchen, sonderlich außerlesen", date: 1560},
-{ title: "Il primo libro di madrigali d'Archadelt a tre voci", date: 1542},
-{ title: "Premier Livre Dv Recveil Des Flevrs Prodvictes De La Divine Mvsicqve a Trois Parties De par Clemens non Papa Thomas Cricquillon & aultres excellens Musichiens", date: 1560},
-{ title: "37 Chansons musicales a quatre parties", date: 1528},
-{ title: "The First book of Balletts to Five Voyces", date: 1595},
-{ title: "51 Galliards, Pavans, Bransles and Basse Dances", date: 1530},
-{ title: "Tiers Livre de chansons à quatre parties de Ja. Arcadet et autres.", date: 1567},
+ave_verum_corpus/metadata.yaml
+organum_alleluya/metadata.yaml
+there_is_no_rose/metadata.yaml
+jayme_bien/metadata.yaml
+margot_labourez/metadata.yaml
+ce_moys_de_may/metadata.yaml
+april/metadata.yaml
+jouissance/metadata.yaml
+fi_maris/metadata.yaml
+though_philomela/metadata.yaml
+fair_phyllis/metadata.yaml
+sub_umbra_illius/metadata.yaml
+sing_we_and_chant_it/metadata.yaml
+belle_qui/metadata.yaml
+se_la_face/metadata.yaml
+o_occhi/metadata.yaml
+stella_splendens/metadata.yaml
+iacob_scalam/metadata.yaml
+tempus_transit/metadata.yaml
+plaude/metadata.yaml
+come_merry_lads/metadata.yaml
+la_la_la/metadata.yaml
+now_oh_now_i_needs_must_part/metadata.yaml
+io_soffriro/metadata.yaml
+tres_morillas/metadata.yaml
+innsbruck/metadata.yaml
+el_grillo/metadata.yaml
+es_ist_ein_schnee/metadata.yaml
+three_country_dances/metadata.yaml
+oy_comamos/metadata.yaml
+jubilate_deo/metadata.yaml
+this_evenfall_tis_snowing/metadata.yaml
+alle_psallite/metadata.yaml
+ecco_la_primavera/metadata.yaml
+au_joly_jeu/metadata.yaml
+chi_passa/metadata.yaml
+come_again/metadata.yaml
+la_bionda_trecca/metadata.yaml
+psallite_unigenito/metadata.yaml
+dindirin_dindirin/metadata.yaml
+silver_swan/metadata.yaml
+deo_gracias/metadata.yaml
+sister_awake/metadata.yaml
+we_be_souldiers_three/metadata.yaml
+pastime_with_good_company/metadata.yaml
+mon_coeur/metadata.yaml
+in_dulci_jubilo/metadata.yaml
+aucun_se_sont/metadata.yaml
+ave_maria_gallus/metadata.yaml
+tosse_the_pot/metadata.yaml
+weep_o_mine_eyes/metadata.yaml
+sumer_is_icumen_in/metadata.yaml
+pucelete/metadata.yaml
+dona_nobis_pacem/metadata.yaml
+tourdion/metadata.yaml
+non_nobis_domine/metadata.yaml
+can_she_excuse/metadata.yaml
+en_natus/metadata.yaml
+matona_mia_cara/metadata.yaml
+blow_thy_horne/metadata.yaml
+lautre_jour/metadata.yaml
+tant_que_vivray/metadata.yaml
+fine_knacks/metadata.yaml
+voi_mi_ponest/metadata.yaml
+now_is_the_month_of_maying/metadata.yaml
+now_wolde_y_fayne/metadata.yaml
+edi_beo/metadata.yaml
+we_be_three_poore_mariners/metadata.yaml

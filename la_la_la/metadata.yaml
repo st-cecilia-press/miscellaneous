@@ -1,10 +1,10 @@
 ---
-title: La La La 
+title: La la la
 composer: Pierre Certon
 voicings:
 - SATB
 books:
-- slug: 'attaignant_chansons_nouvelles_tiers_livre'
+- slug: attaignant_chansons_nouvelles_tiers_livre
   images:
   - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00086196/page/8.jpg
     filename: la_la_la_superius.jpg
@@ -22,3 +22,7 @@ books:
     filename: la_la_la_bassus.jpg
     name: Facsimile of Bassus Part of La La La
     description: 
+language: 
+- French
+tags: 
+- chanson

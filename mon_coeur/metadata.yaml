@@ -1,7 +1,7 @@
 ---
 title: Mon Coeur Se Recommend a Vous
 composer: Orlando di Lasso
-voicings: 
+voicings:
 - SSATB
 - SSAAB
 - SSTTB
@@ -28,3 +28,7 @@ books:
     filename: mon_coeur_quinta.jpg
     name: Mon Coeur Quinta Facsimile
     description: 
+language: 
+- French
+tags: 
+- chanson

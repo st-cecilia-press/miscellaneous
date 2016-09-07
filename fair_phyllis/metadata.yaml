@@ -4,21 +4,25 @@ composer: John Farmer
 voicings:
 - SATB
 books:
-- slug: 'farmer_first_book_of_madrigals'
+- slug: farmer_first_book_of_madrigals
   images:
   - url: https://quod.lib.umich.edu/e/eebo/a00562.0001.001/24?vid=1985&view=image
     filename: fair_phyllis_cantus.gif
     name: Cantus part of Fair Phyllis
-    description:
+    description: 
   - url: https://quod.lib.umich.edu/e/eebo/a00562.0001.001/52?vid=1985&view=image
     filename: fair_phyllis_altus.gif
     name: Altus part of Fair Phyllis
-    description:
+    description: 
   - url: https://quod.lib.umich.edu/e/eebo/a00562.0001.001/80?vid=1985&view=image
     filename: fair_phyllis_tenor.gif
     name: Tenor part of Fair Phyllis
-    description:
+    description: 
   - url: https://quod.lib.umich.edu/e/eebo/a00562.0001.001/108?vid=1985&view=image
     filename: fair_phyllis_bassus.gif
     name: Bassus part of Fair Phyllis
-    description:
+    description: 
+language: 
+- English
+tags: 
+- madrigal

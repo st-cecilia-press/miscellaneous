@@ -2,7 +2,7 @@
 title: Ecco la primavera
 composer: Francesco Landini
 voicings:
-- AT 
+- AT
 manuscripts:
 - name: Codex Squarcialupi
   diamm: 15594
@@ -12,3 +12,7 @@ manuscripts:
     filename: ecco.jpg
     name: Ecco la primavera facsimile
     description: On page 273 of manuscript pdf
+language:
+- Italian
+tags: 
+- ballata

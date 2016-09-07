@@ -1,10 +1,10 @@
 ---
 title: Though Philomela Lost Her Love
 composer: Thomas Morley
-voicings: 
+voicings:
 - SAT
 books:
-- slug: 'morley_canzonettes_to_three_voyces_1606'
+- slug: morley_canzonettes_to_three_voyces_1606
   images:
   - url: http://petrucci.mus.auth.gr/imglnks/usimg/1/12/IMSLP278896-PMLP414816-canzonets_or_Litle_short_aers3.pdf
     filename: though_philomela_cantus.jpg
@@ -18,3 +18,7 @@ books:
     filename: though_philomela_bassus.jpg
     name: Facsimile for Bassus Part of Though Philomela Lost Her Love
     description: On Page 61 of Linked Pdf
+language: 
+- English
+tags: 
+- madrigal

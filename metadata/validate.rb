@@ -1,3 +1,4 @@
+require 'byebug'
 require 'yaml'
 require 'uri'
 require "net/http"

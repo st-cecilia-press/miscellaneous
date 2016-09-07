@@ -1,10 +1,10 @@
 ---
 title: Sing We and Chant It
 composer: Thomas Morley
-voicings: 
+voicings:
 - SSATB
 books:
-- slug: 'morley_first_book_of_balletts'
+- slug: morley_first_book_of_balletts
   images:
   - url: http://imslp.nl/imglnks/usimg/b/bd/IMSLP278911-PMLP60454-morley_the_first_booke.pdf
     filename: sing_we_cantus.jpg
@@ -26,3 +26,7 @@ books:
     filename: sing_we_bassus.jpg
     name: Facsimile for Bassus Part of Sing We and Chant It
     description: On Page 68 of Linked Pdf
+language: 
+- English
+tags: 
+- madrigal

@@ -4,7 +4,7 @@ composer: Pierre Attaingnant
 voicings:
 - SATB
 books:
-- slug: 'attaignant_51_galliards_pavans_bransles_and_basse_dances'
+- slug: attaignant_51_galliards_pavans_bransles_and_basse_dances
   images:
   - url: http://imslp.nl/imglnks/usimg/3/3e/IMSLP274362-PMLP445624-superius.pdf
     filename: tourdion_superius.jpg
@@ -22,3 +22,7 @@ books:
     filename: tourdion_bassus.jpg
     name: Facsimile of Bassus Part of Tourdion
     description: On Page 5 of Linked PDF
+language: 
+- French
+tags: 
+- chanson

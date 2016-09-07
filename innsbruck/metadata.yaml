@@ -4,7 +4,7 @@ composer: Heinrich Isaac
 voicings:
 - SATB
 books:
-- slug: 'ein_aussbund_schoner_teutscher_liedlein'
+- slug: ein_aussbund_schoner_teutscher_liedlein
   images:
   - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071945/page/41.jpg
     filename: innsbruck_sop.jpg
@@ -22,3 +22,6 @@ books:
     filename: innsbruck_bass.jpg
     name: Facsimile of Soprano Part of Innsbruck
     description: 
+language: 
+- German
+tags: 

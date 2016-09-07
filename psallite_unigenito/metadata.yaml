@@ -1,8 +1,12 @@
 ---
 title: Psallite Unigenito
 composer: Michael Praetorius
-voicings: 
+voicings:
 - SATB
 - STTB
 books:
 - slug: praetorius_musae_sione_vi
+language:
+- Latin
+tags:
+- holiday

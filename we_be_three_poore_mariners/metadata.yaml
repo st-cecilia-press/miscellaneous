@@ -9,11 +9,14 @@ voicings:
 books:
 - slug: ravenscroft_deuteromelia
   images:
-    - url: http://www.pbm.com/~lindahl/ravenscroft/deuteromelia/deut_14.html
-      filename: deut_14.gif
-      name: We Be Three Poore Mariners Page 1
-      description:
-    - url: http://www.pbm.com/~lindahl/ravenscroft/deuteromelia/deut_15.html
-      filename: deut_15.gif
-      name: We be Three Poore Mariners Page 2
-      description:
+  - url: http://www.pbm.com/~lindahl/ravenscroft/deuteromelia/deut_14.html
+    filename: deut_14.gif
+    name: We Be Three Poore Mariners Page 1
+    description: 
+  - url: http://www.pbm.com/~lindahl/ravenscroft/deuteromelia/deut_15.html
+    filename: deut_15.gif
+    name: We be Three Poore Mariners Page 2
+    description: 
+language: 
+- English
+tags: 

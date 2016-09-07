@@ -2,19 +2,10 @@ require 'fileutils'
 require 'tempfile'
 require 'yaml'
 
-books = Hash.new 
-directories = Dir.glob('*').select {|f| File.directory? f and f != "include" and f !=  "test"}
+directories = Dir.glob('*').select {|f| File.directory? f and f != "include" and f !=  "test" and f!='metadata'}
 directories.each do  |dir|
-  metadata = YAML.load_file("./#{dir}/metadata.yaml")
-  if metadata["books"] 
-      books[metadata["books"][0]["title"]] = metadata["books"][0]["date"]
-  end
-end
-
-for key in books.keys
-  
-  title = key
-  date = books[key]
-
-  puts "{ title: \"#{title}\", date: #{date}},"
+    Dir.chdir(dir){|folder| 
+        result = `ruby ../metadata/check_metadata.rb metadata.yaml`
+        puts dir + ": " + result unless result =~ /^OK/
+    }
 end

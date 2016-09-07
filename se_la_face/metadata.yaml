@@ -1,7 +1,7 @@
 ---
 title: Se La Face ay Payle
 composer: Guillaume Dufay
-voicings: 
+voicings:
 - SAT
 - ATB
 manuscripts:
@@ -9,11 +9,15 @@ manuscripts:
   - url: http://diglib.hab.de/mss/287-extrav/start.htm?image=00096
     filename: 00096.jpg
     name: Se La Face Facsimile Page 1
-    description:
+    description: 
   - url: http://diglib.hab.de/mss/287-extrav/start.htm?image=00097
     filename: 00097.jpg
     name: Se La Face Facsimile Page 2
-    description:
+    description: 
   diamm: 42091
   name: Wolfenbüttel Chansonnier
-  position: 'No. 33, fol(s)/pages 40v-41r'
+  position: No. 33, fol(s)/pages 40v-41r
+language: 
+- French
+tags: 
+- chanson

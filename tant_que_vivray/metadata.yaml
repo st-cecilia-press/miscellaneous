@@ -1,5 +1,5 @@
 ---
-title: Tant Que Vivray
+title: Tant que vivray
 composer: Claudin Sermisy
 voicings:
 - SATB
@@ -22,3 +22,6 @@ books:
     filename: tant_que_vivray_bassus.jpg
     name: Bassus Facsimile of Tant Que Vivray
     description: On Page 69 of Linked PDF
+language:
+- French
+tags: 

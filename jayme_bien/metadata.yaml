@@ -5,12 +5,16 @@ voicings:
 - SATB
 books:
 - slug: willaert_motetti_novi_e_chanzoni_franciose
-  images: 
-    - url: http://petrucci.mus.auth.gr/imglnks/usimg/5/5e/IMSLP407643-PMLP659969-antico_1520.pdf
-      filename: jayme_bien.png
-      name: Jayme Bien Facsimile Page 1
-      description: On page 62 of linked pdf
-    - url: http://petrucci.mus.auth.gr/imglnks/usimg/5/5e/IMSLP407643-PMLP659969-antico_1520.pdf
-      filename: jayme_bien2.png
-      name: Jayme Bien Facsimile Page 2
-      description: On page 63 of linked pdf
+  images:
+  - url: http://petrucci.mus.auth.gr/imglnks/usimg/5/5e/IMSLP407643-PMLP659969-antico_1520.pdf
+    filename: jayme_bien.png
+    name: Jayme Bien Facsimile Page 1
+    description: On page 62 of linked pdf
+  - url: http://petrucci.mus.auth.gr/imglnks/usimg/5/5e/IMSLP407643-PMLP659969-antico_1520.pdf
+    filename: jayme_bien2.png
+    name: Jayme Bien Facsimile Page 2
+    description: On page 63 of linked pdf
+language: 
+- French
+tags: 
+- chanson

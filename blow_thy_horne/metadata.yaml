@@ -9,11 +9,14 @@ manuscripts:
   - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17324
     filename: blow_thy_horne_1.jpg
     name: Page 1 of Blow Thy Horn Facsimile
-    description:
+    description: 
   - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17325
     filename: blow_thy_horne_2.jpg
     name: Page 2 of Blow Thy Horn Facsimile
-    description:
+    description: 
   diamm: 
   name: Henry VIII Manuscript
-  position: 'fol(s)/pages 39v - 40r'
+  position: fol(s)/pages 39v - 40r
+language: 
+- English
+tags: 

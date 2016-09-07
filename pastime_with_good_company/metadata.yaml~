@@ -1,19 +1,21 @@
 ---
 title: Pastime With Good Company
 composer: Henry VIII
-voicings: 
+voicings:
 - SAB
 - STB
 manuscripts:
 - images:
   - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17274
-    filename: pastime1.jpg 
+    filename: pastime1.jpg
     name: Page 1 of Pastime Facsimile
     description: 
   - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17275
-    filename: pastime2.jpg 
+    filename: pastime2.jpg
     name: Page 2 of Pastime Facsimile
     description: 
   diamm: 
   name: Henry VIII Manuscript
-  position: 'fol(s)/pages 14v-15r'
+  position: fol(s)/pages 14v-15r
+language: 
+tags: 

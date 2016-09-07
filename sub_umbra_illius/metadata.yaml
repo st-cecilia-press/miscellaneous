@@ -5,17 +5,21 @@ voicings:
 - TTB
 - SSA
 books:
-- slug: 'phalese_premier_livre_du_recueil_des_fleurs'
+- slug: phalese_premier_livre_du_recueil_des_fleurs
   images:
   - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/34.jpg
     filename: 34.jpg
     name: Sub Umbra Superius Facsimile
-    description:
+    description: 
   - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/82.jpg
     filename: 82.jpg
     name: Sub Umbra Media Vox Facsimile
-    description:
+    description: 
   - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071974/page/130.jpg
     filename: 130.jpg
     name: Sub Umbra Bassus Facsimile
-    description:
+    description: 
+language: 
+- Latin
+tags: 
+- motet

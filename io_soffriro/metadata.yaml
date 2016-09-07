@@ -1,7 +1,7 @@
 ---
 title: Io Soffriro
 composer: Giovanni Croce
-voicings: 
+voicings:
 - SST
 - SAB
 books:
@@ -19,3 +19,7 @@ books:
     filename: io_soffriro_basso.png
     name: Io Soffriro Basso Part
     description: Page 6 of linked pdf
+language: 
+- Italian
+tags: 
+- canzonette

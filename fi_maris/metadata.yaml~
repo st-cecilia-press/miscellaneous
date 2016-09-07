@@ -1,7 +1,7 @@
 ---
 title: Fi Maris
-composer: Anonymous
-voicings: 
+composer: Adam de la Halle
+voicings:
 - SSA
 - SST
 manuscripts:
@@ -9,11 +9,13 @@ manuscripts:
   - url: http://gallica.bnf.fr/ark:/12148/btv1b6001348v/f73.item
     filename: fi_maris.jpg
     name: Fi Maris Facsimile Page 1
-    description:
-  - url: http://gallica.bnf.fr/ark:/12148/btv1b6001348v/f74.item 
+    description: 
+  - url: http://gallica.bnf.fr/ark:/12148/btv1b6001348v/f74.item
     filename: fi_maris2.jpg
     name: Fi Maris Facsimile Page 2
-    description:
-  diamm: 3156 
+    description: 
+  diamm: 3156
   name: F-PN fonds français 25566
-  position: 'No. 6, fol(s)/pages 33-33v'
+  position: No. 6, fol(s)/pages 33-33v
+language: 
+tags: 

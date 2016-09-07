@@ -8,19 +8,24 @@ manuscripts:
   - url: http://manuscrits.biu-montpellier.fr/images/196193vZ.jpg
     filename: 196193vZ.jpg
     name: Pucelete Page 1
-    description:
+    description: 
   - url: http://manuscrits.biu-montpellier.fr/images/196194rZ.jpg
     filename: 196194rZ.jpg
     name: Pucelete Page 2
-    description:
+    description: 
   - url: http://manuscrits.biu-montpellier.fr/images/196194vZ.jpg
     filename: 196194vZ.jpg
-    name: Pucelete Page 3 
-    description:
+    name: Pucelete Page 3
+    description: 
   - url: http://manuscrits.biu-montpellier.fr/images/196195rZ.jpg
     filename: 196195rZ.jpg
     name: Pucelete Page 4
-    description:
+    description: 
   diamm: 3523
   name: Montpellier Codex
-  position: 'No. 134, fol(s)/pages 193v-195'
+  position: No. 134, fol(s)/pages 193v-195
+language: 
+- French
+- Latin
+tags: 
+- motet
