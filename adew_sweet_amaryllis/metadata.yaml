@@ -1,0 +1,24 @@
+---
+title: Adew Sweet Amaryllis
+composer: John Wilbye
+voicings:
+- SATB
+books:
+- slug: wilbye_first_set_of_madrigals
+  images:
+  - url: http://ks.petruccimusiclibrary.org/files/imglnks/usimg/8/8e/IMSLP00903-Wilbye-Madrigals.pdf 
+    filename: adew_sweet_amaryllis_cantus.jpg
+    name: Cantus Facsimile
+    description: On Page 13 of PDF
+  - url: http://ks.petruccimusiclibrary.org/files/imglnks/usimg/8/8e/IMSLP00903-Wilbye-Madrigals.pdf 
+    filename: adew_sweet_amaryllis_altus.jpg
+    name: Altus Facsimile
+    description: On Page 63 of PDF
+  - url: http://ks.petruccimusiclibrary.org/files/imglnks/usimg/8/8e/IMSLP00903-Wilbye-Madrigals.pdf 
+    filename: adew_sweet_amaryllis_tenor.jpg
+    name: Tenor Facsimile
+    description: On Page 90 of PDF
+  - url: http://ks.petruccimusiclibrary.org/files/imglnks/usimg/8/8e/IMSLP00903-Wilbye-Madrigals.pdf 
+    filename: adew_sweet_amaryllis_bassus.jpg
+    name: Bassus Facsimile
+    description: On Page 132 of PDF

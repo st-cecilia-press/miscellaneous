@@ -1,0 +1,21 @@
+---
+title: Fly Love Aloft
+composer: John Wilbye
+voicings:
+- SST
+- SAT
+books:
+- slug: wilbye_first_set_of_madrigals
+  images:
+  - url: http://ks.petruccimusiclibrary.org/files/imglnks/usimg/8/8e/IMSLP00903-Wilbye-Madrigals.pdf 
+    filename: fly_love_aloft_cantus.jpg
+    name: Cantus Facsimile
+    description: On Page 2 of PDF
+  - url: http://ks.petruccimusiclibrary.org/files/imglnks/usimg/8/8e/IMSLP00903-Wilbye-Madrigals.pdf
+    filename: fly_love_aloft_altus.jpg
+    name: Altus Facsimile
+    description: On Page 52 of PDF
+  - url: http://ks.petruccimusiclibrary.org/files/imglnks/usimg/8/8e/IMSLP00903-Wilbye-Madrigals.pdf
+    filename: fly_love_aloft_bassus.jpg
+    name: Bassus Facsimile
+    description: On Page 121 of PDF
