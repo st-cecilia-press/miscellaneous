@@ -1,5 +1,5 @@
 %score_options {"parts": 4, "verses": 1, "transposed": false}
-scDate = "DATE"
+scDate = "10-Jan-2017"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -154,10 +154,10 @@ scMusicThree =   \relative c'' {
  d4 d4 r4  d4 |  % 7
  d2 r4  d4 |  % 8
  bf4. c8 d4 bf4 |  % 9
- c4 (  bf2 a4 )  |  % 10
+ c4   bf2 a4   |  % 10
  bf2 d2 ~  |  % 11
  d2 d2 ~  |  % 12
- d2 c4 (  bf4 )  |  % 13
+ d2 c4   bf4   |  % 13
  ef2 c2 |  % 14
  f1 |  % 15
  d1 ~  |  % 16
@@ -312,8 +312,8 @@ scWordsThreeA = \lyricmode {
  A -- dew sweet A -- ma -- ril -- lis,
  A -- dew sweet A -- ma -- ril -- lis,
  A -- dew sweet A -- ma -- ril -- lis,
- A -- dew, A -- dew sweet A -- ma -- ril -- lis:
- For since to part your will is,
+ A -- dew, A -- dew sweet A -- ma -- ril -- _ _ lis:
+ For since to __ _ part your will is,
  O hea -- vy ty -- ding,
  Heere is for me no bi -- ding:
  Yet once a -- gaine,
