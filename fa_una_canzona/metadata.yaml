@@ -1,0 +1,24 @@
+---
+title: Fa Una Canzona
+composer: Orazio Vecchi
+voicings:
+- SATB
+books:
+- slug: vecchi_libro_secondo
+  images:
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00074118/page/15.jpg
+    filename: fa_una_canzona_cantus.jpg
+    name: Cantus Facsimile
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00074118/page/44.jpg
+    filename: fa_una_canzona_altus.jpg
+    name: Altus Facsimile
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00074118/page/72.jpg
+    filename: fa_una_canzona_tenore.jpg
+    name: Tenore Facsimile
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00074118/page/98.jpg
+    filename: fa_una_canzona_basso.jpg
+    name: Basso Facsimile
+    description: 
