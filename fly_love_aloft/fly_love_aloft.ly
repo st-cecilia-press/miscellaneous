@@ -29,7 +29,7 @@ scGlobal= {
 }
 
 scTransposeFrom = g'' 
-scTransposeTo = d''
+scTransposeTo = c''
 
 scMinimumSystemSpacingTranspose = #8
 scMinimumSystemSpacing = #12
