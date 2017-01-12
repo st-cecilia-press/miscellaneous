@@ -19,3 +19,7 @@ books:
     filename: LOCAL_FILE
     name: 
     description: 
+language:
+- English
+tags:
+- madrigal

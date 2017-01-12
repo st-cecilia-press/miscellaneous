@@ -22,3 +22,7 @@ books:
     filename: adew_sweet_amarillis_bassus.jpg
     name: Bassus Facsimile
     description: On Page 132 of PDF
+language:
+- English
+tags:
+- madrigal

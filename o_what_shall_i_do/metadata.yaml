@@ -18,3 +18,7 @@ books:
     filename: o_what_shall_i_do_bassus.jpg
     name: Bassus Facsimile
     description: 
+language:
+- English
+tags:
+- madrigal

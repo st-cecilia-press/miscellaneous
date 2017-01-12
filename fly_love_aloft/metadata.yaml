@@ -19,3 +19,7 @@ books:
     filename: fly_love_aloft_bassus.jpg
     name: Bassus Facsimile
     description: On Page 121 of PDF
+language:
+- English
+tags:
+- madrigal
