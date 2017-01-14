@@ -1,0 +1,44 @@
+---
+title: Mille Regretz 
+composer: Josquin des Prez
+voicings:
+- SATB
+books:
+- slug: susato_unziesme_livre_chansons_amoureuses
+  images:
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00078701/page/18.jpg 
+    filename: mille_regretz_superius1.jpg
+    name: Mille Regretz Superius pg 1
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00078701/page/50.jpg
+    filename: mille_regretz_altus1.jpg
+    name: Mille Regretz Altus pg 1
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00078701/page/82.jpg
+    filename: mille_regretz_tenor1.jpg
+    name: Mille Regretz Tenor pg 1
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00078701/page/114.jpg 
+    filename: mille_regretz_bassus1.jpg
+    name: Mille Regretz Bassus pg 1
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00078702/page/19.jpg 
+    filename: mille_regretz_superius2.jpg
+    name: Mille Regretz Superius pg 2
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00078702/page/51.jpg
+    filename: mille_regretz_altus2.jpg
+    name: Mille Regretz Altus pg 2
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00078702/page/83.jpg
+    filename: mille_regretz_tenor2.jpg
+    name: Mille Regretz Tenor pg 2
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00078702/page/115.jpg 
+    filename: mille_regretz_bassus2.jpg
+    name: Mille Regretz Bassus pg 2
+    description: 
+language:
+- French
+tags:
+- chanson
