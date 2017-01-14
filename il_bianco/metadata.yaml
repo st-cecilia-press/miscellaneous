@@ -1,0 +1,28 @@
+---
+title: Il Bianco e Doclce Cigno
+composer: Jacques Arcadelt
+voicings:
+- SATB
+books:
+- slug: arcadelt_il_primo_libro_di_madrigali_a_4_voci
+  images:
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071893/page/9.jpg
+    filename: il_bianco_cantus.jpg 
+    name: Cantus Facsimile
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071893/page/73.jpg
+    filename: il_bianco_altus.jpg 
+    name: Altus Facsimile
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071893/page/139.jpg
+    filename: il_bianco_tenor.jpg 
+    name: Tenor Facsimile
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00071893/page/208.jpg
+    filename: il_bianco_bassus.jpg 
+    name: Bassus Facsimile
+    description: 
+language:
+- Italian
+tags:
+- madrigal
