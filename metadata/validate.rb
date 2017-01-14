@@ -13,11 +13,16 @@ def validate(metadata)
 
   Array(metadata["manuscripts"]).each do |man|
     return "Fail: Need Manuscript Name" if man["name"].empty?
+    manuscripts = YAML.load_file('../include/manuscripts.yaml') 
+    return "Fail: manuscript name not in includes/manuscripts.yaml" unless manuscripts.detect { |m| m['name'] == man['name']}
     error = image_error?(Array(man["images"]))
     return error if error 
   end 
   Array(metadata["books"]).each do |man|
     return "Fail: Need Book Slug" if man["slug"].empty?
+    books = YAML.load_file('../include/books.yaml') 
+    return "Fail: book slug not in includes/books.yaml" unless books.detect { |b| b['slug'] == man['slug']}
+  
     error = image_error?(Array(man["images"]))
     return error if error 
   end 
