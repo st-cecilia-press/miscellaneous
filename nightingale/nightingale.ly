@@ -226,7 +226,7 @@ The Night -- in -- gall the Or --  gan of de -- light.
   let them no more con -- tend who shall ex -- cell, 
  the cu -- ckoo, the coo -- ckoo is the bird
  the coo -- ckoo is the bird
- the coo -- ckoo is the bird that beares the bell
+ the coo -- ckoo is the bird that beares the bell.
  
 }
     

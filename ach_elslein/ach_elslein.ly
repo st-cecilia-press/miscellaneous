@@ -9,7 +9,7 @@ scStaffSize = 13
 
 \include "english.ly"
 
-scTempo = #(ly:make-moment 120 4)
+scTempo = #(ly:make-moment 120 1)
 scTitle = "Ach Elslein"
 scSubtitle = ""
 scComposer = "Ludwig Senfl"

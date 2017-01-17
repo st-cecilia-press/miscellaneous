@@ -10,7 +10,7 @@ scStaffSizeTranspose = 16
 
 \include "english.ly"
 
-scTempo = #(ly:make-moment 120 4)
+scTempo = #(ly:make-moment 120 2)
 scTitle = "Il Bianco"
 scSubtitle = ""
 scComposer = "Jacques Arcadelt"
