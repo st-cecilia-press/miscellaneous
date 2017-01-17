@@ -1,0 +1,24 @@
+---
+title: The Nightingale
+composer: Thomas Weelkes
+voicings:
+- SAT 
+books:
+- slug: weelkes_ayres_or_phantasticke
+  images:
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:20409:14
+    filename: nightingale_cantus.jpg
+    name: Cantus Facsimile
+    description: 
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:20409:29
+    filename: nightingale_tenor.jpg
+    name: Tenor Facsimile
+    description: 
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:20409:45
+    filename: nightingale_bassus.jpg
+    name: Bassus Facsimile
+    description: 
+language:
+- English
+tags:
+- madrigal

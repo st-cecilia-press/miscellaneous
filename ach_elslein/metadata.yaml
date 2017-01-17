@@ -1,0 +1,28 @@
+---
+title: Ach Elslein
+composer: Ludwig Senfl
+voicings:
+- SATB
+books:
+- slug: hundred_und_ainundzweintzig
+  images:
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00082621/page/61.jpg
+    filename: ach_elslein_discantus.jpg
+    name: Discantus Facsimile
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00082621/page/266.jpg
+    filename: ach_elslein_contratenor.jpg
+    name: Contratenor Facsimile
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00082621/page/491.jpg
+    filename: ach_elslein_tenor.jpg
+    name: Tenor Facsimile
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00082621/page/704.jpg
+    filename: ach_elslein_bassus.jpg
+    name: Bassus Facsimile
+    description: 
+language:
+- German
+tags:
+- lieder
