@@ -106,7 +106,7 @@ scMusicFour =   \relative c {
   
   
 scWordsOneA = \lyricmode {
-Pa -- se_el a -- goa ma Ju -- li -- e -- ta da -- ma
+Pa -- se_el a -- goa ma Ju -- li -- e -- ta Da -- ma
 Pa -- se_el a -- goa Ve -- ni -- te vous a moy
 
 Ju me'n a -- nay en un __ _ ver -- gel,
@@ -122,7 +122,7 @@ Pa -- se_el a -- goa. Ve -- ni -- te vous a moy.
   
   
 scWordsTwoA = \lyricmode {
-Pa -- se_el a -- goa ma Ju -- li -- e -- ta da -- ma
+Pa -- se_el a -- goa ma Ju -- li -- e -- ta Da -- ma
 Pa -- se_el a -- goa Ve -- ni -- te vous a moy
 
 Ju me'n a -- nay en un __ _ ver -- gel,
@@ -138,7 +138,7 @@ Pa -- se_el a -- goa. Ve -- ni -- te vous a moy.
   
   
 scWordsThreeA = \lyricmode {
-Pa -- se_el a -- goa ma Ju -- li -- e -- ta da -- ma
+Pa -- se_el a -- goa ma Ju -- li -- e -- ta Da -- ma
 Pa -- se_el a -- goa Ve -- ni -- te vous a moy
 
 Ju me'n a -- nay en un __ _ ver -- gel,
@@ -154,13 +154,13 @@ Pa -- se_el a -- goa. Ve -- ni -- te vous a moy.
   
   
 scWordsFourA = \lyricmode {
-Pa -- se_el a -- goa ma Ju -- li -- e -- ta __ _ da -- ma
+Pa -- se_el a -- goa ma Ju -- li -- e -- ta __ _ Da -- ma
 Pa -- se_el a -- goa Ve -- ni -- te vous a moy
 
 Ju me'n a -- nay en un __ _ ver -- gel,
 
 Tres so -- se -- tas fui co -- ler; 
-Ma Ju -- li -- o -- le -- ta,
+Ma Ju -- li -- o -- le -- ta, __ _
 Da -- ma,
 Pa -- se_el a -- goa. Ve -- ni -- te vous a moy.
 }
