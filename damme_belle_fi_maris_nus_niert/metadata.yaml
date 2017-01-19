@@ -1,0 +1,24 @@
+---
+title: Damme Belle - Fi Maris - Nus N'iert
+composer: Adam de la Halle
+voicings:
+- SAT
+- SST
+- AAT
+manuscripts:
+- name: Montpellier Codex
+  diamm: 3643
+  position: No. 254, fol(s)/pages 300v-301
+  images:
+  - url: https://manuscrits.biu-montpellier.fr/images/196300vZ.jpg
+    filename: damme_belle_pg1.jpg
+    name: Facsimile Page 1
+    description: 
+  - url: https://manuscrits.biu-montpellier.fr/images/196301rZ.jpg
+    filename: damme_belle_pg2.jpg
+    name: Facsimile Page 2
+    description: 
+language:
+- French
+tags:
+- motet

@@ -1,0 +1,22 @@
+---
+title: On Parole - A Paris - Frese Nouvele
+composer: Anonymous
+voicings:
+- SAT
+manuscripts:
+- name: Montpellier Codex
+  diamm: 3691
+  position: 368v-369v
+  images:
+  - url: https://manuscrits.biu-montpellier.fr/images/196366vZ.jpg
+    filename: on_parole_pg1.jpg
+    name: Page 1 of Facsimile
+    description: 
+  - url: https://manuscrits.biu-montpellier.fr/images/196367rZ.jpg
+    filename: on_parole_pg2.jpg
+    name: Page 2 of Facsimile
+    description: 
+language:
+- French
+tags:
+- motet
