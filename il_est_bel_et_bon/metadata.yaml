@@ -1,0 +1,20 @@
+---
+title: Il est bel et bon
+composer: Pierre Passereau
+voicings:
+- SATB
+books:
+- slug: attaingnant_chansons_musicales_tiers_livre
+  images:
+  - url: http://ks.imslp.net/files/imglnks/usimg/c/c6/IMSLP277392-PMLP450494-tiers_livre.pdf
+    filename: il_est_bel_et_bon_pg1.jpg
+    name: Facsimile Page 1
+    description: On page 11 of pdf
+  - url: http://ks.imslp.net/files/imglnks/usimg/c/c6/IMSLP277392-PMLP450494-tiers_livre.pdf
+    filename: il_est_bel_et_bon_pg2.jpg
+    name: Facsimile Page 2
+    description: On page 12 of pdf
+language:
+- French
+tags:
+- chanson
