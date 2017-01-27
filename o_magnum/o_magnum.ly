@@ -1,10 +1,11 @@
-%score_options {"parts": 4, "verses": 1, "transposed": false}
-scDate = "DATE"
+%score_options {"parts": 4, "verses": 1, "transposed": true}
+scDate = "2017-Jan-27"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
-scStaffSize = 19 
+scStaffSize = 16
+scStaffSizeTranspose = 16
 #(ly:set-option 'midi-extension "mid")
 
 \include "english.ly"
@@ -19,6 +20,8 @@ scPoet = ""
 scCopyright = ""
 scTagline = ""
 
+scTransposeFrom = d 
+scTransposeTo = e
 
 
 scGlobal= {
@@ -34,7 +37,8 @@ scMinimumSystemSpacing = #8
 
 
 scMusicOneName = "cantus"
-scMusicOneClef = \clef "soprano"
+scMusicOneClef = \clef "treble"
+scMusicOneClefTransposed = \clef "treble"
 
 scMusicOne =   \relative c'' {  
 a\breve d,1 a'1 ~ a2 a bf bf a1 r2 d2 
@@ -60,15 +64,16 @@ fs2 g1 fs2 | g\breve ~ g\breve ~ g ~ g \bar "|."
 }
 
 scMusicTwoName = "altus"
-scMusicTwoClef = \clef "alto"
+scMusicTwoClef = \clef "G_8"
+scMusicTwoClefTransposed = \clef "treble"
 
 scMusicTwo =   \relative c' {  
-r\breve r1 d1 ~ d1 g,1 d'1. d2 ef2 ef d1 r2 d2 bf2 c d2. d4 d2 a2 bf2 d1 cs4 bf 
+r\breve r1 d1 ~ d1 g,1 d'1. d2 ef2 ef d1 r2 d2 bf2 c d2. d4 d2 a2 bf2 d1 cs4 \ficta b 
 cs1 d1 d\breve d1 d2. e4 f2 f,2 g2. a4 bf2 a2 g d'2 |
 d2 c a2. a4 a2 bf2. a4 g2 ~ g2 fs2 g2 g'2 d2 f2 f2. f4
 f1 d2 ef2 d1 d1 ~ d1 r1 r2 g2 f2. d4
 d2 fs2 g2 d d2. d4 d2 e2 f1 e1 d2 fs2 fs2. fs4 
-fs2 fs g a2 ~ a4 g g1 fs2 g2 d2 fs2. \melisma e8 [ f ] g2 f4 e d2 \melismaEnd a2 | r1 r2 g2 
+fs2 fs g a2 ~ a4 g g1 fs2 g2 d2 f2. \melisma e8 [ f ] g2 f4 e d2 \melismaEnd a2 | r1 r2 g2 
 d'1 c2 a2 b2 c2 d4 \melisma c d e f2. e8[ f] g2 \melismaEnd f4 e4 d1 r2 a2 
 d1 c2 a2 bf4 \melisma c d e f1 \melismaEnd g2. \melisma f4 ef d ef2 d1. \melismaEnd d2
 b1 r1 d1. d2 d1 d1 d\breve ~ d
@@ -86,7 +91,8 @@ d1 r2 a2 bf2. c4 d2 ef2 ~ ef \melisma d2 c2. d4 ef1 \melismaEnd d1 ~ d\breve
 }
 
 scMusicThreeName = "tenor"
-scMusicThreeClef = \clef "tenor"
+scMusicThreeClef = \clef "G_8"
+scMusicThreeClefTransposed = \clef "G_8"
 
 scMusicThree =   \relative c' {  
 r\breve r r r r r r r1 
@@ -111,9 +117,28 @@ a2 d2 d4 \melisma c bf a g2 \melismaEnd bf2 \melisma c d ef2. d4 c1. b4 a \melis
 
 scMusicFourName = "bassus"
 scMusicFourClef = \clef "bass"
+scMusicFourClefTransposed = \clef "bass"
 
-scMusicFour =   \relative c' {  
-
+scMusicFour =   \relative c {  
+r\breve r r r 
+r r r r 
+r d g,1 d'1 ~ d2 d ef ef d1 r2 d2 
+bf2 c d2. d4 d2 bf ef1 d1 g,2 g g'2 f bf,2. bf4 
+bf2 f'2 g c,2 d1 g,2 g'2 f2. d4 e2 fs2 g1 r1
+r1 r2 g,2 g'2. g4 g2 g f2. g4 a1 d,1 r1
+r\breve r1 r2 d2 g1 f2 d e f g \melisma f4 e d2. f4 ef2 \melismaEnd e2
+d1 r1 r2 c2 g'1 f2 d e f g2 \melisma f4 e d2. c4 
+bf2 a4 g a2 \melismaEnd a2 g2 g'2 f d c\breve d1. d2 
+g,1 r1 d'1. d2 d1 g,1 d'2. \melisma e4 fs2 g2 ~ g4 fs4 fs2 g1 \melismaEnd 
+d2 d1 d2 g2. g4 c,1 g'1.  g2 f2 \melisma bf, f'1 \melismaEnd
+bf,1 r1 r\breve r1 d1 ~ d1 bf ef d 
+\time 3/1 g,\breve r1
+r\breve. r r 
+r1 r1 g1 d'\breve d1 c\breve c1 g1 d'\breve g,\breve g1 
+c1 a\breve g g1 d'\breve d1 c\breve c1 ef d\breve
+\time 4/2 
+g,2 g'2 f4 \melisma e d c bf a g f g1 \melismaEnd c\breve
+d\breve g,2 g'2 g4 \melisma f ef d c2 b \melismaEnd c1 ~ c1 g1 ~ g\breve 
 }
 
 
@@ -196,7 +221,24 @@ al -- le -- lu -- ya.
   
   
 scWordsFourA = \lyricmode {
+O ma -- gnum mi -- ste -- ri -- um
+et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum,
+et ad -- mi -- ra -- bi -- le sa -- cra --  _ men -- tum
+ut a -- ni -- ma -- li -- a
+vi -- de -- runt do -- mi -- num __ _ na -- tum 
+ia -- cen -- tem in pre -- _ se -- pi --  o,
+ia -- cen -- tem in pre -- _ se -- pi --  o,
+in pre -- _ se -- _ pi -- o.
 
+O Be -- a -- ta vir -- go cu -- ius vi -- sce -- ra
+me -- ru -- e -- runt 
+
+Ie -- sum Chri -- _ stum.
+
+al -- le -- lu -- ya, al -- le -- lu -- ya,
+al -- le -- lu -- ya, al -- le -- lu -- ya,
+al -- le -- lu -- ya, al -- le -- lu -- _ ya,
+al -- le -- lu -- ya.
 }
     
   

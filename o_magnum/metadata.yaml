@@ -1,25 +1,17 @@
 ---
-title: 
-composer: 
+title: O Magnum Misterium
+composer: Tomás Luis de Victoria 
 voicings:
-- 
-manuscripts:
-- name: MANUSCRIPT_NAME
-  diamm: DIAM_ITEM_NUMBER
-  position: 
-  images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
-    description: 
+- SATB
+- STTB
 books:
-- slug: dowland_first_book_of_songs
+- slug: 
   images:
   - url: SOURCE_URL
     filename: LOCAL_FILE
     name: 
     description: 
 language:
-- English
+- Latin
 tags:
-- madrigal
+- motet
