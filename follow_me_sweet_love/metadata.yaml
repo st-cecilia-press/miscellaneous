@@ -1,0 +1,24 @@
+---
+title: Follow Me, Sweet Love
+composer: Michael East
+voicings:
+- SST
+books: 
+- slug: east_second_set_of_madrigals
+  images:
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:5716:5
+    filename: follow_me_cantus.jpg
+    name: Cantus Facsimile
+    description: 
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:5716:19
+    filename: follow_me_quintus.jpg
+    name: Quintus Facsimile
+    description: 
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:5716:29
+    filename: follow_me_bassus.jpg
+    name: Bassus Facsimile
+    description: 
+language:
+- English
+tags:
+- madrigal
