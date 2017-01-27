@@ -5,12 +5,24 @@ voicings:
 - SATB
 - STTB
 books:
-- slug: 
+- slug: victoria_motecta_libro_1
   images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
-    description: 
+  - url: http://ks.imslp.net/files/imglnks/usimg/3/34/IMSLP106029-PMLP216234-CANTUS.pdf 
+    filename: o_magnum_cantus.jpg
+    name: Cantus Facsimile
+    description: On page 8 of pdf
+  - url: http://ks.imslp.net/files/imglnks/usimg/a/a2/IMSLP106030-PMLP216234-ALTUS.pdf 
+    filename: o_magnum_altus.jpg
+    name: Altus Facsimile
+    description: On page 6 of pdf
+  - url: http://ks.imslp.net/files/imglnks/usimg/6/69/IMSLP106031-PMLP216234-TENOR.pdf
+    filename: o_magnum_tenor.jpg
+    name: Tenor Facsimile
+    description: On page 7 of pdf
+  - url: http://ks.imslp.net/files/imglnks/usimg/f/fa/IMSLP106032-PMLP216234-BASSUS.pdf
+    filename: o_magnum_bassus.jpg
+    name: Bassus Facsimile
+    description: On page 6 of pdf
 language:
 - Latin
 tags:
