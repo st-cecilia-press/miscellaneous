@@ -115,30 +115,6 @@
             
           >>
          
-          \new Staff = \scMusicFourName <<
-            \set Staff.midiInstrument = #"oboe"
-            \new Voice = "four" {
-              
-              \scGlobal 
-              
-               \scMusicFourClef
-              
-                \scMusicFour
-              
-              
-            }
-            
-            <<
-              
-              
-              
-                \new Lyrics \lyricsto "four" { \scWordsFourA } 
-                
-              
-            >>
-            
-          >>
-         
         >>
         \layout { 
         }
