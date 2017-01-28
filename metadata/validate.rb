@@ -33,7 +33,7 @@ def image_error?(images)
     return 'Fail: Image must have URL' if img["url"].empty? 
     return 'Fail: Image must have Filename' if img["filename"].empty? 
     return "Fail: '#{img["filename"]}' doesn't exist" unless File.exists?(img["filename"])
-    return "Fail: '#{img["url"]}' doesn't resolve" unless url_resolves?(img["url"])
+    #return "Fail: '#{img["url"]}' doesn't resolve" unless url_resolves?(img["url"])
   end  
   return false
 end
