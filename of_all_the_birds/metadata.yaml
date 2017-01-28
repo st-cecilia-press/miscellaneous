@@ -1,23 +1,14 @@
 ---
-title: 
-composer: 
+title: Of All the Birds
+composer: John Barlet
 voicings:
-- 
-manuscripts:
-- name: MANUSCRIPT_NAME
-  diamm: DIAM_ITEM_NUMBER
-  position: 
-  images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
-    description: 
+- SATB
 books:
-- slug: dowland_first_book_of_songs
+- slug: bartlet_book_of_ayres
   images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
+  - url: http://eebo.chadwyck.com/home
+    filename: of_all_the_birds.jpg
+    name: Of all the birds facsimile
     description: 
 language:
 - English

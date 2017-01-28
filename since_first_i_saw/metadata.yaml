@@ -1,23 +1,14 @@
 ---
-title: 
-composer: 
+title: Since First I Saw Your Face
+composer: Thomas Ford 
 voicings:
-- 
-manuscripts:
-- name: MANUSCRIPT_NAME
-  diamm: DIAM_ITEM_NUMBER
-  position: 
-  images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
-    description: 
+- SATB
 books:
-- slug: dowland_first_book_of_songs
+- slug: ford_musicke_of_sundrie_kindes
   images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:21748:10
+    filename: since_first_I_saw_your_face.jpg
+    name: Since First I Saw Your Face Facsimile
     description: 
 language:
 - English

@@ -63,6 +63,12 @@
                 \new Lyrics \lyricsto "one" { \scWordsOneA } 
                 
               
+                \new Lyrics \lyricsto "one" { \scWordsOneB } 
+                
+              
+                \new Lyrics \lyricsto "one" { \scWordsOneC } 
+                
+              
             >>
             
           >>
@@ -85,6 +91,12 @@
               
               
                 \new Lyrics \lyricsto "two" { \scWordsTwoA } 
+                
+              
+                \new Lyrics \lyricsto "two" { \scWordsTwoB } 
+                
+              
+                \new Lyrics \lyricsto "two" { \scWordsTwoC } 
                 
               
             >>
@@ -111,6 +123,12 @@
                 \new Lyrics \lyricsto "three" { \scWordsThreeA } 
                 
               
+                \new Lyrics \lyricsto "three" { \scWordsThreeB } 
+                
+              
+                \new Lyrics \lyricsto "three" { \scWordsThreeC } 
+                
+              
             >>
             
           >>
@@ -133,6 +151,12 @@
               
               
                 \new Lyrics \lyricsto "four" { \scWordsFourA } 
+                
+              
+                \new Lyrics \lyricsto "four" { \scWordsFourB } 
+                
+              
+                \new Lyrics \lyricsto "four" { \scWordsFourC } 
                 
               
             >>
