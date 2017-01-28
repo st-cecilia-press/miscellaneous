@@ -1,0 +1,16 @@
+---
+title: Of All the Birds
+composer: John Barlet
+voicings:
+- SATB
+books:
+- slug: bartlet_book_of_ayres
+  images:
+  - url: http://eebo.chadwyck.com/home
+    filename: of_all_the_birds.jpg
+    name: Of all the birds facsimile
+    description: 
+language:
+- English
+tags:
+- madrigal

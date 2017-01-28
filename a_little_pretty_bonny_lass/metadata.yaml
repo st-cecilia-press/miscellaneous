@@ -1,0 +1,28 @@
+---
+title: A Little Pretty Bonny Lass
+composer: John Farmer
+voicings:
+- SATB
+books:
+- slug: farmer_first_book_of_madrigals
+  images:
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:1985:11
+    filename: a_little_pretty_bonny_lass_cantus.jpg
+    name: Cantus Facsimile
+    description: 
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:1985:25
+    filename: a_little_pretty_bonny_lass_altus.jpg
+    name: Cantus Facsimile
+    description: 
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:1985:39
+    filename: a_little_pretty_bonny_lass_tenor.jpg
+    name: Cantus Facsimile
+    description: 
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:1985:53
+    filename: a_little_pretty_bonny_lass_bassus.jpg
+    name: Cantus Facsimile
+    description: 
+language:
+- English
+tags:
+- madrigal

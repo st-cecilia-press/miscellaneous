@@ -1,0 +1,21 @@
+---
+title: Your Shining Eyes
+composer: Thomas Bateson
+voicings:
+- SST
+- SAT
+books:
+- slug: bateson_first_set_of_english_madrigals
+  images:
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:150783:6
+    filename: your_shining_eyes_altus.jpg
+    name: Altus Facsimile
+    description: 
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:150783:37
+    filename: your_shining_eyes_bassus.jpg
+    name: Bassus Facsimile
+    description: 
+language:
+- English
+tags:
+- madrigal
