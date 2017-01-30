@@ -1,0 +1,29 @@
+---
+title: Sicut Cervus
+composer: Giovanni Pierluigi da Palestrina
+voicings:
+- ATTB
+- SATB
+books:
+- slug: palestrina_motettorum_quartet_vocibus_liber_secundus
+  images:
+  - url: http://mdc.cbuc.cat/cdm/ref/collection/partiturBC/id/5641
+    filename: sicut_cervus_cantus.jpg
+    name: Cantus Facsimile 1588 edition
+    description: pg 17 of cantus book in linked source
+  - url: http://mdc.cbuc.cat/cdm/ref/collection/partiturBC/id/5641
+    filename: sicut_cervus_tenor.jpg
+    name: Tenor Facsimile 1588 edition
+    description: pg 17 of tenor book in linked source
+  - url: http://mdc.cbuc.cat/cdm/ref/collection/partiturBC/id/5641
+    filename: sicut_cervus_bassus.jpg
+    name: Bassus Facsimile 1588 edition
+    description: pg 17  of bassus book in linked source
+  - url: http://mdc.cbuc.cat/cdm/ref/collection/musicatedra/id/76598
+    filename: sicut_cervus_bassus.jpg
+    name: Bassus Facsimile 1596 edition
+    description: pg 261 of book in linked source
+language:
+- Latin
+tags:
+- motet
