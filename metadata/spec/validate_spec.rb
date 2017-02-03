@@ -17,6 +17,29 @@ describe "validate" do
       val = validate(@metadata)
       expect(val).to eq('Fail: Need Composer')
     end
+    it "rejects empty dates" do
+      @metadata["dates"] = []
+      val = validate(@metadata)
+      expect(val).to eq('Fail: dates must exist')
+    end
+    it "rejects dates with non number" do
+      @metadata["dates"][0] = 'abc'
+      val = validate(@metadata)
+      expect(val).to eq('Fail: dates must be integers')
+    end
+    it "rejects dates where first number is greater than first" do
+      @metadata["dates"][0] = 1500
+      @metadata["dates"][1] = 1400
+      val = validate(@metadata)
+      expect(val).to eq('Fail: second date must be larger than first date')
+    end
+    it "rejects dates where more than two numbers are in list" do
+      @metadata["dates"][0] = 1400
+      @metadata["dates"][1] = 1500
+      @metadata["dates"][2] = 1600
+      val = validate(@metadata)
+      expect(val).to eq('Fail: only two numbers allowed in dates list')
+    end
     it "rejects empty voicings" do
       @metadata["voicings"] = ""
       val = validate(@metadata)
