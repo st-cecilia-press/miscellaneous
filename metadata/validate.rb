@@ -5,6 +5,14 @@ require "net/http"
 def validate(metadata) 
   return "Fail: Need Title" if metadata["title"].empty? 
   return "Fail: Need Composer" if metadata["composer"].empty?
+  if metadata['dates']
+    return 'Fail: dates must exist' if metadata['dates'].empty?
+    metadata['dates'].each do | date |
+      return 'Fail: dates must be integers' unless date.is_a? Integer
+    end
+    return 'Fail: second date must be larger than first date' if metadata['dates'].count >1 && metadata['dates'][0] > metadata['dates'][1]
+    return 'Fail: only two numbers allowed in dates list' if metadata['dates'].count > 2
+  end
   return "Fail: Need at least one Voicing" if metadata["voicings"].empty? or metadata["voicings"].all? {|i| i.nil? or i == ""}
 
   metadata["voicings"].each do |voicing| 

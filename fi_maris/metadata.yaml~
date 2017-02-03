@@ -1,6 +1,9 @@
 ---
 title: Fi Maris
 composer: Adam de la Halle
+dates: 
+- 1250
+- 1288
 voicings:
 - SSA
 - SST
@@ -18,4 +21,5 @@ manuscripts:
   name: F-PN fonds français 25566
   position: No. 6, fol(s)/pages 33-33v
 language: 
+- French
 tags: 

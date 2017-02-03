@@ -1,6 +1,9 @@
 ---
 title: Aucun Se Sont / A Dieu Commant / Super Te
 composer: Adam de la Halle
+dates: 
+- 1250
+- 1288
 voicings:
 - TTT
 - AAA
@@ -31,4 +34,7 @@ manuscripts:
   name: Montpellier Codex
   position: No. 246, fol(s)/pages 288-290
 language: 
+- French
+- Latin
 tags: 
+- motet
