@@ -1,6 +1,15 @@
+require 'optparse'
 require_relative 'validate'
 
-input_file = ARGV[0]
-abort 'need yaml file' if input_file.nil?
-metadata = YAML.load_file(input_file)  
-puts validate(metadata)
+options = {url: false}
+OptionParser.new do |parser|
+    parser.on("-u", "--url", "Checks if URL for images work") do
+        options[:url] = true
+    end
+    parser.on("-h", "--help",  "Prints this Help") do 
+      puts parser
+    end
+end.parse!
+
+val = Validator.new(options[:url])
+puts val.validate_repo
