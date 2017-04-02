@@ -22,7 +22,7 @@ manuscripts = [
 ]
 manuscripts.find{ |manuscript| manuscript[:shelfmark] == 'MS 1236' }
 
-directories = Dir.glob('*').select {|f| File.directory? f and f != "include" and f !=  "test"}
+directories = Dir.glob('*').select {|f| File.directory? f and f != "metadata" and f !=  "test"}
 directories.each do  |dir|
   t_file = Tempfile.new('filename_temp.txt')
   metadata = YAML.load_file("./#{dir}/metadata.yaml")
