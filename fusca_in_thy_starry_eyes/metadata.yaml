@@ -1,0 +1,35 @@
+---
+title: 
+composer: 
+dates:
+- 1500
+- 1599
+voicings:
+- 
+books:
+- slug: tomkins_songs_1622
+  images:
+  - url: SOURCE_URL
+    filename: fusca_cantus.jpg
+    name: Cantus Facsimile
+    description: 
+  - url: SOURCE_URL
+    filename: fusca_altus.jpg
+    name: Altus Facsimile
+    description: 
+  - url: SOURCE_URL
+    filename: fusca_tenor.jpg
+    name: Tenor Facsimile
+    description: 
+  - url: SOURCE_URL
+    filename: fusca_bassus.jpg
+    name: Bassus Facsimile
+    description: 
+  - url: SOURCE_URL
+    filename: fusca_quintus.jpg
+    name: Quintus Facsimile
+    description: 
+language:
+- English
+tags:
+- madrigal
