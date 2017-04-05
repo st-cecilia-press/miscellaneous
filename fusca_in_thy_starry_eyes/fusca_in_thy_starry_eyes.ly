@@ -99,7 +99,7 @@ r2 d'2~ d2 a2 r1 r4 b8 c d4 e d2. cs4 d1
 }
 
 scMusicThreeName = "altus"
-scMusicThreeClef = \clef "mezzosoprano"
+scMusicThreeClef = \clef "treble"
 
 scMusicThree =   \relative c'' {  
   g1  d1 ~ d1 r2 r4 d8 d8 
@@ -130,7 +130,7 @@ scMusicThree =   \relative c'' {
 }
 
 scMusicFourName = "tenor"
-scMusicFourClef = \clef "alto"
+scMusicFourClef = \clef "G_8"
 
 scMusicFour =   \relative c' {  
   r1 r b1 a r1 r4 g8 a b4 c b2 r2 r1
@@ -161,7 +161,7 @@ scMusicFour =   \relative c' {
 }
 
 scMusicFiveName = "bassus"
-scMusicFiveClef = \clef "varbaritone"
+scMusicFiveClef = \clef "bass"
 
 scMusicFive =   \relative c' {  
   r1 r g1 d r4 g8 a b4 c b2 r2
