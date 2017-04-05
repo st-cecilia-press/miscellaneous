@@ -1,0 +1,34 @@
+---
+title: Fusca, in thy starry eyes
+composer: Thomas Tomkins
+dates:
+- 1622
+voicings:
+- SSATB
+books:
+- slug: tomkins_songs_1622
+  images:
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:25630:13
+    filename: fusca_cantus.jpg
+    name: Cantus Facsimile
+    description: 
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:25630:43
+    filename: fusca_altus.jpg
+    name: Altus Facsimile
+    description: 
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:25630:69
+    filename: fusca_tenor.jpg
+    name: Tenor Facsimile
+    description: 
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:25630:116
+    filename: fusca_bassus.jpg
+    name: Bassus Facsimile
+    description: 
+  - url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:25630:93
+    filename: fusca_quintus.jpg
+    name: Quintus Facsimile
+    description: 
+language:
+- English
+tags:
+- madrigal
