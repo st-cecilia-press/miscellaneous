@@ -1,5 +1,5 @@
 %score_options {"parts": 5, "verses": 1, "transposed": false}
-scDate = "04-Apr-2017"
+scDate = "10-Apr-2017"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -9,7 +9,7 @@ scStaffSize = 15
 
 \include "english.ly"
 
-scTempo = #(ly:make-moment 90 2)
+scTempo = #(ly:make-moment 150 4)
 scTitle = "Fusca, in thy starry eyes"
 scSubtitle = ""
 scComposer = "Thomas Thomkins"
@@ -22,7 +22,7 @@ scTagline = ""
 
 
 scGlobal= {
-  \key d \dorian
+  \key g \major
   \time 2/2
   \autoBeamOff
 }
