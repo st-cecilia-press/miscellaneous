@@ -1,11 +1,11 @@
 %score_options {"parts": 2, "verses": 0, "transposed": false}
 %http://stimmbuecher.digitale-sammlungen.de/view?id=bsb00082256
-scDate = "DATE"
+scDate = "10-Apr-2017"
 
 \include "../include/sc_functions.ly"
-\include "../include/sc_layout_vocal.ly"
+%\include "../include/sc_layout_vocal.ly"
 
-scStaffSize = 19 
+scStaffSize = 16
 #(ly:set-option 'midi-extension "mid")
 
 \include "english.ly"
@@ -29,13 +29,11 @@ scGlobal= {
 }
 
 
-
-scMinimumSystemSpacingTranspose = #8
-scMinimumSystemSpacing = #8
+scMinimumSystemSpacing = #20
 
 
 scMusicOneName = "treble"
-scMusicOneClef = \clef "soprano"
+scMusicOneClef = \clef "treble"
 
 scMusicOne =   \relative c'' {  
   \repeat volta 2{
@@ -70,11 +68,26 @@ scMusicOne =   \relative c'' {
   >> 
   <d f>4 f8 e f16 e f32 e d e |
   <a, c f>2 <a c f>4 <a c f>
-}
+  }
+  
+  f'16 e f a f8 g a4 a |
+  f16 e f g f8 g a4 a |
+  c4 c8 bf a g16 f e f g a |
+  c4 c8 bf a4 a | 
+  f16 e f g f8 g a4 a |
+  f16 e f g f8 g a4 a |
+  
+  
+  c4 c8 bf a g a bf |
+  c8 d c bf a4 <e g>4 |
+  g8 f <d f>4. e8 f16 e f32 e d e |
+  <a, c f>1
+  
+  \bar "|."
 }
 
 scMusicTwoName = "bass"
-scMusicTwoClef = \clef "tenor"
+scMusicTwoClef = \clef "bass"
 
 scMusicTwo =   \relative c' {  
   \repeat volta 2{
@@ -122,7 +135,20 @@ scMusicTwo =   \relative c' {
  
  <f, f'>2 <f f'>4 <f f'> |
  
-}
+  }
+  <bf' d>4 <bf d>8 <bf d> <a c e>4 <f c' f> |
+  <bf d>4 <bf d>8 <bf d> <a c e>4 < f c' f>4 |
+  <f a f'>4 <f a f'>8 <g bf d>8 <f c' f>2 | 
+  <f a f'>4 <f a f'>8 <g bf d> <f c' f>4 <f c' f> |
+  <bf d>4 <bf d>8 <bf d>8 <a c e>4 < f c' f>4 |
+  <bf d>4 <bf d>8 <bf d>8 <a c e>4 <f c' f>4 |
+
+  <f a f'>4 <f a f'>8 <g bf d>8 <f c' f>2 |
+  <f a f'>4 <f a f'>8 <g bf d>8 <f c' f>4 <c c'>4 |
+  << {\voiceOne bf'8 a } \new Voice{\voiceTwo d,4 } >>
+  << {\voiceOne bf'16 a g f } \new Voice{\voiceTwo d4 } >>
+  <c g' c>2 |
+  <f, f'>1
 }
 
 
