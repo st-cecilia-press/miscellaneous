@@ -10,7 +10,7 @@ scStaffSize = 16
 
 \include "english.ly"
 
-scTempo = #(ly:make-moment 120 4)
+scTempo = #(ly:make-moment 100 4)
 scTitle = "Tant Que Vivrai"
 scSubtitle = ""
 scComposer = ""
