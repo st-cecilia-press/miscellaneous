@@ -1,0 +1,22 @@
+---
+title: Dal lecto me levara
+composer: Michele Pesenti
+dates:
+- 1504
+voicings:
+- STTB
+books:
+- slug: petrucci_frottole_i
+  images:
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00082307/page/60
+    filename: dal_lecto_pg1.jpg
+    name: Facsimile pg 1
+    description: 
+  - url: http://stimmbuecher.digitale-sammlungen.de/api/book/bsb00082307/page/61
+    filename: dal_lecto_pg2.jpg
+    name: Facsimile pg 2
+    description: 
+language:
+- Italian
+tags:
+- frottole
