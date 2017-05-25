@@ -10,7 +10,7 @@ scStaffSize = 16
 \include "english.ly"
 
 scTempo = #(ly:make-moment 120 2)
-scTitle = "Dal lecto me lavara"
+scTitle = "Dal lecto me levava"
 scSubtitle = ""
 scComposer = "Michele Pesenti"
 scArranger = ""
