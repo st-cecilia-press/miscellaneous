@@ -1,5 +1,5 @@
 %score_options {"parts": 4, "verses": 1, "transposed": false}
-scDate = "27-Apr-2017"
+scDate = "25-May-2017"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -10,7 +10,7 @@ scStaffSize = 16
 \include "english.ly"
 
 scTempo = #(ly:make-moment 120 2)
-scTitle = "Dal lecto me lavara"
+scTitle = "Dal lecto me levava"
 scSubtitle = ""
 scComposer = "Michele Pesenti"
 scArranger = ""
@@ -122,7 +122,7 @@ scWordsOneA = \lyricmode {
     % Dal lecto me levava per servir il Signor
     Al -- hor quan -- do~ar -- ri -- va -- va la grua suo ser -- vi -- dor
     gru, gru, gru, gru, gru, gru, __ gru.
-    Gen -- til am -- ba -- sci -- a -- dor
+    Gen -- til am -- _ ba -- scia -- dor
     Che dis -- se non le -- ve, tor -- ne~a -- dor -- mir,
     tor -- ne, __ tor -- ne, tor -- ne, tor -- _ ne~a -- dor -- mir.
 
@@ -165,7 +165,7 @@ scWordsTwoA = \lyricmode {
 scWordsThreeA = \lyricmode {
     Dal lec -- to me le -- va -- va per ser -- vir il Si -- gnor
     gru, gru, gru, gru, gru, gru, gru __ gru. __
-    Gen -- til am -- ba -- sci -- a -- dor
+    Gen -- til am -- _ ba -- scia -- dor
     Che dis -- se non le -- ve, tor -- ne~a -- dor -- mir. __
     tor -- ne, tor -- ne, tor -- ne~a -- dor -- mir,
         tor -- ne~a -- dor -- mir. __
