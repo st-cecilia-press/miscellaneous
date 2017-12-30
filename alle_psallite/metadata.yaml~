@@ -3,6 +3,9 @@ title: Alle psallite cum luya
 composer: Anonymous
 voicings:
 - SAT
+dates:
+- 1280
+- 1350
 manuscripts:
 - images:
   - url: http://manuscrits.biu-montpellier.fr/images/196390rZ.jpg

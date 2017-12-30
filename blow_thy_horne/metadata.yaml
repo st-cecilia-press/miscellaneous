@@ -9,11 +9,11 @@ voicings:
 - STB
 manuscripts:
 - images:
-  - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17324
+  - url: https://www.diamm.ac.uk/sources/1238/#/images
     filename: blow_thy_horne_1.jpg
     name: Page 1 of Blow Thy Horn Facsimile
     description: 
-  - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17325
+  - url: https://www.diamm.ac.uk/sources/1238/#/images
     filename: blow_thy_horne_2.jpg
     name: Page 2 of Blow Thy Horn Facsimile
     description: 
