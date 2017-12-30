@@ -9,11 +9,11 @@ voicings:
 - TT
 manuscripts:
 - images:
-  - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=1178
+  - url: https://www.diamm.ac.uk/sources/488/#/images?p=191
     filename: now_wolde_y_fayne.jpg
     name: Now Wolde Y Fayne Facsimile
     description: 
-  diamm: 72409
+  diamm: 69851
   name: GB-Ob MS. Ashmole 191
   position: No. 1, fol(s)/pages 191
 language:

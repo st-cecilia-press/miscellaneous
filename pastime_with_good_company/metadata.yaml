@@ -9,11 +9,11 @@ voicings:
 - STB
 manuscripts:
 - images:
-  - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17274
+  - url: https://www.diamm.ac.uk/sources/1238/#/images
     filename: pastime1.jpg
     name: Page 1 of Pastime Facsimile
     description: 
-  - url: http://www.diamm.ac.uk/jsp/AnnotationManager?imageKey=17275
+  - url: https://www.diamm.ac.uk/sources/1238/#/images
     filename: pastime2.jpg
     name: Page 2 of Pastime Facsimile
     description: 
