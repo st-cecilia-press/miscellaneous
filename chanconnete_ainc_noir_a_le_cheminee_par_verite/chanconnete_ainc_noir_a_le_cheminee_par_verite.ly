@@ -10,9 +10,9 @@ scStaffSize = 19
 \include "english.ly"
 
 scTempo = #(ly:make-moment 120 4)
-scTitle = ""
+scTitle = "Chançonnete / Ainc voir / A la cheminée / Par verité"
 scSubtitle = ""
-scComposer = ""
+scComposer = "Anonymous"
 scArranger = ""
 scMeter = ""
 scPoet = ""
@@ -23,7 +23,7 @@ scTagline = ""
 
 scGlobal= {
   \key d \dorian
-  \time 4/2
+  \time 6/8
   \autoBeamOff
 }
 
@@ -33,29 +33,34 @@ scMinimumSystemSpacingTranspose = #8
 scMinimumSystemSpacing = #8
 
 
-scMusicOneName = "cantus"
-scMusicOneClef = \clef "treble"
+scMusicOneName = "quintus"
+scMusicOneClef = \clef "G_8"
 
 scMusicOne =   \relative c' {  
-
+  f4.e4. c4. \ficta bf d f16 e d4 c4. r4. 
+  c4. e8 f4 g4. f8 d4 e4. r4.
+  e8 c4 b8 c4 c4. \ficta bf4. d4. r4. c4. c16 \ficta bf a4
+  b8 c4 b16 a g4 a4. a8 \ficta bf4 c4. r4. 
+  d4. e4. f8 f4 e16 d c4 b4. r4. f4. e16 d c4 d4. e16 d c4 
+  d4. e16 f g8 e f4. r4. 
 }
 
-scMusicTwoName = "altus"
-scMusicTwoClef = \clef "treble"
+scMusicTwoName = "treble"
+scMusicTwoClef = \clef "G_8"
 
 scMusicTwo =   \relative c' {  
 
 }
 
-scMusicThreeName = "tenor"
+scMusicThreeName = "medius"
 scMusicThreeClef = \clef "G_8"
 
 scMusicThree =   \relative c' {  
 
 }
 
-scMusicFourName = "bassus"
-scMusicFourClef = \clef "bass"
+scMusicFourName = "tenor"
+scMusicFourClef = \clef "G_8"
 
 scMusicFour =   \relative c' {  
 
