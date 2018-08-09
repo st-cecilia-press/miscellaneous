@@ -41,15 +41,18 @@ scMusicOne =   \relative c' {
   c4. e8 f4 g4. f8 d4 e4. r4.
   e8 c4 b8 c4 c4. \ficta bf4. d4. r4. c4. c16 \ficta bf a4
   b8 c4 b16 a g4 a4. a8 \ficta bf4 c4. r4. 
-  d4. e4. f8 f4 e16 d c4 b4. r4. f4. e16 d c4 d4. e16 d c4 
-  d4. e16 f g8 e f4. r4. 
+  d4. e4. f8 f4 e16 d c4 b4. r4. f'4. e16 d c4 d4. e16 d c4 
+  d4. e16 f g8 e f4. r4.  \bar "|."
 }
 
 scMusicTwoName = "treble"
 scMusicTwoClef = \clef "G_8"
 
 scMusicTwo =   \relative c' {  
-
+ c4. \ficta bf c a g8 a \ficta bf d4. c4. r4. c \ficta bf a8 g4 c4. a4. a
+ e r c'4. \ficta bf8 a4 g4. a8 \ficta bf4 c4. \ficta bf16 a g4 a4. r4. 
+ a4. g4. f4. a
+ g8 a \ficta bf c4. r4. a b c a g \ficta bf d e f16 e e8 d c4. r
 }
 
 scMusicThreeName = "medius"
