@@ -1,28 +1,25 @@
 ---
-title: 
-composer: 
+title: Post Partum Virgo - Ave Regina - Veritatem 
+composer: Anonymous
 dates:
-- 1500
-- 1599
+- 1280
+- 1350
 voicings:
-- 
+- TTT
 manuscripts:
-- name: MANUSCRIPT_NAME
-  diamm: DIAM_ITEM_NUMBER
+- name: Montpellier Codex
+  diamm: 1589
   position: 
   images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
+  - url: http://manuscrits.biu-montpellier.fr/images/196102vZ.jpg
+    filename: 196102vZ.jpg
+    name: Post Partum Virgo facsimile page 1
     description: 
-books:
-- slug: dowland_first_book_of_songs
-  images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
+  - url: http://manuscrits.biu-montpellier.fr/images/196103rZ.jpg
+    filename: 196103rZ.jpg
+    name: Post Partum Virgo facsimile page 2
     description: 
 language:
-- English
+- Latin
 tags:
-- madrigal
+- motet
