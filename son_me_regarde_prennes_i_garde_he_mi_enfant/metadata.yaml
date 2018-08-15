@@ -1,28 +1,34 @@
 ---
-title: 
-composer: 
+title: S'on me regarde - Prennés i garde - Hé, mi enfant
+composer: Anonymous
 dates:
-- 1500
-- 1599
+- 1280
+- 1350
 voicings:
-- 
+- AAT
+- AAB
+- ATT
+- ATB
+- TTT
+- TTB  
 manuscripts:
-- name: MANUSCRIPT_NAME
-  diamm: DIAM_ITEM_NUMBER
+- name: Montpellier Codex
+  diamm: 86565
   position: 
   images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
+  - url: http://manuscrits.biu-montpellier.fr/images/196373vZ.jpg
+    filename: 196373vZ.jpg
+    name: S'on me regarde facsimile page 1
     description: 
-books:
-- slug: dowland_first_book_of_songs
-  images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
+  - url: http://manuscrits.biu-montpellier.fr/images/196374rZ.jpg
+    filename: 196374rZ.jpg
+    name: S'on me regarde facsimile page 2
+    description: 
+  - url: http://manuscrits.biu-montpellier.fr/images/196374vZ.jpg
+    filename: 196374vZ.jpg
+    name: S'on me regarde facsimile page 3
     description: 
 language:
-- English
+- French
 tags:
-- madrigal
+- motet
