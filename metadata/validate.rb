@@ -42,35 +42,36 @@ class Validator
       return false, e.message
     end
   end
-
+  def nempty?(val)
+		val.nil? || val.empty?
+  end
   def validate(metadata, slug)
-  
     my_errors = []
-    my_errors.push('Need Title') if metadata["title"].empty? 
-    my_errors.push('Need Composer') if metadata["composer"].empty?
+    my_errors.push('Need Title') if nempty?(metadata["title"])
+    my_errors.push('Need Composer') if nempty?(metadata["composer"])
     if metadata['dates']
-      my_errors.push('dates must exist') if metadata['dates'].empty?
+      my_errors.push('dates must exist') if nempty?(metadata['dates'])
       metadata['dates'].each do | date |
         my_errors.push('dates must be integers') unless date.is_a? Integer
       end
       my_errors.push('second date must be larger than first date') if metadata['dates'].count >1 && metadata['dates'][0] > metadata['dates'][1]
       my_errors.push('only two numbers allowed in dates list') if metadata['dates'].count > 2
     end
-    my_errors.push('Need at least one Voicing') if metadata["voicings"].empty? or metadata["voicings"].all? {|i| i.nil? or i == ""}
+    my_errors.push('Need at least one Voicing') if nempty?(metadata["voicings"]) or metadata["voicings"].all? {|i| i.nil? or i == ""}
 
     Array(metadata["voicings"]).each do |voicing| 
       my_errors.push('Must contain only SATB characters') if voicing !~ /^[SATB]+$/
     end
 
     Array(metadata["manuscripts"]).each do |man|
-      my_errors.push('Need Manuscript Name') if man["name"].empty?
+      my_errors.push('Need Manuscript Name') if nempty?(man["name"])
       manuscripts = YAML.load_file(@manuscript_yaml) 
       my_errors.push('manuscript name not in includes/manuscripts.yaml') unless manuscripts.detect { |m| m['name'] == man['name']}
       my_errors += image_error?(Array(man["images"]),slug)
     end 
     Array(metadata["books"]).each do |man|
       my_errors = []
-      my_errors.push('Need Book Slug') if man["slug"].empty?
+      my_errors.push('Need Book Slug') if nempty?(man["slug"])
       books = YAML.load_file(@book_yaml) 
       my_errors.push('book slug not in includes/books.yaml') unless books.detect { |b| b['slug'] == man['slug']}
     
@@ -85,10 +86,10 @@ class Validator
   def image_error?(images, slug)
     errors = []
     images.each do |img|
-      errors.push('Image must have URL') if img["url"].empty? 
-      errors.push('Image must have Filename') if img["filename"].empty? 
+      errors.push('Image must have URL') if nempty?(img["url"])
+      errors.push('Image must have Filename') if nempty?(img["filename"])
       errors.push("'#{img["filename"]}' doesn't exist") unless File.exists?("./#{slug}/#{img["filename"]}")
-      if @url && !img["url"].empty? && img["url"] !~ /proquest/ 
+      if @url && !nempty?(img["url"]) && img["url"] !~ /proquest/ 
         errors.push("'#{img["url"]}' doesn't resolve") unless url_resolves?(img["url"])
       end
     end  

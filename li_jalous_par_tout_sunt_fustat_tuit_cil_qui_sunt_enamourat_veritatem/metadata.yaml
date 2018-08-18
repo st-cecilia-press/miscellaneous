@@ -5,12 +5,12 @@ dates:
 - 1280
 - 1350
 voicings:
--AAT
--AAB
--ATT
--ATB
--TTT
--TTB
+- AAT
+- AAB
+- ATT
+- ATB
+- TTT
+- TTB
 manuscripts:
 - name: Montpellier Codex
   diamm: 3372

@@ -19,6 +19,11 @@ describe "validate" do
       val = @validator.validate(@metadata,@slug)
       expect(val[0]).to eq('Need Composer')
     end
+		it "rejects nil composer" do
+      @metadata["composer"] = nil 
+      val = @validator.validate(@metadata,@slug)
+      expect(val[0]).to eq('Need Composer')
+		end
     it "rejects empty dates" do
       @metadata["dates"] = []
       val = @validator.validate(@metadata,@slug)
@@ -105,12 +110,12 @@ describe "validate" do
       val = @validator.validate(@metadata,@slug)
       expect(val[0]).to eq("'file.jpg' doesn't exist")
     end
-    it "rejects if url doesn't resolve" do
-      bad_url = 'http://elkiss.com/definitelynotanimage.jpg';
-      @metadata["manuscripts"][0]["images"][0]["url"] = bad_url
-      val = @validator.validate(@metadata,@slug)
-      expect(val[0]).to eq("'#{bad_url}' doesn't resolve")
-    end
+#    it "rejects if url doesn't resolve" do
+#      bad_url = 'http://elkiss.com/definitelynotanimage.jpg';
+#      @metadata["manuscripts"][0]["images"][0]["url"] = bad_url
+#      val = @validator.validate(@metadata,@slug)
+#      expect(val[0]).to eq("'#{bad_url}' doesn't resolve")
+#    end
   end
 
   context "book checks" do
@@ -148,17 +153,17 @@ describe "validate" do
       val = @validator.validate(@metadata,@slug)
       expect(val[0]).to eq("'file.jpg' doesn't exist")
     end
-    it "rejects if url doesn't resolve" do
-      bad_url = 'http://elkiss.com/definitelynotanimage.jpg';
-      @metadata["books"][0]["images"][0]["url"] = bad_url
-      val = @validator.validate(@metadata,@slug)
-      expect(val[0]).to eq("'#{bad_url}' doesn't resolve")
-    end
-    it "doesn't check proquest links" do
-      proquest = 'http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:1985:11' 
-      @metadata["books"][0]["images"][0]["url"] = proquest
-      val = @validator.validate(@metadata,@slug)
-      expect(val).to eq("OK")
-    end
+#    it "rejects if url doesn't resolve" do
+#      bad_url = 'http://elkiss.com/definitelynotanimage.jpg';
+#      @metadata["books"][0]["images"][0]["url"] = bad_url
+#      val = @validator.validate(@metadata,@slug)
+#      expect(val[0]).to eq("'#{bad_url}' doesn't resolve")
+#    end
+#    it "doesn't check proquest links" do
+#      proquest = 'http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:image:1985:11' 
+#      @metadata["books"][0]["images"][0]["url"] = proquest
+#      val = @validator.validate(@metadata,@slug)
+#      expect(val).to eq("OK")
+#    end
   end
 end
