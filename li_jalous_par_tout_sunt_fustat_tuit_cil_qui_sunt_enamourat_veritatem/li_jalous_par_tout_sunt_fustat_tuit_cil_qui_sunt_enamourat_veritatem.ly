@@ -59,10 +59,10 @@ scMusicThreeName = "tenor"
 scMusicThreeClef = \clef "G_8"
 
 scMusicThree =   \relative c {  
- \partial 4 r4 f2. g2 r4 f2 f4 g2 r4 a2 r4 a2 f4
- g2 r4 f2. e2 r4 d2 f4 g2 r4 f2 r4 e2 f4 g2 r4
- g2. f2 r4 f2. g2 r4 f2 f4 g2 r4
- a2 r4 a2 f4 g2 r4 f2. e2 r4 d2 r4 f2 g4 f2 r4 e2 f4 g2 r4 g2 g4 f2 r4 
+ \partial 4 r4 f2. g2 r4 f2 \[ f4 g2 \] r4 a2 r4 \[ a2 f4
+ g2 \] r4 f2. e2 r4 \[ d2 f4 g2 \] r4 f2 r4 \[ e2 f4 g2 \] r4
+ g2. f2 r4 f2. g2 r4 f2 \[ f4 g2 \] r4
+ a2 r4 \[ a2 f4 g2 \] r4 f2. e2 r4 d2 r4 \[ f2 g4 f2 \] r4 \[ e2 f4 g2 \] r4 g2 \[ g4 f2 \] r4 
 }
 
 
