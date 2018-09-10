@@ -56,7 +56,7 @@ scMusicTwo =   \relative c' {
   c2 a1 b2 g1 a2 b1 c2 r1 a2 g a c2 c1 d2 e d
   c2 r1 d2 b1 c2 b a b2 a g a r1 a2 b4 c d2
   
-  c2 c2 b4 a4 b2 b1 a2 r1 d2 f4 e d2 c2 c4 b a2
+  c2 c4 b4 a2 b2 b1 a2 r1 d2 f4 e d2 c2 c4 b a2
   b2 c1 d2 r2 r c2 c4 b a2 b2 b4 a g2 a2 b1 c2 r2 r 
   d2 c4 b a2 c2 c1 d2 d1 c2 b a g a b c4 d c b a2 b2 a g a r1
 }
