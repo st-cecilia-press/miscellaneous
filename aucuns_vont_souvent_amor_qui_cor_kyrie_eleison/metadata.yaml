@@ -1,28 +1,38 @@
 ---
-title: 
-composer: 
+title: Aucuns vont souvent - Amor qui cor - Kyrie Eleison 
+composer: Anonymous
 dates:
-- 1500
-- 1599
+- 1280
+- 1350
 voicings:
-- 
+- SSS
+- SSA
+- AAT
+- TTT
+- TTB
 manuscripts:
-- name: MANUSCRIPT_NAME
-  diamm: DIAM_ITEM_NUMBER
+- name: Montpellier Codex
+  diamm: 3462
   position: 
   images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
+  - url: http://manuscrits.biu-montpellier.fr/images/196290vZ.jpg
+    filename: 196290vZ.jpg
+    name: Aucuns facsimile page 1
     description: 
-books:
-- slug: dowland_first_book_of_songs
-  images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
+  - url: http://manuscrits.biu-montpellier.fr/images/196291rZ.jpg
+    filename: 196291rZ.jpg
+    name: Aucuns facsimile page 2
+    description: 
+  - url: http://manuscrits.biu-montpellier.fr/images/196291vZ.jpg
+    filename: 196291vZ.jpg
+    name: Aucuns facsimile page 3
+    description: 
+  - url: http://manuscrits.biu-montpellier.fr/images/196292rZ.jpg
+    filename: 196292rZ.jpg
+    name: Aucuns facsimile page 4
     description: 
 language:
-- English
+- French
+- Latin
 tags:
-- madrigal
+- motet
