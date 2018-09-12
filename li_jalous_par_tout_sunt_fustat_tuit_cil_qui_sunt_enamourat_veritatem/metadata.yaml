@@ -1,0 +1,30 @@
+---
+title: Li jalous par tout sunt fustat - Tuit cil qui sunt enamourat - Veritatem
+composer: Anonymous
+dates:
+- 1280
+- 1350
+voicings:
+- AAT
+- AAB
+- ATT
+- ATB
+- TTT
+- TTB
+manuscripts:
+- name: Montpellier Codex
+  diamm: 3372
+  position: 
+  images:
+  - url: http://manuscrits.biu-montpellier.fr/images/196218vZ.jpg
+    filename: 196218vZ.jpg
+    name: Li Jalous Par Tout facsimile page 1
+    description: 
+  - url: http://manuscrits.biu-montpellier.fr/images/196219rZ.jpg
+    filename: 196219rZ.jpg
+    name: Li Jalous Par Tout facsimile page 2
+    description: 
+language:
+- French
+tags:
+- motet

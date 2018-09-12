@@ -1,0 +1,25 @@
+---
+title: "Chançonnete - Ainc voir - A la cheminée - Par verité"
+composer: Anonymous
+dates:
+- 1280
+- 1350
+voicings:
+- TTTT
+manuscripts:
+- name: Montpellier Codex
+  diamm: 1551
+  position: 
+  images:
+  - url: http://manuscrits.biu-montpellier.fr/images/196039vZ.jpg
+    filename: 196039vZ.jpg
+    name: Chanconnete facsimile page 1
+    description: 
+  - url: http://manuscrits.biu-montpellier.fr/images/196040rZ.jpg
+    filename: 196040rZ.jpg
+    name: Chanconnete facsimile page 2
+    description: 
+language:
+- French
+tags:
+- motet
