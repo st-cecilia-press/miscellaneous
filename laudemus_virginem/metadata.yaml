@@ -1,28 +1,23 @@
 ---
-title: 
-composer: 
+title: Laudemus virginem
+composer: Anonymous
 dates:
-- 1500
-- 1599
+- 1300
+- 1399
 voicings:
-- 
+- S
+- A
+- T
+- B 
 manuscripts:
-- name: MANUSCRIPT_NAME
-  diamm: DIAM_ITEM_NUMBER
+- name: Llibre Vermell
+  diamm: 271
   position: 
-  images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
-    description: 
-books:
-- slug: dowland_first_book_of_songs
-  images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
-    description: 
+- images:
+  - url: http://petrucci.mus.auth.gr/imglnks/usimg/9/97/IMSLP297165-PMLP481806-llibre_vermell_de_montserrat.pdf
+    filename: laudemus_virginem.png
+    name: Laudemus Virginem Facsimile
+    description: On page of 47 linked PDF
 language:
-- English
+- Latin
 tags:
-- madrigal

@@ -1,28 +1,24 @@
 ---
-title: 
-composer: 
+title: Mariam matrem Virginem attolite 
+composer: Anonymous
 dates:
-- 1500
-- 1599
+- 1300
+- 1399
 voicings:
-- 
+- STT
+- STB
+- ATT
+- ATB  
 manuscripts:
-- name: MANUSCRIPT_NAME
-  diamm: DIAM_ITEM_NUMBER
+- name: Llibre Vermell
+  diamm: 273
   position: 
   images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
-    description: 
-books:
-- slug: dowland_first_book_of_songs
-  images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
-    description: 
+  - url: http://petrucci.mus.auth.gr/imglnks/usimg/9/97/IMSLP297165-PMLP481806-llibre_vermell_de_montserrat.pdf
+    filename: mariam_matrem.png
+    name: Mariam Matrem Facsimile
+    description: On page of 51 linked PDF
 language:
-- English
+- Latin
 tags:
-- madrigal
+- motet
