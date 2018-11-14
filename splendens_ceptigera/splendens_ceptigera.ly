@@ -1,5 +1,5 @@
 %score_options {"parts": 1, "verses": 2, "transposed": false}
-scDate = "DATE"
+scDate = "19-Sept-2018"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -10,12 +10,12 @@ scStaffSize = 19
 \include "english.ly"
 
 scTempo = #(ly:make-moment 120 4)
-scTitle = ""
+scTitle = "Splendens Ceptigera"
 scSubtitle = ""
-scComposer = ""
+scComposer = "Anonymous"
 scArranger = ""
 scMeter = ""
-scPoet = ""
+scPoet = "A canon in two or three"
 scCopyright = ""
 scTagline = ""
 
@@ -23,7 +23,7 @@ scTagline = ""
 
 scGlobal= {
   \key d \dorian
-  \time 4/2
+  \time 2/2
   \autoBeamOff
 }
 
@@ -37,7 +37,9 @@ scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 
 scMusicOne =   \relative c' {  
-
+  \repeat volta 2 {
+  d4 e f2 d4 e c2 d4\coda e f2 a4 g f f a\coda b c2 a4 g f2
+  }
 }
 
 
@@ -46,12 +48,16 @@ scMusicOne =   \relative c' {
   
   
 scWordsOneA = \lyricmode {
-
+  Splen -- dens cep -- ti -- ger -- ra 
+  Nos -- stri sis ad -- vo -- ca -- ta 
+  Vir -- go pu -- er -- pe -- ra
 }
     
   
 scWordsOneB = \lyricmode {
-
+  Tun -- den -- tes pec -- to -- ra 
+  Cri -- mi -- na con -- fi -- ten -- tes 
+  Si -- mus al -- tis -- si -- mo.
 }
     
   
