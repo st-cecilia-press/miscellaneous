@@ -1,0 +1,22 @@
+---
+title: No me digáis mal
+composer: Alonso Perez de Alba
+dates:
+- 1400
+- 1499
+voicings:
+- SAB
+- STB
+- AAB
+- ATB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 90054
+  position: 217r
+  images:
+  - url: http://petrucci.mus.auth.gr/imglnks/usimg/9/95/IMSLP403749-PMLP304828-cancionero_palacio2.pdf
+    filename: no_me_digais_mal.png
+    name: Facsimile of 'No me digáis mal'
+    description: On page 40 of linked PDF
+language:
+- Spanish

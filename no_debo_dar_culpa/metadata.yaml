@@ -1,0 +1,22 @@
+---
+title: No debo dar culpa
+composer: Pedro de Escobar
+dates:
+- 1400
+- 1499
+voicings:
+- SAB
+- STB
+- AAB
+- ATB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 89823
+  position: 128r
+  images:
+  - url: http://imslp.nl/imglnks/usimg/1/14/IMSLP403748-PMLP304828-cancionero_palacio1.pdf
+    filename: no_debo_dar_culpa.png
+    name: Facsimile of 'No debo dar culpa'
+    description: On page 42 of linked PDF
+language:
+- Spanish

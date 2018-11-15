@@ -1,0 +1,22 @@
+---
+title: Enemiga le soy, madre
+composer: Juan del Encina
+dates:
+- 1400
+- 1499
+voicings:
+- SAB
+- STB
+- AAB
+- ATB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 3968
+  position: 12v-13r
+  images:
+  - url: http://ks.imslp.info/files/imglnks/usimg/a/ac/IMSLP403750-PMLP304828-cancionero_palacio3.pdf
+    filename: enemiga_le_soy_madre.png
+    name: Facsimile of 'Enemiga le soy, madre'
+    description: On page 18 of linked PDF
+language:
+- Spanish

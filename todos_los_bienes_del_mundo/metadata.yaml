@@ -1,0 +1,21 @@
+---
+title: Todos los bienes del mundo
+composer: Juan del Encina
+dates:
+- 1400
+- 1499
+voicings:
+- SSTB
+- SATB
+- AATB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 19119
+  position: 244v-245r
+  images:
+  - url: http://petrucci.mus.auth.gr/imglnks/usimg/9/95/IMSLP403749-PMLP304828-cancionero_palacio2.pdf
+    filename: todos_los_bienes_del_mundo.png
+    name: Facsimile of 'Todos los bienes del mundo'
+    description: On page 68 of linked PDF
+language:
+- Spanish

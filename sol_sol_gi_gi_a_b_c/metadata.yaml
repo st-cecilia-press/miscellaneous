@@ -1,0 +1,20 @@
+---
+title: Sol sol gi gi A B C
+composer: Alonso Perez de Alba
+dates:
+- 1400
+- 1499
+voicings:
+- STB
+- ATB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 89675
+  position: 54r
+  images:
+  - url: http://ks.imslp.info/files/imglnks/usimg/a/ac/IMSLP403750-PMLP304828-cancionero_palacio3.pdf
+    filename: sol_sol_gi_gi_a_b_c.png
+    name: Facsimile of 'Sol sol gi gi A B C'
+    description: On page 59 of linked PDF
+language:
+- Spanish

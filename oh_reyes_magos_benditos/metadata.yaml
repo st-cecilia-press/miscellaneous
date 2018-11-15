@@ -1,0 +1,20 @@
+---
+title: "?Oh, Reyes magos benditos!"
+composer: Juan del Encina
+dates:
+- 1400
+- 1499
+voicings:
+- STB
+- ATB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 90094
+  position: 228v-229r
+  images:
+  - url: http://petrucci.mus.auth.gr/imglnks/usimg/9/95/IMSLP403749-PMLP304828-cancionero_palacio2.pdf
+    filename: oh_reyes_magos_benditos.png
+    name: Facsimile of '?Oh, Reyes magos benditos!'
+    description: On page 52 of linked PDF
+language:
+- Spanish

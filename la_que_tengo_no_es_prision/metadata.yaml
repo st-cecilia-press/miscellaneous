@@ -1,0 +1,20 @@
+---
+title: La que tengo no es prision
+composer: Francisco de la Torre
+dates:
+- 1400
+- 1499
+voicings:
+- STT
+- STB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 89661
+  position: 44v-45r
+  images:
+  - url: http://ks.imslp.info/files/imglnks/usimg/a/ac/IMSLP403750-PMLP304828-cancionero_palacio3.pdf
+    filename: la_que_tengo_no_es_prision.png
+    name: Facsimile of 'La que tengo no es prision'
+    description: On page 50 of linked PDF
+language:
+- Spanish

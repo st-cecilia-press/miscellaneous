@@ -1,0 +1,21 @@
+---
+title: Pásame por Dios barquero
+composer: Pedro de Escobar
+dates:
+- 1400
+- 1499
+voicings:
+- SSB
+- SAB
+- AAB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 89361
+  position: 190r
+  images:
+  - url: http://petrucci.mus.auth.gr/imglnks/usimg/9/95/IMSLP403749-PMLP304828-cancionero_palacio2.pdf
+    filename: pasame_por_dios_barquero.png
+    name: Facsimile of 'Pásame por Dios barquero'
+    description: On page 13 of linked PDF
+language:
+- Spanish

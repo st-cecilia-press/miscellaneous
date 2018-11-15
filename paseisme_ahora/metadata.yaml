@@ -1,0 +1,22 @@
+---
+title: Paséisme ahora
+composer: Pedro de Escobar
+dates:
+- 1400
+- 1499
+voicings:
+- SATB
+- STTB
+- AATB
+- ATTB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 89847
+  position: 139r
+  images:
+  - url: http://imslp.nl/imglnks/usimg/1/14/IMSLP403748-PMLP304828-cancionero_palacio1.pdf
+    filename: paseisme_ahora.png
+    name: Facsimile of 'Paséisme ahora'
+    description: On page 53 of linked PDF
+language:
+- Spanish

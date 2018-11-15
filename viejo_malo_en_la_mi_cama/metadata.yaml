@@ -1,0 +1,26 @@
+---
+title: Viejo malo en la mi cama
+composer: Sedano
+dates:
+- 1400
+- 1499
+voicings:
+- SATB
+- SABB
+- STTB
+- STBB
+- AATB
+- AABB
+- ATTB
+- ATBB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 90135
+  position: 258r
+  images:
+  - url: http://petrucci.mus.auth.gr/imglnks/usimg/9/95/IMSLP403749-PMLP304828-cancionero_palacio2.pdf
+    filename: viejo_malo_en_la_mi_cama.png
+    name: Facsimile of 'Viejo malo en la mi cama'
+    description: On page 258 of linked PDF
+language:
+- Spanish

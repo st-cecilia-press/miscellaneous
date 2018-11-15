@@ -1,0 +1,31 @@
+---
+title: No puedo apartarme
+composer: Anonymous
+dates:
+- 1400
+- 1499
+voicings:
+- SSAB
+- SSTB
+- SSBB
+- SAAB
+- SATB
+- SABB
+- STTB
+- STBB
+- AAAB
+- AATB
+- AABB
+- ATTB
+- ATBB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 89987
+  position: 202v
+  images:
+  - url: http://petrucci.mus.auth.gr/imglnks/usimg/9/95/IMSLP403749-PMLP304828-cancionero_palacio2.pdf
+    filename: no_puedo_apartarme.png
+    name: Facsimile of 'No puedo apartarme'
+    description: On page 90 of linked PDF
+language:
+- Spanish

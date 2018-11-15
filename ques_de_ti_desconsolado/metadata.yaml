@@ -1,0 +1,22 @@
+---
+title: "¿Qu'es de ti, desconsolado?"
+composer: Juan del Encina
+dates:
+- 1400
+- 1499
+voicings:
+- SAB
+- STB
+- AAB
+- ATB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 89686
+  position: 60v
+  images:
+  - url: http://ks.imslp.info/files/imglnks/usimg/a/ac/IMSLP403750-PMLP304828-cancionero_palacio3.pdf
+    filename: ques_de_ti_desconsolado.png
+    name: Facsimile of '¿Qu'es de ti, desconsolado?'
+    description: On page 66 of linked PDF
+language:
+- Spanish

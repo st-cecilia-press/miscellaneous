@@ -1,0 +1,24 @@
+---
+title: Meu naranjedo
+composer: Anonymous
+dates:
+- 1400
+- 1499
+voicings:
+- SSAB
+- SSTB
+- SAAB
+- SATB
+- AAAB
+- AATB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 89906
+  position: 175r
+  images:
+  - url: http://imslp.nl/imglnks/usimg/1/14/IMSLP403748-PMLP304828-cancionero_palacio1.pdf
+    filename: meu_naranjedo.png
+    name: Facsimile of 'Meu naranjedo'
+    description: On page 89 of linked PDF
+language:
+- Spanish

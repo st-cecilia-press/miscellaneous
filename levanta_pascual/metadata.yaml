@@ -1,0 +1,21 @@
+---
+title: Levanta Pascual
+composer: Juan del Encina
+dates:
+- 1400
+- 1499
+voicings:
+- SAB
+- STB
+- AAB
+manuscripts:
+- name: Canconiero de Palacio
+  diamm: 89787
+  position: 113v-114r
+  images:
+  - url: http://imslp.nl/imglnks/usimg/1/14/IMSLP403748-PMLP304828-cancionero_palacio1.pdf
+    filename: levanta_pascual.png
+    name: Facsimile of 'Levanta Pascual'
+    description: On page 28 of linked PDF
+language:
+- Spanish
