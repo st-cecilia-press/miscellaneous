@@ -1,8 +1,14 @@
-no_me_digais_mal
-no_puedo_apartarme
-paseisme_ahora
-pasame_por_dios_barquero
-sol_sol_gi_gi_a_b_c
-todos_los_bienes_del_mundo
-viejo_malo_en_la_mi_cama
-ques_de_ti_desconsolado
+oh_reyes_magos_benditos;?Oh, Reyes magos benditos!;228v-229r;90094;Juan del Encina;3;3;52
+enemiga_le_soy_madre;Enemiga le soy, madre;12v-13r;3968;Juan del Encina;3;1;18
+la_que_tengo_no_es_prision;La que tengo no es prision;44v-45r;89661;Francisco de la Torre;3;1;50
+levanta_pascual;Levanta Pascual;113v-114r;89787;Juan del Encina;3;2;28
+meu_naranjedo;Meu naranjedo;175r;89906;Anonymous;4;2;89
+no_debo_dar_culpa;No debo dar culpa;128r;89823;Pedro de Escobar;3;2;42
+no_me_digais_mal;No me digáis mal;217r;90054;Alonso Perez de Alba;3;3;40
+no_puedo_apartarme;No puedo apartarme;202v;89987;Anonymous;4;3;90
+paseisme_ahora;Paséisme ahora;139r;89847;Pedro de Escobar;4;2;53
+pasame_por_dios_barquero;Pásame por Dios barquero;190r;89361;Pedro de Escobar;3;3;13
+sol_sol_gi_gi_a_b_c;Sol sol gi gi A B C;54r;89675;Alonso Perez de Alba;3;1;59
+todos_los_bienes_del_mundo;Todos los bienes del mundo;244v-245r;19119;Juan del Encina;4;3;68
+viejo_malo_en_la_mi_cama;Viejo malo en la mi cama;258r;90135;Sedano;4;3;258
+ques_de_ti_desconsolado;¿Qu'es de ti, desconsolado?;60v;89686;Juan del Encina;3;1;66
