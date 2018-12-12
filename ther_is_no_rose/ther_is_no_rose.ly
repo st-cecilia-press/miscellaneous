@@ -1,5 +1,6 @@
 %score_options { "parts": 3, "verses": 5, "transposed": false }
-scDate = "13-Aug-2016"
+%12-Dec-2018 Changed some underlay
+scDate = "12-Dec-2018"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 #(ly:set-option 'midi-extension "mid")
@@ -43,7 +44,7 @@ cantusMusicVerse = \relative c'' {
   c4 | a4. \melisma  g8 \melismaEnd  a8[ bf] c4 d2 |
   c2 a4 bf4 \melisma  a4. g8 \melismaEnd  | a4 r4 g8[ a] f4. e8 f8[ e] |
 
-  \time 9/4 c4. d8 \melisma  e4 \melismaEnd  f2 e4 f2 r4 \break | \time 6/4 f4. \melisma  g8[ a bf] \melismaEnd c4 \melisma  bf8[ a] g4 \melismaEnd  |
+  \time 9/4 c4.\melisma d8 \melismaEnd   e4   f2 e4 f2 r4 \break | \time 6/4 f4. \melisma  g8[ a bf] \melismaEnd c4 \melisma  bf8[ a] g4 \melismaEnd  |
   f2 \melisma  e4 g f d | e8[f g f bf a] f4. e8[ e d] \melismaEnd   f2.~f2 \bar "|."
 }
 
@@ -79,23 +80,23 @@ wordsVerseA = \lyricmode {
   
   Ther is __ no rose of swych __ _ ver -- tu
   As is __ _ the __ rose that bare Jhe -- su;
-  Al -- le -- lu -- ia. __
+  Al -- le -- lu -- ia. 
 }
 
 wordsVerseB = \lyricmode {
   \set stanza = "2."
   
   For in __ this rose con -- tey -- _ nyd __ was
-  He -- _. ven and erthe in __ lyt -- tyle space;
-  Res __ mi -- ran -- da. __
+  He --  ven __ _ and erthe __ in  lyt -- tyle space;
+  Res __ mi -- ran -- da. 
 }
 
 wordsVerseC = \lyricmode {
 
   \set stanza = "3."
   Be that __ _ rose we may __ _ weel __ see
-  That he __ _ is __ God in __ per -- sonys thre,
-  Pa -- ri __ for -- ma. __
+  That he __ _ is __ God __ in  per -- sonys thre,
+  Pa -- ri __ for -- ma. 
 }
 
 wordsVerseD = \lyricmode {
@@ -103,15 +104,15 @@ wordsVerseD = \lyricmode {
   \set stanza = "4."
   The aun -- gelys sung -- _ yn the \set ignoreMelismata = ##t shep -- \unset ignoreMelismata erdes __ to:
   Glo -- ri -- a in __ ex -- cel -- sis De -- o:
-  Gau -- de -- a -- mus. __
+  Gau -- de -- a -- mus. 
 }
 
 wordsVerseE = \lyricmode {
  
   \set stanza = "5."
   Leive we __ _ al this world -- _ ly __ merthe,
-  And fol -- _ we __ we this __ joy -- ful berthe;
-  Trans -- e -- a -- mus. __
+  And fol -- _ we __ we __ this  joy -- ful berthe;
+  Trans -- e -- a -- mus. 
 }
 
 
