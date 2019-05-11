@@ -76,13 +76,13 @@ scMusicThreeClef = \clef "tenor"
 scMusicThreeClefTransposed = \clef "treble"
 
 scMusicThree =   \relative c' {  
-  g\breve  bf\breve . g\breve bf1 a d1. c4( bf) c2 c d\breve . d,\breve g1. f4( e) f2 f g1 c bf a r2 g2 g f bf1. a2 g1 e1 d r2 g2 g f2
-  bf2 a1 g f2 g2 d2 bf'2 a1 g f2 g1 r1 d'1 f1. e2 d c d g,2 r1 r2 c2 f1. e2 d c1 bf2 c bf2. a4 g( f) g1. e2 e1 r2 c'1 bf2 a2
-  g2 d'2. e8( bf) d2 c1 bf2 a1 g d'1 r2 g,2 bf2 g d'1. c2 a2 bf1 a2. g4 g1 f4( e) f2 d2 d1 r1 d'\breve d c bf1. a2 g f e1 d\breve r1 a'\breve
-  
-  bf1. a2 g\breve g1 bf1. a2 g1 g r2 d'2 d d g,2 bf2. a4 d1 c2 d\breve r g,1 a2 bf2. a4 a1 g f2 g d'2 e d bf2. a8[ g] g\breve r r2 d'2 
-  e2 d bf2. bf4 c2 d g,2 g bf1 a r2 g2 d'2. d4 c2 g bf2 bf a g2. f4 f1 e2 f1 bf1 a1 g1 a\breve g2 d'2 e d bf2. a8[ g] g\breve r\breve
-  r2 d'2 e2 d bf2. bf4 c2 d g,2 g bf1 a r2 g2 d'2. d4 c2 g bf2 bf a g2. f4 f1 e2 f1 bf1 a1 g1 a\breve g\breve
+%   g\breve  bf\breve . g\breve bf1 a d1. c4( bf) c2 c d\breve . d,\breve g1. f4( e) f2 f g1 c bf a r2 g2 g f bf1. a2 g1 e1 d r2 g2 g f2
+%   bf2 a1 g f2 g2 d2 bf'2 a1 g f2 g1 r1 d'1 f1. e2 d c d g,2 r1 r2 c2 f1. e2 d c1 bf2 c bf2. a4 g( f) g1. e2 e1 r2 c'1 bf2 a2
+%   g2 d'2. e8( bf) d2 c1 bf2 a1 g d'1 r2 g,2 bf2 g d'1. c2 a2 bf1 a2. g4 g1 f4( e) f2 d2 d1 r1 d'\breve d c bf1. a2 g f e1 d\breve r1 a'\breve
+%   
+%   bf1. a2 g\breve g1 bf1. a2 g1 g r2 d'2 d d g,2 bf2. a4 d1 c2 d\breve r g,1 a2 bf2. a4 a1 g f2 g d'2 e d bf2. a8[ g] g\breve r r2 d'2 
+%   e2 d bf2. bf4 c2 d g,2 g bf1 a r2 g2 d'2. d4 c2 g bf2 bf a g2. f4 f1 e2 f1 bf1 a1 g1 a\breve g2 d'2 e d bf2. a8[ g] g\breve r\breve
+%   r2 d'2 e2 d bf2. bf4 c2 d g,2 g bf1 a r2 g2 d'2. d4 c2 g bf2 bf a g2. f4 f1 e2 f1 bf1 a1 g1 a\breve g\breve
   
 }
 
@@ -92,13 +92,13 @@ scMusicFourClef = \clef "bass"
 scMusicFourClefTransposed = \clef "G_8"
 
 scMusicFour =   \relative c {  
-%   g1 bf1. g2 d'1 r2 d2 e c g'1 d\breve r c1 f2. e4 d c d2 g,1 r\breve r2 c2 f d a' d, r2 g1 c,2 f2 d r2 d d g,2 d'\breve
-%   r2 d2 d1 r1 d bf2 g4 a bf c d2 g, a'2 bf2 c a1 g2 f2 r2 a2 bf c a1 g g,\breve d'1 bf1. f'2 r1 r2 f2 g c,2 r2 d2 e c d e f d
-%   e2 g d g2 r2 d2 e g1 f2 e a g f1 c2 g'2 g,2 d'2 e f1 e e r2 d2 g1 g,1 r2 d'2 g2 c,2 f1 f,1 r\breve r r1 f'\breve d e1 c d\breve r1
-%   
-%   r2 c2 bf g d'1 r1 f\breve d e1 c d\breve . r\breve r1 r2 d2 d d bf'2 a g1 f bf,1 bf'1. a2 g c,2 f2 d1 e2 f g r2 d2 g,2 g g\longa r1 r2 d'2 d2. d4
-%   c2 f2 d g,2 a bf2 c1 r1 r2 a'2 bf2. bf4 a2 f r2 c2 f1 f2 c2 r1 r2 c2 d1 bf1 r2 d2 g c,2 f2. e4 d1 g,\longa g1 r1 r2 d'2 d2. d4 
-%   c2 f d g,2 a bf c1 r1 r2 a'2 bf2. bf4 a2 f r2 c2 f1 f2 c2 r1 r2 c2 d1 bf1 r2 d2 g c, f2. e4 d\breve r2 g1 bf2 g2. a4 bf\breve
+  g1 bf1. g2 d'1 r2 d2 e c g'1 d\breve r c1 f2. e4 d( c) d2 g,1 r\breve r2 c2 f d a' d, r2 g1 c,2 f2 d r2 d d g,2 d'\breve
+  r2 d2 d1 r1 d bf2 g4 a bf c d2 g, a'2 bf2 c a1 g2 f2 r2 a2 bf c a1 g g,\breve d'1 bf1. f'2 r1 r2 f2 g c,2 r2 d2 e c d e f d
+  e2 g d g2 r2 d2 e g1 f2 e a g f1 c2 g'2 g,2 d'2 e f1 e e r2 d2 g1 g,1 r2 d'2 g2 c,2 f1 f,1 r\breve r r1 f'\breve d e1 c d\breve r1
+  
+  r2 c2 bf g d'1 r1 f\breve d e1 c d\breve . r\breve r1 r2 d2 d d bf'2 a g1 f bf,1 bf'1. a2 g c,2 f2 d1 e2 f g r2 d2 g,2 g g\longa r1 r2 d'2 d2. d4
+  c2 f2 d g,2 a bf2 c1 r1 r2 a'2 bf2. bf4 a2 f r2 c2 f1 f2 c2 r1 r2 c2 d1 bf1 r2 d2 g c,2 f2. e4 d1 g,\longa g1 r1 r2 d'2 d2. d4 
+  c2 f d g,2 a bf c1 r1 r2 a'2 bf2. bf4 a2 f r2 c2 f1 f2 c2 r1 r2 c2 d1 bf1 r2 d2 g c, f2. e4 d\breve r2 g1 bf2 g2. a4 bf\breve
   
 }
 
@@ -217,6 +217,37 @@ scWordsThreeA = \lyricmode {
   
   
 scWordsFourA = \lyricmode {
+ O Be -- a -- _ te Chris -- ti con -- fes -- sor, 
+ con fes -- _ _ sor,
+ Chri -- sti con -- fes -- sor,
+ quam__ _ mag -- na a -- pud de -- um,
+ de -- um,
+ sunt __ _ mer -- i -- ta __ _ tu -- a,
+ sunt mer -- i -- ta tu -- a,
+ sunt __ _ mer -- i -- ta tu -- a, 
+ tu -- a, mer -- i -- ta,
+ sunt mer -- i -- ta tu -- a,
+ qui -- bus cre -- di -- mus,
+ qui -- bus cre -- _ _ di -- _ mus nos,
+ qui -- bus cre -- _ di -- mus nos,
+ a mor -- bo,
+ a  mor -- _ _ bo,
+ e -- pe -- di -- mi -- e,
+ a mor -- _ bo,
+ e -- pi -- di -- mi -- e
+
+ pos -- se li -- be -- _ ra -- _ ri
+ pos -- se li -- be --  ra -- _ _ _ ri,
+ li -- be -- ra -- ri,
+ et ae -- ris, et ae -- ris tem -- pe -- ri -- em,
+ tem -- pe -- ri -- _ em,
+ tem -- pe -- ri -- em con -- ce -- di,
+ tem -- pe -- ri -- em __ _ con -- ce -- di,
+ 
+  et ae -- ris, et ae -- ris tem -- pe -- ri -- em,
+ tem -- pe -- ri -- _ em,
+ tem -- pe -- ri -- em con -- ce -- di,
+ tem -- pe -- ri -- em __ _ _ con -- _ ce -- _ di.
 
 }
     
