@@ -22,7 +22,7 @@
       " - Page"
       \fromproperty #'page:page-number-string
     } } 
-	\fill-line { \tiny { \line{© Monique Rio (CC BY 4.0) | Edition Date: \scDate } } } }
+	\fill-line { \tiny { \line{© Cassandra Cohen and Monique Rio (CC BY 4.0) | Edition Date: \scDate } } } }
   }
   
   evenFooterMarkup = \oddFooterMarkup

@@ -1,5 +1,5 @@
 %score_options {"parts": 5, "verses": 1, "transposed": true}
-scDate = "DATE"
+scDate = "11-May-2019"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
@@ -11,7 +11,7 @@ scStaffSize = 16
 
 \include "english.ly"
 
-scTempo = #(ly:make-moment 120 4)
+scTempo = #(ly:make-moment 100 2)
 scTitle = "Sicut Lilium"
 scSubtitle = ""
 scComposer = "Attrib. Leonora d'Este"
