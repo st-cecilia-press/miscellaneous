@@ -1,10 +1,12 @@
-%score_options {"parts": 5, "verses": 1, "transposed": false}
+%score_options {"parts": 5, "verses": 1, "transposed": true}
 scDate = "7-May-2019"
 
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
 scStaffSize = 16 
+
+scStaffSizeTranspose = 16 
 #(ly:set-option 'midi-extension "mid")
 
 \include "english.ly"
@@ -27,15 +29,16 @@ scGlobal= {
   \autoBeamOff
 }
 
-
+scTransposeFrom =  c 
+scTransposeTo =  g
 
 
 scMinimumSystemSpacing = #8
-
+scMinimumSystemSpacingTranspose = #8
 
 scMusicOneName = "cantus"
 scMusicOneClef = \clef "G_8"
-
+scMusicOneClefTransposed = \clef "treble"
 scMusicOne =   \relative c' {  
   c1 a2 d2 ~ d4 d4 b2 g g'2 f1 f2 d2 g2.
   g4 e2 c4 f4 ~ f4 d4 e2 d b c2. d4 g,4 
@@ -49,7 +52,7 @@ scMusicOne =   \relative c' {
 
 scMusicTwoName = "altus"
 scMusicTwoClef = \clef "G_8"
-
+scMusicTwoClefTransposed = \clef "treble"
 scMusicTwo =   \relative c' {  
   r1 f1 d2 g2. g4 e2 c1 r2 r4 d4 ~ d4 b2 e c4. b8 a4 ~ a8 g8 f4 e e f a g2 r1 r4 g2 g4 b2 c4 g2 c4. b8 a4 g4 g'2 g4 f4
   
@@ -61,7 +64,7 @@ scMusicTwo =   \relative c' {
 
 scMusicThreeName = "quintus"
 scMusicThreeClef = \clef "G_8"
-
+scMusicThreeClefTransposed = \clef "treble"
 scMusicThree =   \relative c' {  
   r1 r r r r r r r r2 c2 a d c a b b d c c c c b d g, g c g b b a g a b c d
   
@@ -70,14 +73,14 @@ scMusicThree =   \relative c' {
 
 scMusicFourName = "tenor"
 scMusicFourClef = \clef "G_8"
-
+scMusicFourClefTransposed = \clef "treble"
 scMusicFour =   \relative c' {  
   r1 r r r2  c1 a2 d2. d4 b2 g c2. c4 d2 g,4 
   g'2 f4 g2 f4 e2 d4 e2 d c4 
   g2 g4 c4 c e2 c4 g4. a8 b[ g] a4 b 
   
   c4 b8[  a ] g[ f e d]  e4 
-  \clef "tenor" 
+ % \clef "tenor" 
   a4 e e g g d d'2 d4 b4 c4. b8 a[ g] f2 g g e a g r2 
   g2 c1 d4 b4 c4 c4 ~ c4 b4 c2 r4 g4
   
@@ -87,7 +90,7 @@ scMusicFour =   \relative c' {
 
 scMusicFiveName = "bassus"
 scMusicFiveClef = \clef "bass"
-
+scMusicFiveClefTransposed = \clef "G_8"
 scMusicFive =   \relative c {  
  r2 f1 d2 g2. g4 e2 c f1 
  d2 g2 ~ g4 g4  e2  c4 c f2 d c d2 g,4 g'4 \melisma a4. g8 f2 \melismaEnd e r4 

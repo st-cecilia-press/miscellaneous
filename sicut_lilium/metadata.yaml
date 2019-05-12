@@ -1,28 +1,36 @@
 ---
-title: 
-composer: 
+title: Sicut Lilium
+composer: Leonora d'Este
 dates:
-- 1500
-- 1599
+- 1543
 voicings:
-- 
-manuscripts:
-- name: MANUSCRIPT_NAME
-  diamm: DIAM_ITEM_NUMBER
-  position: 
-  images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
-    description: 
+- ATTBB
+- TTTBB
+- SSSTT
 books:
-- slug: dowland_first_book_of_songs
+- slug: leonora_dest_musica_quinque_vocum
   images:
-  - url: SOURCE_URL
-    filename: LOCAL_FILE
-    name: 
+  - url: http://ks4.imslp.info/files/imglnks/usimg/e/e2/IMSLP348472-PMLP562916-musica_quinque_vocum_1543-3_cantus.pdf
+    filename: sicut_lilium_cantus.png
+    name: Sicut Lilium Cantus facsimile
+    description:
+  - url: http://ks4.imslp.info/files/imglnks/usimg/c/c5/IMSLP355075-PMLP562916-musica_quinque_vocum_1543-3_altus.pdf 
+    filename: sicut_lilium_altus.png
+    name: Sicut Lilium Altus facsimile
+    description: 
+  - url: http://ks4.imslp.info/files/imglnks/usimg/8/87/IMSLP355084-PMLP562916-musica_quinque_vocum_1543-3_tenor.pdf 
+    filename: sicut_lilium_tenor.png
+    name: Sicut Lilium Tenor facsimile
+    description: 
+  - url: http://ks4.imslp.info/files/imglnks/usimg/d/d8/IMSLP462999-PMLP562916-musica_quinque_vocum_1543-2_quintus.pdf 
+    filename: sicut_lilium_quintus.png
+    name: Sicut Lilium Quintus facsimile
+    description: 
+  - url: http://ks4.imslp.info/files/imglnks/usimg/9/95/IMSLP355803-PMLP562916-musica_quinque_vocum_1543-3_bassus.pdf 
+    filename: sicut_lilium_bassus.png
+    name: Sicut Lilium Bassus facsimile
     description: 
 language:
-- English
+- Latin
 tags:
-- madrigal
+- motet
