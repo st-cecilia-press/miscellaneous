@@ -1,0 +1,35 @@
+---
+title: Sicut Lilium
+composer: Leonora d'Este
+dates:
+- 1543
+voicings:
+- TTTBB
+- SSSAA
+books:
+- slug: leonora_dest_musica_quinque_vocum
+  images:
+  - url: http://ks4.imslp.info/files/imglnks/usimg/e/e2/IMSLP348472-PMLP562916-musica_quinque_vocum_1543-3_cantus.pdf
+    filename: o_beate_christi_confessor_cantus.png
+    name: O Beate Cantus facsimile
+    description:
+  - url: http://ks4.imslp.info/files/imglnks/usimg/c/c5/IMSLP355075-PMLP562916-musica_quinque_vocum_1543-3_altus.pdf 
+    filename: o_beate_christi_confessor_altus.png
+    name: O Beate Altus facsimile
+    description: 
+  - url: http://ks4.imslp.info/files/imglnks/usimg/8/87/IMSLP355084-PMLP562916-musica_quinque_vocum_1543-3_tenor.pdf 
+    filename: o_beate_christi_confessor_tenor.png
+    name: O Beate Tenor facsimile
+    description: 
+  - url: http://ks4.imslp.info/files/imglnks/usimg/d/d8/IMSLP462999-PMLP562916-musica_quinque_vocum_1543-2_quintus.pdf 
+    filename: o_beate_christi_confessor_quintus.png
+    name: O Beate Quintus facsimile
+    description: 
+  - url: http://ks4.imslp.info/files/imglnks/usimg/9/95/IMSLP355803-PMLP562916-musica_quinque_vocum_1543-3_bassus.pdf 
+    filename: o_beate_christi_confessor_bassus.png
+    name: O Beate Bassus facsimile
+    description: 
+language:
+- Latin
+tags:
+- motet
