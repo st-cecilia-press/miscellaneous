@@ -51,7 +51,7 @@ c2 c4 c4 |  % 1
  a4 c2 g4 |  % 13
  bf2 a2 |  % 14
  g4 f4 f4 e4 |  % 15
- f1 \bar "|:"  % 16
+ f1 \bar ".|:"  % 16
  r2  c'2 |  % 17
  d2 f2 |  % 18
  e2 d2 |  % 19
@@ -62,7 +62,7 @@ c2 c4 c4 |  % 1
  c1 |  % 24
  r4  a4 c2 ~  |  % 25
  c2 g2 |  % 26
- f1  \bar "|."
+ f1  \bar ":|."
 
 }
 
@@ -85,7 +85,7 @@ a2 a4 a4 |  % 1
  f2 c4 c4 |  % 13
  d4. \melisma e8 f4 \melismaEnd  e4 |  % 14
  d4 c4 d4 g4 |  % 15
- c,1 \bar "|:"  % 16
+ c,1 \bar ".|:"  % 16
  a'1 |  % 17
  g2 f2 |  % 18
  g2. f4 |  % 19
@@ -96,7 +96,7 @@ a2 a4 a4 |  % 1
  e2. e4 |  % 24
  a2. \melisma   g8 [  f8 ]  |  % 25
  e4 f2 \melismaEnd  e4 |  % 26
- f1 \bar "|."
+ f1 \bar ":|."
 
 }
 
@@ -119,7 +119,7 @@ scMusicThree =   \relative c' {
  r4  a4 g4. g8 |  % 13
  f4. \melisma g8 [  a8 bf8 ] \melismaEnd  c4 |  % 14
  g4 a4 bf4. bf8 |  % 15
- a1 \bar "|:"  % 16
+ a1 \bar ".|:"  % 16
  c1 |  % 17
  bf2 a2 c2 b2 |  % 18
  c2. e4 |  % 19
@@ -129,7 +129,7 @@ scMusicThree =   \relative c' {
  g,2. c4 |  % 23
  c4 f,4 a4 bf4 |  % 24
  c4 a4 c4. g8 |  % 25
- a1 \bar "|."
+ a1 \bar ":|."
 
 }
 
@@ -152,7 +152,7 @@ f2 f4 f4 |  % 1
  f2 e4 e4 |  % 13
  d2. c4 |  % 14
  bf4 a4 g4. g8 |  % 15
- f1 \bar "|:"  % 16
+ f1 \bar ".|:"  % 16
  f'1 |  % 17
  bf,2 d2 |  % 18
  c2 g'2 |  % 19
@@ -163,7 +163,7 @@ f2 f4 f4 |  % 1
  c4. d8 e4 c4 |  % 24
  f2. e8   [  d8  ]  |  % 25
  c2. c4 |  % 26
- f,1 \bar "|."
+ f,1 \bar ":|."
 
 }
 
